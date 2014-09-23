@@ -19,7 +19,7 @@ fi
 
 if [[ ${okto_driver}  && $okto_driver = true ]]
 	then
-		git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./extStackCVG/okto_driver
+		git submodule init extStackCVG/okto_driver
 		echo " -extStackCVG/okto_driver added"
 
 fi

@@ -1,3 +1,7 @@
 [submodule "stack/droneStackBasis/droneMsgsROS"]
 	path = stack/droneStackBasis/droneMsgsROS
 	url = https://bitbucket.org/joselusl/dronemsgsros.git
+[submodule "extStackCVG/okto_driver"]
+	path = extStackCVG/okto_driver
+	url = https://bitbucket.org/Vision4UAV/okto_driver.git
+	branch = catkin

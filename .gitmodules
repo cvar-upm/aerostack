@@ -1,0 +1,3 @@
+[submodule "stack/droneStackBasis/droneMsgsROS"]
+	path = stack/droneStackBasis/droneMsgsROS
+	url = https://bitbucket.org/joselusl/dronemsgsros.git

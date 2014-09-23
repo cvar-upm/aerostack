@@ -10,8 +10,9 @@ echo "Configuring stack submodules .."
 #Loop for git submodule init
 if [[ ${droneMsgsROS}  && $droneMsgsROS = true ]]
 	then
-		git submodule init stack/droneStackBasis/droneMsgsROS/
-		echo " -stack/droneStackBasis/droneMsgsROS added"
+		
+		git submodule init stack/droneStackBasis/droneMsgsROS/ > /dev/null
+		echo " -stack/droneStackBasis/droneMsgsROS added" 
 fi
 
 
@@ -19,7 +20,7 @@ fi
 
 if [[ ${okto_driver}  && $okto_driver = true ]]
 	then
-		git submodule init extStackCVG/okto_driver
+		git submodule init extStackCVG/okto_driver > /dev/null
 		echo " -extStackCVG/okto_driver added"
 
 fi

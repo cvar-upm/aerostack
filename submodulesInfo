@@ -23,7 +23,7 @@ git submodule add https://bitbucket.org/joselusl/mav_tools.git ./stack/droneDriv
 
 git submodule add https://bitbucket.org/joselusl/asctec_drivers.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
 
-git submodule add https://bitbucket.org/joselusl/driverpelicanrosmodule.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
+git submodule add https://bitbucket.org/joselusl/driverPelicanROSModule.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
 
 #ARDRONE
 git submodule add -b catkin https://github.com/AutonomyLab/ardrone_autonomy.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy

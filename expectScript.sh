@@ -8,21 +8,18 @@ set gitSubmodule [lindex $argv 0]; # Grab the second command line parameter
 set bitbucketUsername [lindex $argv 1]; # Grab the second command line parameter
 set bitbucketPassword [lindex $argv 2]; # Grab the third command line parameter
 
-
-#Use the built in telnet program to connect to an IP and port number
+#Do the command
 spawn git submodule update $gitSubmodule
-#
-#The next thing we should see is a Password prompt
-expect "Username for 'https://bitbucket.org': "
-#
-#Send a vaild password to the device
-send "$bitbucketUsername\n"
-#
-#The next thing we should see is a Password prompt
-expect "Password for 'https://$bitbucketUsername@bitbucket.org': "
-#
-#Send a vaild password to the device
-send "$bitbucketPassword\n"
+#Wait for a response
+expect {
+"Username for 'https://bitbucket.org': "
+	{
+	send "$bitbucketUsername\n"
+	expect "Password for 'https://$bitbucketUsername@bitbucket.org': "
+	send "$bitbucketPassword\n"
+	}
+""
+}
 # 
 #The interact command is part of the expect script, which tells the script to hand off control to the user.
 #This will allow you to continue to stay in the device for issuing future commands, instead of just closing

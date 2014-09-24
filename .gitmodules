@@ -6,8 +6,8 @@
 	url = https://bitbucket.org/Vision4UAV/okto_driver.git
 	branch = catkin
 [submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye"]
-	path = stack/droneDrivers/driversSensors/driver_camera_ueye
+	path = stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
 	url = https://joselusl@bitbucket.org/joselusl/driver_camera_ueye.git
-[submodule "stack/droneDrivers/driversSensors/driver_camera_ueye_ROSModule"]
+[submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule"]
 	path = stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 	url = https://joselusl@bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git

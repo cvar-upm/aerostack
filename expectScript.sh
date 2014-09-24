@@ -26,7 +26,7 @@ expect {
 	send "$bitbucketPassword\n"
 	}
 
-#"" { send "aqui\n"}
+"* checked out *" 
 }
 # 
 #The interact command is part of the expect script, which tells the script to hand off control to the user.

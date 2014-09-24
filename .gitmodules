@@ -205,3 +205,9 @@
 [submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
 	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/joselusl/robotSimulatorRvizROSModule.git
+[submodule "stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks"]
+	path = stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
+	url = https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git
+[submodule "stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule"]
+	path = stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
+	url = https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarksROSModule.git

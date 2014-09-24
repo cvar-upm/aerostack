@@ -122,7 +122,10 @@ git submodule add https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule
 
 
 #droneObstacleProcessorVisualMarks
-git submodule add https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks
+git submodule add https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
+
+#droneObstacleProcessorVisualMarksROSModule
+git submodule add https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarksROSModule.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
 
 #robotLocalizationROSModule
 git submodule add https://bitbucket.org/joselusl/robotLocalizationROSModule.git ./stack/droneEnvironmentUnderstanding/robotLocalizationROSModule

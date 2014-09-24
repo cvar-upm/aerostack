@@ -11,13 +11,6 @@
 [submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule"]
 	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 	url = https://bitbucket.org/joselusl/driver_px4flow_interface_rosmodule.git
-[submodule "stack/droneDrivers/driversPlatforms/driverOkto/okto_driver"]
-	path = stack/droneDrivers/driversPlatforms/driverOkto/okto_driver
-	url = https://bitbucket.org/Vision4UAV/okto_driver.git
-	branch = catkin
-[submodule "stack/droneDrivers/driversPlatforms/driverOkto/driverOktoROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverOkto/driverOktoROSModule
-	url = https://bitbucket.org/joselusl/driveroktorosmodule.git
 [submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
 	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 	url = https://github.com/AutonomyLab/ardrone_autonomy.git
@@ -34,6 +27,13 @@
 [submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
 	url = https://bitbucket.org/joselusl/driverpelicanrosmodule.git
+[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver"]
+	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
+	url = https://bitbucket.org/Vision4UAV/okto_driver.git
+	branch = catkin
+[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule"]
+	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
+	url = https://bitbucket.org/joselusl/driveroktorosmodule.git
 [submodule "stack/droneStackBasics/droneMsgsROS"]
 	path = stack/droneStackBasics/droneMsgsROS
 	url = https://bitbucket.org/joselusl/dronemsgsros.git

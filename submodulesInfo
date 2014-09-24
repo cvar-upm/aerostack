@@ -14,9 +14,9 @@ git submodule add -b master https://github.com/cvg/px-ros-pkg.git ./stack/droneD
 git submodule add https://bitbucket.org/joselusl/driver_px4flow_interface_rosmodule.git ./stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 
 #OKTO
-git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./stack/droneDrivers/driversPlatforms/driverOkto/okto_driver
+git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
 
-git submodule add https://bitbucket.org/joselusl/driveroktorosmodule.git ./stack/droneDrivers/driversPlatforms/driverOkto/driverOktoROSModule
+git submodule add https://bitbucket.org/joselusl/driveroktorosmodule.git ./stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
 
 #PELICAN
 git submodule add https://bitbucket.org/joselusl/mav_tools.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools

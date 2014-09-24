@@ -42,3 +42,14 @@ if [[ ${okto_driver}  && $okto_driver = true ]]
 fi
 
 
+#okto_driver
+if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]
+	then
+		git submodule init stack/droneSrivers/driversSensors/driver_camera_ueye > /dev/null
+		./expectScript.sh "stack/droneSrivers/driversSensors/driver_camera_ueye" $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: stack/droneSrivers/driversSensors/driver_camera_ueye"
+
+fi
+
+
+

@@ -5,3 +5,6 @@
 	path = extStackCVG/okto_driver
 	url = https://bitbucket.org/Vision4UAV/okto_driver.git
 	branch = catkin
+[submodule "stack/droneSrivers/driversSensors/driver_camera_ueye"]
+	path = stack/droneSrivers/driversSensors/driver_camera_ueye
+	url = https://joselusl@bitbucket.org/joselusl/driver_camera_ueye.git

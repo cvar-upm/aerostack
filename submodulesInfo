@@ -94,6 +94,17 @@ git submodule add https://bitbucket.org/joselusl/referenceFramesROS.git ./stack/
 
 
 
+#lib_cvglogger
+git submodule add https://bitbucket.org/joselusl/lib_cvglogger.git ./stack/droneLogging/lib_cvglogger
+
+#lib_cvgloggerROS
+git submodule add https://bitbucket.org/joselusl/lib_cvgloggerROS.git ./stack/droneLogging/lib_cvgloggerROS
+
+#droneLoggerROSModule
+git submodule add https://bitbucket.org/joselusl/droneLoggerROSModule.git ./stack/droneLogging/droneLoggerROSModule
+
+#dronePelicanLoggerROSModule
+git submodule add https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git ./stack/droneLogging/dronePelicanLoggerROSModule
 
 
 

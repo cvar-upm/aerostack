@@ -88,3 +88,15 @@
 [submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS"]
 	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
 	url = https://bitbucket.org/joselusl/referenceFramesROS.git
+[submodule "stack/droneLogging/lib_cvglogger"]
+	path = stack/droneLogging/lib_cvglogger
+	url = https://bitbucket.org/joselusl/lib_cvglogger.git
+[submodule "stack/droneLogging/lib_cvgloggerROS"]
+	path = stack/droneLogging/lib_cvgloggerROS
+	url = https://bitbucket.org/joselusl/lib_cvgloggerROS.git
+[submodule "stack/droneLogging/droneLoggerROSModule"]
+	path = stack/droneLogging/droneLoggerROSModule
+	url = https://bitbucket.org/joselusl/droneLoggerROSModule.git
+[submodule "stack/droneLogging/dronePelicanLoggerROSModule"]
+	path = stack/droneLogging/dronePelicanLoggerROSModule
+	url = https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git

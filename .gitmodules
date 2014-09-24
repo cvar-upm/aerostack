@@ -11,3 +11,10 @@
 [submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule"]
 	path = stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 	url = https://bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git
+[submodule "stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg"]
+	path = stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
+	url = https://github.com/cvg/px-ros-pkg.git
+	branch = master
+[submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule"]
+	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
+	url = https://bitbucket.org/joselusl/driver_px4flow_interface_rosmodule.git

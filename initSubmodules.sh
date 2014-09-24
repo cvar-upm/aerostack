@@ -61,5 +61,22 @@ if [[ ${driver_camera_ueye_ROSModule}  && $driver_camera_ueye_ROSModule = true ]
 
 fi
 
+#px-ros-pkg
+if [[ ${px_ros_kg}  && $px_ros_pkg = true ]]
+	then
+		git submodule init stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg > /dev/null
+		git submodule update stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg > /dev/null
+		echo " -Added package in: stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg"
 
+fi
+
+#driver_camera_ueye
+if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
+		git submodule init $MODULE_PATH > /dev/null
+		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+
+fi
 

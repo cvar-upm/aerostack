@@ -11,3 +11,6 @@
 [submodule "stack/droneDrivers/driversSensors/driver_camera_ueye_ROSModule"]
 	path = stack/droneDrivers/driversSensors/driver_camera_ueye_ROSModule
 	url = https://joselusl@bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git
+[submodule "stack/droneSrivers/driversSensors/driver_camera_ueye_ROSModulegit"]
+	path = stack/droneSrivers/driversSensors/driver_camera_ueye_ROSModulegit
+	url = https://joselusl@bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git

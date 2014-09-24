@@ -65,7 +65,7 @@ git submodule add https://bitbucket.org/joselusl/referenceFrames.git ./stack/lib
 
 
 #videoPublisherROSModule
-git submodule add https://bitbucket.org/joselusl/videoPublisherROSModule.git ./stack/utils/videoPublisherROSModule
+git submodule add https://bitbucket.org/joselusl/quadrotor_stack-videoPublisherROSModule.git ./stack/utils/videoPublisherROSModule
 
 
 

@@ -166,3 +166,30 @@
 [submodule "stack/dronePerception/droneCV2DTo3DROSModule"]
 	path = stack/dronePerception/droneCV2DTo3DROSModule
 	url = https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git
+[submodule "stack/droneSimulators/droneSimulator/droneSimulator"]
+	path = stack/droneSimulators/droneSimulator/droneSimulator
+	url = https://bitbucket.org/joselusl/droneSimulator.git
+[submodule "stack/droneSimulators/droneSimulator/droneSimulatorROSModule"]
+	path = stack/droneSimulators/droneSimulator/droneSimulatorROSModule
+	url = https://bitbucket.org/joselusl/droneSimulatorROSModule.git
+[submodule "stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule"]
+	path = stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
+	url = https://bitbucket.org/joselusl/dronePelicanSimulatorROSModule.git
+[submodule "stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule"]
+	path = stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
+	url = https://bitbucket.org/joselusl/droneOktoSimulatorROSModule.git
+[submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator"]
+	path = stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
+	url = https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulator.git
+[submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule"]
+	path = stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
+	url = https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulatorROSModule.git
+[submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule"]
+	path = stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
+	url = https://bitbucket.org/joselusl/droneSimulatorGridROSModule.git
+[submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule"]
+	path = stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
+	url = https://bitbucket.org/joselusl/droneSimulatoriRobotCVROSModule.git
+[submodule "stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule"]
+	path = stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
+	url = https://bitbucket.org/joselusl/robotSimulatorROSModule.git

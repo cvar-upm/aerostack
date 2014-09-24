@@ -189,6 +189,33 @@ git submodule add https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git ./st
 
 
 
+#droneSimulator
+git submodule add https://bitbucket.org/joselusl/droneSimulator.git ./stack/droneSimulators/droneSimulator/droneSimulator
+
+#droneSimulatorROSModule
+git submodule add https://bitbucket.org/joselusl/droneSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/droneSimulatorROSModule
+
+#dronePelicanSimulatorROSModule
+git submodule add https://bitbucket.org/joselusl/dronePelicanSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
+
+#droneOktoSimulatorROSModule
+git submodule add https://bitbucket.org/joselusl/droneOktoSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
+
+#droneVisualMarkersEyeSimulator
+git submodule add https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulator.git ./stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
+
+#droneVisualMarkersEyeSimulatorROSModule
+git submodule add https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulatorROSModule.git ./stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
+
+#droneSimulatorGridROSModule
+git submodule add https://bitbucket.org/joselusl/droneSimulatorGridROSModule.git ./stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
+
+#droneSimulatoriRobotCVROSModule
+git submodule add https://bitbucket.org/joselusl/droneSimulatoriRobotCVROSModule.git ./stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
+
+#robotSimulatorROSModule
+git submodule add https://bitbucket.org/joselusl/robotSimulatorROSModule.git ./stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
+
 
 
 

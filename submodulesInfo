@@ -108,6 +108,21 @@ git submodule add https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git
 
 
 
+#droneYawCommanderROSModule
+git submodule add https://bitbucket.org/joselusl/droneYawCommanderROSModule.git ./stack/droneYawCommanding/droneYawCommanderROSModule
+
+
+
+#droneTrajectoryPlanner
+git submodule add https://bitbucket.org/joselusl/droneTrajectoryPlanner.git ./stack/droneTrajectoryPlanning/droneTrajectoryPlanner
+
+#droneTrajectoryPlannerROSModule
+git submodule add https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule.git ./stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
+
+
+
+
+
 
 How to init
 git submodule init

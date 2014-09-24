@@ -100,3 +100,12 @@
 [submodule "stack/droneLogging/dronePelicanLoggerROSModule"]
 	path = stack/droneLogging/dronePelicanLoggerROSModule
 	url = https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git
+[submodule "stack/droneYawCommanding/droneYawCommanderROSModule"]
+	path = stack/droneYawCommanding/droneYawCommanderROSModule
+	url = https://bitbucket.org/joselusl/droneYawCommanderROSModule.git
+[submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlanner"]
+	path = stack/droneTrajectoryPlanning/droneTrajectoryPlanner
+	url = https://bitbucket.org/joselusl/droneTrajectoryPlanner.git
+[submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule"]
+	path = stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
+	url = https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule.git

@@ -21,15 +21,6 @@
 [submodule "stack/droneDrivers/driversPlatforms/driverOkto/driverOktoROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverOkto/driverOktoROSModule
 	url = https://bitbucket.org/joselusl/driveroktorosmodule.git
-[submodule "stack/droneDrivers/driversPlatforms/driverPelican/mav_tools"]
-	path = stack/droneDrivers/driversPlatforms/driverPelican/mav_tools
-	url = https://bitbucket.org/joselusl/mav_tools.git
-[submodule "stack/droneDrivers/driversPlatforms/driverPelican/asctec_drivers"]
-	path = stack/droneDrivers/driversPlatforms/driverPelican/asctec_drivers
-	url = https://bitbucket.org/joselusl/asctec_drivers.git
-[submodule "stack/droneDrivers/driversPlatforms/driverPelican/driverPelicanROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverPelican/driverPelicanROSModule
-	url = https://bitbucket.org/joselusl/driverpelicanrosmodule.git
 [submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
 	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 	url = https://github.com/AutonomyLab/ardrone_autonomy.git
@@ -37,3 +28,12 @@
 [submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
 	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
+[submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools"]
+	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
+	url = https://bitbucket.org/joselusl/mav_tools.git
+[submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers"]
+	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
+	url = https://bitbucket.org/joselusl/asctec_drivers.git
+[submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule"]
+	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
+	url = https://bitbucket.org/joselusl/driverpelicanrosmodule.git

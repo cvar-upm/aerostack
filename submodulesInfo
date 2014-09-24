@@ -1,0 +1,35 @@
+How to add a submodule with branch
+git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./extStackCVG/okto_driver
+
+#UEYE_CAMERA
+git submodule add https://joselusl@bitbucket.org/joselusl/driver_camera_ueye.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
+
+git submodule add https://joselusl@bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
+
+#PX4FLOW
+git submodule add -b master https://github.com/cvg/px-ros-pkg.git ./stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
+
+git submodule add https://bitbucket.org/joselusl/driver_px4flow_interface_rosmodule.git ./stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
+
+#OKTO
+git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./stack/droneDrivers/driversPlatforms/driverOkto/okto_driver
+
+git submodule add https://bitbucket.org/joselusl/driveroktorosmodule.git ./stack/droneDrivers/driversPlatforms/driverOkto/driverOktoROSModule
+
+#PELICAN
+git submodule add https://bitbucket.org/joselusl/mav_tools.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
+
+git submodule add https://bitbucket.org/joselusl/asctec_drivers.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
+
+git submodule add https://bitbucket.org/joselusl/driverpelicanrosmodule.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
+
+#ARDRONE
+git submodule add -b catkin https://github.com/AutonomyLab/ardrone_autonomy.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
+
+git submodule add https://bitbucket.org/joselusl/driverparrotardronerosmodule.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
+
+
+
+How to init
+git submodule init
+git submodule update

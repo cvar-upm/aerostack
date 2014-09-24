@@ -67,3 +67,9 @@
 [submodule "stack/utils/videoPublisherROSModule"]
 	path = stack/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videoPublisherROSModule.git
+[submodule "stack/droneMidLevelAutopilot/droneMidLevelAutopilot"]
+	path = stack/droneMidLevelAutopilot/droneMidLevelAutopilot
+	url = https://bitbucket.org/joselusl/droneMidLevelAutopilot.git
+[submodule "stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule"]
+	path = stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule
+	url = https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git

@@ -69,6 +69,16 @@ git submodule add https://bitbucket.org/joselusl/videoPublisherROSModule.git ./s
 
 
 
+#droneMidLevelAutopilot
+git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilot.git ./stack/droneMidLevelAutopilot/droneMidLevelAutopilot
+
+#droneMidLevelAutopilotROSModule
+git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git ./stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule
+
+
+
+
+
 How to init
 git submodule init
 git submodule update

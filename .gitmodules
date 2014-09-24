@@ -67,12 +67,6 @@
 [submodule "stack/utils/videoPublisherROSModule"]
 	path = stack/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videoPublisherROSModule.git
-[submodule "stack/droneMidLevelAutopilot/droneMidLevelAutopilot"]
-	path = stack/droneMidLevelAutopilot/droneMidLevelAutopilot
-	url = https://bitbucket.org/joselusl/droneMidLevelAutopilot.git
-[submodule "stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule"]
-	path = stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule
-	url = https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git
 [submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator"]
 	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
 	url = https://bitbucket.org/joselusl/droneEKFStateEstimator.git
@@ -145,3 +139,9 @@
 [submodule "stack/droneSupervising/droneIARC14BrainROSModule"]
 	path = stack/droneSupervising/droneIARC14BrainROSModule
 	url = https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git
+[submodule "stack/droneMidLevelControl/droneMidLevelAutopilot"]
+	path = stack/droneMidLevelControl/droneMidLevelAutopilot
+	url = https://bitbucket.org/joselusl/droneMidLevelAutopilot.git
+[submodule "stack/droneMidLevelControl/droneMidLevelAutopilotROSModule"]
+	path = stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
+	url = https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git

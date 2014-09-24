@@ -145,3 +145,24 @@
 [submodule "stack/droneMidLevelControl/droneMidLevelAutopilotROSModule"]
 	path = stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
 	url = https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git
+[submodule "stack/dronePerception/droneArucoEye/lib_aruco"]
+	path = stack/dronePerception/droneArucoEye/lib_aruco
+	url = https://bitbucket.org/joselusl/lib_aruco.git
+[submodule "stack/dronePerception/droneArucoEye/arucoEye"]
+	path = stack/dronePerception/droneArucoEye/arucoEye
+	url = https://bitbucket.org/joselusl/arucoEye.git
+[submodule "stack/dronePerception/droneArucoEye/droneArucoEye"]
+	path = stack/dronePerception/droneArucoEye/droneArucoEye
+	url = https://bitbucket.org/joselusl/droneArucoEye.git
+[submodule "stack/dronePerception/droneArucoEye/droneArucoEyeROSModule"]
+	path = stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
+	url = https://bitbucket.org/joselusl/droneArucoEyeROSModule.git
+[submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14"]
+	path = stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
+	url = https://bitbucket.org/joselusl/droneComputerVisionIARC14.git
+[submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule"]
+	path = stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
+	url = https://bitbucket.org/joselusl/droneComputerVisionIARC14ROSModule.git
+[submodule "stack/dronePerception/droneCV2DTo3DROSModule"]
+	path = stack/dronePerception/droneCV2DTo3DROSModule
+	url = https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git

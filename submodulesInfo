@@ -166,6 +166,29 @@ git submodule add https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git .
 
 
 
+#lib_aruco
+git submodule add https://bitbucket.org/joselusl/lib_aruco.git ./stack/dronePerception/droneArucoEye/lib_aruco
+
+#arucoEye
+git submodule add https://bitbucket.org/joselusl/arucoEye.git ./stack/dronePerception/droneArucoEye/arucoEye
+
+#droneArucoEye
+git submodule add https://bitbucket.org/joselusl/droneArucoEye.git ./stack/dronePerception/droneArucoEye/droneArucoEye
+
+#droneArucoEyeROSModule
+git submodule add https://bitbucket.org/joselusl/droneArucoEyeROSModule.git ./stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
+
+#droneComputerVisionIARC14
+git submodule add https://bitbucket.org/joselusl/droneComputerVisionIARC14.git ./stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
+
+#droneComputerVisionIARC14ROSModule
+git submodule add https://bitbucket.org/joselusl/droneComputerVisionIARC14ROSModule.git ./stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
+
+#droneCV2DTo3DROSModule
+git submodule add https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git ./stack/dronePerception/droneCV2DTo3DROSModule
+
+
+
 
 
 

@@ -1,6 +1,3 @@
-[submodule "stack/droneStackBasis/droneMsgsROS"]
-	path = stack/droneStackBasis/droneMsgsROS
-	url = https://bitbucket.org/joselusl/dronemsgsros.git
 [submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye"]
 	path = stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
 	url = https://bitbucket.org/joselusl/driver_camera_ueye.git
@@ -37,3 +34,12 @@
 [submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
 	url = https://bitbucket.org/joselusl/driverpelicanrosmodule.git
+[submodule "stack/droneStackBasics/droneMsgsROS"]
+	path = stack/droneStackBasics/droneMsgsROS
+	url = https://bitbucket.org/joselusl/dronemsgsros.git
+[submodule "stack/droneStackBasics/droneModuleROS"]
+	path = stack/droneStackBasics/droneModuleROS
+	url = https://bitbucket.org/joselusl/dronemoduleros.git
+[submodule "stack/droneStackBasics/droneModuleInterfaceROS"]
+	path = stack/droneStackBasics/droneModuleInterfaceROS
+	url = https://bitbucket.org/joselusl/dronemoduleinterfaceros.git

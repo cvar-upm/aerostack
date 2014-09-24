@@ -1,6 +1,6 @@
 How to add a submodule with branch
 
-#DRONE_MSGS
+
 
 
 #UEYE_CAMERA
@@ -29,6 +29,17 @@ git submodule add https://bitbucket.org/joselusl/driverpelicanrosmodule.git ./st
 git submodule add -b catkin https://github.com/AutonomyLab/ardrone_autonomy.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 
 git submodule add https://bitbucket.org/joselusl/driverparrotardronerosmodule.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
+
+
+#droneMsgsROS
+git submodule add https://bitbucket.org/joselusl/dronemsgsros.git ./stack/droneStackBasics/droneMsgsROS
+
+#droneModuleROS
+git submodule add https://bitbucket.org/joselusl/dronemoduleros.git ./stack/droneStackBasics/droneModuleROS
+
+#droneModuleInterfaceROS
+git submodule add https://bitbucket.org/joselusl/dronemoduleinterfaceros.git ./stack/droneStackBasics/droneModuleInterfaceROS
+
 
 
 

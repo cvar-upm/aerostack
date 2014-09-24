@@ -65,7 +65,7 @@
 	path = stack/libraries/referenceFrames
 	url = https://bitbucket.org/joselusl/referenceFrames.git
 [submodule "stack/utils/videoPublisherROSModule"]
-	path = stack/utils/quadrotor_stack-videoPublisherROSModule
+	path = stack/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videoPublisherROSModule.git
 [submodule "stack/droneMidLevelAutopilot/droneMidLevelAutopilot"]
 	path = stack/droneMidLevelAutopilot/droneMidLevelAutopilot

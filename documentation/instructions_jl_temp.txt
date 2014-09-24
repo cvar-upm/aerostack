@@ -14,42 +14,32 @@ cd ..
 catkin_make
 
 
+SOURCERING THE STACK
 source devel/setup.bash
 
 
-DOWNLOAD PACKAGES
-cd src
-
-1- EXT_STACK
-mkdir extStack
-a. ardrone_autonomy
-git clone https://github.com/AutonomyLab/ardrone_autonomy.git --branch=indigo-devel ./extStack/ardrone_autonomy
-b. px-ros-pkg
-git clone https://github.com/cvg/px-ros-pkg --branch=master ./extStack/px-ros-pkg
+DOWNLOAD STACK
+git clone https://joselusl@bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
 
 
-2- EXT_STACK_CVG
-mkdir extStackCVG
-a. okto_driver
-git clone https://bitbucket.org/Vision4UAV/okto_driver.git --branch=catkin ./extStackCVG/okto_driver
-b. mav_tools
-git clone https://bitbucket.org/joselusl/mav_tools.git ./extStackCVG/mav_tools
-c. asctec_drivers
-git clone https://bitbucket.org/joselusl/asctec_drivers.git ./extStackCVG/asctec_drivers
-
-
-3- STACK
-git clone https://bitbucket.org/joselusl/quadrotor_swarm.git --branch=catkin ./stack
+DOWNLOAD REQUIRED PACKAGES
+cd src/quadrotor_stack
+#set to true packages required in configSubmodules.cfg
+#run script to init submodules
+./initSubmodules.sh
 
 
 
-COMPILE
-cd ..
+COMPILE STACK
 catkin_make
 
 
 
 
-OPENING with qtcreator
+OPENING STACK with qtcreator
+cd src
 rm CMakeLists.txt
 cp /opt/ros/indigo/share/catkin/cmake/toplevel.cmake CMakeLists.txt
+cd ..
+source devel/setup.bash
+qtcreator

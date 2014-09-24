@@ -73,3 +73,18 @@
 [submodule "stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule"]
 	path = stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule
 	url = https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git
+[submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator"]
+	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
+	url = https://bitbucket.org/joselusl/droneEKFStateEstimator.git
+[submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule"]
+	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
+	url = https://bitbucket.org/joselusl/droneEKFStateEstimatorROSModule.git
+[submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer"]
+	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
+	url = https://bitbucket.org/joselusl/droneVisualMarkersLocalizer.git
+[submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule"]
+	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
+	url = https://bitbucket.org/joselusl/droneVisualMarkersLocalizerROSModule.git
+[submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS"]
+	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
+	url = https://bitbucket.org/joselusl/referenceFramesROS.git

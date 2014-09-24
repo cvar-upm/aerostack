@@ -77,6 +77,25 @@ git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule
 
 
 
+#droneEKFStateEstimator
+git submodule add https://bitbucket.org/joselusl/droneEKFStateEstimator.git ./stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
+
+#droneEKFStateEstimatorROSModule
+git submodule add https://bitbucket.org/joselusl/droneEKFStateEstimatorROSModule.git ./stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
+
+#droneVisualMarkersLocalizer
+git submodule add https://bitbucket.org/joselusl/droneVisualMarkersLocalizer.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
+
+#droneVisualMarkersLocalizerROSModule
+git submodule add https://bitbucket.org/joselusl/droneVisualMarkersLocalizerROSModule.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
+
+#referenceFramesROS
+git submodule add https://bitbucket.org/joselusl/referenceFramesROS.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
+
+
+
+
+
 
 
 How to init

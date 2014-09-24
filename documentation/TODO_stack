@@ -1,0 +1,21 @@
+TODO in the stack
+
+1. Replace name of libs and executables by ${PROJECT_NAME} + something
+
+2. Clean shit! Like code_tests!
+
+3. Fix dependencies of packages. JL: already reviewed, but requieres improvements
+
+4. Eliminate dependencies of communication_definition.h
+
+5. Divide the package lib_cvgutils in subpackages. Almost all the stack depends on this package.
+
+6. Use git submodules
+
+7. Improve documentation
+
+8. Improve droneModuleROS
+
+9. Review msgs of droneMsgsROS and delete old one and update new one! Include appropiate Header.
+
+10. Improve the folder distribution of the stack!

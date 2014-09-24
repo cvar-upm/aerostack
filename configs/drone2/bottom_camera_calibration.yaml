@@ -1,0 +1,18 @@
+%YAML:1.0
+image_width: 752
+image_height: 480
+sensor_width: 4.512e-3
+sensor_height: 2.880e-3
+camera_name: pelican_bottom
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [369.2905849118381004, 0, 375.815337818140510, 0, 369.866188743079700, 213.187693576630810, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [-0.294573392649882, 0.070824962696828, -0.000071250131558, -0.001292319790812, 0.000000000000000]
+

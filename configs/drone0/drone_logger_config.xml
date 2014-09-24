@@ -1,0 +1,11 @@
+<drone_logger_config>
+    <description>Configuration of the droneLogger in the Aerial Swarm architecture, by the CVG (CAR, CSIC-UPM).</description>
+    <module_frequency> 120.0 </module_frequency>                                         <!-- Hz   -->
+    <use_of_rosservice_is_allowed>0</use_of_rosservice_is_allowed>                      <!-- bool -->
+    <drone_logger_ros_publisher_queue_size>10</drone_logger_ros_publisher_queue_size>   <!-- int  -->
+    <save_front_camera_images>  1 </save_front_camera_images>                             <!-- bool -->
+    <save_bottom_camera_images> 1 </save_bottom_camera_images>                            <!-- bool -->
+    <save_right_camera_images>  1 </save_right_camera_images>                             <!-- bool -->
+    <save_left_camera_images>   1 </save_left_camera_images>                            <!-- bool -->
+    <save_back_camera_images>   1 </save_back_camera_images>                            <!-- bool -->
+</drone_logger_config>

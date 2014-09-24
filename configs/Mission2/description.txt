@@ -1,0 +1,7 @@
+4 drones van y 2 patrullan
+
+numDrones=4+2;
+campo=voley
+
+
+

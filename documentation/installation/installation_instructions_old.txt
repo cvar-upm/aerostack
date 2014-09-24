@@ -1,0 +1,34 @@
+1. Install Ubuntu 12.10 Quantal
+2. Install ros Groovy
+3. Create your ROS workspace folder, ${ROS_WORKSPACE}
+4. Create ${ROS_WORKSPACE}/extStack ${ROS_WORKSPACE}/stack
+5. Copy the files from the "Installation IMAV2013 Stack" email to ${ROS_WORKSPACE} folder
+6. GEdit setup.sh, change "/home/jespestana/Documents/ROS_workspace" to your ${ROS_WORKSPACE} folder/route
+7. run in ${ROS_WORKSPACE}: git clone https://${USER}@bitbucket.org/jespestana/cvg_upm-imav2013-competition_ros_code.git stack
+8. copy ${ROS_WORKSPACE}/stack/installWS.sh to ${ROS_WORKSPACE}/installWS.sh
+	run in ${ROS_WORKSPACE}: 	sudo chmod +x ./installWS.sh
+					./installWS.sh
+9. run in ${ROS_WORKSPACE}/stack: 	sudo chmod +x ./installStack.sh
+					./installStack.sh
+	(Nota: 8 y 9 aniaden las variables de entorno IMAV_WORKSPACE y IMAV_STACK a tu ~/.bashrc)
+10. Descargar todas las dependencias del IMAV_STACK en ${ROS_WORKSPACE}/extStack:
+	ardrone_autonomy	(https://github.com/AutonomyLab/ardrone_autonomy)
+		Seguir instrucciones de instalacion del ardrone_autonomy de la pagina
+	ros_opentld		(https://github.com/Ronan0912/ros_opentld)
+				# sudo apt-get install libopts25-dev
+				# Go to synaptic (you may need to install it)
+				# 	search "autogen"
+				# 	install "autogen"
+	Go to synaptic (you may need to install it)
+		search 	"ncurses"
+		install "ncurses"
+11. Compilar librerias internas de ${ROS_WORKSPACE}/stack
+	Atlante 	
+12. Hacer ejecutables los sh que hay en ${ROS_WORKSPACE}/stack/launch_dir/*.sh con el comando "sudo chmod +x my_file.sh"
+13. Recuerda que en cada terminal que quieras ejecutar cosas de ros hay que hacer:
+	cd ${IMAV_STACK}
+	source setup.sh
+14. Para compilar ir a ${ROS_WORKSPACE}/stack/launch_dir/ y ejecutar el "./rosmake_*.sh" correspondiente
+15. Para ejecutar el software ir a ${ROS_WORKSPACE}/stack/launch_dir/ y ejecutar el "./parrot_*.sh" correspondiente
+# Fin. Corregir network setup de ${ROS_WORKSPACE}/stack/README.md
+	

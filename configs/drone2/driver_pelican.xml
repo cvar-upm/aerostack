@@ -1,0 +1,22 @@
+<driver_pelican_config>
+    <description>Configuration file for the driverPelicanROSModule package, stack:cvg_quadrotor_swarm, by Vision4UAV.</description>
+    <enable_state_changes> 0 </enable_state_changes>	<!-- bool -->
+
+    <enable_ctrl_thrust> 1 </enable_ctrl_thrust>     	<!-- bool -->
+    <enable_ctrl_yaw>    1 </enable_ctrl_yaw>     	<!-- bool -->
+    <enable_ctrl_roll>   1 </enable_ctrl_roll>     	<!-- bool -->
+    <enable_ctrl_pitch>  1 </enable_ctrl_pitch>     	<!-- bool -->
+    
+    <max_ctrl_thrust> 3100 </max_ctrl_thrust>     	<!-- int - asctec units, [    0, +4095] -->
+    <min_ctrl_thrust> 2000 </min_ctrl_thrust>     	<!-- int - asctec units, [    0, +4095] -->
+    <max_ctrl_roll>    800 </max_ctrl_roll>     	<!-- int - asctec units, [-2047, +2047] -->
+    <max_ctrl_pitch>   800 </max_ctrl_pitch>     	<!-- int - asctec units, [-2047, +2047] -->
+    <max_ctrl_yaw>     800 </max_ctrl_yaw>     		<!-- int - asctec units, [-2047, +2047] -->
+    
+    <!-- IMPORTANT, limitation regarding min_ctrl_thrust and max_ctrl_yaw parameters:
+	Tests seem to indicate that the start/stop Pelican motors conditions are:
+	  yaw    >= 1753
+	  thrust <=  199
+    -->
+
+</driver_pelican_config>

@@ -1,0 +1,14 @@
+<driver_okto_config>
+    <description>Configuration file for the driverOktoROSModule package, stack:cvg_quadrotor_swarm, by Vision4UAV.</description>
+
+    <enable_ctrl_yaw>    1 </enable_ctrl_yaw>     	<!-- bool -->
+    <enable_ctrl_roll>   1 </enable_ctrl_roll>     	<!-- bool -->
+    <enable_ctrl_pitch>  1 </enable_ctrl_pitch>     	<!-- bool -->
+    
+    <max_ctrl_thrust>  190 </max_ctrl_thrust>     	<!-- int - okto units, [    0, +255] -->
+    <min_ctrl_thrust>  100 </min_ctrl_thrust>     	<!-- int - okto units, [    0, +255] -->
+    <max_ctrl_roll>     50 </max_ctrl_roll>     	<!-- int - okto units, [ -127, +127] -->
+    <max_ctrl_pitch>    50 </max_ctrl_pitch>     	<!-- int - okto units, [ -127, +127] -->
+    <max_ctrl_yaw>      50 </max_ctrl_yaw>     		<!-- int - okto units, [ -127, +127] -->
+
+</driver_okto_config>

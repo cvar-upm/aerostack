@@ -1,0 +1,9 @@
+pinball
+
+
+numDrones=6;
+numObstaculos=3+4+3
+campo=voley
+
+
+

@@ -1,0 +1,30 @@
+<package>
+	<!-- PUT DESCRIPTION -->
+	<name>droneExamplePackageROSModule</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is droneExamplePackageROSModule.
+	</description>
+	<author email="jl.sanchez@upm.es">Jose Luis Sanchez-Lopez</author>
+	<maintainer email="jl.sanchez@upm.es">Jose Luis Sanchez-Lopez</maintainer>
+  	<license>BSD</license>
+	<url>http://ros.org/wiki/droneExamplePackageROSModule</url>
+
+
+	<!-- PUT DEPENDENCIES -->
+  	<buildtool_depend>catkin</buildtool_depend>
+
+	
+	<build_depend>roscpp</build_depend>
+	<build_depend>droneModuleROS</build_depend>
+	<build_depend>droneExamplePackage</build_depend>
+
+	<run_depend>roscpp</run_depend>
+	<run_depend>droneModuleROS</run_depend>
+	<run_depend>droneExamplePackage</run_depend>
+ 
+
+
+</package>
+
+

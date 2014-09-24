@@ -55,9 +55,15 @@
 [submodule "stack/libraries/lib_newmat11"]
 	path = stack/libraries/lib_newmat11
 	url = https://bitbucket.org/joselusl/lib_newmat11.git
+[submodule "stack/libraries/lib_pose"]
+	path = stack/libraries/lib_pose
+	url = https://bitbucket.org/joselusl/lib_pose.git
 [submodule "stack/libraries/lib_pugixml"]
 	path = stack/libraries/lib_pugixml
 	url = https://bitbucket.org/joselusl/lib_pugixml.git
 [submodule "stack/libraries/referenceFrames"]
 	path = stack/libraries/referenceFrames
 	url = https://bitbucket.org/joselusl/referenceFrames.git
+[submodule "stack/utils/videoPublisherROSModule"]
+	path = stack/utils/videoPublisherROSModule
+	url = https://bitbucket.org/joselusl/videoPublisherROSModule.git

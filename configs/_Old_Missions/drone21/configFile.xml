@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+
+<robot>
+	<dimensions>1.0 1.0</dimensions> <!-- ARDrone 0.6 x 0.6 -->
+</robot>
+
+
+<map>
+	<config>
+		<dimensions>12.0 21.0</dimensions>
+		<initPoint>-1.77 -5.49</initPoint> <!-- punto minimo del mapa -->
+	</config>
+
+
+	<obstaclesInMap>
+	
+		<!-- other robots:0-9999 -->
+		
+
+		<!-- borders: 10000-19999 -->
+
+		<virtualWall description="bottom side">
+			<id>10000</id>
+			<centerPoint>4.23 -5.49</centerPoint>
+			<size>12.0 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</virtualWall>
+		
+		
+		<virtualWall description="right side"> 
+			<id>10001</id>
+			<centerPoint>10.24 5.02</centerPoint>
+			<size>0.3 21.01</size>
+			<yawAngle>0.0</yawAngle>	
+		</virtualWall>
+		
+		<virtualWall description="top side"> 
+			<id>10002</id>
+			<centerPoint>4.235 15.52</centerPoint>
+			<size>12.0 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</virtualWall>
+		
+		<virtualWall description="left side"> 
+			<id>10003</id>
+			<centerPoint>-1.77 5.02</centerPoint>
+			<size>0.3 21.01</size>
+			<yawAngle>0.0</yawAngle>	
+		</virtualWall>
+		
+		
+		<!-- virtual walls: 20000-29999 -->
+	
+		<virtualWall description="left side">
+			<id>20000</id>
+			<centerPoint>-0.885 0.0</centerPoint>
+			<size>1.77 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</virtualWall>
+		
+		
+		<virtualWall description="rigth side"> 
+			<id>20001</id>
+			<centerPoint>9.37 0.0</centerPoint>
+			<size>1.74 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</virtualWall>
+
+		
+		
+		<!-- walls: 30000-39999 -->
+		
+<!--		<wall description="left side"> 
+			<id>30000</id>
+			<centerPoint>2.5 0.05</centerPoint>
+			<size>5.0 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</wall>
+		
+		<wall description="rigth side"> 
+			<id>30001</id>
+			<centerPoint>7.25 0.05</centerPoint>
+			<size>1.5 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</wall>
+		
+-->		
+		
+		
+		
+		
+		
+		<!-- poles: 40000-49999 -->
+<!--		
+		<pole description="fixed 1"> 
+			<id>40000</id>
+			<centerPoint>1.2 3.3</centerPoint>
+			<radius>0.2 0.2</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="fixed 2"> 
+			<id>40001</id>
+			<centerPoint>6.8 3.3</centerPoint>
+			<radius>0.2 0.2</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="fixed 3"> 
+			<id>40002</id>
+			<centerPoint>6.8 8.9</centerPoint>
+			<radius>0.2 0.2</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="fixed 4"> 
+			<id>40003</id>
+			<centerPoint>1.2 8.9</centerPoint>
+			<radius>0.2 0.2</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="unknown 1"> 
+			<id>40004</id>
+			<centerPoint>5.8 4.9</centerPoint>
+			<radius>0.4 0.4</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="unknown 2"> 
+			<id>40005</id>
+			<centerPoint>3.2 4.1</centerPoint>
+			<radius>0.3 0.3</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="unknown 3"> 
+			<id>40006</id>
+			<centerPoint>4.0 6.5</centerPoint>
+			<radius>0.45 0.45</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+		<pole description="unknown 4"> 
+			<id>40007</id>
+			<centerPoint>5.0 8.1</centerPoint>
+			<radius>0.1 0.1</radius>
+			<yawAngle>0.0</yawAngle>	
+		</pole>
+		
+-->
+	
+
+	</obstaclesInMap>
+</map>
+
+
+
+<logs> <!-- Not working yet ??? -->
+	<prm> 
+		<fileNodesList>/home/joselu/rosWS_IMAV13/stack/logs/nodesList.dat</fileNodesList>
+		<fileNodesRelation>/home/joselu/rosWS_IMAV13/stack/logs/nodesRelation.dat</fileNodesRelation>
+	</prm>
+	
+	<aStar>
+		<fileSolutionNodes>/home/joselu/rosWS_IMAV13/stack/logs/solutionNodes.dat</fileSolutionNodes>
+		<fileSimplifSolNodes>/home/joselu/rosWS_IMAV13/stack/logs/simplifSolNodes.dat</fileSimplifSolNodes>	
+	</aStar>
+</logs>
+
+
+<prm>
+	<generate>1</generate>
+	<files> 
+		<fileNodesList>/home/joselu/rosWS_IMAV13/stack/configs/nodesList.dat</fileNodesList>
+		<fileNodesRelation>/home/joselu/rosWS_IMAV13/stack/configs/nodesRelation.dat</fileNodesRelation>
+	</files>
+	
+	<config> 
+		<numNodes>2800</numNodes>
+		<neigbourhood>5</neigbourhood>
+		
+		<subzone>
+			<numNodes>400</numNodes>
+			<initPoint>4.05 -1.85</initPoint> 
+			<size>4.0 4.0</size>
+		</subzone>
+			
+		
+	</config>	
+	
+</prm>
+
+

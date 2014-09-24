@@ -1,0 +1,4 @@
+   drone0	Asctec Pelican		IARC2014 real and simulation
+   drone1	Asctec Pelican		IMAV13 simulation
+   drone2	Mikrokopter Oktokopter	IARC2014 type of Okto
+>= drone3 	AR_Drone_2.0 		¿¿which mission??

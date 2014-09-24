@@ -1,0 +1,76 @@
+<take_off_site> <!-- Frame_{drone_GMR_t=0} with respect to Frame_{GFF} -->
+        <position> <!-- units: m -->
+                <x>  6.80 </x>
+                <y> -3.50 </y>
+                <z>  0.00 </z>
+        </position>
+        <attitude> <!-- units: deg, wYvPuR -->
+                <yaw> 	  90.00	</yaw>
+                <pitch>	   0.00	</pitch>
+                <roll>	   0.00	</roll>
+        </attitude>
+</take_off_site>
+
+<ekf_state_estimator_config>
+    <description>Configuration of the EKF in the Aerial Swarm architecture, by the CVG (CAR, CSIC-UPM).</description>
+    <module_frequency> 30.0 </module_frequency> <!-- Hz -->
+    <ground_optical_flow_maximum_speed> 2.0 </ground_optical_flow_maximum_speed> <!-- m/s -->
+    <state_estimation_mahalanobis_distance> -1.0 </state_estimation_mahalanobis_distance>
+
+    <state_model>
+        <number_of_states>    12 </number_of_states>
+        <integration_time> 0.033 </integration_time> <!-- s  -->
+
+        <standard_deviation>
+            <yaw> 1.000 </yaw>  <!-- deg -->
+            <z> 0.01666 </z>  <!-- m -->
+            <x> 0.01666 </x>  <!-- m -->
+            <y> 0.01666 </y>  <!-- m -->
+            <vx> 0.01666 </vx>  <!-- m/s -->
+            <vy> 0.01666 </vy>  <!-- m/s -->
+        </standard_deviation>
+
+        <initial_state>
+            <standard_deviation>
+                <pitch> 0.666 </pitch> <!-- deg -->
+                <roll>  0.666 </roll>  <!-- deg -->
+                <dyaw1> 1.666 </dyaw1> <!-- deg/s -->
+                <dyaw2> 1.666 </dyaw2> <!-- deg/s -->
+                <yaw>   240.0 </yaw>   <!-- deg -->
+                <dz1>   0.066 </dz1>   <!-- m/s -->
+                <dz2>   0.066 </dz2>   <!-- m/s -->
+                <z> 1.666 </z>         <!-- m -->
+                <x> 6.666 </x>         <!-- m -->
+                <y> 6.666 </y>         <!-- m -->
+                <vx> 0.666 </vx>       <!-- m/s -->
+                <vy> 0.666 </vy>       <!-- m/s -->
+            </standard_deviation>
+        </initial_state>
+
+        <commands>
+            <number_of_inputs>  4 </number_of_inputs>
+            <standard_deviation>
+                <pitch> 0.333 </pitch> <!-- deg -->
+                <roll>  0.333 </roll>  <!-- deg -->
+                <dyaw>  0.666 </dyaw>  <!-- deg/s -->
+                <dz>    0.00033 </dz>  <!-- m/s -->
+            </standard_deviation>
+        </commands>
+    </state_model>
+
+    <observation_model>
+        <number_of_measurements> 13 </number_of_measurements>
+        <standard_deviation>
+            <pitch> 0.3333 </pitch>                 <!-- deg -->
+            <roll>  0.3333 </roll>                  <!-- deg -->
+            <yaw_odometry>  0.3333 </yaw_odometry>  <!-- deg -->
+            <yaw_position>  0.1666 </yaw_position>  <!-- deg -->
+            <z> 0.0666 </z>                         <!-- m -->
+            <vx_odometry> 0.0666 </vx_odometry>     <!-- m/s -->
+            <vy_odometry> 0.0666 </vy_odometry>     <!-- m/s -->
+            <x> 0.0666 </x>                         <!-- m -->
+            <y> 0.0666 </y>                         <!-- m -->
+            <unused> 1e6 </unused>                  <!-- ??? -->
+        </standard_deviation>
+    </observation_model>
+</ekf_state_estimator_config>

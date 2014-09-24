@@ -1,0 +1,12 @@
+ROS camera calibration information:
+	http://www.ros.org/wiki/image_pipeline/CameraInfo
+	http://mirror.umd.edu/roswiki/doc/diamondback/api/sensor_msgs/html/msg/CameraInfo.html
+
+Note that the projection_matrix parameters alpha_x and alpha_y may be different of each other, due to the fact that the CCD sensor is rectangular (in cases where the distortion of the lense is noticeable). Note that the lense distortion acts more heavily on the width part of the sensor (as the CCD sensor has bigger width compared to its heigth). 
+
+'plumb_bob' distortion model:
+	http://www.vision.caltech.edu/bouguetj/calib_doc/htmls/parameters.html
+
+Other:
+	http://www.vision.caltech.edu/bouguetj/calib_doc/htmls/ref.html
+	http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/EPSRC_SSAZ/node3.html

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<robot>
+	<dimensions>1.0 1.0</dimensions> <!-- ARDrone 0.6 x 0.6 -->
+</robot>
+
+
+<map>
+	<config>
+		<dimensions>9.0 22.0</dimensions>
+		<initPoint>0.0 -2.0</initPoint> <!-- punto minimo del mapa -->
+	</config>
+
+
+	<obstaclesInMap>
+	
+		<!-- other robots:0-9999 -->
+		
+
+		<!-- borders: 10000-19999 -->
+<!--
+		<rectangle description="0">
+			<id>10000</id>
+			<centerPoint>4.5 7.95</centerPoint>
+			<size>5.0 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		-->
+
+		<!-- virtual Rectangles: 20000-29999 -->
+	
+		<rectangle description="izquierda"> 
+			<id>20000</id>
+			<centerPoint>-0.05 9.0</centerPoint>
+			<size>0.1 22.2</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		<rectangle description="derecha"> 
+			<id>20001</id>
+			<centerPoint>+9.05 9.0</centerPoint>
+			<size>0.1 22.2</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+	<!--	
+		<rectangle description="abajo"> 
+			<id>20002</id>
+			<centerPoint>4.5 0.05</centerPoint>
+			<size>9.2 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		<rectangle description="arriba"> 
+			<id>20003</id>
+			<centerPoint>4.5 17.95</centerPoint>
+			<size>9.2 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+	-->	
+
+
+		
+		
+		<!-- rectangles: 30000-39999 -->
+		
+
+		<!--
+		<rectangle description="left"> 
+			<id>30000</id>
+			<centerPoint>0.8 9.0</centerPoint>
+			<size>1.6 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		<rectangle description="right"> 
+			<id>30001</id>
+			<centerPoint>8.2 9.0</centerPoint>
+			<size>1.6 0.1</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		-->
+		
+		
+		<!-- ellipses: 40000-49999 -->
+<!--		
+		<ellipse description="fixed 1"> 
+			<id>40000</id>
+			<centerPoint>6.0 5.0</centerPoint>
+			<radius>0.15 0.15</radius>
+			<yawAngle>0.0</yawAngle>	
+		</ellipse>
+-->		
+			
+
+	
+
+	</obstaclesInMap>
+</map>
+
+
+
+
+
+
+<prm>
+	<generate>1</generate>
+	<save>0</save> <!--JL TODO -->
+	<!--
+	<files> 
+		<fileNodesList>/home/joselu/rosWS_IMAV13/stack/configs/nodesList.dat</fileNodesList>
+		<fileNodesRelation>/home/joselu/rosWS_IMAV13/stack/configs/nodesRelation.dat</fileNodesRelation>
+	</files>
+	-->
+	<config> 
+		<numNodes>2500</numNodes>
+		<neigbourhood>5</neigbourhood>
+		
+		<!--
+		<subzone>
+			<numNodes>300</numNodes>
+			<initPoint>3.3 7.8</initPoint> 
+			<size>2.4 2.4</size>
+		</subzone>
+		-->
+			
+		
+	</config>	
+	
+</prm>
+
+
+<!-- Not working yet ??? -->
+<!--
+<logs> 
+	<prm> 
+		<fileNodesList>/home/joselu/rosWS_IMAV13/stack/logs/nodesList.dat</fileNodesList>
+		<fileNodesRelation>/home/joselu/rosWS_IMAV13/stack/logs/nodesRelation.dat</fileNodesRelation>
+	</prm>
+	
+	<aStar>
+		<fileSolutionNodes>/home/joselu/rosWS_IMAV13/stack/logs/solutionNodes.dat</fileSolutionNodes>
+		<fileSimplifSolNodes>/home/joselu/rosWS_IMAV13/stack/logs/simplifSolNodes.dat</fileSimplifSolNodes>	
+	</aStar>
+</logs>
+-->
+
+

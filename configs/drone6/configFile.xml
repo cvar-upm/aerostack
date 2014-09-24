@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<robot>
+	<dimensions>1.0 1.0</dimensions> <!-- ARDrone 0.6 x 0.6 -->
+</robot>
+
+
+<map>
+	<config>
+		<dimensions>12.0 25.0</dimensions>
+		<initPoint>-2.0 -5.0</initPoint> <!-- punto minimo del mapa -->
+	</config>
+
+
+	<obstaclesInMap>
+	
+		<!-- other robots:0-9999 -->
+		
+
+		<!-- borders: 10000-19999 -->
+
+		<rectangle description="bottom side">
+			<id>10000</id>
+			<centerPoint>4.0 -5.0</centerPoint>
+			<size>12.0 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		
+		<rectangle description="right side"> 
+			<id>10001</id>
+			<centerPoint>10.0 7.0</centerPoint>
+			<size>0.3 24.0</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		<rectangle description="up side"> 
+			<id>10002</id>
+			<centerPoint>4.0 15.0</centerPoint>
+			<size>12.0 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		<rectangle description="left side"> 
+			<id>10003</id>
+			<centerPoint>-2.0 7.0</centerPoint>
+			<size>0.3 24.0</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		
+		<!-- virtual walls: 20000-29999 -->
+	
+		<rectangle description="left side">
+			<id>20000</id>
+			<centerPoint>-1.0 0.05</centerPoint>
+			<size>2.0 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		
+		
+		<rectangle description="rigth side"> 
+			<id>20001</id>
+			<centerPoint>9.0 0.05</centerPoint>
+			<size>2.0 0.3</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+
+		<rectangle description="Wall left">
+			<id>20010</id>
+			<centerPoint>0.475 0.125</centerPoint>
+			<size>0.95 0.25</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		<rectangle description="Wall center">
+			<id>20011</id>
+			<centerPoint>4.2445 0.125</centerPoint>
+			<size>3.31 0.25</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+		<rectangle description="Wall right"> 
+			<id>20012</id>
+			<centerPoint>7.4 0.125</centerPoint>
+			<size>1.2 0.25</size>
+			<yawAngle>0.0</yawAngle>	
+		</rectangle>
+
+	</obstaclesInMap>
+</map>
+
+
+
+
+
+
+<prm>
+	<generate>1</generate>
+	<save>0</save> 
+
+	<config> 
+		<numNodes>3500</numNodes>
+		<neigbourhood>5</neigbourhood>
+		
+		<subzone>
+			<numNodes>500</numNodes>
+			<initPoint>1.0 -1.0</initPoint> 
+			<size>1.5 2.0</size>
+		</subzone>
+			
+		
+	</config>
+	
+</prm>

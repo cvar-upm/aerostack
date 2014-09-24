@@ -1,0 +1,2 @@
+serial_port: /dev/ttyACM0
+baudrate:    115200

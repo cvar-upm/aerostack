@@ -1,0 +1,125 @@
+<trajectory_controller_config>
+    <description>[PARROT ARDRONE 2.0] Configuration of the trajectory controller in the Aerial Swarm architecture,
+                 by the CVG (CAR, CSIC-UPM).</description>
+    <module_frequency> 30.0 </module_frequency>     <!-- Hz -->
+    <init_control_mode>speed</init_control_mode>    <!-- string, one of {'speed','position','trajectory'} -->
+
+    <general_saturations>
+        <drone_commands>
+            <pitch_max> 0.50  </pitch_max>              <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
+            <roll_max>  0.50  </roll_max>               <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
+            <dyaw_max>  0.38  </dyaw_max>               <!-- [0,1] -->
+            <dz_max>    1.00  </dz_max>                 <!-- [0,1] -->
+            <!-- dyaw_max_comments: IMAV13 0.75; JINT13_130821 0.25; 0.50 before ASU -->
+            <low_pass_filters>
+                <tilt_tr>   0.30    </tilt_tr>          <!-- seconds, negative means disabled -->
+                <dyaw_tr>  -1.00    </dyaw_tr>          <!-- seconds, negative means disabled -->
+                <dz_tr>    -1.00    </dz_tr>            <!-- seconds, negative means disabled -->
+            </low_pass_filters>
+        </drone_commands>
+        <speed_control_loop>
+            <vxy_max>       0.50    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
+            <!-- vxy_max_comments: IMAV13 0.70; JINT13_130821 2.75; 2.00 before ASU -->
+            <vxy_at_ratio>  0.75    </vxy_at_ratio>     <!-- [0,1] -->
+                <!-- vxy_at_max =    vxy_at_ratio  * vxy_max -->
+                <!-- vxy_ct_max = (1-vxy_at_ratio) * vxy_max -->
+            <dz_at_ratio>   0.75    </dz_at_ratio>      <!-- [0,1] -->
+                <!-- dz_at_max =    dz_at_ratio  * dz_max -->
+                <!-- dz_ct_max = (1-dz_at_ratio) * dz_max -->
+        </speed_control_loop>
+        <drone_pose_feedback_low_pass_filters>
+            <tr_v>    0.15 </tr_v>          <!-- seconds -->
+            <tr_dyaw> 0.20 </tr_dyaw>       <!-- seconds -->
+            <tr_dz>   0.30 </tr_dz>         <!-- seconds -->
+            <!-- <saturation_value_v></saturation_value_v> see ekf_configuration ground_optical_flow_maximum_speed parameter-->
+            <saturation_value_dyaw> 3.50 </saturation_value_dyaw>     <!-- rad/s (3.5 rad/s = 200deg/s) -->
+            <saturation_value_dz>   2.00 </saturation_value_dz>       <!--  m/s  -->
+        </drone_pose_feedback_low_pass_filters>
+    </general_saturations>
+
+    <state_machine>
+        <checkpoint_clearance_radius>0.35</checkpoint_clearance_radius>  <!-- m -->
+        <debug_is_activated>0</debug_is_activated>                      <!-- bool -->
+        <tilt_feed_forward_commands_config>
+            <tiltfo_tr>          0.30   </tiltfo_tr>                    <!-- seconds    -->
+            <tiltfo_rad2tiltref> 2.3873 </tiltfo_rad2tiltref>           <!-- [-1,1]/rad -->
+            <!-- tiltfo_rad2tiltref_comments: 180/(M_PI*24) = 180/M_PI deg/rad * 1/24 [-1,1]/deg -->
+            <tiltfo_is_activated>0</tiltfo_is_activated>                <!-- bool       -->
+        </tilt_feed_forward_commands_config>
+        <trajectory_mode_safety_zones_thresholds>
+        <!-- outside this zones, the controller switches to position controller -->
+            <straight_mode>
+                <distance_to_trajectory>1.0</distance_to_trajectory>            <!-- m -->
+            </straight_mode>
+            <turn_mode>
+                <radius_distance>         1.0</radius_distance>   <!-- m -->
+                <altitude_distance>       1.0</altitude_distance>                   <!-- m -->
+                <negative_angle_position>-5.0</negative_angle_position>             <!-- deg -->
+                <!-- DONE, previous value was ( -5.0 * M_PI/180.0 ) pass to rad in the code!! -->
+            </turn_mode>
+        </trajectory_mode_safety_zones_thresholds>
+        <trajectory_planning_params>
+            <checkpoint_radius>0.35</checkpoint_radius> <!-- m -->
+        <!-- SM_TRAJPLAN_RTMIN 0.20 // corresponde a ALPHAMIN  75.0deg y SM_TRAJPLAN_CHECKPOINT_RADIUS 0.25m -->
+        <!-- SM_TRAJPLAN_RTMAX 40.0 // corresponde a ALPHAMIN 171.0deg y SM_TRAJPLAN_CHECKPOINT_RADIUS 0.25m -->
+            <turn_alpha_min>75.0</turn_alpha_min>         <!-- deg -->
+        <!-- <turn_radius_min></turn_radius_min>, m -->
+        <!-- ( (SM_TRAJPLAN_CHECKPOINT_RADIUS/2.0) * sin(( SM_TRAJPLAN_TURN_ALPHAMIN *M_PI/180.0)/2.0)/(1-sin(( SM_TRAJPLAN_TURN_ALPHAMIN *M_PI/180.0)/2.0)) ) -->
+            <turn_alpha_max>171.0</turn_alpha_max>      <!-- deg -->
+        <!-- <turn_radius_max></turn_radius_max>, m -->
+        <!-- ( (SM_TRAJPLAN_CHECKPOINT_RADIUS/2.0) * sin(( SM_TRAJPLAN_TURN_ALPHAMAX *M_PI/180.0)/2.0)/(1-sin(( SM_TRAJPLAN_TURN_ALPHAMAX *M_PI/180.0)/2.0)) ) -->
+        </trajectory_planning_params>
+        <speed_plan_saturations>
+            <accel_max>           0.50  </accel_max>            <!-- m/s^2 -->
+            <speed_tr>            1.70  </speed_tr>             <!-- seconds -->
+            <delta_checkpoint>    5     </delta_checkpoint>     <!-- number of checkpoints -->
+            <stall_turn_speed_max>0.25  </stall_turn_speed_max> <!-- m/s -->
+        <!-- accel_max_comments: JINT13_130821 0.70; 0.75 (valores limite aceptables); 0.50 before ASU-->
+        <!-- speed_tr_comments:  JINT13_130821 1.25; 1.20 (valores limite aceptables); 1.7  before ASU-->
+        </speed_plan_saturations>
+    </state_machine>
+
+    <middle_level_controller>
+        <trajectory_controller>
+            <!-- currently no parameters -->
+        </trajectory_controller>
+        <position_controller>
+            <xy>
+                <DeltaKp>0.125</DeltaKp>     <!-- 1/1 -->
+                <!-- DeltaKp_comments: IMAV13 0.125; JINT13 0.25; CEA12 0.5-->
+                <!-- x, y PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
+                <Kp>2.04</Kp>   <!-- (m/s)/m     -->
+                <Ki>0.00</Ki>   <!-- (m/s)/(m*s) -->
+                <Kd>0.99</Kd>   <!-- (m/s)/(m/s) -->
+            </xy>
+        </position_controller>
+        <speed_controller>
+            <!-- The constant MULTIROTOR_SPEEDCONTROLLER_VXVY_DELTA_KP_CORRECTION is the (slope)^-1 in
+            the origin of the aerodynamic friction curve. The nlf_pitch and nlf_roll are the inverse
+            of the aerodynamic friction, so MULTIROTOR_SPEEDCONTROLLER_VXVY_DELTA_KP_CORRECTION (0.15) is
+            their slope in the origin. -->
+            <vxy>
+                <nlf_is_activated>0</nlf_is_activated> <DeltaKp>0.015</DeltaKp>     <!-- 1/1, 0.3*0.15 -->
+           <!-- <nlf_is_activated>1</nlf_is_activated> <DeltaKp>0.300</DeltaKp> -->
+                <!-- vx, vy PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
+                <Kp>7.1521</Kp>   <!-- [-1,1]/( m/s ) -->
+                <Ki>7.1521</Ki>   <!-- [-1,1]/(  m  )  -->
+                <Kd>1.5534</Kd>   <!-- [-1,1]/(m/s^2)  -->
+            </vxy>
+            <yaw>
+                <DeltaKp>0.30</DeltaKp>     <!-- 1/1 -->
+                <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
+                <Kp> 1.60</Kp>   <!-- [-1,1]/rad     -->
+                <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
+                <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
+            </yaw>
+            <altitude>
+                <DeltaKp>0.50</DeltaKp>     <!-- 1/1 -->
+                <!-- z PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
+                <Kp>-1.33</Kp>   <!-- [-1,1]/m     -->
+                <Ki> 0.00</Ki>   <!-- [-1,1]/(m*s) -->
+                <Kd>-0.35</Kd>   <!-- [-1,1]/(m/s) -->
+            </altitude>
+        </speed_controller>
+    </middle_level_controller>
+</trajectory_controller_config>

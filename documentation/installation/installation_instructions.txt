@@ -1,0 +1,67 @@
+//Install Ubuntu 12.10
+//Install ROS Groovy
+
+//Install external packages
+//-> ncurses
+sudo apt-get install libncurses5
+sudo apt-get install ncurses-bin
+sudo apt-get install ncurses-dev
+
+//Create folder of the workspace and navigate to it
+// For example ~/workspace/ros/quadrotor
+// cd ~
+// mkdir workspace
+// cd workspace
+// mkdir ros
+// cd ros
+// mkdir quadrotor
+// cd quadrotor
+
+//Create workspace
+rosws init ./ /opt/ros/groovy
+
+//Create sandboxs
+//rosws set ./stack
+//rosws set ./stack/cvgDroneControlStack
+rosws set ./extStack
+
+
+//Set stacks git
+rosws set ./extStack/ardrone_autonomy --git https://github.com/AutonomyLab/ardrone_autonomy.git
+
+rosws set ./extStack/ros_opentld --git https://github.com/Ronan0912/ros_opentld.git
+
+rosws set ./stack --git https://bitbucket.org/joselusl/quadrotor_swarm.git
+
+rosws update
+
+
+./stack/documentation/installation/installers/installWS.sh
+
+cd stack
+./documentation/installation/installers/installStack.sh
+
+
+///Cerrar terminal y volver a abrila
+cd ${DRONE_STACK}
+source setup.sh
+
+rospack profile
+# try
+sudo rosdep init
+rosdep update
+# catch
+rosdep update
+# end
+
+//Compilar librerias internas
+//Ardrone autonomy
+// cd ../extStack/ardrone_autonomy/
+roscd ardrone_autonomy
+./build_sdk.sh
+
+
+//Compilar stack
+cd ${DRONE_STACK}/launchers/
+./rosmake.sh
+

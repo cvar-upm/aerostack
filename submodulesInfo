@@ -70,10 +70,10 @@ git submodule add https://bitbucket.org/joselusl/videoPublisherROSModule.git ./s
 
 
 #droneMidLevelAutopilot
-git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilot.git ./stack/droneMidLevelAutopilot/droneMidLevelAutopilot
+git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilot.git ./stack/droneMidLevelControl/droneMidLevelAutopilot
 
 #droneMidLevelAutopilotROSModule
-git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git ./stack/droneMidLevelAutopilot/droneMidLevelAutopilotROSModule
+git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git ./stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
 
 
 
@@ -154,6 +154,15 @@ git submodule add https://bitbucket.org/joselusl/droneMissionPlanner.git ./stack
 
 #droneMissionPlannerROSModule
 git submodule add https://bitbucket.org/joselusl/droneMissionPlannerROSModule.git ./stack/droneMissionPlanning/droneMissionPlannerROSModule
+
+
+
+
+#droneBrainROSModule
+git submodule add https://bitbucket.org/joselusl/droneBrainROSModule.git ./stack/droneSupervising/droneBrainROSModule
+
+#droneIARC14BrainROSModule
+git submodule add https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git ./stack/droneSupervising/droneIARC14BrainROSModule
 
 
 

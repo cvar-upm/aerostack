@@ -139,3 +139,9 @@
 [submodule "stack/droneMissionPlanning/droneMissionPlannerROSModule"]
 	path = stack/droneMissionPlanning/droneMissionPlannerROSModule
 	url = https://bitbucket.org/joselusl/droneMissionPlannerROSModule.git
+[submodule "stack/droneSupervising/droneBrainROSModule"]
+	path = stack/droneSupervising/droneBrainROSModule
+	url = https://bitbucket.org/joselusl/droneBrainROSModule.git
+[submodule "stack/droneSupervising/droneIARC14BrainROSModule"]
+	path = stack/droneSupervising/droneIARC14BrainROSModule
+	url = https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git

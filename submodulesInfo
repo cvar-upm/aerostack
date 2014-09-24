@@ -121,6 +121,43 @@ git submodule add https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule
 
 
 
+#droneObstacleProcessorVisualMarks
+git submodule add https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks
+
+#robotLocalizationROSModule
+git submodule add https://bitbucket.org/joselusl/robotLocalizationROSModule.git ./stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
+
+
+
+#dronePBVSPositionMidLevelController
+git submodule add https://bitbucket.org/joselusl/dronePBVSPositionMidLevelController.git ./stack/droneHighLevelControl/dronePBVSPositionMidLevelController
+
+#droneSpeedPositionMidLevelController
+git submodule add https://bitbucket.org/joselusl/droneSpeedPositionMidLevelController.git ./stack/droneHighLevelControl/droneSpeedPositionMidLevelController
+
+#droneTrajectoryController
+git submodule add https://bitbucket.org/joselusl/droneTrajectoryController.git ./stack/droneHighLevelControl/droneTrajectoryController
+
+#droneTrajectoryControllerROSModule
+git submodule add https://bitbucket.org/joselusl/droneTrajectoryControllerROSModule.git ./stack/droneHighLevelControl/droneTrajectoryControllerROSModule
+
+#droneTrajectoryStateMachine
+git submodule add https://bitbucket.org/joselusl/droneTrajectoryStateMachine.git ./stack/droneHighLevelControl/droneTrajectoryStateMachine
+
+
+
+#droneIARC14MissionSchedulerROSModule
+git submodule add https://bitbucket.org/joselusl/droneIARC14MissionSchedulerROSModule.git ./stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
+
+#droneMissionPlanner
+git submodule add https://bitbucket.org/joselusl/droneMissionPlanner.git ./stack/droneMissionPlanning/droneMissionPlanner
+
+#droneMissionPlannerROSModule
+git submodule add https://bitbucket.org/joselusl/droneMissionPlannerROSModule.git ./stack/droneMissionPlanning/droneMissionPlannerROSModule
+
+
+
+
 
 
 

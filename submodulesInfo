@@ -41,6 +41,29 @@ git submodule add https://bitbucket.org/joselusl/dronemoduleros.git ./stack/dron
 git submodule add https://bitbucket.org/joselusl/dronemoduleinterfaceros.git ./stack/droneStackBasics/droneModuleInterfaceROS
 
 
+#lib_cvgekf
+git submodule add https://bitbucket.org/joselusl/lib_cvgekf.git ./stack/libraries/lib_cvgekf
+
+#lib_cvgthread
+git submodule add https://bitbucket.org/joselusl/lib_cvgthread.git ./stack/libraries/lib_cvgthread
+
+#lib_cvgutils
+git submodule add https://bitbucket.org/joselusl/lib_cvgutils.git ./stack/libraries/lib_cvgutils
+
+#lib_newmat11
+git submodule add https://bitbucket.org/joselusl/lib_newmat11.git ./stack/libraries/lib_newmat11
+
+#lib_pose
+git submodule add https://bitbucket.org/joselusl/lib_pose.git ./stack/libraries/lib_pose
+
+#lib_pugixml
+git submodule add https://bitbucket.org/joselusl/lib_pugixml.git ./stack/libraries/lib_pugixml
+
+#referenceFrames
+git submodule add https://bitbucket.org/joselusl/referenceFrames.git ./stack/libraries/referenceFrames
+
+
+
 
 
 How to init

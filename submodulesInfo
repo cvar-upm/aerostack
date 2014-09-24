@@ -1,5 +1,7 @@
 How to add a submodule with branch
-git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./extStackCVG/okto_driver
+
+#DRONE_MSGS
+
 
 #UEYE_CAMERA
 git submodule add https://joselusl@bitbucket.org/joselusl/driver_camera_ueye.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye

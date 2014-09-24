@@ -12,12 +12,6 @@ set bitbucketPassword [lindex $argv 2]; # Grab the third command line parameter
 #Use the built in telnet program to connect to an IP and port number
 spawn git submodule update $gitSubmodule
 #
-#The first thing we should see is a User Name prompt
-#expect "login as:"
-#
-#Send a valid username to the device
-#send "admin"
-#
 #The next thing we should see is a Password prompt
 expect "Username for 'https://bitbucket.org': "
 #

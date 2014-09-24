@@ -73,7 +73,7 @@ if [[ ${ardrone_autonomy}  && $ardrone_autonomy = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 		git submodule deinit $MODULE_PATH > /dev/null
-		git submodule update --init $MODULE_PATH > /dev/null
+		./updateGithubPublRepo $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -108,11 +108,11 @@ if [[ ${driver_camera_ueye_ROSModule}  && $driver_camera_ueye_ROSModule = true ]
 fi
 
 #px-ros-pkg
-if [[ ${px_ros_kg}  && $px_ros_pkg = true ]]
+if [[ ${px_ros_pkg}  && $px_ros_pkg = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
 		git submodule deinit $MODULE_PATH > /dev/null
-		git submodule update --init $MODULE_PATH > /dev/null
+		./updateGithubPublRepo $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 

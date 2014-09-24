@@ -193,3 +193,18 @@
 [submodule "stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule"]
 	path = stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
 	url = https://bitbucket.org/joselusl/robotSimulatorROSModule.git
+[submodule "stack/HMI/droneArchitectureRvizInterfaceROSModule"]
+	path = stack/HMI/droneArchitectureRvizInterfaceROSModule
+	url = https://bitbucket.org/joselusl/droneArchitectureRvizInterfaceROSModule.git
+[submodule "stack/HMI/droneEkfSimulatorRvizROSModule"]
+	path = stack/HMI/droneEkfSimulatorRvizROSModule
+	url = https://bitbucket.org/joselusl/droneEkfSimulatorRvizROSModule.git
+[submodule "stack/HMI/droneInterfaceROSModule"]
+	path = stack/HMI/droneInterfaceROSModule
+	url = https://bitbucket.org/joselusl/droneInterfaceROSModule.git
+[submodule "stack/HMI/droneSimulatorRvizROSModule"]
+	path = stack/HMI/droneSimulatorRvizROSModule
+	url = https://bitbucket.org/joselusl/droneSimulatorRvizROSModule.git
+[submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
+	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
+	url = https://bitbucket.org/joselusl/robotSimulatorRvizROSModule.git

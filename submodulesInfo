@@ -218,6 +218,24 @@ git submodule add https://bitbucket.org/joselusl/robotSimulatorROSModule.git ./s
 
 
 
+#droneArchitectureRvizInterfaceROSModule
+git submodule add https://bitbucket.org/joselusl/droneArchitectureRvizInterfaceROSModule.git ./stack/HMI/droneArchitectureRvizInterfaceROSModule
+
+#droneEkfSimulatorRvizROSModule
+git submodule add https://bitbucket.org/joselusl/droneEkfSimulatorRvizROSModule.git ./stack/HMI/droneEkfSimulatorRvizROSModule
+
+#droneInterfaceROSModule
+git submodule add https://bitbucket.org/joselusl/droneInterfaceROSModule.git ./stack/HMI/droneInterfaceROSModule
+
+#droneSimulatorRvizROSModule
+git submodule add https://bitbucket.org/joselusl/droneSimulatorRvizROSModule.git ./stack/HMI/droneSimulatorRvizROSModule
+
+#robotSimulatorRvizROSModule
+git submodule add https://bitbucket.org/joselusl/robotSimulatorRvizROSModule.git ./stack/HMI/IARC14/robotSimulatorRvizROSModule
+
+
+
+
 
 
 How to init

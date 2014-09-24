@@ -28,7 +28,7 @@ if [[ ${mav_tools}  && $mav_tools = true ]]
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
 		git submodule deinit $MODULE_PATH > /dev/null
 		#git submodule init $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -37,7 +37,7 @@ if [[ ${asctec_drivers}  && $asctec_drivers = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -46,7 +46,7 @@ if [[ ${driverPelicanROSModule}  && $driverPelicanROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -55,7 +55,7 @@ if [[ ${okto_driver}  && $okto_driver = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -64,7 +64,7 @@ if [[ ${driverOktoROSModule}  && $driverOktoROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -73,7 +73,7 @@ if [[ ${ardrone_autonomy}  && $ardrone_autonomy = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		git submodule update --init $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -82,7 +82,7 @@ if [[ ${driverParrotARDroneROSModule}  && $driverParrotARDroneROSModule = true ]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -92,7 +92,7 @@ if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -102,7 +102,7 @@ if [[ ${driver_camera_ueye_ROSModule}  && $driver_camera_ueye_ROSModule = true ]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 
 fi
@@ -112,7 +112,7 @@ if [[ ${px_ros_kg}  && $px_ros_pkg = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		git submodule update --init $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -121,7 +121,7 @@ if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -130,7 +130,7 @@ if [[ ${droneObstacleProcessorVisualMarks}  && $droneObstacleProcessorVisualMark
 	then
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -139,7 +139,7 @@ if [[ ${droneObstacleProcessorVisualMarksROSModule}  && $droneObstacleProcessorV
 	then
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -148,7 +148,7 @@ if [[ ${robotLocalizationROSModule}  && $robotLocalizationROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -157,7 +157,7 @@ if [[ ${dronePBVSPositionMidLevelController}  && $dronePBVSPositionMidLevelContr
 	then
 		MODULE_PATH=stack/droneHighLevelControl/dronePBVSPositionMidLevelController
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -166,7 +166,7 @@ if [[ ${droneSpeedPositionMidLevelController}  && $droneSpeedPositionMidLevelCon
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneSpeedPositionMidLevelController
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -175,7 +175,7 @@ if [[ ${droneTrajectoryController}  && $droneTrajectoryController = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneTrajectoryController
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -184,7 +184,7 @@ if [[ ${droneTrajectoryControllerROSModule}  && $droneTrajectoryControllerROSMod
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneTrajectoryControllerROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -193,7 +193,7 @@ if [[ ${droneTrajectoryStateMachine}  && $droneTrajectoryStateMachine = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneTrajectoryStateMachine
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -202,7 +202,7 @@ if [[ ${droneLoggerROSModule}  && $droneLoggerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/droneLoggerROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -211,7 +211,7 @@ if [[ ${dronePelicanLoggerROSModule}  && $dronePelicanLoggerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/dronePelicanLoggerROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -220,7 +220,7 @@ if [[ ${lib_cvglogger}  && $lib_cvglogger = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/lib_cvglogger
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -229,7 +229,7 @@ if [[ ${lib_cvgloggerROS}  && $lib_cvgloggerROS = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/lib_cvgloggerROS
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -238,7 +238,7 @@ if [[ ${droneMidLevelAutopilot}  && $droneMidLevelAutopilot = true ]]
 	then
 		MODULE_PATH=stack/droneMidLevelControl/droneMidLevelAutopilot
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -247,7 +247,7 @@ if [[ ${droneMidLevelAutopilotROSModule}  && $droneMidLevelAutopilotROSModule = 
 	then
 		MODULE_PATH=stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -256,7 +256,7 @@ if [[ ${arucoEye}  && $arucoEye = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/arucoEye
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -265,7 +265,7 @@ if [[ ${droneArucoEye}  && $droneArucoEye = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/droneArucoEye
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -274,7 +274,7 @@ if [[ ${droneArucoEyeROSModule}  && $droneArucoEyeROSModule = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -283,7 +283,7 @@ if [[ ${lib_aruco}  && $lib_aruco = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/lib_aruco
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -292,7 +292,7 @@ if [[ ${droneComputerVisionIARC14}  && $droneComputerVisionIARC14 = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -301,7 +301,7 @@ if [[ ${droneComputerVisionIARC14ROSModule}  && $droneComputerVisionIARC14ROSMod
 	then
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -310,7 +310,7 @@ if [[ ${droneCV2DTo3DROSModule}  && $droneCV2DTo3DROSModule = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneCV2DTo3DROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -319,7 +319,7 @@ if [[ ${droneEKFStateEstimator}  && $droneEKFStateEstimator = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -328,7 +328,7 @@ if [[ ${droneEKFStateEstimatorROSModule}  && $droneEKFStateEstimatorROSModule = 
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -337,7 +337,7 @@ if [[ ${droneVisualMarkersLocalizer}  && $droneVisualMarkersLocalizer = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -346,7 +346,7 @@ if [[ ${droneVisualMarkersLocalizerROSModule}  && $droneVisualMarkersLocalizerRO
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -355,7 +355,7 @@ if [[ ${referenceFramesROS}  && $referenceFramesROS = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -364,7 +364,7 @@ if [[ ${droneOktoSimulatorROSModule}  && $droneOktoSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -373,7 +373,7 @@ if [[ ${dronePelicanSimulatorROSModule}  && $dronePelicanSimulatorROSModule = tr
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -382,7 +382,7 @@ if [[ ${droneSimulator}  && $droneSimulator = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/droneSimulator
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -391,7 +391,7 @@ if [[ ${droneSimulatorROSModule}  && $droneSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/droneSimulatorROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -400,7 +400,7 @@ if [[ ${droneVisualMarkersEyeSimulator}  && $droneVisualMarkersEyeSimulator = tr
 	then
 		MODULE_PATH=stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -409,7 +409,7 @@ if [[ ${droneVisualMarkersEyeSimulatorROSModule}  && $droneVisualMarkersEyeSimul
 	then
 		MODULE_PATH=stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -418,7 +418,7 @@ if [[ ${droneSimulatorGridROSModule}  && $droneSimulatorGridROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -427,7 +427,7 @@ if [[ ${droneSimulatoriRobotCVROSModule}  && $droneSimulatoriRobotCVROSModule = 
 	then
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -436,7 +436,7 @@ if [[ ${robotSimulatorROSModule}  && $robotSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -445,7 +445,7 @@ if [[ ${droneModuleInterfaceROS}  && $droneModuleInterfaceROS = true ]]
 	then
 		MODULE_PATH=stack/droneStackBasics/droneModuleInterfaceROS
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -454,7 +454,7 @@ if [[ ${droneModuleROS}  && $droneModuleROS = true ]]
 	then
 		MODULE_PATH=stack/droneStackBasics/droneModuleROS
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -463,7 +463,7 @@ if [[ ${droneMsgsROS}  && $droneMsgsROS = true ]]
 	then
 		MODULE_PATH=stack/droneStackBasics/droneMsgsROS
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -472,7 +472,7 @@ if [[ ${droneBrainROSModule}  && $droneBrainROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSupervising/droneBrainROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -481,7 +481,7 @@ if [[ ${droneIARC14BrainROSModule}  && $droneIARC14BrainROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSupervising/droneIARC14BrainROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -490,7 +490,7 @@ if [[ ${droneTrajectoryPlanner}  && $droneTrajectoryPlanner = true ]]
 	then
 		MODULE_PATH=stack/droneTrajectoryPlanning/droneTrajectoryPlanner
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -499,7 +499,7 @@ if [[ ${droneTrajectoryPlannerROSModule}  && $droneTrajectoryPlannerROSModule = 
 	then
 		MODULE_PATH=stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -508,7 +508,7 @@ if [[ ${droneYawCommanderROSModule}  && $droneYawCommanderROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneYawCommanding/droneYawCommanderROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -517,7 +517,7 @@ if [[ ${droneArchitectureRvizInterfaceROSModule}  && $droneArchitectureRvizInter
 	then
 		MODULE_PATH=stack/HMI/droneArchitectureRvizInterfaceROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -526,7 +526,7 @@ if [[ ${droneEkfSimulatorRvizROSModule}  && $droneEkfSimulatorRvizROSModule = tr
 	then
 		MODULE_PATH=stack/HMI/droneEkfSimulatorRvizROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -535,7 +535,7 @@ if [[ ${droneInterfaceROSModule}  && $droneInterfaceROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/droneInterfaceROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -544,7 +544,7 @@ if [[ ${droneSimulatorRvizROSModule}  && $droneSimulatorRvizROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/droneSimulatorRvizROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -553,7 +553,7 @@ if [[ ${robotSimulatorRvizROSModule}  && $robotSimulatorRvizROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/IARC14/robotSimulatorRvizROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -562,7 +562,7 @@ if [[ ${lib_cvgekf}  && $lib_cvgekf = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_cvgekf
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -571,7 +571,7 @@ if [[ ${lib_cvgthread}  && $lib_cvgthread = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_cvgthread
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -580,7 +580,7 @@ if [[ ${lib_cvgutils}  && $lib_cvgutils = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_cvgutils
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -589,7 +589,7 @@ if [[ ${lib_newmat11}  && $lib_newmat11 = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_newmat11
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -598,7 +598,7 @@ if [[ ${lib_pose}  && $lib_pose = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_pose
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -607,7 +607,7 @@ if [[ ${lib_pugixml}  && $lib_pugixml = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_pugixml
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -616,7 +616,7 @@ if [[ ${referenceFrames}  && $referenceFrames = true ]]
 	then
 		MODULE_PATH=stack/libraries/referenceFrames
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -625,7 +625,7 @@ if [[ ${videoPublisherROSModule}  && $videoPublisherROSModule = true ]]
 	then
 		MODULE_PATH=stack/utils/videoPublisherROSModule
 		git submodule deinit $MODULE_PATH > /dev/null
-		./expectScript.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 

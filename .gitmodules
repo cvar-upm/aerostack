@@ -151,6 +151,7 @@
 [submodule "stack/dronePerception/droneArucoEye/lib_aruco"]
 	path = stack/dronePerception/droneArucoEye/lib_aruco
 	url = https://bitbucket.org/joselusl/lib_aruco.git
+	branch = master
 [submodule "stack/dronePerception/droneArucoEye/arucoEye"]
 	path = stack/dronePerception/droneArucoEye/arucoEye
 	url = https://bitbucket.org/joselusl/arucoEye.git

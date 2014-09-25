@@ -152,7 +152,7 @@
 	branch = master
 [submodule "stack/droneHighLevelControl/droneSpeedPositionMidLevelController"]
 	path = stack/droneHighLevelControl/droneSpeedPositionMidLevelController
-	url = https://bitbucket.org/joselusl/dronecspeedpositionmidlevelcontroller.git
+	url = https://bitbucket.org/joselusl/dronespeedpositionmidlevelcontroller.git
 	branch = master
 [submodule "stack/droneHighLevelControl/droneTrajectoryController"]
 	path = stack/droneHighLevelControl/droneTrajectoryController

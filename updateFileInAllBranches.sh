@@ -14,8 +14,8 @@ for branch in "${branches[@]}"; do
 
 	if [[ "${branch_filt}" != "master" ]]; then
 		echo $branch_filt
-#	    	git checkout ${branch_filt}
-#	    	git checkout master -- $FILE_TO_UPDATE 
+	    	git checkout ${branch_filt}
+	    	git checkout master -- $FILE_TO_UPDATE 
 #		git commit -m $COMMIT_MSG
 	fi
 done

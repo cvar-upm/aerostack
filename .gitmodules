@@ -152,7 +152,7 @@
 	branch = master
 [submodule "stack/droneHighLevelControl/droneSpeedPositionMidLevelController"]
 	path = stack/droneHighLevelControl/droneSpeedPositionMidLevelController
-	url = https://bitbucket.org/joselusl/dronecpeedpositionmidlevelcontroller.git
+	url = https://bitbucket.org/joselusl/dronecspeedpositionmidlevelcontroller.git
 	branch = master
 [submodule "stack/droneHighLevelControl/droneTrajectoryController"]
 	path = stack/droneHighLevelControl/droneTrajectoryController
@@ -258,7 +258,7 @@
 	branch = master
 [submodule "stack/HMI/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/HMI/droneArchitectureRvizInterfaceROSModule
-	url = https://bitbucket.org/joselusl/dronesrchitecturervizinterfacerosmodule.git
+	url = https://bitbucket.org/joselusl/dronearchitecturervizinterfacerosmodule.git
 	branch = master
 [submodule "stack/HMI/droneEkfSimulatorRvizROSModule"]
 	path = stack/HMI/droneEkfSimulatorRvizROSModule

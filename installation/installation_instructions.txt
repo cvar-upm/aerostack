@@ -37,7 +37,8 @@ source devel/setup.bash
 
 
 DOWNLOAD STACK
-git clone https://joselusl@bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
+#choose branch. By default master!
+git clone -b master https://joselusl@bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
 
 
 

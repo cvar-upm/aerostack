@@ -59,7 +59,7 @@ cd ..
 
 
 
-DOWNLOAD REQUIRED PACKAGES OF THE STACK
+DOWNLOAD REQUIRED PACKAGES OF THE STACK -> This step is slow, so, be patient!
 cd $DRONE_STACK
 #set to true packages required in installation/configSubmodules.cfg
 #run script to init submodules
@@ -80,6 +80,9 @@ rosdep update
 
 
 COMPILE STACK
+cd $DRONE_STACK
+source setup.sh
+cd $DRONE_WORKSPACE
 catkin_make
 
 

@@ -1,5 +1,9 @@
 # Temporary files
 *~
 
+#logs
+drone_logger
+date_*
+
 #matlab .dat
 *.dat

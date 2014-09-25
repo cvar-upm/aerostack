@@ -50,7 +50,7 @@ fi
 #gnome-terminal  --full-screen  \
 gnome-terminal  \
 	--tab --title "DroneRvizInterface"	--command "bash -c \"
-roslaunch droneArchitectureRvizInterfaceROSModule droneArchitectureRvizInterfaceROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+roslaunch droneArchitectureRvizROSModule droneArchitectureRvizInterfaceROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  &
 
 # rosrun ardrone_autonomy ardrone_driver;

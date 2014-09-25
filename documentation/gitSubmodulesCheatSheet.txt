@@ -4,4 +4,6 @@
 #git submodule update
 
 
-
+#https://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/
+#http://blog.jacius.info/git-submodule-cheat-sheet/
+#http://git-scm.com/docs/git-submodule

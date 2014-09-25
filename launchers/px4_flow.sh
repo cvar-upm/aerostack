@@ -8,7 +8,7 @@ echo " ### plotting optical flow sensor outputs !!! ###"
 
 gnome-terminal  \
 	--tab --title "PX4 Flow Sensor"		--command "bash -c \"
-roslaunch px4flow_node px4flow.launch --wait;
+roslaunch px4flow px4flow.launch --wait;
 						exec bash\""  \
 	--tab --title "rqt_plot" 		--command "bash -c \"
 rqt_plot $1/px4flow/opt_flow/velocity_x:velocity_y:ground_distance -b 10;

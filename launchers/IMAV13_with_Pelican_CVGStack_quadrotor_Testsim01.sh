@@ -23,7 +23,7 @@ fi
 #gnome-terminal  --full-screen  \
 gnome-terminal  \
 	--tab --title "Pelican Simulator"    --command "bash -c \"
-roslaunch dronePelicanSimulatorROSModule dronePelicanSimulatorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+roslaunch dronePelicanSimulatorROSModule dronePelicanSimulatorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_sim_config_filename:=${DRONE_STACK}/stack/droneSimulators/droneSimulator/droneSimulator/configs/pelican_like_model.xml;
 						exec bash\""  \
 	--tab --title "Pelican Interface"	--command "bash -c \"
 roslaunch ${DRONE_STACK}/launchers/screen_launchers/driverPelicanROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};

@@ -1,6 +1,0 @@
-#! /bin/bash
-
-cd $DRONE_STACK
-source setup.sh
-
-rosmake okto_driver droneOktoSimulatorROSModule px_comm px4flow_node driver_px4flow_interface_ROSModule droneEkfSimulatorRvizROSModule droneSimulatorRvizROSModule driverOktoROSModule droneMidLevelAutopilotROSModule droneInterfaceROSModule droneEKFStateEstimatorROSModule droneTrajectoryControllerROSModule

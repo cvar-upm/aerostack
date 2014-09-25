@@ -1,0 +1,15 @@
+#In this document, the compatibility of the stack is shown:
+
+
+LINUX UBUNTU:  [cmd to check the version: lsb_release -a ]
+	- 14.04 x64: Tested by Jose Luis Sanchez Lopez (09-2014)
+
+
+
+ROS:
+	- Indigo: Tested by Jose Luis Sanchez Lopez (09-2014)
+
+
+
+OpenCV: [cmd to check the version: pkg-config --modversion opencv ]
+	- 2.4.9: Tested by Jose Luis Sanchez Lopez (09-2014)

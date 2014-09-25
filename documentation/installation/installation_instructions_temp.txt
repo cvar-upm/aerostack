@@ -8,9 +8,9 @@ sudo apt-get install expect
 
 
 
-DEINSTALL OTHER (OLDER) VERSIONS OF THE STACK
-
-
+DEINSTALL ENVIRONMENT VARIABLES OF OTHER (OLDER) VERSIONS OF THE STACK
+sed -i '/DRONE_WORKSPACE/d' ~/.bashrc
+sed -i '/DRONE_STACK/d' ~/.bashrc
 
 
 
@@ -45,14 +45,31 @@ cd src/quadrotor_stack
 #set to true packages required in configSubmodules.cfg
 #run script to init submodules
 ./initSubmodules.sh
+cd ..
+cd ..
 
 
+
+INSTALL THE WORKSPACE
+#not needed yet ?
 
 
 INSTALL THE STACK
+cd src/quadrotor_stack
+./documentation/installation/installers/installStack.sh
+cd ..
+cd ..
+#close terminal and reopen in this same path
 
 
-
+SOURCERING EVERYTHING -> NOT needed yet!
+rospack profile
+# try
+sudo rosdep init
+rosdep update
+# catch
+rosdep update
+# end
 
 
 COMPILE STACK
@@ -68,3 +85,4 @@ cp /opt/ros/indigo/share/catkin/cmake/toplevel.cmake CMakeLists.txt
 cd ..
 source devel/setup.bash
 qtcreator
+#put the build folder in the correct path!

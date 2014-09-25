@@ -1,4 +1,22 @@
+EXTERNAL LIBRARIES THAT SHOULD BE INSTALLED
+#ncurses
+sudo apt-get install libncurses5
+sudo apt-get install ncurses-bin
+sudo apt-get install ncurses-dev
+#expect
+sudo apt-get install expect
+
+
+
+DEINSTALL OTHER (OLDER) VERSIONS OF THE STACK
+
+
+
+
+
+
 NAVIGATE TO WORKSPACE OF ROS (OR CREATE IT)
+#example
 cd ~/workspace/ros
 
 CREATE A FOLDER FOR THE WHOLE STACK APPLICATION
@@ -27,6 +45,13 @@ cd src/quadrotor_stack
 #set to true packages required in configSubmodules.cfg
 #run script to init submodules
 ./initSubmodules.sh
+
+
+
+
+INSTALL THE STACK
+
+
 
 
 

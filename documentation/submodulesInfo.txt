@@ -4,237 +4,237 @@ How to add a submodule with branch
 
 
 #UEYE_CAMERA
-git submodule add https://joselusl@bitbucket.org/joselusl/driver_camera_ueye.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
+git submodule add -b master https://joselusl@bitbucket.org/joselusl/driver_camera_ueye.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
 
-git submodule add https://joselusl@bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
+git submodule add -b master https://joselusl@bitbucket.org/joselusl/driver_camera_ueye_rosmodule.git ./stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 
 #PX4FLOW
 git submodule add -b master https://github.com/cvg/px-ros-pkg.git ./stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
 
-git submodule add https://bitbucket.org/joselusl/driver_px4flow_interface_rosmodule.git ./stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
+git submodule add -b master https://bitbucket.org/joselusl/driver_px4flow_interface_rosmodule.git ./stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 
 #OKTO
 git submodule add -b catkin https://bitbucket.org/Vision4UAV/okto_driver.git ./stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
 
-git submodule add https://bitbucket.org/joselusl/driveroktorosmodule.git ./stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
+git submodule add -b master https://bitbucket.org/joselusl/driveroktorosmodule.git ./stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
 
 #PELICAN
-git submodule add https://bitbucket.org/joselusl/mav_tools.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
+git submodule add -b master https://bitbucket.org/joselusl/mav_tools.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
 
-git submodule add https://bitbucket.org/joselusl/asctec_drivers.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
+git submodule add -b master https://bitbucket.org/joselusl/asctec_drivers.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
 
-git submodule add https://bitbucket.org/joselusl/driverPelicanROSModule.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
+git submodule add -b master https://bitbucket.org/joselusl/driverPelicanROSModule.git ./stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
 
 #ARDRONE
 git submodule add -b catkin https://github.com/AutonomyLab/ardrone_autonomy.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 
-git submodule add https://bitbucket.org/joselusl/driverparrotardronerosmodule.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
+git submodule add -b master https://bitbucket.org/joselusl/driverparrotardronerosmodule.git ./stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
 
 
 #droneMsgsROS
-git submodule add https://bitbucket.org/joselusl/dronemsgsros.git ./stack/droneStackBasics/droneMsgsROS
+git submodule add -b master https://bitbucket.org/joselusl/dronemsgsros.git ./stack/droneStackBasics/droneMsgsROS
 
 #droneModuleROS
-git submodule add https://bitbucket.org/joselusl/dronemoduleros.git ./stack/droneStackBasics/droneModuleROS
+git submodule add -b master https://bitbucket.org/joselusl/dronemoduleros.git ./stack/droneStackBasics/droneModuleROS
 
 #droneModuleInterfaceROS
-git submodule add https://bitbucket.org/joselusl/dronemoduleinterfaceros.git ./stack/droneStackBasics/droneModuleInterfaceROS
+git submodule add -b master https://bitbucket.org/joselusl/dronemoduleinterfaceros.git ./stack/droneStackBasics/droneModuleInterfaceROS
 
 
 #lib_cvgekf
-git submodule add https://bitbucket.org/joselusl/lib_cvgekf.git ./stack/libraries/lib_cvgekf
+git submodule add -b master https://bitbucket.org/joselusl/lib_cvgekf.git ./stack/libraries/lib_cvgekf
 
 #lib_cvgthread
-git submodule add https://bitbucket.org/joselusl/lib_cvgthread.git ./stack/libraries/lib_cvgthread
+git submodule add -b master https://bitbucket.org/joselusl/lib_cvgthread.git ./stack/libraries/lib_cvgthread
 
 #lib_cvgutils
-git submodule add https://bitbucket.org/joselusl/lib_cvgutils.git ./stack/libraries/lib_cvgutils
+git submodule add -b master https://bitbucket.org/joselusl/lib_cvgutils.git ./stack/libraries/lib_cvgutils
 
 #lib_newmat11
-git submodule add https://bitbucket.org/joselusl/lib_newmat11.git ./stack/libraries/lib_newmat11
+git submodule add -b master https://bitbucket.org/joselusl/lib_newmat11.git ./stack/libraries/lib_newmat11
 
 #lib_pose
-git submodule add https://bitbucket.org/joselusl/lib_pose.git ./stack/libraries/lib_pose
+git submodule add -b master https://bitbucket.org/joselusl/lib_pose.git ./stack/libraries/lib_pose
 
 #lib_pugixml
-git submodule add https://bitbucket.org/joselusl/lib_pugixml.git ./stack/libraries/lib_pugixml
+git submodule add -b master https://bitbucket.org/joselusl/lib_pugixml.git ./stack/libraries/lib_pugixml
 
 #referenceFrames
-git submodule add https://bitbucket.org/joselusl/referenceFrames.git ./stack/libraries/referenceFrames
+git submodule add -b master https://bitbucket.org/joselusl/referenceFrames.git ./stack/libraries/referenceFrames
 
 
 
 #videoPublisherROSModule
-git submodule add https://bitbucket.org/joselusl/videoPublisherROSModule.git ./stack/utils/videoPublisherROSModule
+git submodule add -b master https://bitbucket.org/joselusl/videoPublisherROSModule.git ./stack/utils/videoPublisherROSModule
 
 
 
 #droneMidLevelAutopilot
-git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilot.git ./stack/droneMidLevelControl/droneMidLevelAutopilot
+git submodule add -b master https://bitbucket.org/joselusl/droneMidLevelAutopilot.git ./stack/droneMidLevelControl/droneMidLevelAutopilot
 
 #droneMidLevelAutopilotROSModule
-git submodule add https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git ./stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git ./stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
 
 
 
 #droneEKFStateEstimator
-git submodule add https://bitbucket.org/joselusl/droneEKFStateEstimator.git ./stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
+git submodule add -b master https://bitbucket.org/joselusl/droneEKFStateEstimator.git ./stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
 
 #droneEKFStateEstimatorROSModule
-git submodule add https://bitbucket.org/joselusl/droneEKFStateEstimatorROSModule.git ./stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneEKFStateEstimatorROSModule.git ./stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
 
 #droneVisualMarkersLocalizer
-git submodule add https://bitbucket.org/joselusl/droneVisualMarkersLocalizer.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
+git submodule add -b master https://bitbucket.org/joselusl/droneVisualMarkersLocalizer.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
 
 #droneVisualMarkersLocalizerROSModule
-git submodule add https://bitbucket.org/joselusl/droneVisualMarkersLocalizerROSModule.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneVisualMarkersLocalizerROSModule.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
 
 #referenceFramesROS
-git submodule add https://bitbucket.org/joselusl/referenceFramesROS.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
+git submodule add -b master https://bitbucket.org/joselusl/referenceFramesROS.git ./stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
 
 
 
 #lib_cvglogger
-git submodule add https://bitbucket.org/joselusl/lib_cvglogger.git ./stack/droneLogging/lib_cvglogger
+git submodule add -b master https://bitbucket.org/joselusl/lib_cvglogger.git ./stack/droneLogging/lib_cvglogger
 
 #lib_cvgloggerROS
-git submodule add https://bitbucket.org/joselusl/lib_cvgloggerROS.git ./stack/droneLogging/lib_cvgloggerROS
+git submodule add -b master https://bitbucket.org/joselusl/lib_cvgloggerROS.git ./stack/droneLogging/lib_cvgloggerROS
 
 #droneLoggerROSModule
-git submodule add https://bitbucket.org/joselusl/droneLoggerROSModule.git ./stack/droneLogging/droneLoggerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneLoggerROSModule.git ./stack/droneLogging/droneLoggerROSModule
 
 #dronePelicanLoggerROSModule
-git submodule add https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git ./stack/droneLogging/dronePelicanLoggerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git ./stack/droneLogging/dronePelicanLoggerROSModule
 
 
 
 #droneYawCommanderROSModule
-git submodule add https://bitbucket.org/joselusl/droneYawCommanderROSModule.git ./stack/droneYawCommanding/droneYawCommanderROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneYawCommanderROSModule.git ./stack/droneYawCommanding/droneYawCommanderROSModule
 
 
 
 #droneTrajectoryPlanner
-git submodule add https://bitbucket.org/joselusl/droneTrajectoryPlanner.git ./stack/droneTrajectoryPlanning/droneTrajectoryPlanner
+git submodule add -b master https://bitbucket.org/joselusl/droneTrajectoryPlanner.git ./stack/droneTrajectoryPlanning/droneTrajectoryPlanner
 
 #droneTrajectoryPlannerROSModule
-git submodule add https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule.git ./stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule.git ./stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
 
 
 
 #droneObstacleProcessorVisualMarks
-git submodule add https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
+git submodule add -b master https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
 
 #droneObstacleProcessorVisualMarksROSModule
-git submodule add https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarksROSModule.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarksROSModule.git ./stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
 
 #robotLocalizationROSModule
-git submodule add https://bitbucket.org/joselusl/robotLocalizationROSModule.git ./stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
+git submodule add -b master https://bitbucket.org/joselusl/robotLocalizationROSModule.git ./stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
 
 
 
 #dronePBVSPositionMidLevelController
-git submodule add https://bitbucket.org/joselusl/dronePBVSPositionMidLevelController.git ./stack/droneHighLevelControl/dronePBVSPositionMidLevelController
+git submodule add -b master https://bitbucket.org/joselusl/dronePBVSPositionMidLevelController.git ./stack/droneHighLevelControl/dronePBVSPositionMidLevelController
 
 #droneSpeedPositionMidLevelController
-git submodule add https://bitbucket.org/joselusl/droneSpeedPositionMidLevelController.git ./stack/droneHighLevelControl/droneSpeedPositionMidLevelController
+git submodule add -b master https://bitbucket.org/joselusl/droneSpeedPositionMidLevelController.git ./stack/droneHighLevelControl/droneSpeedPositionMidLevelController
 
 #droneTrajectoryController
-git submodule add https://bitbucket.org/joselusl/droneTrajectoryController.git ./stack/droneHighLevelControl/droneTrajectoryController
+git submodule add -b master https://bitbucket.org/joselusl/droneTrajectoryController.git ./stack/droneHighLevelControl/droneTrajectoryController
 
 #droneTrajectoryControllerROSModule
-git submodule add https://bitbucket.org/joselusl/droneTrajectoryControllerROSModule.git ./stack/droneHighLevelControl/droneTrajectoryControllerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneTrajectoryControllerROSModule.git ./stack/droneHighLevelControl/droneTrajectoryControllerROSModule
 
 #droneTrajectoryStateMachine
-git submodule add https://bitbucket.org/joselusl/droneTrajectoryStateMachine.git ./stack/droneHighLevelControl/droneTrajectoryStateMachine
+git submodule add -b master https://bitbucket.org/joselusl/droneTrajectoryStateMachine.git ./stack/droneHighLevelControl/droneTrajectoryStateMachine
 
 
 
 #droneIARC14MissionSchedulerROSModule
-git submodule add https://bitbucket.org/joselusl/droneIARC14MissionSchedulerROSModule.git ./stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneIARC14MissionSchedulerROSModule.git ./stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
 
 #droneMissionPlanner
-git submodule add https://bitbucket.org/joselusl/droneMissionPlanner.git ./stack/droneMissionPlanning/droneMissionPlanner
+git submodule add -b master https://bitbucket.org/joselusl/droneMissionPlanner.git ./stack/droneMissionPlanning/droneMissionPlanner
 
 #droneMissionPlannerROSModule
-git submodule add https://bitbucket.org/joselusl/droneMissionPlannerROSModule.git ./stack/droneMissionPlanning/droneMissionPlannerROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneMissionPlannerROSModule.git ./stack/droneMissionPlanning/droneMissionPlannerROSModule
 
 
 
 
 #droneBrainROSModule
-git submodule add https://bitbucket.org/joselusl/droneBrainROSModule.git ./stack/droneSupervising/droneBrainROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneBrainROSModule.git ./stack/droneSupervising/droneBrainROSModule
 
 #droneIARC14BrainROSModule
-git submodule add https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git ./stack/droneSupervising/droneIARC14BrainROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git ./stack/droneSupervising/droneIARC14BrainROSModule
 
 
 
 #lib_aruco
-git submodule add https://bitbucket.org/joselusl/lib_aruco.git ./stack/dronePerception/droneArucoEye/lib_aruco
+git submodule add -b master https://bitbucket.org/joselusl/lib_aruco.git ./stack/dronePerception/droneArucoEye/lib_aruco
 
 #arucoEye
-git submodule add https://bitbucket.org/joselusl/arucoEye.git ./stack/dronePerception/droneArucoEye/arucoEye
+git submodule add -b master https://bitbucket.org/joselusl/arucoEye.git ./stack/dronePerception/droneArucoEye/arucoEye
 
 #droneArucoEye
-git submodule add https://bitbucket.org/joselusl/droneArucoEye.git ./stack/dronePerception/droneArucoEye/droneArucoEye
+git submodule add -b master https://bitbucket.org/joselusl/droneArucoEye.git ./stack/dronePerception/droneArucoEye/droneArucoEye
 
 #droneArucoEyeROSModule
-git submodule add https://bitbucket.org/joselusl/droneArucoEyeROSModule.git ./stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneArucoEyeROSModule.git ./stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
 
 #droneComputerVisionIARC14
-git submodule add https://bitbucket.org/joselusl/droneComputerVisionIARC14.git ./stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
+git submodule add -b master https://bitbucket.org/joselusl/droneComputerVisionIARC14.git ./stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
 
 #droneComputerVisionIARC14ROSModule
-git submodule add https://bitbucket.org/joselusl/droneComputerVisionIARC14ROSModule.git ./stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneComputerVisionIARC14ROSModule.git ./stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
 
 #droneCV2DTo3DROSModule
-git submodule add https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git ./stack/dronePerception/droneCV2DTo3DROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git ./stack/dronePerception/droneCV2DTo3DROSModule
 
 
 
 #droneSimulator
-git submodule add https://bitbucket.org/joselusl/droneSimulator.git ./stack/droneSimulators/droneSimulator/droneSimulator
+git submodule add -b master https://bitbucket.org/joselusl/droneSimulator.git ./stack/droneSimulators/droneSimulator/droneSimulator
 
 #droneSimulatorROSModule
-git submodule add https://bitbucket.org/joselusl/droneSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/droneSimulatorROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/droneSimulatorROSModule
 
 #dronePelicanSimulatorROSModule
-git submodule add https://bitbucket.org/joselusl/dronePelicanSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
+git submodule add -b master https://bitbucket.org/joselusl/dronePelicanSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
 
 #droneOktoSimulatorROSModule
-git submodule add https://bitbucket.org/joselusl/droneOktoSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneOktoSimulatorROSModule.git ./stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
 
 #droneVisualMarkersEyeSimulator
-git submodule add https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulator.git ./stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
+git submodule add -b master https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulator.git ./stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
 
 #droneVisualMarkersEyeSimulatorROSModule
-git submodule add https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulatorROSModule.git ./stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulatorROSModule.git ./stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
 
 #droneSimulatorGridROSModule
-git submodule add https://bitbucket.org/joselusl/droneSimulatorGridROSModule.git ./stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneSimulatorGridROSModule.git ./stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
 
 #droneSimulatoriRobotCVROSModule
-git submodule add https://bitbucket.org/joselusl/droneSimulatoriRobotCVROSModule.git ./stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneSimulatoriRobotCVROSModule.git ./stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
 
 #robotSimulatorROSModule
-git submodule add https://bitbucket.org/joselusl/robotSimulatorROSModule.git ./stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
+git submodule add -b master https://bitbucket.org/joselusl/robotSimulatorROSModule.git ./stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
 
 
 
 #droneArchitectureRvizInterfaceROSModule
-git submodule add https://bitbucket.org/joselusl/droneArchitectureRvizInterfaceROSModule.git ./stack/HMI/droneArchitectureRvizInterfaceROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneArchitectureRvizInterfaceROSModule.git ./stack/HMI/droneArchitectureRvizInterfaceROSModule
 
 #droneEkfSimulatorRvizROSModule
-git submodule add https://bitbucket.org/joselusl/droneEkfSimulatorRvizROSModule.git ./stack/HMI/droneEkfSimulatorRvizROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneEkfSimulatorRvizROSModule.git ./stack/HMI/droneEkfSimulatorRvizROSModule
 
 #droneInterfaceROSModule
-git submodule add https://bitbucket.org/joselusl/droneInterfaceROSModule.git ./stack/HMI/droneInterfaceROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneInterfaceROSModule.git ./stack/HMI/droneInterfaceROSModule
 
 #droneSimulatorRvizROSModule
-git submodule add https://bitbucket.org/joselusl/droneSimulatorRvizROSModule.git ./stack/HMI/droneSimulatorRvizROSModule
+git submodule add -b master https://bitbucket.org/joselusl/droneSimulatorRvizROSModule.git ./stack/HMI/droneSimulatorRvizROSModule
 
 #robotSimulatorRvizROSModule
-git submodule add https://bitbucket.org/joselusl/robotSimulatorRvizROSModule.git ./stack/HMI/IARC14/robotSimulatorRvizROSModule
+git submodule add -b master https://bitbucket.org/joselusl/robotSimulatorRvizROSModule.git ./stack/HMI/IARC14/robotSimulatorRvizROSModule
 
 
 

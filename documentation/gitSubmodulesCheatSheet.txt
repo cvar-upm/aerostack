@@ -1,19 +1,39 @@
 COMANDS
-#git submodule add
-#git submodule init
-#git submodule deinit
-#git submodule update
+git submodule add
+git submodule init
+git submodule deinit
+git submodule update
 
 
 HOW TO CHANGE A SUBMODULE AND UPLOAD THE CHANGES TO ITS INDIVIDUAL REPO
+if you have changed the submodule ".stack/subm" in the stack "./stack". and the change is definitive.
+-Submodules have HEAD detached. That means, they are not in any branch, they are just a commit.
+-When you change them, the changes are not uploaded to the stack repo, but neither to its repo.
+-The stack repo just point to the commit of the submodule.
+1. Update submodule:
+	1.1 go to the submodule "cd stack/subm"
+	1.2 create a temporal repo and make the it point to it: "git branch temp" and "git checkout temp" (equivalent to "git checkout -b temp")
+	1.3 add changes to the "temp" branch: "git add ." and "git commit -m "changes added""
+	1.4 compare the "temp" branch with the "master" branch to check that all changes are correct
+		git log --graph --decorate --pretty=oneline --abbrev-commit master origin/master temp
+		git diff master temp
+		git diff origin/master temp
+	1.5 if correct, update master "git branch -f master temp" and checkout in master "git checkout master" (equivalent to "git checkout -B master temp")
+	1.6 delete "temp" branch "git branch -d temp"
+	1.7 push changes to remote repo "git push origin master"
+	MORE INFO: http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin
+2. Update the stack repo
+	2.1 go to the stack "cd stack". if you "git status -u" you can see "new commits" in the subm.
+	2.2 "git add ." and "git commit -m "updated submodule" "
+	2.3 "git push origin master"
+	
 
 
 
 
 
-
-#INFO
-#https://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/
-#http://blog.jacius.info/git-submodule-cheat-sheet/
-#http://git-scm.com/docs/git-submodule
-#http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin
+INFO
+https://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/
+http://blog.jacius.info/git-submodule-cheat-sheet/
+http://git-scm.com/docs/git-submodule
+http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin

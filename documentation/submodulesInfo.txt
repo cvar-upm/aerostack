@@ -1,5 +1,6 @@
 How to add a submodule with branch
 
+#NOTA: poner en minuscula la direccion del repositorio!!!!
 
 
 

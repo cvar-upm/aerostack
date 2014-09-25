@@ -80,31 +80,31 @@
 	branch = master
 [submodule "stack/libraries/referenceFrames"]
 	path = stack/libraries/referenceFrames
-	url = https://bitbucket.org/joselusl/referenceFrames.git
+	url = https://bitbucket.org/joselusl/referenceframes.git
 	branch = master
 [submodule "stack/utils/videoPublisherROSModule"]
 	path = stack/utils/videoPublisherROSModule
-	url = https://bitbucket.org/joselusl/videoPublisherROSModule.git
+	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
 	branch = master
 [submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator"]
 	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
-	url = https://bitbucket.org/joselusl/droneEKFStateEstimator.git
+	url = https://bitbucket.org/joselusl/droneekfstateestimator.git
 	branch = master
 [submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule"]
 	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
-	url = https://bitbucket.org/joselusl/droneEKFStateEstimatorROSModule.git
+	url = https://bitbucket.org/joselusl/droneekfstateestimatorrosmodule.git
 	branch = master
 [submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer"]
 	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
-	url = https://bitbucket.org/joselusl/droneVisualMarkersLocalizer.git
+	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
 	branch = master
 [submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule"]
 	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
-	url = https://bitbucket.org/joselusl/droneVisualMarkersLocalizerROSModule.git
+	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
 	branch = master
 [submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS"]
 	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
-	url = https://bitbucket.org/joselusl/referenceFramesROS.git
+	url = https://bitbucket.org/joselusl/referenceframesros.git
 	branch = master
 [submodule "stack/droneLogging/lib_cvglogger"]
 	path = stack/droneLogging/lib_cvglogger
@@ -112,87 +112,87 @@
 	branch = master
 [submodule "stack/droneLogging/lib_cvgloggerROS"]
 	path = stack/droneLogging/lib_cvgloggerROS
-	url = https://bitbucket.org/joselusl/lib_cvgloggerROS.git
+	url = https://bitbucket.org/joselusl/lib_cvgloggerros.git
 	branch = master
 [submodule "stack/droneLogging/droneLoggerROSModule"]
 	path = stack/droneLogging/droneLoggerROSModule
-	url = https://bitbucket.org/joselusl/droneLoggerROSModule.git
+	url = https://bitbucket.org/joselusl/droneloggerrosmodule.git
 	branch = master
 [submodule "stack/droneLogging/dronePelicanLoggerROSModule"]
 	path = stack/droneLogging/dronePelicanLoggerROSModule
-	url = https://bitbucket.org/joselusl/dronePelicanLoggerROSModule.git
+	url = https://bitbucket.org/joselusl/dronepelicanloggerrosmodule.git
 	branch = master
 [submodule "stack/droneYawCommanding/droneYawCommanderROSModule"]
 	path = stack/droneYawCommanding/droneYawCommanderROSModule
-	url = https://bitbucket.org/joselusl/droneYawCommanderROSModule.git
+	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
 	branch = master
 [submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlanner"]
 	path = stack/droneTrajectoryPlanning/droneTrajectoryPlanner
-	url = https://bitbucket.org/joselusl/droneTrajectoryPlanner.git
+	url = https://bitbucket.org/joselusl/dronetrajectoryplanner.git
 	branch = master
 [submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule"]
 	path = stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
-	url = https://bitbucket.org/joselusl/droneTrajectoryPlannerROSModule.git
+	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
 	branch = master
 [submodule "stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks"]
 	path = stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
-	url = https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarks.git
+	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
 	branch = master
 [submodule "stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule"]
 	path = stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
-	url = https://bitbucket.org/joselusl/droneObstacleProcessorVisualMarksROSModule.git
+	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
 	branch = master
 [submodule "stack/droneEnvironmentUnderstanding/robotLocalizationROSModule"]
 	path = stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
-	url = https://bitbucket.org/joselusl/robotLocalizationROSModule.git
+	url = https://bitbucket.org/joselusl/robotlocalizationrosmodule.git
 	branch = master
 [submodule "stack/droneHighLevelControl/dronePBVSPositionMidLevelController"]
 	path = stack/droneHighLevelControl/dronePBVSPositionMidLevelController
-	url = https://bitbucket.org/joselusl/dronePBVSPositionMidLevelController.git
+	url = https://bitbucket.org/joselusl/dronepbvspositionmidlevelcontroller.git
 	branch = master
 [submodule "stack/droneHighLevelControl/droneSpeedPositionMidLevelController"]
 	path = stack/droneHighLevelControl/droneSpeedPositionMidLevelController
-	url = https://bitbucket.org/joselusl/droneSpeedPositionMidLevelController.git
+	url = https://bitbucket.org/joselusl/dronecpeedpositionmidlevelcontroller.git
 	branch = master
 [submodule "stack/droneHighLevelControl/droneTrajectoryController"]
 	path = stack/droneHighLevelControl/droneTrajectoryController
-	url = https://bitbucket.org/joselusl/droneTrajectoryController.git
+	url = https://bitbucket.org/joselusl/dronetrajectorycontroller.git
 	branch = master
 [submodule "stack/droneHighLevelControl/droneTrajectoryControllerROSModule"]
 	path = stack/droneHighLevelControl/droneTrajectoryControllerROSModule
-	url = https://bitbucket.org/joselusl/droneTrajectoryControllerROSModule.git
+	url = https://bitbucket.org/joselusl/dronetrajectorycontrollerrosmodule.git
 	branch = master
 [submodule "stack/droneHighLevelControl/droneTrajectoryStateMachine"]
 	path = stack/droneHighLevelControl/droneTrajectoryStateMachine
-	url = https://bitbucket.org/joselusl/droneTrajectoryStateMachine.git
+	url = https://bitbucket.org/joselusl/dronetrajectorystatemachine.git
 	branch = master
 [submodule "stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule"]
 	path = stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
-	url = https://bitbucket.org/joselusl/droneIARC14MissionSchedulerROSModule.git
+	url = https://bitbucket.org/joselusl/droneiarc14missionschedulerrosmodule.git
 	branch = master
 [submodule "stack/droneMissionPlanning/droneMissionPlanner"]
 	path = stack/droneMissionPlanning/droneMissionPlanner
-	url = https://bitbucket.org/joselusl/droneMissionPlanner.git
+	url = https://bitbucket.org/joselusl/dronemissionplanner.git
 	branch = master
 [submodule "stack/droneMissionPlanning/droneMissionPlannerROSModule"]
 	path = stack/droneMissionPlanning/droneMissionPlannerROSModule
-	url = https://bitbucket.org/joselusl/droneMissionPlannerROSModule.git
+	url = https://bitbucket.org/joselusl/dronemissionplannerrosmodule.git
 	branch = master
 [submodule "stack/droneSupervising/droneBrainROSModule"]
 	path = stack/droneSupervising/droneBrainROSModule
-	url = https://bitbucket.org/joselusl/droneBrainROSModule.git
+	url = https://bitbucket.org/joselusl/dronebrainrosmodule.git
 	branch = master
 [submodule "stack/droneSupervising/droneIARC14BrainROSModule"]
 	path = stack/droneSupervising/droneIARC14BrainROSModule
-	url = https://bitbucket.org/joselusl/droneIARC14BrainROSModule.git
+	url = https://bitbucket.org/joselusl/droneiarc14brainrosmodule.git
 	branch = master
 [submodule "stack/droneMidLevelControl/droneMidLevelAutopilot"]
 	path = stack/droneMidLevelControl/droneMidLevelAutopilot
-	url = https://bitbucket.org/joselusl/droneMidLevelAutopilot.git
+	url = https://bitbucket.org/joselusl/dronemidlevelautopilot.git
 	branch = master
 [submodule "stack/droneMidLevelControl/droneMidLevelAutopilotROSModule"]
 	path = stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
-	url = https://bitbucket.org/joselusl/droneMidLevelAutopilotROSModule.git
+	url = https://bitbucket.org/joselusl/dronemidlevelautopilotrosmodule.git
 	branch = master
 [submodule "stack/dronePerception/droneArucoEye/lib_aruco"]
 	path = stack/dronePerception/droneArucoEye/lib_aruco
@@ -200,79 +200,79 @@
 	branch = master
 [submodule "stack/dronePerception/droneArucoEye/arucoEye"]
 	path = stack/dronePerception/droneArucoEye/arucoEye
-	url = https://bitbucket.org/joselusl/arucoEye.git
+	url = https://bitbucket.org/joselusl/arucoeye.git
 	branch = master
 [submodule "stack/dronePerception/droneArucoEye/droneArucoEye"]
 	path = stack/dronePerception/droneArucoEye/droneArucoEye
-	url = https://bitbucket.org/joselusl/droneArucoEye.git
+	url = https://bitbucket.org/joselusl/dronearucoeye.git
 	branch = master
 [submodule "stack/dronePerception/droneArucoEye/droneArucoEyeROSModule"]
 	path = stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
-	url = https://bitbucket.org/joselusl/droneArucoEyeROSModule.git
+	url = https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 	branch = master
 [submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14"]
 	path = stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
 	url = https://bitbucket.org/joselusl/droneComputerVisionIARC14.git
 [submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule"]
 	path = stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
-	url = https://bitbucket.org/joselusl/droneComputerVisionIARC14ROSModule.git
+	url = https://bitbucket.org/joselusl/dronecomputervisioniarc14rosmodule.git
 	branch = master
 [submodule "stack/dronePerception/droneCV2DTo3DROSModule"]
 	path = stack/dronePerception/droneCV2DTo3DROSModule
-	url = https://bitbucket.org/joselusl/droneCV2DTo3DROSModule.git
+	url = https://bitbucket.org/joselusl/dronecv2dto3drosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneSimulator/droneSimulator"]
 	path = stack/droneSimulators/droneSimulator/droneSimulator
 	url = https://bitbucket.org/joselusl/droneSimulator.git
 [submodule "stack/droneSimulators/droneSimulator/droneSimulatorROSModule"]
 	path = stack/droneSimulators/droneSimulator/droneSimulatorROSModule
-	url = https://bitbucket.org/joselusl/droneSimulatorROSModule.git
+	url = https://bitbucket.org/joselusl/dronesimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule"]
 	path = stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
-	url = https://bitbucket.org/joselusl/dronePelicanSimulatorROSModule.git
+	url = https://bitbucket.org/joselusl/dronepelicansimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule"]
 	path = stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
-	url = https://bitbucket.org/joselusl/droneOktoSimulatorROSModule.git
+	url = https://bitbucket.org/joselusl/droneoktosimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator"]
 	path = stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
-	url = https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulator.git
+	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule"]
 	path = stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
-	url = https://bitbucket.org/joselusl/droneVisualMarkersEyeSimulatorROSModule.git
+	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule"]
 	path = stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
-	url = https://bitbucket.org/joselusl/droneSimulatorGridROSModule.git
+	url = https://bitbucket.org/joselusl/dronesimulatorgridrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule"]
 	path = stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
-	url = https://bitbucket.org/joselusl/droneSimulatoriRobotCVROSModule.git
+	url = https://bitbucket.org/joselusl/dronesimulatorirobotcvrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule"]
 	path = stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
-	url = https://bitbucket.org/joselusl/robotSimulatorROSModule.git
+	url = https://bitbucket.org/joselusl/robotsimulatorrosmodule.git
 	branch = master
 [submodule "stack/HMI/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/HMI/droneArchitectureRvizInterfaceROSModule
-	url = https://bitbucket.org/joselusl/droneArchitectureRvizInterfaceROSModule.git
+	url = https://bitbucket.org/joselusl/dronesrchitecturervizinterfacerosmodule.git
 	branch = master
 [submodule "stack/HMI/droneEkfSimulatorRvizROSModule"]
 	path = stack/HMI/droneEkfSimulatorRvizROSModule
-	url = https://bitbucket.org/joselusl/droneEkfSimulatorRvizROSModule.git
+	url = https://bitbucket.org/joselusl/droneekfsimulatorrvizrosmodule.git
 	branch = master
 [submodule "stack/HMI/droneInterfaceROSModule"]
 	path = stack/HMI/droneInterfaceROSModule
-	url = https://bitbucket.org/joselusl/droneInterfaceROSModule.git
+	url = https://bitbucket.org/joselusl/droneinterfacerosmodule.git
 	branch = master
 [submodule "stack/HMI/droneSimulatorRvizROSModule"]
 	path = stack/HMI/droneSimulatorRvizROSModule
-	url = https://bitbucket.org/joselusl/droneSimulatorRvizROSModule.git
+	url = https://bitbucket.org/joselusl/dronesimulatorrvizrosmodule.git
 	branch = master
 [submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
 	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
-	url = https://bitbucket.org/joselusl/robotSimulatorRvizROSModule.git
+	url = https://bitbucket.org/joselusl/robotsimulatorrvizrosmodule.git
 	branch = master

@@ -16,6 +16,6 @@ for branch in "${branches[@]}"; do
 		echo $branch_filt
 	    	git checkout ${branch_filt}
 	    	git checkout master -- $FILE_TO_UPDATE 
-#		git commit -m $COMMIT_MSG
+		git commit $FILE_TO_UPDATE -m $COMMIT_MSG
 	fi
 done

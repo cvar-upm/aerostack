@@ -1,9 +1,19 @@
+COMANDS
 #git submodule add
 #git submodule init
 #git submodule deinit
 #git submodule update
 
 
+HOW TO CHANGE A SUBMODULE AND UPLOAD THE CHANGES TO ITS INDIVIDUAL REPO
+
+
+
+
+
+
+#INFO
 #https://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/
 #http://blog.jacius.info/git-submodule-cheat-sheet/
 #http://git-scm.com/docs/git-submodule
+#http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin

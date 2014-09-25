@@ -23,7 +23,7 @@ CREATE A FOLDER FOR THE WHOLE STACK APPLICATION
 mkdir quadrotor_stack_catkin
 cd quadrotor_stack_catkin
 
-CREATION OF THE CATKING WORKSPACE
+CREATION OF THE CATKING WORKSPACE and first built
 source /opt/ros/indigo/setup.bash
 mkdir src
 cd src
@@ -50,19 +50,22 @@ cd ..
 
 
 
-INSTALL THE WORKSPACE
-#not needed yet ?
+INSTALL THE WORKSPACE -> for the setup.sh
+./src/quadrotor_stack/documentation/installation/installers/installWS.sh
 
 
-INSTALL THE STACK
+
+INSTALL THE STACK -> for the launchers and the logs
 cd src/quadrotor_stack
 ./documentation/installation/installers/installStack.sh
 cd ..
 cd ..
-#close terminal and reopen in this same path
 
 
-SOURCERING EVERYTHING -> NOT needed yet!
+#close terminal and reopen in this same directory
+
+
+SOURCERING EVERYTHING -> NOT needed yet?!
 rospack profile
 # try
 sudo rosdep init
@@ -74,6 +77,7 @@ rosdep update
 
 COMPILE STACK
 catkin_make
+
 
 
 

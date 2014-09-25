@@ -251,6 +251,33 @@ if [[ ${droneMidLevelAutopilotROSModule}  && $droneMidLevelAutopilotROSModule = 
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneIARC14MissionSchedulerROSModule
+if [[ ${droneIARC14MissionSchedulerROSModule}  && $droneIARC14MissionSchedulerROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
+		git submodule deinit $MODULE_PATH > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneMissionPlanner
+if [[ ${droneMissionPlanner}  && $droneMissionPlanner = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneMissionPlanner
+		git submodule deinit $MODULE_PATH > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneMissionPlannerROSModule
+if [[ ${droneMissionPlannerROSModule}  && $droneMissionPlannerROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneMissionPlannerROSModule
+		git submodule deinit $MODULE_PATH > /dev/null
+		./updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #arucoEye
 if [[ ${arucoEye}  && $arucoEye = true ]]
 	then

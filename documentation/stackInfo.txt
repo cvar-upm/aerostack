@@ -15,7 +15,7 @@
 					#asctec_drivers [2]
 						asctec_autopilot (JL* / Cpp)
 						asctec_msgs (JL* / Cpp)
-					driverPelicanROSModule (RS / Cpp)
+					driverPelicanROSModule (RS + JP / Cpp)
 				#driverMikrokopterOkto [2]
 					okto_driver (Rey / py)
 					driverOktoROSModule (AlexCele + AC / Cpp)
@@ -113,7 +113,7 @@
 			lib_newmat11 (PP* & JL* / Cpp)
 			lib_pose (JL / Cpp)
 			lib_pugixml (JL* / Cpp)
-			referenceFrames (JL / Cpp)
+			referenceFrames (JL + JP/ Cpp)
 		#utils [1]
 			videoPublisherROSModule (JL / Cpp)
 

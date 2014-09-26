@@ -50,8 +50,6 @@ INSTALL THE WORKSPACE -> for the setup.sh
 INSTALL THE STACK -> for the launchers and the logs
 cd src/quadrotor_stack
 ./installation/installers/installStack.sh
-cd ..
-cd ..
 
 
 #close terminal and reopen it
@@ -69,16 +67,6 @@ cd $DRONE_STACK
 
 
 
-SOURCERING EVERYTHING -> NOT needed yet?!
-rospack profile
-# try
-sudo rosdep init
-rosdep update
-# catch
-rosdep update
-# end
-
-
 COMPILE STACK
 cd $DRONE_STACK
 source setup.sh
@@ -88,9 +76,8 @@ catkin_make
 
 
 
-
 OPENING STACK with qtcreator
-cd src
+cd $DRONE_WORKSPACE/src
 rm CMakeLists.txt
 cp /opt/ros/indigo/share/catkin/cmake/toplevel.cmake CMakeLists.txt
 cd ..

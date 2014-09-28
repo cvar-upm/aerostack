@@ -212,7 +212,8 @@
 	branch = master
 [submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14"]
 	path = stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
-	url = https://bitbucket.org/joselusl/droneComputerVisionIARC14.git
+	url = https://bitbucket.org/Vision4UAV/dronecomputervisioniarc14.git
+	branch = master
 [submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule"]
 	path = stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
 	url = https://bitbucket.org/joselusl/dronecomputervisioniarc14rosmodule.git

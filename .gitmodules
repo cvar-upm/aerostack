@@ -32,7 +32,7 @@
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
-	url = https://bitbucket.org/joselusl/driverpelicanrosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver"]
 	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver

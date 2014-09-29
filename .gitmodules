@@ -144,7 +144,7 @@
 	branch = master
 [submodule "stack/droneEnvironmentUnderstanding/robotLocalizationROSModule"]
 	path = stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
-	url = https://bitbucket.org/joselusl/robotlocalizationrosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/robotlocalizationrosmodule.git
 	branch = master
 [submodule "stack/droneHighLevelControl/dronePBVSPositionMidLevelController"]
 	path = stack/droneHighLevelControl/dronePBVSPositionMidLevelController
@@ -255,15 +255,15 @@
 	branch = master
 [submodule "stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule"]
 	path = stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
-	url = https://bitbucket.org/joselusl/robotsimulatorrosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrosmodule.git
 	branch = master
 [submodule "stack/HMI/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/HMI/droneArchitectureRvizInterfaceROSModule
-	url = https://bitbucket.org/joselusl/dronearchitecturervizinterfacerosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronearchitecturervizinterfacerosmodule.git
 	branch = master
 [submodule "stack/HMI/droneEkfSimulatorRvizROSModule"]
 	path = stack/HMI/droneEkfSimulatorRvizROSModule
-	url = https://bitbucket.org/joselusl/droneekfsimulatorrvizrosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/droneekfsimulatorrvizrosmodule.git
 	branch = master
 [submodule "stack/HMI/droneInterfaceROSModule"]
 	path = stack/HMI/droneInterfaceROSModule
@@ -271,9 +271,9 @@
 	branch = master
 [submodule "stack/HMI/droneSimulatorRvizROSModule"]
 	path = stack/HMI/droneSimulatorRvizROSModule
-	url = https://bitbucket.org/joselusl/dronesimulatorrvizrosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronesimulatorrvizrosmodule.git
 	branch = master
 [submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
 	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
-	url = https://bitbucket.org/joselusl/robotsimulatorrvizrosmodule.git
+	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
 	branch = master

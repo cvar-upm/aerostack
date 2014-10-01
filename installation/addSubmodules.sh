@@ -353,7 +353,7 @@ if [[ ${droneComputerVisionIARC14}  && $droneComputerVisionIARC14 = true ]]
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
 		REPO_URL=https://bitbucket.org/Vision4UAV/dronecomputervisioniarc14.git
 		REPO_BRANCH=master
-		./installation/addPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -363,7 +363,7 @@ if [[ ${droneComputerVisionIARC14ROSModule}  && $droneComputerVisionIARC14ROSMod
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
 		REPO_URL=https://bitbucket.org/joselusl/dronecomputervisioniarc14rosmodule.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -471,8 +471,8 @@ fi
 if [[ ${droneVisualMarkersEyeSimulator}  && $droneVisualMarkersEyeSimulator = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
-		REPO_URL=
-		REPO_BRANCH=https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.gitmaster
+		REPO_URL=https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.git
+		REPO_BRANCH=master
 		./installation/addPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi

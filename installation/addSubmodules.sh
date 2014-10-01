@@ -61,7 +61,7 @@ if [[ ${okto_driver}  && $okto_driver = true ]]
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
 		REPO_URL=https://bitbucket.org/Vision4UAV/okto_driver.git
 		REPO_BRANCH=catkin
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -164,7 +164,7 @@ if [[ ${robotLocalizationROSModule}  && $robotLocalizationROSModule = true ]]
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
 		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/robotlocalizationrosmodule.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -353,7 +353,7 @@ if [[ ${droneComputerVisionIARC14}  && $droneComputerVisionIARC14 = true ]]
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
 		REPO_URL=https://bitbucket.org/Vision4UAV/dronecomputervisioniarc14.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -503,7 +503,7 @@ if [[ ${droneSimulatoriRobotCVROSModule}  && $droneSimulatoriRobotCVROSModule = 
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
 		REPO_URL=https://bitbucket.org/jespestana/dronesimulatorirobotcvrosmodule.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -513,7 +513,7 @@ if [[ ${robotSimulatorROSModule}  && $robotSimulatorROSModule = true ]]
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
 		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrosmodule.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -633,7 +633,7 @@ if [[ ${droneSimulatorRvizROSModule}  && $droneSimulatorRvizROSModule = true ]]
 		MODULE_PATH=stack/HMI/droneSimulatorRvizROSModule
 		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/dronesimulatorrvizrosmodule.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -643,7 +643,7 @@ if [[ ${robotSimulatorRvizROSModule}  && $robotSimulatorRvizROSModule = true ]]
 		MODULE_PATH=stack/HMI/IARC14/robotSimulatorRvizROSModule
 		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
 		REPO_BRANCH=master
-		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		./installation/addBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 

@@ -120,7 +120,7 @@ if [[ ${px_ros_pkg}  && $px_ros_pkg = true ]]
 fi
 
 #driver_px4flow_interface_ROSModule
-if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]
+if [[ ${driver_px4flow_interface_ROSModule}  && $driver_px4flow_interface_ROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 		# git submodule deinit $MODULE_PATH > /dev/null

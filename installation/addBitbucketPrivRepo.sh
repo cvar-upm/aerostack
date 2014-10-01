@@ -15,7 +15,7 @@ set bitbucketPassword [lindex $argv 4]; # Grab the 5 command line parameter
 #Do the command
 #spawn git submodule update $gitSubmodule
 #if you don't want to use git submodule init
-spawn git submodule add -b $REPO_BRANCH $REPO_URL $MODULE_PATH
+spawn git submodule add -b $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 #Wait for a response
 #"Username for 'https://bitbucket.org': " {
 expect {

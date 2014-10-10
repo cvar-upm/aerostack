@@ -717,7 +717,7 @@ if [[ ${referenceFrames}  && $referenceFrames = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-#droneMsgsROS
+#videoPublisherROSModule
 if [[ ${videoPublisherROSModule}  && $videoPublisherROSModule = true ]]
 	then
 		MODULE_PATH=stack/utils/videoPublisherROSModule

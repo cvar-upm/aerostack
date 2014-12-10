@@ -6,7 +6,7 @@
   <arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
   <group ns="$(arg drone_id_namespace)">
 
-    <node name="px4flow" pkg="px4flow_node" type="px4flow_node" output="screen" respawn="true" clear_params="true">
+    <node name="px4flow" pkg="px4flow" type="px4flow_node" output="screen" respawn="true" clear_params="true">
         <rosparam file="$(env DRONE_STACK)/launchers/screen_launchers/px4flow_parameters.yaml"/>
     </node>
 

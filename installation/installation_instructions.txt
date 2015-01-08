@@ -6,6 +6,9 @@ sudo apt-get install ncurses-dev
 #expect
 sudo apt-get install expect
 
+#drivers
+#you might also need drivers for some devices like ueye cameras.
+
 
 
 DEINSTALL ENVIRONMENT VARIABLES OF OTHER (OLDER) VERSIONS OF THE STACK

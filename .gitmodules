@@ -277,3 +277,6 @@
 	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
 	branch = master
+[submodule "stack/droneDrivers/driversPlatforms/driverPixHawk"]
+	path = stack/droneDrivers/driversPlatforms/driverPixHawk
+	url = https://github.com/mavlink/mavros.git

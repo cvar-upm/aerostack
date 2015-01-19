@@ -659,3 +659,22 @@ if [[ ${videoPublisherROSModule}  && $videoPublisherROSModule = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#mavlink
+if [[ ${mavlink}  && $mavlink = true ]]
+	then
+		MODULE_PATH=sstack/libraries/mavlink
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#mavros
+if [[ ${mavros}  && $mavros = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+

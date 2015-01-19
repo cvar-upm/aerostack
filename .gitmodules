@@ -280,3 +280,4 @@
 [submodule "stack/droneDrivers/driversPlatforms/driverPixHawk/mavros"]
 	path = stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
 	url = https://github.com/mavlink/mavros.git
+	branch = master

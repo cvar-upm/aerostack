@@ -727,3 +727,27 @@ if [[ ${videoPublisherROSModule}  && $videoPublisherROSModule = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+
+#mavlink
+if [[ ${mavlink}  && $mavlink = true ]]
+	then
+		MODULE_PATH=stack/libraries/mavlink
+		REPO_URL=https://github.com/mavlink/mavlink-gbp-release
+		REPO_BRANCH=release/indigo/mavlink
+		./installation/addPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
+#mavros
+if [[ ${mavros}  && $mavros = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
+		REPO_URL=https://github.com/mavlink/mavros.git
+		REPO_BRANCH=master
+		./installation/addPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
+git submodule add -b debian/indigo/mavlink https://github.com/mavlink/mavlink-gbp-release stack/libraries/mavlink

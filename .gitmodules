@@ -281,3 +281,7 @@
 	path = stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
 	url = https://github.com/mavlink/mavros.git
 	branch = master
+[submodule "stack/libraries/mavlink"]
+	path = stack/libraries/mavlink
+	url = https://github.com/mavlink/mavlink-gbp-release
+	branch = release/indigo/mavlink

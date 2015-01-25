@@ -64,9 +64,9 @@ DOWNLOAD REQUIRED PACKAGES OF THE STACK -> This step is slow, so, be patient!
 cd $DRONE_STACK
 #set to true packages required in installation/configSubmodules.cfg
 #if the packages are not already defined in the stack run script to add submodules
-./installation/addSubmodules.sh installation/configSubmodules.cfg
+./installation/gitSubmoduleAdd.sh installation/configSubmodules.cfg
 #if the packages are already defined in the stack run script to init submodules
-./installation/initSubmodules.sh installation/configSubmodules.cfg
+./installation/gitSubmoduleUpdateInit.sh installation/configSubmodules.cfg
 
 
 

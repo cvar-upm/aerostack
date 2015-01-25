@@ -29,9 +29,9 @@ echo "Adding submodules"
 if [[ ${mav_tools}  && $mav_tools = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
-		# git submodule deinit $MODULE_PATH > /dev/null
-		#git submodule init $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/mav_tools.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -39,8 +39,9 @@ fi
 if [[ ${asctec_drivers}  && $asctec_drivers = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/asctec_drivers.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -48,8 +49,9 @@ fi
 if [[ ${driverPelicanROSModule}  && $driverPelicanROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -57,8 +59,9 @@ fi
 if [[ ${okto_driver}  && $okto_driver = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/Vision4UAV/okto_driver.git
+		REPO_BRANCH=catkin
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -66,8 +69,9 @@ fi
 if [[ ${driverOktoROSModule}  && $driverOktoROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/driveroktorosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -75,8 +79,9 @@ fi
 if [[ ${ardrone_autonomy}  && $ardrone_autonomy = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updatePublRepo.sh $MODULE_PATH > /dev/null
+		REPO_URL=https://github.com/AutonomyLab/ardrone_autonomy.git
+		REPO_BRANCH=catkin
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -84,8 +89,9 @@ fi
 if [[ ${driverParrotARDroneROSModule}  && $driverParrotARDroneROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -94,8 +100,9 @@ fi
 if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/driver_camera_ueye.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -104,8 +111,9 @@ fi
 if [[ ${driver_camera_ueye_ROSModule}  && $driver_camera_ueye_ROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/driver_camera_ueye_rosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 
 fi
@@ -114,8 +122,9 @@ fi
 if [[ ${px_ros_pkg}  && $px_ros_pkg = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updatePublRepo.sh $MODULE_PATH > /dev/null
+		REPO_URL=https://github.com/cvg/px-ros-pkg.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -123,8 +132,9 @@ fi
 if [[ ${driver_px4flow_interface_ROSModule}  && $driver_px4flow_interface_ROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -132,8 +142,9 @@ fi
 if [[ ${droneObstacleProcessorVisualMarks}  && $droneObstacleProcessorVisualMarks = true ]]
 	then
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -141,8 +152,9 @@ fi
 if [[ ${droneObstacleProcessorVisualMarksROSModule}  && $droneObstacleProcessorVisualMarksROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -150,8 +162,9 @@ fi
 if [[ ${robotLocalizationROSModule}  && $robotLocalizationROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneEnvironmentUnderstanding/robotLocalizationROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/robotlocalizationrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -159,8 +172,9 @@ fi
 if [[ ${dronePBVSPositionMidLevelController}  && $dronePBVSPositionMidLevelController = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/dronePBVSPositionMidLevelController
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronepbvspositionmidlevelcontroller.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -168,8 +182,9 @@ fi
 if [[ ${droneSpeedPositionMidLevelController}  && $droneSpeedPositionMidLevelController = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneSpeedPositionMidLevelController
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronespeedpositionmidlevelcontroller.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -177,8 +192,9 @@ fi
 if [[ ${droneTrajectoryController}  && $droneTrajectoryController = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneTrajectoryController
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronetrajectorycontroller.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -186,8 +202,9 @@ fi
 if [[ ${droneTrajectoryControllerROSModule}  && $droneTrajectoryControllerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneTrajectoryControllerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronetrajectorycontrollerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -195,8 +212,9 @@ fi
 if [[ ${droneTrajectoryStateMachine}  && $droneTrajectoryStateMachine = true ]]
 	then
 		MODULE_PATH=stack/droneHighLevelControl/droneTrajectoryStateMachine
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronetrajectorystatemachine.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -204,8 +222,9 @@ fi
 if [[ ${droneLoggerROSModule}  && $droneLoggerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/droneLoggerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneloggerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -213,8 +232,9 @@ fi
 if [[ ${dronePelicanLoggerROSModule}  && $dronePelicanLoggerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/dronePelicanLoggerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -222,8 +242,9 @@ fi
 if [[ ${lib_cvglogger}  && $lib_cvglogger = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/lib_cvglogger
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/lib_cvglogger.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -231,8 +252,9 @@ fi
 if [[ ${lib_cvgloggerROS}  && $lib_cvgloggerROS = true ]]
 	then
 		MODULE_PATH=stack/droneLogging/lib_cvgloggerROS
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/lib_cvgloggerros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -240,8 +262,9 @@ fi
 if [[ ${droneMidLevelAutopilot}  && $droneMidLevelAutopilot = true ]]
 	then
 		MODULE_PATH=stack/droneMidLevelControl/droneMidLevelAutopilot
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronemidlevelautopilot.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -249,8 +272,9 @@ fi
 if [[ ${droneMidLevelAutopilotROSModule}  && $droneMidLevelAutopilotROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneMidLevelControl/droneMidLevelAutopilotROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronemidlevelautopilotrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -258,8 +282,9 @@ fi
 if [[ ${droneIARC14MissionSchedulerROSModule}  && $droneIARC14MissionSchedulerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneiarc14missionschedulerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -267,8 +292,9 @@ fi
 if [[ ${droneMissionPlanner}  && $droneMissionPlanner = true ]]
 	then
 		MODULE_PATH=stack/droneMissionPlanning/droneMissionPlanner
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronemissionplanner.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -276,8 +302,9 @@ fi
 if [[ ${droneMissionPlannerROSModule}  && $droneMissionPlannerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneMissionPlanning/droneMissionPlannerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronemissionplannerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -285,8 +312,9 @@ fi
 if [[ ${arucoEye}  && $arucoEye = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/arucoEye
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/arucoeye.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -294,17 +322,18 @@ fi
 if [[ ${droneArucoEye}  && $droneArucoEye = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/droneArucoEye
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronearucoeye.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
 #droneArucoEyeROSModule
 if [[ ${droneArucoEyeROSModule}  && $droneArucoEyeROSModule = true ]]
 	then
-		MODULE_PATH=stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -312,8 +341,9 @@ fi
 if [[ ${lib_aruco}  && $lib_aruco = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneArucoEye/lib_aruco
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/lib_aruco.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -321,8 +351,9 @@ fi
 if [[ ${droneComputerVisionIARC14}  && $droneComputerVisionIARC14 = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/Vision4UAV/dronecomputervisioniarc14.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -330,8 +361,9 @@ fi
 if [[ ${droneComputerVisionIARC14ROSModule}  && $droneComputerVisionIARC14ROSModule = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronecomputervisioniarc14rosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -339,8 +371,9 @@ fi
 if [[ ${droneCV2DTo3DROSModule}  && $droneCV2DTo3DROSModule = true ]]
 	then
 		MODULE_PATH=stack/dronePerception/droneCV2DTo3DROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronecv2dto3drosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -348,8 +381,9 @@ fi
 if [[ ${droneEKFStateEstimator}  && $droneEKFStateEstimator = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneekfstateestimator.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -357,8 +391,9 @@ fi
 if [[ ${droneEKFStateEstimatorROSModule}  && $droneEKFStateEstimatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneekfstateestimatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -366,8 +401,9 @@ fi
 if [[ ${droneVisualMarkersLocalizer}  && $droneVisualMarkersLocalizer = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -375,8 +411,9 @@ fi
 if [[ ${droneVisualMarkersLocalizerROSModule}  && $droneVisualMarkersLocalizerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -384,8 +421,9 @@ fi
 if [[ ${referenceFramesROS}  && $referenceFramesROS = true ]]
 	then
 		MODULE_PATH=stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/referenceframesros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -393,8 +431,9 @@ fi
 if [[ ${droneOktoSimulatorROSModule}  && $droneOktoSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneoktosimulatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -402,8 +441,9 @@ fi
 if [[ ${dronePelicanSimulatorROSModule}  && $dronePelicanSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -411,8 +451,9 @@ fi
 if [[ ${droneSimulator}  && $droneSimulator = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/droneSimulator
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneSimulator.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -420,8 +461,9 @@ fi
 if [[ ${droneSimulatorROSModule}  && $droneSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneSimulator/droneSimulatorROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronesimulatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -429,8 +471,9 @@ fi
 if [[ ${droneVisualMarkersEyeSimulator}  && $droneVisualMarkersEyeSimulator = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -438,8 +481,9 @@ fi
 if [[ ${droneVisualMarkersEyeSimulatorROSModule}  && $droneVisualMarkersEyeSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronevisualmarkerseyesimulatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -447,8 +491,9 @@ fi
 if [[ ${droneSimulatorGridROSModule}  && $droneSimulatorGridROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronesimulatorgridrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -456,8 +501,9 @@ fi
 if [[ ${droneSimulatoriRobotCVROSModule}  && $droneSimulatoriRobotCVROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronesimulatorirobotcvrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -465,8 +511,9 @@ fi
 if [[ ${robotSimulatorROSModule}  && $robotSimulatorROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -474,8 +521,9 @@ fi
 if [[ ${droneModuleInterfaceROS}  && $droneModuleInterfaceROS = true ]]
 	then
 		MODULE_PATH=stack/droneStackBasics/droneModuleInterfaceROS
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -483,8 +531,9 @@ fi
 if [[ ${droneModuleROS}  && $droneModuleROS = true ]]
 	then
 		MODULE_PATH=stack/droneStackBasics/droneModuleROS
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronemoduleros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -492,8 +541,9 @@ fi
 if [[ ${droneMsgsROS}  && $droneMsgsROS = true ]]
 	then
 		MODULE_PATH=stack/droneStackBasics/droneMsgsROS
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronemsgsros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -501,8 +551,9 @@ fi
 if [[ ${droneBrainROSModule}  && $droneBrainROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSupervising/droneBrainROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/dronebrainrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -510,8 +561,9 @@ fi
 if [[ ${droneIARC14BrainROSModule}  && $droneIARC14BrainROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSupervising/droneIARC14BrainROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/droneiarc14brainrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -519,8 +571,9 @@ fi
 if [[ ${droneTrajectoryPlanner}  && $droneTrajectoryPlanner = true ]]
 	then
 		MODULE_PATH=stack/droneTrajectoryPlanning/droneTrajectoryPlanner
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronetrajectoryplanner.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -528,8 +581,9 @@ fi
 if [[ ${droneTrajectoryPlannerROSModule}  && $droneTrajectoryPlannerROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -537,8 +591,9 @@ fi
 if [[ ${droneYawCommanderROSModule}  && $droneYawCommanderROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneYawCommanding/droneYawCommanderROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -546,8 +601,9 @@ fi
 if [[ ${droneArchitectureRvizInterfaceROSModule}  && $droneArchitectureRvizInterfaceROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/droneArchitectureRvizInterfaceROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/dronearchitecturervizinterfacerosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -555,8 +611,9 @@ fi
 if [[ ${droneEkfSimulatorRvizROSModule}  && $droneEkfSimulatorRvizROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/droneEkfSimulatorRvizROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/droneekfsimulatorrvizrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -564,8 +621,9 @@ fi
 if [[ ${droneInterfaceROSModule}  && $droneInterfaceROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/droneInterfaceROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/droneinterfacerosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -573,8 +631,9 @@ fi
 if [[ ${droneSimulatorRvizROSModule}  && $droneSimulatorRvizROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/droneSimulatorRvizROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/dronesimulatorrvizrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -582,8 +641,9 @@ fi
 if [[ ${robotSimulatorRvizROSModule}  && $robotSimulatorRvizROSModule = true ]]
 	then
 		MODULE_PATH=stack/HMI/IARC14/robotSimulatorRvizROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -591,8 +651,9 @@ fi
 if [[ ${lib_cvgekf}  && $lib_cvgekf = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_cvgekf
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/lib_cvgekf.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -600,8 +661,9 @@ fi
 if [[ ${lib_cvgthread}  && $lib_cvgthread = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_cvgthread
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/lib_cvgthread.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -609,8 +671,9 @@ fi
 if [[ ${lib_cvgutils}  && $lib_cvgutils = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_cvgutils
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/jespestana/lib_cvgutils.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -618,8 +681,9 @@ fi
 if [[ ${lib_newmat11}  && $lib_newmat11 = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_newmat11
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/lib_newmat11.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -627,8 +691,9 @@ fi
 if [[ ${lib_pose}  && $lib_pose = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_pose
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/lib_pose.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -636,8 +701,9 @@ fi
 if [[ ${lib_pugixml}  && $lib_pugixml = true ]]
 	then
 		MODULE_PATH=stack/libraries/lib_pugixml
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/lib_pugixml.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -645,8 +711,9 @@ fi
 if [[ ${referenceFrames}  && $referenceFrames = true ]]
 	then
 		MODULE_PATH=stack/libraries/referenceFrames
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/referenceframes.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
@@ -654,27 +721,33 @@ fi
 if [[ ${videoPublisherROSModule}  && $videoPublisherROSModule = true ]]
 	then
 		MODULE_PATH=stack/utils/videoPublisherROSModule
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://bitbucket.org/joselusl/videopublisherrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
+
 
 #mavlink
 if [[ ${mavlink}  && $mavlink = true ]]
 	then
-		MODULE_PATH=sstack/libraries/mavlink
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		MODULE_PATH=stack/libraries/mavlink
+		REPO_URL=https://github.com/mavlink/mavlink-gbp-release
+		REPO_BRANCH=release/indigo/mavlink
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
+
 
 #mavros
 if [[ ${mavros}  && $mavros = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/updateBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		REPO_URL=https://github.com/mavlink/mavros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 
 
+git submodule gitSubmoduleAdd -b debian/indigo/mavlink https://github.com/mavlink/mavlink-gbp-release stack/libraries/mavlink

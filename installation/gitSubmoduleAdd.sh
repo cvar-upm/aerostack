@@ -749,5 +749,3 @@ if [[ ${mavros}  && $mavros = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-
-git submodule gitSubmoduleAdd -b debian/indigo/mavlink https://github.com/mavlink/mavlink-gbp-release stack/libraries/mavlink

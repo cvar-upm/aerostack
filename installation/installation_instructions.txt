@@ -6,6 +6,11 @@ sudo apt-get install ncurses-dev
 #expect
 sudo apt-get install expect
 
+#ardrone_autonomy
+sudo apt-get install libsdl1.2-dev
+sudo apt-get install libudev-dev
+sudo apt-get install libiw-dev
+
 #drivers
 #you might also need drivers for some devices like ueye cameras.
 

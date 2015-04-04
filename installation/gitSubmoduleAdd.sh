@@ -331,6 +331,7 @@ fi
 #droneArucoEyeROSModule
 if [[ ${droneArucoEyeROSModule}  && $droneArucoEyeROSModule = true ]]
 	then
+		MODULE_PATH=stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
 		REPO_URL=https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 		REPO_BRANCH=master
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null

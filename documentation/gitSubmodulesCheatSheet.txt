@@ -30,6 +30,9 @@ if you have changed the submodule ".stack/subm" in the stack "./stack". and the 
 	
 
 
+HOW TO UPDATE ALL SUBMODULES TO THE LAST COMMIT
+git submodule foreach git pull origin master
+
 
 
 

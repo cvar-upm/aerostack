@@ -14,10 +14,6 @@
 	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 	url = https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git
 	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
-	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
-	url = https://github.com/AutonomyLab/ardrone_autonomy.git
-	branch = catkin
 [submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
 	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git

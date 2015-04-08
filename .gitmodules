@@ -273,3 +273,7 @@
 	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
 	branch = master
+[submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
+	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
+	url = https://github.com/AutonomyLab/ardrone_autonomy.git
+	branch = indigo-devel

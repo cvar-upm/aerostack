@@ -51,7 +51,7 @@ echo exit
 #gnome-terminal  --full-screen  \
 gnome-terminal  \
 	--tab --title "Ardrone_Autonomy"	--command "bash -c \"
-roslaunch ./ardrone_launch/ardrone_indoors.launch --wait drone_id_namespace:=drone$NUMID_DRONE;
+roslaunch $DRONE_STACK/launchers/ardrone_launch/ardrone_indoors.launch --wait drone_id_namespace:=drone$NUMID_DRONE;
 						exec bash\""  \
 	--tab --title "Driver Parrot"	--command "bash -c \"
 roslaunch driverParrotARDroneROSModule driverParrotARDroneROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};

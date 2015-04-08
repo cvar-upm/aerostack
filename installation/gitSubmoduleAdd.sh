@@ -80,7 +80,7 @@ if [[ ${ardrone_autonomy}  && $ardrone_autonomy = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 		REPO_URL=https://github.com/AutonomyLab/ardrone_autonomy.git
-		REPO_BRANCH=catkin
+		REPO_BRANCH=indigo-devel
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi

@@ -1,0 +1,22 @@
+<!-- Launches: joyConverterNode, joy to pelican commands -->
+<launch>
+	
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
+	<arg name="joy_device_name"  	default="/dev/input/js1" />
+	<group ns="$(arg drone_id_namespace)">
+		<!-- joy_node -->
+		<node name="joy_node" pkg="joy" type="joy_node" output="screen">
+			<param name="droneId" 	value="$(arg drone_id_int)" type="int"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+			<param name="dev" 	value="$(arg joy_device_name)" type="string"/>
+		</node>
+		<!-- joy_converter -->
+		<node name="joy_converter" pkg="mikrokopter_driver_ros_module" type="joy_converter_to_drv_okto_cmd" output="screen">
+			<param name="droneId" 	value="$(arg drone_id_int)" type="int"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+			<param name="dev" 	value="$(arg joy_device_name)" type="string"/>
+		</node>
+	</group>
+</launch>

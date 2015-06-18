@@ -283,13 +283,13 @@
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module"]
 	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module
-	url = https://hridaybavle@bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
 	branch = master
 [submodule "stack/droneDrivers/driversSensors/Lidarlite"]
 	path = stack/droneDrivers/driversSensors/Lidarlite
-	url = https://hridaybavle@bitbucket.org/hridaybavle/lidarlite.git
+	url = https://bitbucket.org/hridaybavle/lidarlite.git
 	branch = master
 [submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto"]
 	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
-	url = https://hridaybavle@bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
+	url = https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
 	branch = master

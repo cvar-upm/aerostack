@@ -88,9 +88,9 @@
                 <DeltaKp>0.125</DeltaKp>     <!-- 1/1 -->
                 <!-- DeltaKp_comments: IMAV13 0.125; JINT13 0.25; CEA12 0.5-->
                 <!-- x, y PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp>2.04</Kp>   <!-- (m/s)/m     -->
+                <Kp>1.04</Kp>   <!-- (m/s)/m     -->
                 <Ki>0.00</Ki>   <!-- (m/s)/(m*s) -->
-                <Kd>0.99</Kd>   <!-- (m/s)/(m/s) -->
+                <Kd>0.09</Kd>   <!-- (m/s)/(m/s) -->
             </xy>
         </position_controller>
         <speed_controller>
@@ -102,9 +102,9 @@
                 <nlf_is_activated>0</nlf_is_activated> <DeltaKp>0.045</DeltaKp>     <!-- 1/1, 0.3*0.15 -->
            <!-- <nlf_is_activated>1</nlf_is_activated> <DeltaKp>0.300</DeltaKp> -->
                 <!-- vx, vy PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp>7.1521</Kp>   <!-- [-1,1]/( m/s ) -->
-                <Ki>7.1521</Ki>   <!-- [-1,1]/(  m  )  -->
-                <Kd>1.5534</Kd>   <!-- [-1,1]/(m/s^2)  -->
+                <Kp>2.0000</Kp>   <!-- [-1,1]/( m/s ) -->
+                <Ki>2.0000</Ki>   <!-- [-1,1]/(  m  )  -->
+                <Kd>0.4343</Kd>   <!-- [-1,1]/(m/s^2)  -->
             </vxy>
             <yaw>
                 <DeltaKp>0.30</DeltaKp>     <!-- 1/1 -->

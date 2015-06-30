@@ -171,7 +171,7 @@ fi
 #rosserial driver
 if [[ ${rosserial}  && $rosserial = true ]]
 	then
-		MODULE_PATH=stack/droneDrivers/driversSensors/driver_lider_lite/rosserial
+		MODULE_PATH=stack/droneDrivers/driversSensors/utils/rosserial
 		REPO_URL=https://github.com/ros-drivers/rosserial.git
 		REPO_BRANCH=indigo-devel
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null

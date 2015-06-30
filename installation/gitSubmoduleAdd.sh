@@ -168,6 +168,17 @@ if [[ ${driver_px4flow_interface_ROSModule_okto}  && $driver_px4flow_interface_R
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#rosserial driver
+if [[ ${rosserial}  && $rosserial = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_lider_lite/rosserial
+		REPO_URL=https://github.com/ros-drivers/rosserial.git
+		REPO_BRANCH=indigo-devel
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
 #droneObstacleProcessorVisualMarks
 if [[ ${droneObstacleProcessorVisualMarks}  && $droneObstacleProcessorVisualMarks = true ]]
 	then

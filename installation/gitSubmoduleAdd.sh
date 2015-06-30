@@ -179,6 +179,8 @@ if [[ ${rosserial}  && $rosserial = true ]]
 fi
 
 
+
+
 #droneObstacleProcessorVisualMarks
 if [[ ${droneObstacleProcessorVisualMarks}  && $droneObstacleProcessorVisualMarks = true ]]
 	then

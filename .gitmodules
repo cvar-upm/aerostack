@@ -285,11 +285,11 @@
 	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module
 	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
 	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_lider_lite/rosserial"]
-	path = stack/droneDrivers/driversSensors/driver_lider_lite/rosserial
-	url = https://github.com/ros-drivers/rosserial.git
-	branch = indigo-devel
 [submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto"]
 	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
 	url = https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
 	branch = master
+[submodule "home/hriday/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/stack/droneDrivers/driversSensors/utils/rosserial"]
+	path =home/hriday/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/stack/droneDrivers/driversSensors/utils/rosserial
+	url = https://github.com/ros-drivers/rosserial.git
+	branch = indigo-devel

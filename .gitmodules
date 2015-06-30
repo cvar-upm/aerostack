@@ -289,7 +289,7 @@
 	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
 	url = https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
 	branch = master
-[submodule "home/hriday/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/stack/droneDrivers/driversSensors/utils/rosserial"]
-	path =home/hriday/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/stack/droneDrivers/driversSensors/utils/rosserial
+[submodule "stack/droneDrivers/driversSensors/utils/rosserial"]
+	path = stack/droneDrivers/driversSensors/utils/rosserial
 	url = https://github.com/ros-drivers/rosserial.git
 	branch = indigo-devel

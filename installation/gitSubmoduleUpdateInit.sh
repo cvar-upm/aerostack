@@ -158,7 +158,7 @@ fi
 #rosserial driver
 if [[ ${rosserial}  && $rosserial = true ]]
 	then
-		MODULE_PATH=sstack/droneDrivers/driversSensors/utils/rosserial
+		MODULE_PATH=stack/droneDrivers/driversSensors/utils/rosserial
 		# git submodule deinit $MODULE_PATH > /dev/null
 		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"

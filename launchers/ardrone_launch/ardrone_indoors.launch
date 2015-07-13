@@ -106,7 +106,8 @@
 			
 			
 			<!-- MAC lock command -->
-			<param name="owner_mac" value="00:00:00:00:00:00" />
+                        <!-- hriday-Lenovo-G50-70  C0:38:96:8D:BB:1D -->
+			<param name="owner_mac" value="C0:38:96:8D:BB:1D" />
 			
 			
 			<!-- Ultrasound frequency to avoid interaction between 2 ARdrone -->
@@ -144,12 +145,10 @@
 			
 		</node>
 
-		<!-- Ardrone front camera image rectification -->
-		<!--
+                <!-- Ardrone front camera image rectification -->
 		<node ns="/$(arg drone_id_namespace)/ardrone/front" pkg="image_proc" type="image_proc" name="image_proc" />
-		-->
-		
 
+		
 		<!-- Ardrone front camera image visualization 
     		<node ns="ardrone/front" pkg="image_view" type="image_view" name="image_view" >
       			<remap from="image" to="image_rect_color" />

@@ -211,6 +211,37 @@ if [[ ${robotLocalizationROSModule}  && $robotLocalizationROSModule = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneIBVSController
+if [[ ${droneIBVSController}  && $droneIBVSController = true ]]
+	then
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSController
+		REPO_URL=https://bitbucket.org/hridaybavle/droneibvscontroller.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneIBVSControllerROSModule
+if [[ ${droneIBVSControllerROSModule}  && $droneIBVSControllerROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSControllerROSModule
+		REPO_URL=https://bitbucket.org/hridaybavle/droneibvscontrollerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneIBVSInterfaceROS
+if [[ ${droneIBVSInterfaceROS}  && $droneIBVSInterfaceROS = true ]]
+	then
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSInterfaceROS
+		REPO_URL=https://bitbucket.org/hridaybavle/droneibvsinterfaceros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
 #dronePBVSPositionMidLevelController
 if [[ ${dronePBVSPositionMidLevelController}  && $dronePBVSPositionMidLevelController = true ]]
 	then
@@ -350,6 +381,27 @@ if [[ ${droneMissionPlannerROSModule}  && $droneMissionPlannerROSModule = true ]
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
+
+#droneOpenTLDTranslatorROS
+if [[ ${droneOpenTLDTranslatorROS}  && $droneOpenTLDTranslatorROS = true ]]
+	then
+		MODULE_PATH=stack/dronePerception/openTLD/droneOpenTLDTranslatorROS
+		REPO_URL=https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#ros_opentld
+if [[ ${ros_opentld}  && $ros_opentld = true ]]
+	then
+		MODULE_PATH=stack/dronePerception/openTLD/ros_opentld
+		REPO_URL=https://github.com/Ronan0912/ros_opentld.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 
 #arucoEye
 if [[ ${arucoEye}  && $arucoEye = true ]]

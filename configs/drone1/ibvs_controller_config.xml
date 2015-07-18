@@ -1,0 +1,76 @@
+<ibvs_controller_config>
+
+     <description> Configuration file for IBVS controller </description> 
+  
+     <output_saturations>
+          <MULTIROTOR_IBVSCONTROLLER_DYAWMAX>   0.5 </MULTIROTOR_IBVSCONTROLLER_DYAWMAX>
+          <MULTIROTOR_IBVSCONTROLLER_DZMAX>     0.5 </MULTIROTOR_IBVSCONTROLLER_DZMAX>
+          <MULTIROTOR_IBVSCONTROLLER_MAX_PITCH> 0.5 </MULTIROTOR_IBVSCONTROLLER_MAX_PITCH>
+          <MULTIROTOR_IBVSCONTROLLER_MAX_ROLL>  0.5 </MULTIROTOR_IBVSCONTROLLER_MAX_ROLL>   
+     </output_saturations>
+
+     <low_pass_filter_configs>
+           <MULTIROTOR_TILT_REFERENCE_CUTOFF_TR>  0.30 </MULTIROTOR_TILT_REFERENCE_CUTOFF_TR>
+           <MULTIROTOR_DYAW_REFERENCE_CUTOFF_TR> -0.30 </MULTIROTOR_DYAW_REFERENCE_CUTOFF_TR>
+           <MULTIROTOR_DALT_REFERENCE_CUTOFF_TR> -0.30 </MULTIROTOR_DALT_REFERENCE_CUTOFF_TR>
+     </low_pass_filter_configs>
+ 
+     <camera_constants>
+         <MULTIROTOR_FRONTCAM_RESOLUTION_WIDTH>         640.0   </MULTIROTOR_FRONTCAM_RESOLUTION_WIDTH>
+         <MULTIROTOR_FRONTCAM_RESOLUTION_HEIGHT>        360.0   </MULTIROTOR_FRONTCAM_RESOLUTION_HEIGHT>
+         <MULTIROTOR_FRONTCAM_HORIZONTAL_ANGLE_OF_VIEW> 70.0    </MULTIROTOR_FRONTCAM_HORIZONTAL_ANGLE_OF_VIEW>
+         <MULTIROTOR_FRONTCAM_VERTICAL_ANGLE_OF_VIEW>   38.0    </MULTIROTOR_FRONTCAM_VERTICAL_ANGLE_OF_VIEW>
+         <MULTIROTOR_FRONTCAM_ALPHAX>                   460.0   </MULTIROTOR_FRONTCAM_ALPHAX>
+         <MULTIROTOR_FRONTCAM_ALPHAY>                   530.0   </MULTIROTOR_FRONTCAM_ALPHAY>
+         <MULTIROTOR_IBVSCONTROLLER_INIT_DEPTH>         3.0     </MULTIROTOR_IBVSCONTROLLER_INIT_DEPTH>
+         <MULTIROTOR_IBVSCONTROLLER_TARGET_INIT_SIZE>   0.12    </MULTIROTOR_IBVSCONTROLLER_TARGET_INIT_SIZE>
+         <MULTIROTOR_FAERO_DCGAIN_SPEED2TILT>           0.142857143 </MULTIROTOR_FAERO_DCGAIN_SPEED2TILT>
+     </camera_constants>
+       
+     <fx2r>
+        <FX2R_DELTA_KP>   1.0    </FX2R_DELTA_KP>
+        <FX2R_KP>        -0.5    </FX2R_KP>
+        <FX2R_KI>         0.0    </FX2R_KI>
+        <FX2R_KD>         0.486  </FX2R_KD> 
+     </fx2r>
+      
+     <fd2p>
+        <FD2P_DELTA_KP>  1.0     </FD2P_DELTA_KP>
+        <FD2P_KP>        0.5     </FD2P_KP>
+        <FD2P_KI>        0.0     </FD2P_KI>
+        <FD2P_KD>        0.486   </FD2P_KD>     
+     </fd2p>
+
+     <fx2dy>
+        <FX2DY_DELTA_KP>  0.9     </FX2DY_DELTA_KP>
+        <FX2DY_KP>       -0.9     </FX2DY_KP>
+        <FX2DY_KI>        0.0     </FX2DY_KI>
+        <FX2DY_KD>        0.12    </FX2DY_KD>
+     </fx2dy>
+
+     <fy2dz>
+         <FY2DZ_DELTA_KP> 1.0     </FY2DZ_DELTA_KP>
+         <FY2DZ_KP>       0.7     </FY2DZ_KP>
+         <FY2DZ_KI>       0.0     </FY2DZ_KI>
+         <FY2DZ_KD>       0.26    </FY2DZ_KD>
+    </fy2dz>
+
+    <fs2p>
+         <FS2P_DELTA_KP>  0.0     </FS2P_DELTA_KP>
+         <FS2P_KP>       -0.5     </FS2P_KP>
+         <FS2P_KI>        0.0     </FS2P_KI>
+         <FS2P_KD>        1.62    </FS2P_KD>
+    </fs2p>
+
+    <initval>
+         <MULTIROTOR_IBVSCONTROLLER_INITVAL_FX>                       0.5   </MULTIROTOR_IBVSCONTROLLER_INITVAL_FX>
+         <MULTIROTOR_IBVSCONTROLLER_INITVAL_FY>                       0.5   </MULTIROTOR_IBVSCONTROLLER_INITVAL_FY>
+         <MULTIROTOR_IBVSCONTROLLER_INITVAL_FS>                       0.025 </MULTIROTOR_IBVSCONTROLLER_INITVAL_FS>
+         <MULTIROTOR_IBVSCONTROLLER_SAFETY_DISTANCE_TO_IMAGE_BORDER>  0.25  </MULTIROTOR_IBVSCONTROLLER_SAFETY_DISTANCE_TO_IMAGE_BORDER> 
+    </initval>
+
+
+</ibvs_controller_config>
+
+
+

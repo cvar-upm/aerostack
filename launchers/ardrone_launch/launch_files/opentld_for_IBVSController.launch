@@ -1,0 +1,64 @@
+<!-- Launches: ardrone_autonomy driver; front and bottom camera rectification and visualization; -->
+<launch>
+	<!-- General ROS tools 
+		- already - started by ardrone_configured_mc4mavwork.launch
+	<group ns="ROS_tools">
+		<node pkg="rxtools" type="rxconsole" name="rxconsole_node"></node>
+		<node pkg="rqt_graph" type="rqt_graph" name="rqt_graph_node"></node>
+	</group> -->
+
+	<!-- Nodes: Ardrone; image rectification; image visualization 
+		Ardrone driver node:
+			- started by ardrone_configured_mc4mavwork.launch
+			- right now is created under ROS node name domain /ardrone -->
+
+	
+	<!-- OpenTLD Nodes: tld_tracker; tld_gui 
+	Repository: https://github.com/Ronan0912/ros_opentld -->
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env IBVS_STACK)" />
+	<group ns="$(arg drone_id_namespace)/OpenTLD">
+	<!-- <group ns="ardrone/OpenTLD"> -->
+		<!-- declare arg to be passed in -->
+		<arg name="load_model" default="false"/>
+		<arg name="auto_face_detection" default="false"/>
+		<arg name="model_import_file" default="/home/tld_models/sample"/>
+		<arg name="model_export_file" default="/home/tld_models/sample"/>
+		<arg name="cascade_path" default="$(env ROS_ROOT)/../OpenCV/haarcascades/haarcascade_frontalface_alt.xml"/>
+		<arg name="image_topic" default="/$(arg drone_id_namespace)/ardrone/front/image_rect_color"/>
+
+	<!-- Nodes -->
+		<node name="ros_tld_tracker_node" pkg="tld_tracker" type="tld_tracker_node" output="screen">
+			<!-- remap of topics -->
+			<remap from="image" to="$(arg image_topic)"/>
+			<remap from="bounding_box" to="tld_gui_bb"/>
+			<remap from="cmds" to="tld_gui_cmds"/>
+
+			<!-- declare param and read value of arg-->
+			<param name="showOutput" value="true" type="bool"/>
+			<param name="loadModel" value="$(arg load_model)" type="bool"/>
+			<param name="autoFaceDetection" value="$(arg auto_face_detection)" type="bool"/>
+			<param name="modelImportFile" value="$(arg model_import_file)" type="string"/>
+			<param name="exportModelAfterRun" value="false" type="bool"/>
+			<param name="modelExportFile" value="$(arg model_export_file)" type="string"/>
+			<param name="cascadePath" value="$(arg cascade_path)" type="string"/>
+			<param name="x" value="200" type="int"/>
+			<param name="y" value="200" type="int"/>
+			<param name="width" value="200" type="int"/>
+			<param name="height" value="200" type="int"/>
+			<param name="correctBB" value="false" type="bool"/>
+		</node>
+
+		<node name="ros_tld_gui_node" pkg="tld_tracker" type="tld_gui_node" output="screen" respawn="true">
+			<remap from="image" to="$(arg image_topic)"/>
+			<remap from="tracked_object" to="tld_tracked_object"/>
+			<remap from="fps_tracker" to="tld_fps"/>
+		</node>
+
+                <node  name="open_tld_translator" pkg= "droneOpenTLDTranslatorROS" type = "droneOpenTLDTranslatorROSNode" output="screen">
+
+                </node>
+	<!-- </group> -->
+	</group>
+</launch>

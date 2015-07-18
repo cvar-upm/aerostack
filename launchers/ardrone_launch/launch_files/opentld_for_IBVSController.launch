@@ -17,7 +17,7 @@
 	Repository: https://github.com/Ronan0912/ros_opentld -->
 	<arg name="drone_id_namespace"  default="drone0" />
 	<arg name="drone_id_int" 	default="0" />
-	<arg name="my_stack_directory" 	default="$(env IBVS_STACK)" />
+	<arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
 	<group ns="$(arg drone_id_namespace)/OpenTLD">
 	<!-- <group ns="ardrone/OpenTLD"> -->
 		<!-- declare arg to be passed in -->

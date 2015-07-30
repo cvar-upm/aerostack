@@ -231,11 +231,11 @@ if [[ ${droneIBVSControllerROSModule}  && $droneIBVSControllerROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-#droneIBVSInterfaceROS
-if [[ ${droneIBVSInterfaceROS}  && $droneIBVSInterfaceROS = true ]]
+#droneTrackerEyeROSModule
+if [[ ${droneTrackerEyeROSModule}  && $droneTrackerEyeROSModule = true ]]
 	then
-		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSInterfaceROS
-		REPO_URL=https://bitbucket.org/hridaybavle/droneibvsinterfaceros.git
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule
+		REPO_URL=https://bitbucket.org/hridaybavle/dronetrackereyerosmodule.git
 		REPO_BRANCH=master
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"

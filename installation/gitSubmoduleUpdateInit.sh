@@ -210,10 +210,10 @@ if [[ ${droneIBVSControllerROSModule}  && $droneIBVSControllerROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-#droneIBVSInterfaceROS
-if [[ ${droneIBVSInterfaceROS}  && $droneIBVSInterfaceROS = true ]]
+#droneTrackerEyeROSModule
+if [[ ${droneTrackerEyeROSModule}  && $droneTrackerEyeROSModule = true ]]
 	then
-		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSInterfaceROS
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule
 		# git submodule deinit $MODULE_PATH > /dev/null
 		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"

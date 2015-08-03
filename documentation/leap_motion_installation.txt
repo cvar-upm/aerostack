@@ -1,0 +1,22 @@
+# Package
+http://wiki.ros.org/leap_motion
+#repo:
+https://github.com/ros-drivers/leap_motion
+
+# Documentation
+https://www.leapmotion.com/product/desktop
+https://developer.leapmotion.com/documentation/cpp/index.html
+https://developer.leapmotion.com/documentation/cpp/devguide/Leap_Overview.html
+
+
+# Download Driver and SDK
+
+# Copy SDK on
+~/workspace/LeapSDK
+
+
+
+# ADD to ~/.bashrc
+# LEAP MOTION SDK
+export LEAP_SDK=true
+export PYTHONPATH=$PYTHONPATH:$HOME/workspace/LeapSDK/lib:$HOME/workspace/LeapSDK/lib/x64

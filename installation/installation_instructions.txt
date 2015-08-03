@@ -60,7 +60,8 @@ cd src/quadrotor_stack
 ./installation/installers/installStack.sh
 
 
-#close terminal and reopen it
+#close terminal and reopen it, or alternatively execute
+source ~/.bashrc
 
 
 

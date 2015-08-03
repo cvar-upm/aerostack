@@ -1,0 +1,17 @@
+<!-- Launches: Simulator RVIZ visualization -->
+
+<launch>
+        
+ 
+        <!-- rviz -->
+	<node pkg="rviz" type="rviz" name="rviz" 
+    		args="-d $(find droneEkfSimulatorRvizROSModule)/launch/EKF_Simulator_rviz.rviz"/>
+
+       	<node name="EKF_Simulator" pkg="droneEkfSimulatorRvizROSModule" type="EKFSimulatorRvizROSModuleNode" respawn="false" required="true" output="screen">
+           
+	
+<!-- <remap from="/drone0/EstimatedPose_droneGMR_wrt_GFF" to="/drone5/ArucoSlam_EstimatedPose"/> -->
+      
+  	</node>
+
+</launch>

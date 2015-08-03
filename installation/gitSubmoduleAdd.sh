@@ -75,12 +75,32 @@ if [[ ${driverOktoROSModule}  && $driverOktoROSModule = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#mikrokopter_driver
+if [[ ${mikrokopter_driver}  && $mikrokopter_driver = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver
+		REPO_URL=https://bitbucket.org/hridaybavle/mikrokopter_driver.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#mikrokopter_driver_ros_module
+if [[ ${mikrokopter_driver_ros_module}  && $mikrokopter_driver_ros_module = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module
+		REPO_URL=https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #ardrone_autonomy
 if [[ ${ardrone_autonomy}  && $ardrone_autonomy = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
 		REPO_URL=https://github.com/AutonomyLab/ardrone_autonomy.git
-		REPO_BRANCH=catkin
+		REPO_BRANCH=indigo-devel
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
@@ -138,6 +158,29 @@ if [[ ${driver_px4flow_interface_ROSModule}  && $driver_px4flow_interface_ROSMod
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#driver_px4flow_interface_ROSModule_okto
+if [[ ${driver_px4flow_interface_ROSModule_okto}  && $driver_px4flow_interface_ROSModule_okto = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
+		REPO_URL=https:https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#rosserial driver
+if [[ ${rosserial}  && $rosserial = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/utils/rosserial
+		REPO_URL=https://github.com/ros-drivers/rosserial.git
+		REPO_BRANCH=indigo-devel
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
+
+
 #droneObstacleProcessorVisualMarks
 if [[ ${droneObstacleProcessorVisualMarks}  && $droneObstacleProcessorVisualMarks = true ]]
 	then
@@ -167,6 +210,37 @@ if [[ ${robotLocalizationROSModule}  && $robotLocalizationROSModule = true ]]
 		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
+
+#droneIBVSController
+if [[ ${droneIBVSController}  && $droneIBVSController = true ]]
+	then
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSController
+		REPO_URL=https://bitbucket.org/hridaybavle/droneibvscontroller.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneIBVSControllerROSModule
+if [[ ${droneIBVSControllerROSModule}  && $droneIBVSControllerROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneIBVSControllerROSModule
+		REPO_URL=https://bitbucket.org/hridaybavle/droneibvscontrollerrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneTrackerEyeROSModule
+if [[ ${droneTrackerEyeROSModule}  && $droneTrackerEyeROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule
+		REPO_URL=https://bitbucket.org/hridaybavle/dronetrackereyerosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 
 #dronePBVSPositionMidLevelController
 if [[ ${dronePBVSPositionMidLevelController}  && $dronePBVSPositionMidLevelController = true ]]
@@ -308,6 +382,27 @@ if [[ ${droneMissionPlannerROSModule}  && $droneMissionPlannerROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneOpenTLDTranslatorROS
+if [[ ${droneOpenTLDTranslatorROS}  && $droneOpenTLDTranslatorROS = true ]]
+	then
+		MODULE_PATH=stack/dronePerception/openTLD/droneOpenTLDTranslatorROS
+		REPO_URL=https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#ros_opentld
+if [[ ${ros_opentld}  && $ros_opentld = true ]]
+	then
+		MODULE_PATH=stack/dronePerception/openTLD/ros_opentld
+		REPO_URL=https://github.com/Ronan0912/ros_opentld.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
 #arucoEye
 if [[ ${arucoEye}  && $arucoEye = true ]]
 	then
@@ -331,6 +426,7 @@ fi
 #droneArucoEyeROSModule
 if [[ ${droneArucoEyeROSModule}  && $droneArucoEyeROSModule = true ]]
 	then
+		MODULE_PATH=stack/dronePerception/droneArucoEye/droneArucoEyeROSModule
 		REPO_URL=https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 		REPO_BRANCH=master
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
@@ -748,4 +844,10 @@ if [[ ${mavros}  && $mavros = true ]]
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
+
+
+
+
+
+
 

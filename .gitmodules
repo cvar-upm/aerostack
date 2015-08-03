@@ -14,10 +14,6 @@
 	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
 	url = https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git
 	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
-	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
-	url = https://github.com/AutonomyLab/ardrone_autonomy.git
-	branch = catkin
 [submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule"]
 	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
 	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
@@ -276,4 +272,44 @@
 [submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
 	path = stack/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
+	branch = master
+[submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
+	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
+	url = https://github.com/AutonomyLab/ardrone_autonomy.git
+	branch = indigo-devel
+[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver"]
+	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver
+	branch = master
+[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module"]
+	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
+	branch = master
+[submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto"]
+	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
+	url = https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
+	branch = master
+[submodule "stack/droneDrivers/driversSensors/utils/rosserial"]
+	path = stack/droneDrivers/driversSensors/utils/rosserial
+	url = https://github.com/ros-drivers/rosserial.git
+	branch = indigo-devel
+[submodule "stack/droneHighLevelControl/droneIBVSControl/droneIBVSController"]
+	path = stack/droneHighLevelControl/droneIBVSControl/droneIBVSController
+	url = https://bitbucket.org/hridaybavle/droneibvscontroller.git
+	branch = master
+[submodule "stack/droneHighLevelControl/droneIBVSControl/droneIBVSControllerROSModule"]
+	path = stack/droneHighLevelControl/droneIBVSControl/droneIBVSControllerROSModule
+	url = https://bitbucket.org/hridaybavle/droneibvscontrollerrosmodule.git
+	branch = master
+[submodule "stack/dronePerception/openTLD/droneOpenTLDTranslatorROS"]
+	path = stack/dronePerception/openTLD/droneOpenTLDTranslatorROS
+	url = https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
+	branch = master
+[submodule "stack/dronePerception/openTLD/ros_opentld"]
+	path = stack/dronePerception/openTLD/ros_opentld
+	url = https://github.com/Ronan0912/ros_opentld.git
+	branch = master
+[submodule "stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule"]
+	path = stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule
+	url = https://bitbucket.org/hridaybavle/dronetrackereyerosmodule.git
 	branch = master

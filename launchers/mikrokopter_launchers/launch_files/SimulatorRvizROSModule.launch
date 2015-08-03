@@ -1,0 +1,14 @@
+<!-- Launches: Simulator RVIZ visualization -->
+
+<launch>
+	<!-- rviz -->
+	<node pkg="rviz" type="rviz" name="rviz" 
+    		args="-d $(find droneSimulatorRvizROSModule)/launch/Simulator_rviz_okto.rviz"/>
+
+  	<node name="Simulator" pkg="droneSimulatorRvizROSModule" type="SimulatorRvizROSModuleNode" respawn="false" required="true" output="screen">
+  	</node>
+
+</launch>
+
+
+

@@ -1,12 +1,12 @@
-<midlevel_autopilot_config>
++<midlevel_autopilot_config>
     <description>Configuration file for the droneMidLevelAutopilotROSModule package, stack:cvg_quadrotor_swarm, by Vision4UAV.</description>
  
     <midlevel_autopilot> 
 	<ON_GROUND_ALTITUDE> 0.32 </ON_GROUND_ALTITUDE>				<!-- m -->
 
 	<TAKE_OFF> 
-	  <TAKEOFF_SPEED>                 1.0  </TAKEOFF_SPEED>			<!-- m/s -->
-	  <TAKEOFF_FINAL_ALTITUDE>        1.1  </TAKEOFF_FINAL_ALTITUDE>	<!-- m   -->
+	  <TAKEOFF_SPEED>                 0.4  </TAKEOFF_SPEED>			<!-- m/s -->
+	  <TAKEOFF_FINAL_ALTITUDE>        1.0  </TAKEOFF_FINAL_ALTITUDE>	<!-- m   -->
 	  <TAKINGOFF_ALT_SPEED_COS_GAMMA> 2.15 </TAKINGOFF_ALT_SPEED_COS_GAMMA>	<!-- ??? -->
 	  <MAX_TAKINGOFF_TIME_S>          5.0  </MAX_TAKINGOFF_TIME_S>		<!-- s   -->
 	</TAKE_OFF>
@@ -54,17 +54,17 @@
 	//               experimental feedforward constant = 2650 counts
 	-->
 	
-	<FEEDFORWARD_M>    2.10     </FEEDFORWARD_M>     <!-- kg  -->
+	<FEEDFORWARD_M>    1.80      </FEEDFORWARD_M>     <!-- kg  -->
 	<THRUSTER_GAIN>    0.3065625 </THRUSTER_GAIN>   <!-- 1p1/kg, pelican: 1/(32/9.81)-->
-	<GAIN_P>           0.1       </GAIN_P> <!-- Pelican: 0.1             , 1p1/(m/s)-->
-	<GAIN_I>           0.08      </GAIN_I> <!-- Pelican: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
+	<GAIN_P>           0.10      </GAIN_P> <!-- Pelican: 0.1             , 1p1/(m/s)-->
+	<GAIN_I>           0.09      </GAIN_I> <!-- Pelican: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
 	<GAIN_D>           0.00      </GAIN_D> <!-- Pelican: (GAIN_P * 0.00) , 1p1 * s / (m/s)-->
 
 	<ALT_SPEED_MEASURE_SATURATION_FACTOR> 3.0 </ALT_SPEED_MEASURE_SATURATION_FACTOR>
 
-	<COMMAND_UPPER_LIMIT>  0.33  </COMMAND_UPPER_LIMIT> <!-- Pelican: (           450.0 / 4095.0 ) -->
-	<COMMAND_LOWER_LIMIT> -0.11  </COMMAND_LOWER_LIMIT> <!-- Pelican: ( (-1.0) *  150.0 / 4095.0 ) -->
-	<SUBSAMPLING_DIVIDER>  6     </SUBSAMPLING_DIVIDER> <!-- Pelican: 6                            -->
+	<COMMAND_UPPER_LIMIT>  0.10   </COMMAND_UPPER_LIMIT> <!-- Pelican: (           450.0 / 4095.0 ) -->
+	<COMMAND_LOWER_LIMIT> -0.20  </COMMAND_LOWER_LIMIT> <!-- Pelican: ( (-1.0) *  150.0 / 4095.0 ) -->
+	<SUBSAMPLING_DIVIDER>  6      </SUBSAMPLING_DIVIDER> <!-- Pelican: 6                            -->
     </altitude_speed_controller>
  
     <hover_controller> 

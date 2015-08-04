@@ -2,6 +2,8 @@
 <launch>
 	
 	<arg name="drone_id_namespace" default="drone0" />
+  <arg name="owner_mac" default="" />
+
 	<group ns="$(arg drone_id_namespace)">
 		<!-- Ardrone driver node -->
 		<node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver" output="screen" clear_params="true">
@@ -107,7 +109,7 @@
 			
 			<!-- MAC lock command -->
                         <!-- hriday-Lenovo-G50-70  C0:38:96:8D:BB:1D -->
-			<param name="owner_mac" value="24:FD:52:4D:0E:9C" />
+			<param name="owner_mac" value="$(arg owner_mac)" />
 			
 			
 			<!-- Ultrasound frequency to avoid interaction between 2 ARdrone -->

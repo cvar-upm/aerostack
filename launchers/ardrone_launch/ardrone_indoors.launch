@@ -107,7 +107,7 @@
 			
 			<!-- MAC lock command -->
                         <!-- hriday-Lenovo-G50-70  C0:38:96:8D:BB:1D -->
-			<param name="owner_mac" value="C0:38:96:8D:BB:1D" />
+			<param name="owner_mac" value="24:FD:52:4D:0E:9C" />
 			
 			
 			<!-- Ultrasound frequency to avoid interaction between 2 ARdrone -->

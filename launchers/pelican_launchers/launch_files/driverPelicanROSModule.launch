@@ -1,0 +1,24 @@
+<!-- Launches: driverPelicanROSModule -->
+<launch>
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
+	<group ns="$(arg drone_id_namespace)">
+		<!-- Battery Pelican -->
+		<node name="droneBattery" pkg="driverPelicanROSModule" type="batteryPelicanROSModule" output="screen">
+			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+		</node>
+		<!-- rotationAngles Pelican -->
+		<node name="droneRotationAngles" pkg="driverPelicanROSModule" type="rotationAnglesPelicanROSModule" output="screen">
+			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+		</node>
+		
+		<!-- droneCommand Pelican -->
+		<node name="droneCommand" pkg="driverPelicanROSModule" type="droneCommandPelicanROSModule" output="screen">
+			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+		</node>
+	</group>
+</launch>

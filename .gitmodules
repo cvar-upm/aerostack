@@ -313,11 +313,3 @@
 	path = stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule
 	url = https://bitbucket.org/hridaybavle/dronetrackereyerosmodule.git
 	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion"]
-	path = stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion
-	url = https://github.com/ros-drivers/leap_motion
-	branch = master
-[submodule "stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule"]
-	path = stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
-	url = https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
-	branch = master

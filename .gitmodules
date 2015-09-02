@@ -301,10 +301,6 @@
 	path = stack/droneHighLevelControl/droneIBVSControl/droneIBVSControllerROSModule
 	url = https://bitbucket.org/hridaybavle/droneibvscontrollerrosmodule.git
 	branch = master
-[submodule "stack/droneHighLevelControl/droneIBVSControl/droneIBVSInterfaceROS"]
-	path = stack/droneHighLevelControl/droneIBVSControl/droneIBVSInterfaceROS
-	url = https://bitbucket.org/hridaybavle/droneibvsinterfaceros.git
-	branch = master
 [submodule "stack/dronePerception/openTLD/droneOpenTLDTranslatorROS"]
 	path = stack/dronePerception/openTLD/droneOpenTLDTranslatorROS
 	url = https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
@@ -332,4 +328,7 @@
 [submodule "stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule"]
 	path = stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
 	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
+[submodule "stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule"]
+	path = stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule
+	url = https://bitbucket.org/hridaybavle/dronetrackereyerosmodule.git
 	branch = master

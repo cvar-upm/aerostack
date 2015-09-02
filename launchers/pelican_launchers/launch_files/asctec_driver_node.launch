@@ -1,0 +1,71 @@
+<!-- Launches: /pelican_manager /AutoPilotNodelet /AsctecProcNodelet -->
+<launch>
+
+  <arg name="drone_id_namespace"  default="drone0" />
+  <arg name="drone_id_int" 	default="0" />
+  <arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
+  <group ns="$(arg drone_id_namespace)">
+    #### Asctec Autopilot ###################################
+    <node pkg="asctec_autopilot" type="autopilot_node" name="autopilot_node" output="screen">
+
+      <param name="port" type="string" value="/dev/ttyS3"/>
+      <param name="speed" type="int" value="57600"/>
+      <param name="freq" type="double" value="20.0"/>
+
+      #### Feedback channels ################################
+      <param name="enable_IMU_CALCDATA" type="bool" value="true"/>
+      <param name="interval_IMU_CALCDATA" type="int" value="1"/>
+      <param name="offset_IMU_CALCDATA" type="int" value="0"/>
+
+      <param name="enable_LL_STATUS" type="bool" value="true"/>
+      <param name="interval_LL_STATUS" type="int" value="2"/>
+      <param name="offset_LL_STATUS" type="int" value="0"/>
+
+      <param name="enable_GPS_DATA" type="bool" value="false"/>
+      <param name="interval_GPS_DATA" type="int" value="1"/>
+      <param name="offset_GPS_DATA" type="int" value="0"/>
+
+      <param name="enable_RC_DATA" type="bool" value="true"/>
+      <param name="interval_RC_DATA" type="int" value="1"/>
+      <param name="offset_RC_DATA" type="int" value="0"/>
+
+      #### Asctec Control - enable CTRL_INPUT ###############
+      <param name="enable_CONTROL" type="bool" value="true"/>
+    </node>
+
+    <!-- 
+    #### Asctec Proc ########################################
+    # We are not using the asctec_proc nodelet, because our commands go directly through:
+    #     "asctec/CTRL_INPUT", 
+    #   instead of through: 
+    #     "mav/cmd_thrust"
+    #     "mav/cmd_roll"
+    #     "mav/cmd_pitch"
+    #     "mav/cmd_yaw"
+    # Thus, part of the asctec_proc code is copied to our driverPelicanROSModule.
+    <node pkg="nodelet" type="nodelet" name="AsctecProcNodelet" 
+      args="load asctec_proc/AsctecProcNodelet pelican_manager" output="screen">
+      # enable rosservice "mav/setMotorsOnOff"
+      <param name="enable_state_changes" type="bool" value="false"/> # default value: false
+								     # motors-on/off also commanded by: {yaw:2047, thrust:0}
+								     # Tests seem to indicate that the start/stop Pelican 
+								     #   motors conditions are:
+								     #     yaw    >= 1753
+								     #     thrust <=  199
+
+      # enables thrust, yaw, pitch and roll channels
+      <param name="enable_ctrl_thrust"   type="bool" value="true"/>  # default value: false
+      <param name="enable_ctrl_yaw"      type="bool" value="true"/>  # default value: false
+      <param name="enable_ctrl_pitch"    type="bool" value="true"/>  # default value: false
+      <param name="enable_ctrl_roll"     type="bool" value="true"/>  # default value: false
+
+      # maximum command values
+      <param name="max_ctrl_thrust" value="2800"/>  # default value: 2200, range: [    0, +4095]
+      <param name="max_ctrl_roll"   value="1000"/>  # default value: 300 , range: [-2047, +2047]
+      <param name="max_ctrl_pitch"  value="1000"/>  # default value: 300 , range: [-2047, +2047]
+      <param name="max_ctrl_yaw"    value="1000"/>  # default value: 600 , range: [-2047, +2047]
+    </node>
+    -->    
+  </group>
+
+</launch>

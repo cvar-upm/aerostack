@@ -563,6 +563,16 @@ if [[ ${droneSimulatorROSModule}  && $droneSimulatorROSModule = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneMissionPlannerEmulatorROSModule
+if [[ ${droneMissionPlannerEmulatorROSModule}  && $droneMissionPlannerEmulatorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
+		REPO_URL=https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #droneVisualMarkersEyeSimulator
 if [[ ${droneVisualMarkersEyeSimulator}  && $droneVisualMarkersEyeSimulator = true ]]
 	then
@@ -658,6 +668,46 @@ if [[ ${droneIARC14BrainROSModule}  && $droneIARC14BrainROSModule = true ]]
 	then
 		MODULE_PATH=stack/droneSupervising/droneIARC14BrainROSModule
 		REPO_URL=https://bitbucket.org/jespestana/droneiarc14brainrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneManagerOfActions
+if [[ ${droneManagerOfActions}  && $droneManagerOfActions = true ]]
+	then
+		MODULE_PATH=stack/droneActionsManaging/droneManagerOfActions
+		REPO_URL=https://bitbucket.org/csampedro/dronemanagerofactions.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneManagerOfActionsROSModule
+if [[ ${droneManagerOfActionsROSModule}  && $droneManagerOfActionsROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneActionsManaging/droneManagerOfActionsROSModule
+		REPO_URL=https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneSupervisorROSModule
+if [[ ${droneSupervisorROSModule}  && $droneSupervisorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule
+		REPO_URL=https://bitbucket.org/csampedro/dronesupervisorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneSupervisorROSModule_v2
+if [[ ${droneSupervisorROSModule_v2}  && $droneSupervisorROSModule_v2 = true ]]
+	then
+		MODULE_PATH=stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2
+		REPO_URL=https://bitbucket.org/csampedro/dronesupervisorrosmodule_v2.git
 		REPO_BRANCH=master
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"

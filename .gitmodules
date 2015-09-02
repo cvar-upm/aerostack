@@ -313,3 +313,23 @@
 	path = stack/dronePerception/openTLD/ros_opentld
 	url = https://github.com/Ronan0912/ros_opentld.git
 	branch = master
+[submodule "stack/droneActionsManaging/droneManagerOfActions"]
+	path = stack/droneActionsManaging/droneManagerOfActions
+	url = https://bitbucket.org/csampedro/dronemanagerofactions
+	branch = master
+[submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule"]
+	path = stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule
+	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule
+	branch = master
+[submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2"]
+	path = stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2
+	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule_v2
+	branch = master
+[submodule "stack/droneActionsManaging/droneManagerOfActionsROSModule"]
+	path = stack/droneActionsManaging/droneManagerOfActionsROSModule
+	url = https://bitbucket.org/csampedro/dronemanagerofactions
+	branch = master
+[submodule "stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule"]
+	path = stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
+	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
+	branch = master

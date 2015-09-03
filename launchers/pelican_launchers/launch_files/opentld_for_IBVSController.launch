@@ -26,7 +26,7 @@
 		<arg name="model_import_file" default="/home/tld_models/sample"/>
 		<arg name="model_export_file" default="/home/tld_models/sample"/>
 		<arg name="cascade_path" default="$(env ROS_ROOT)/../OpenCV/haarcascades/haarcascade_frontalface_alt.xml"/>
-		<arg name="image_topic" default="/$(arg drone_id_namespace)/camera/front/image_rect_color"/>
+		<arg name="image_topic" default="/$(arg drone_id_namespace)/camera/front/image"/>
 
 	<!-- Nodes -->
 		<node name="ros_tld_tracker_node" pkg="tld_tracker" type="tld_tracker_node" output="screen">

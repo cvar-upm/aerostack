@@ -333,3 +333,6 @@
 	path = stack/droneActionsManaging/droneManagerOfActionsROSModule
 	url = https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule
 	branch = master
+[submodule "stack/supervision_system"]
+	path = stack/supervision_system
+	url = https://bitbucket.org/Ortinson/supervision_system

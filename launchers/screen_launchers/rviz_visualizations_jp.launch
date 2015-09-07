@@ -14,12 +14,13 @@
 
 	  	<node name="rviz_translator_from_ekf" pkg="droneEkfSimulatorRvizROSModule" type="EKFSimulatorRvizROSModuleNode" respawn="false" required="true" output="screen">
 	  	</node>
-
+<!--
 		<node name="rviz_translator_from_robotSim" pkg="robotSimulatorRvizROSModule" type="robotSimulatorRvizROSModuleNode" respawn="false" required="true" output="screen">
 	  	</node>
 
 		<node name="rviz_translator_from_robotPf" pkg="robotSimulatorRvizROSModule" type="robotPFRvizROSModuleNode" respawn="false" required="true" output="screen">
 	  	</node>
+-->
 	</group>
 </launch>
 

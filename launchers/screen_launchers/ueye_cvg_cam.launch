@@ -1,6 +1,6 @@
 <!-- launches: ueye_cvg node -->
 <launch>
-	<arg name="camera_id_num"	default="1"/>
+	<arg name="camera_id_num"	default="4"/>
 	<arg name="config_file"		default="small_camera_RGB24.ini"/>
 	<arg name="camera_name_str"	default="front" />
 
@@ -10,7 +10,7 @@
 	<group ns="drone$(arg drone_id_int)">
 		<node name="cvg_ueye_cam$(arg camera_id_num)_$(arg camera_name_str)" pkg="driver_camera_ueye_ROSModule" type="driver_camera_ueye_ROSNode" output="screen">
 			<param name="camera_ident_number" value="$(arg camera_id_num)" type="int"/>
-			<param name="configuration_file"  value="$(arg my_stack_directory)/configs/drone$(arg drone_id_int)/$(arg config_file)" type="string"/>
+			<param name="configuration_file"  value="/home/ramon/Desktop/UI122xLE-C_conf.ini" type="string"/>
 			<param name="camera_name"	  value="$(arg camera_name_str)" type="string"/>
 			<param name="topic_name"	  value="camera/$(arg camera_name_str)" type="string"/>
 			<param name="droneId" value="$(arg drone_id_int)" type="int"/>

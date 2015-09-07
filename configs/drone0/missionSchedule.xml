@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+
+<mission description="Noche De Los Investigadores">
+
+	<config>
+		<precission>
+			<x>0.4</x>
+			<y>0.4</y>
+			<z>0.4</z>
+			<yaw>20.0</yaw> <!--deg-->
+		</precission>
+	</config>
+
+
+	<submission description="01 - Take-off">
+		<config>
+			<id>01</id>
+		</config>
+		<task description=".1 - Take-off">
+			<config>
+				<id>01</id>
+			</config>
+			<command>takeOff</command>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+			</modules>
+		</task>
+	</submission>
+
+	<submission description="02 - Navigation and Obstacle Avoidance">
+		<config>
+			<id>02</id>
+			<loop>0</loop>
+			
+		</config>
+
+		<task description=".4 - Hover 5 secs">
+			<config>
+				<id>01</id>
+				<time>10</time>
+			</config>
+			<command>hover</command>
+		</task>
+		<task description=".1 - Move to point 1">
+			<config>
+				<id>02</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<e>droneTrajectoryPlanner</e>
+				<f>droneYawPlanner</f>
+			</modules>
+			<point>
+				<x>3.0</x>
+				<y>4.0</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+		
+		
+		<task description=".2 - Hover 5 secs">
+			<config>
+				<id>03</id>
+				<time>5</time>
+			</config>
+			<command>hover</command>
+		</task>
+
+		<task description=".3 - Move to point 2">
+			<config>
+				<id>04</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<point>
+				<x>6.0</x>
+				<y>7.0</y>
+				<z>1.5</z>
+			</point>
+			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<e>droneTrajectoryPlanner</e>
+				<f>droneYawPlanner</f>
+			</modules>
+			<pointToLook>
+				<x>1.2</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+
+		<task description=".4 - Hover 5 secs">
+			<config>
+				<id>05</id>
+				<time>5</time>
+			</config>
+			<command>hover</command>
+		</task>
+		
+		<task description=".5 - Move to point 3">
+			<config>
+				<id>06</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<point>
+				<x>3.0</x>
+				<y>10.0</y>
+				<z>1.5</z>
+			</point>
+			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<e>droneTrajectoryPlanner</e>
+				<f>droneYawPlanner</f>
+			</modules>
+			<pointToLook>
+				<x>1.2</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".6 - Hover 5 secs">
+			<config>
+				<id>07</id>
+				<time>5</time>
+			</config>
+			<command>hover</command>
+		</task>
+		
+		<task description=".7 - Move to point 4">
+			<config>
+				<id>08</id>
+			</config>
+			<command>movePosition</command>
+			<point>
+				<x>6.0</x>
+				<y>13.0</y>
+				<z>1.5</z>
+			</point>
+			<modules>
+				<b>droneOdometryStateEstimator</b>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<e>droneTrajectoryPlanner</e>
+				<f>droneYawPlanner</f>
+			</modules>
+			<pointToLook>
+				<x>1.2</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+
+	</submission>
+
+	
+	<submission description="03 - Hover">
+		<config>
+			<id>03</id>
+		</config>
+		<task description=".1 - Hover 5 secs">
+			<config>
+				<id>01</id>
+				<time>0.5</time>
+			</config>
+			<command>hover</command>
+		</task>
+
+	</submission>
+
+	<submission description="04 - Image Based Visual Servoing">
+		<config>
+			<id>04</id>
+		</config>
+		<task description=".1 - Start IBVS Control">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveVSObsAvoid</command>
+			<point>
+				<x>10.0</x>
+				<y>10.0</y>
+				<z>1.5</z>
+			</point>
+		</task>
+
+	</submission>
+
+	<submission description="05 - Land">
+		<config>
+			<id>05</id>
+		</config>
+		<task description=".1 - Land">
+			<config>
+				<id>01</id>
+			</config>
+			<command>land</command>
+		</task>	
+	</submission>
+	
+	
+</mission>

@@ -336,4 +336,14 @@
 [submodule "stack/utils/audio_common"]
 	path = stack/utils/audio_common
 	url = https://github.com/ros-drivers/audio_common
+[submodule "stack/supervision_system"]
+	path = stack/supervision_system
+	url = https://bitbucket.org/Ortinson/supervision_system
+[submodule "stack/droneMissionPlanning/droneMissionScheduleProcessor"]
+	path = stack/droneMissionPlanning/droneMissionScheduleProcessor
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
+	branch = master
+[submodule "stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule"]
+	path = stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
 	branch = master

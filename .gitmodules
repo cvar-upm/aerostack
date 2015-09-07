@@ -347,3 +347,15 @@
 	path = stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
 	branch = master
+[submodule "stack/HMI/droneSpeechROSModule"]
+	path = stack/HMI/droneSpeechROSModule
+	url = https://bitbucket.org/joselusl/dronespeechrosmodule.git
+	branch = master
+[submodule "stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion"]
+	path = stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion
+	url = https://github.com/ros-drivers/leap_motion
+	branch = master
+[submodule "stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule"]
+	path = stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
+	url = https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
+	branch = master

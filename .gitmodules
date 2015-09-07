@@ -333,3 +333,7 @@
 	path = stack/droneActionsManaging/droneManagerOfActionsROSModule
 	url = https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule
 	branch = master
+[submodule "stack/utils/audio_common"]
+	path = stack/utils/audio_common
+	url = https://github.com/ros-drivers/audio_common
+	branch = master

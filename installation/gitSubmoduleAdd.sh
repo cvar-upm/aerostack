@@ -896,8 +896,57 @@ if [[ ${mavros}  && $mavros = true ]]
 fi
 
 
+#droneCommunicationManagerROSModule
+if [[ ${droneCommunicationManagerROSModule}  && $droneCommunicationManagerROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneCommunication/droneCommunicationManagerROSModule
+		REPO_URL=https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
 
 
+#droneLeapMotionDroneControlUserInterfaceROSModule
+if [[ ${droneLeapMotionDroneControlUserInterfaceROSModule}  && $droneLeapMotionDroneControlUserInterfaceROSModule = true ]]
+	then
+		MODULE_PATH=stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
+		REPO_URL=https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
 
 
+#leap_motion
+if [[ ${leap_motion}  && $leap_motion = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion
+		REPO_URL=https://github.com/ros-drivers/leap_motion
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
+#droneSpeechROSModule
+if [[ ${droneSpeechROSModule}  && $droneSpeechROSModule = true ]]
+	then
+		MODULE_PATH=stack/HMI/droneSpeechROSModule
+		REPO_URL=https://bitbucket.org/joselusl/dronespeechrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+
+#audio_common
+if [[ ${audio_common}  && $audio_common = true ]]
+	then
+		MODULE_PATH=stack/utils/audio_common
+		REPO_URL=https://github.com/ros-drivers/audio_common
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
 

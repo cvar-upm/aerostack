@@ -950,3 +950,13 @@ if [[ ${audio_common}  && $audio_common = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#ueye_cam
+if [[ ${ueye_cam}  && $ueye_cam = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
+		REPO_URL=https://github.com/anqixu/ueye_cam
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+

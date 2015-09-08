@@ -365,3 +365,7 @@
 	path = stack/droneCommunication/droneCommunicationManagerROSModule
 	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
 	branch = master
+[submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam"]
+	path = stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
+	url = https://github.com/anqixu/ueye_cam
+	branch = master

@@ -857,3 +857,12 @@ if [[ ${audio_common}  && $audio_common = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#ueye_cam
+if [[ ${ueye_cam}  && $ueye_cam = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-
-<simulator_grid>
-	<minDistanceDetection units="m"> 0.5 </minDistanceDetection>
-	<maxDistanceDetection units="m"> 3.0 </maxDistanceDetection>
-	<sensor_horizontal_view_direction units="deg"> 270.0 </sensor_horizontal_view_direction>
-	<sensor_horizontal_field_of_view units="deg">   92.0 </sensor_horizontal_field_of_view>
-</simulator_grid>
-

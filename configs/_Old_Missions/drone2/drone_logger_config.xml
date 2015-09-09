@@ -1,6 +1,0 @@
-<drone_logger_config>
-    <description>Configuration of the droneLogger in the Aerial Swarm architecture, by the CVG (CAR, CSIC-UPM).</description>
-    <module_frequency> 30.0 </module_frequency>                                       <!-- Hz   -->
-    <use_of_rosservice_is_allowed>0</use_of_rosservice_is_allowed>                    <!-- bool -->
-    <drone_logger_ros_publisher_queue_size>10</drone_logger_ros_publisher_queue_size> <!-- int  -->
-</drone_logger_config>

@@ -25,6 +25,11 @@ echo ""
 echo "Adding submodules"
 
 
+#configs
+MODULE_PATH=configs
+./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+echo " -Added package in: $MODULE_PATH"
+
 #mav_tools
 if [[ ${mav_tools}  && $mav_tools = true ]]
 	then

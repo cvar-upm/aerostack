@@ -25,6 +25,13 @@ echo ""
 echo "Adding submodules"
 
 
+#configs
+MODULE_PATH=configs
+REPO_URL=https://bitbucket.org/joselusl/quadrotor_stack_configs
+REPO_BRANCH=master
+./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+echo " -Added package in: $MODULE_PATH"
+
 #mav_tools
 if [[ ${mav_tools}  && $mav_tools = true ]]
 	then

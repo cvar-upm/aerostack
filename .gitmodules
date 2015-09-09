@@ -369,3 +369,7 @@
 	path = stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
 	url = https://github.com/anqixu/ueye_cam
 	branch = master
+[submodule "configs"]
+	path = configs
+	url = https://bitbucket.org/joselusl/quadrotor_stack_configs
+	branch = master

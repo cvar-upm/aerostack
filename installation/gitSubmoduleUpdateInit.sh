@@ -25,6 +25,11 @@ echo ""
 echo "Adding submodules"
 
 
+#configs
+MODULE_PATH=configs
+./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+echo " -Added package in: $MODULE_PATH"
+
 #mav_tools
 if [[ ${mav_tools}  && $mav_tools = true ]]
 	then
@@ -811,4 +816,58 @@ if [[ ${mavros}  && $mavros = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+
+#droneCommunicationManagerROSModule
+if [[ ${droneCommunicationManagerROSModule}  && $droneCommunicationManagerROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneCommunication/droneCommunicationManagerROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneLeapMotionDroneControlUserInterfaceROSModule
+if [[ ${droneLeapMotionDroneControlUserInterfaceROSModule}  && $droneLeapMotionDroneControlUserInterfaceROSModule = true ]]
+	then
+		MODULE_PATH=stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#leap_motion
+if [[ ${leap_motion}  && $leap_motion = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneSpeechROSModule
+if [[ ${droneSpeechROSModule}  && $droneSpeechROSModule = true ]]
+	then
+		MODULE_PATH=stack/HMI/droneSpeechROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#audio_common
+if [[ ${audio_common}  && $audio_common = true ]]
+	then
+		MODULE_PATH=stack/utils/audio_common
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#ueye_cam
+if [[ ${ueye_cam}  && $ueye_cam = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
 

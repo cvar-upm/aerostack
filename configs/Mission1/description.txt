@@ -1,4 +1,0 @@
-Pasar por el hueco
-
-numDrones=6;
-campo=voley

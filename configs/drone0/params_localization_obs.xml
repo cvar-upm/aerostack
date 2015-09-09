@@ -11,7 +11,6 @@
         <pitch_0>0.0</pitch_0>
         <yaw_0>90.0</yaw_0>
         
-        
         <!-- Odom sigma -->
         <sigma_odom_x>0.5</sigma_odom_x>
         <sigma_odom_y>0.5</sigma_odom_y>
@@ -19,6 +18,7 @@
         <sigma_odom_roll>10</sigma_odom_roll> <!-- Angles are given in degrees!! -->
         <sigma_odom_pitch>10</sigma_odom_pitch>
         <sigma_odom_yaw>40</sigma_odom_yaw>
+
         <!-- Obs sigma -->
         <sigma_obs_x>0.2</sigma_obs_x>
         <sigma_obs_y>0.2</sigma_obs_y>
@@ -27,11 +27,15 @@
         <sigma_obs_pitch>3</sigma_obs_pitch>
         <sigma_obs_yaw>10</sigma_obs_yaw>
         
+        <!-- Visual Markers -->
+        <VisualMarkerList description="List of visual markers that are going to be added to the visual markers SLAM">
+          <VisualMarker id="1" />
+          <VisualMarker id="2" />
+          <VisualMarkersRange fromId="3" toId="100"/>
+        </VisualMarkerList>
         
-        <!-- Known Arucos -->
-        <!-- <num_known_Arucos>16</num_known_Arucos> -->
-        
-        <Arucos>
+        <!-- Visual Markers Landmarks -->
+        <Arucos description="List of visual markers considered as landmarks (previously known pose)">
         <!-- Angles are given in degrees!! -->
 
         		

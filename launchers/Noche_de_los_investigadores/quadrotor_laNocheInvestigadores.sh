@@ -80,7 +80,7 @@ roslaunch droneTrajectoryPlannerROSModule droneTrajectoryPlanner2dROSModule.laun
 						exec bash\""  \
 	--tab --title "Yaw Commander" --command "bash -c \"
 roslaunch droneYawCommanderROSModule droneYawCommanderROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-						exec bash\"" 
+						exec bash\""  \
 	--tab --title "openTLD"	--command "bash -c \"
 roslaunch ${DRONE_STACK}/launchers/ardrone_launch/launch_files/opentld_for_IBVSController.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
@@ -89,6 +89,9 @@ roslaunch droneOpenTLDTranslatorROS droneOpenTLDTranslatorROSModule.launch --wai
 						exec bash\""  \
 	--tab --title "tracker Eye"	--command "bash -c \"
 roslaunch droneTrackerEyeROSModule droneTrackerEyeROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
+	--tab --title "DroneCommunicationManager" --command "bash -c \"
+roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
 	--tab --title "DroneManagerofActions" --command "bash -c \"
 roslaunch droneManagerOfActionsROSModule droneManagerOfActionsROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};

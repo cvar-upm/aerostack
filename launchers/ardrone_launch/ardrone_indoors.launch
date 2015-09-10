@@ -148,7 +148,8 @@
 		</node>
 
                 <!-- Ardrone front camera image rectification -->
-		<node ns="/$(arg drone_id_namespace)/ardrone/front" pkg="image_proc" type="image_proc" name="image_proc" />
+		<node ns="ardrone/front" pkg="image_proc" type="image_proc" name="image_proc" />
+
 
 		
 		<!-- Ardrone front camera image visualization 

@@ -16,8 +16,8 @@ fi
 if [ -z $NUMID_DRONE ] # Check if NUMID_DRONE is NULL
   then
   	#Argument 1 empty
-    	echo "-Setting droneId = 0"
-    	NUMID_DRONE=0
+    	echo "-Setting droneId = 1"
+    	NUMID_DRONE=1
   else
     	echo "-Setting droneId = $1"
 fi
@@ -58,8 +58,8 @@ roslaunch droneEKFStateEstimatorROSModule droneEKFStateEstimatorROSModule.launch
 	--tab --title "Drone Trajectory Controller"	--command "bash -c \"
 roslaunch droneTrajectoryControllerROSModule droneTrajectoryControllerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
-	--tab --title "ArucoEye" --command "bash -c \"
-roslaunch droneArucoEyeROSModule droneArucoEyeROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+	--tab --title "Eye Simulator" --command "bash -c \"
+roslaunch droneVisualMarkersEyeSimulatorROSModule droneVisualMarkersEyeSimulatorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
 	--tab --title "VisualMarkerLocalizer" --command "bash -c \"
 roslaunch droneVisualMarkersLocalizerROSModule droneVisualMarkersLocalizerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
@@ -75,10 +75,22 @@ roslaunch droneYawCommanderROSModule droneYawCommanderROSModule.launch --wait dr
 						exec bash\"" \
 	--tab --title "DroneInterface"	--command "bash -c \"
 roslaunch droneInterfaceROSModule droneInterface_jp_ROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-						exec bash\"" \
+						exec bash\""  \
+	--tab --title "DroneSupervisor" --command "bash -c \"
+roslaunch droneSupervisorROSModule_v2 droneSupervisorROSModule_v2.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
+	--tab --title "DroneCommunicationManager" --command "bash -c \"
+roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
+	--tab --title "DroneManagerofActions"	--command "bash -c \"
+roslaunch droneManagerOfActionsROSModule droneManagerOfActionsROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
+	--tab --title "openTLD"	--command "bash -c \"
+roslaunch ${DRONE_STACK}/launchers/ardrone_launch/launch_files/opentld_for_IBVSController.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
 	--tab --title "DroneMissionScheduler" --command "bash -c \"
 roslaunch droneMissionScheduleProcessorROSModule droneMissionSheduleProcessorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-						exec bash\"" &
+						exec bash\""  &
 						
 
 

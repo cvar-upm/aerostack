@@ -18,6 +18,7 @@ sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 
 #drivers
 #you might also need drivers for some devices like ueye cameras.
+#https://en.ids-imaging.com/download-ueye.html
 
 
 

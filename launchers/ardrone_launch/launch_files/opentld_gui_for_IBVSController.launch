@@ -1,0 +1,20 @@
+<!-- Launches:  -->
+<launch>
+
+	<!-- OpenTLD Nodes: tld_gui 
+	Repository: https://github.com/Ronan0912/ros_opentld -->
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
+	<arg name="image_topic" default="ardrone/front/image_rect_color"/>
+	<group ns="$(arg drone_id_namespace)">
+
+		<node name="ros_tld_gui_node" pkg="tld_tracker" type="tld_gui_node" output="screen" respawn="true">
+			<remap from="image" to="$(arg image_topic)"/>
+			<remap from="tracked_object" to="tld_tracked_object"/>
+			<remap from="fps_tracker" to="tld_fps"/>
+		</node>
+
+
+	</group>
+</launch>

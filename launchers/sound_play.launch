@@ -12,7 +12,7 @@
 			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
 			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
 
-      <remap from="robotsound" to="$(arg sound_topic_name)">
+      <remap from="robotsound" to="$(arg sound_topic_name)"/>
 		</node>
 	</group>
 

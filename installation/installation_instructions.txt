@@ -15,6 +15,21 @@ sudo apt-get install libiw-dev
 # sudo apt-get install ros-jade-audio-common
 sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 
+# voices
+# the voices are in /usr/share/festival
+# info at http://ubuntuforums.org/showthread.php?t=751169
+# To get the voice sintetizer
+sudo apt-get install festlex-cmu
+# To get voices
+sudo apt-cache search festvox
+# British English male speaker for festival, 16khz sample rate [voice_rab_diphone]
+sudo apt-get install festvox-rablpc16k
+# American English male speaker for festival, 16khz sample rate [voice_kal_diphone]
+sudo apt-get install festvox-kallpc16k
+# Castilian Spanish male speaker for Festival [voice_el_diphone]
+sudo apt-get install festvox-ellpc11k
+
+
 
 #drivers
 #you might also need drivers for some devices like ueye cameras.

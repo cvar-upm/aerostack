@@ -51,6 +51,9 @@ fi
 
 #gnome-terminal  --full-screen  \
 gnome-terminal  \
+	--tab --title "ROSCORE"	--command "bash -c \"
+roscore;
+						exec bash\""  \
 	--tab --title "Driver Parrot"	--command "bash -c \"
 roslaunch droneSimulatorROSModule droneSimulatorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
@@ -81,9 +84,6 @@ roslaunch droneYawCommanderROSModule droneYawCommanderROSModule.launch --wait dr
 	--tab --title "openTLD translator"	--command "bash -c \"
 roslaunch droneOpenTLDTranslatorROS droneOpenTLDTranslatorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
-	--tab --title "tracker Eye"	--command "bash -c \"
-roslaunch droneTrackerEyeROSModule droneTrackerEyeROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-						exec bash\""  \
 	--tab --title "DroneCommunicationManager" --command "bash -c \"
 roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
@@ -100,7 +100,7 @@ roslaunch performance_monitor performance_monitor.launch --wait drone_id_namespa
 roslaunch droneManagerOfActionsROSModule droneManagerOfActionsROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
 	--tab --title "DroneMissionScheduler" --command "bash -c \"
-roslaunch droneMissionScheduleProcessorROSModule droneMissionSheduleProcessorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_Estimated_Pose_Topic_Name:=ArucoSlam_EstimatedPose;
+roslaunch droneMissionScheduleProcessorROSModule droneMissionSheduleProcessorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_Estimated_Pose_Topic_Name:=ArucoSlam_EstimatedPose mission_config_file:=missionSchedule_short.xml;
 						exec bash\"" &
 						
 
@@ -110,6 +110,10 @@ roslaunch droneInterfaceROSModule droneInterface_jp_ROSModule.launch --wait dron
 						exec bash\""  &
 
 
+
+#	--tab --title "tracker Eye"	--command "bash -c \"
+#roslaunch droneTrackerEyeROSModule droneTrackerEyeROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+#						exec bash\""  \
 # rosrun ardrone_autonomy ardrone_driver;
 # gnome-terminal  --window --full-screen  \ # window part opens an unused tab
 

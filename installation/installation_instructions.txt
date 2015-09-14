@@ -29,6 +29,14 @@ sudo apt-get install festvox-kallpc16k
 # Castilian Spanish male speaker for Festival [voice_el_diphone]
 sudo apt-get install festvox-ellpc11k
 
+## LEVMAR
+# Lapack
+sudo apt-get install liblapack3 liblapack-dev
+# Blas
+sudo apt-get install libblas3 libblas-dev
+# F2C
+sudo apt-get install libf2c2 libf2c2-dev
+
 
 
 #drivers

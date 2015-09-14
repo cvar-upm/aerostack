@@ -87,13 +87,12 @@ roslaunch droneManagerOfActionsROSModule droneManagerOfActionsROSModule.launch -
 						
 
 gnome-terminal  \
-	--tab --title "DroneInterface"	--command "bash -c \"
-roslaunch droneInterfaceROSModule droneInterface_jp_ROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-						exec bash\"" \
 	--tab --title "openTLDGUI"	--command "bash -c \"
 roslaunch ${DRONE_STACK}/launchers/ardrone_launch/launch_files/opentld_gui_for_IBVSController.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-						exec bash\""  &
-
+						exec bash\"" \
+	--tab --title "DroneInterface"	--command "bash -c \"
+roslaunch droneInterfaceROSModule droneInterface_jp_ROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\"" &
 
 # rosrun ardrone_autonomy ardrone_driver;
 # gnome-terminal  --window --full-screen  \ # window part opens an unused tab

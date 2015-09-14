@@ -996,3 +996,22 @@ if [[ ${supervision_system}  && $supervision_system = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#lib_levmar-2.6
+if [[ ${lib_levmar_2_6}  && $lib_levmar_2_6 = true ]]
+	then
+		MODULE_PATH=stack/libraries/lib_levmar-2.6
+		REPO_URL=https://bitbucket.org/joselusl/lib_levmar-2.6
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneObstacleDistanceCalculatorROSModule
+if [[ ${droneObstacleDistanceCalculatorROSModule}  && $droneObstacleDistanceCalculatorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule
+		REPO_URL=https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi

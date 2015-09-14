@@ -373,3 +373,11 @@
 	path = configs
 	url = https://bitbucket.org/joselusl/quadrotor_stack_configs
 	branch = master
+[submodule "stack/libraries/lib_levmar-2.6"]
+	path = stack/libraries/lib_levmar-2.6
+	url = https://bitbucket.org/joselusl/lib_levmar-2.6
+	branch = master
+[submodule "stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule"]
+	path = stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule
+	url = https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
+	branch = master

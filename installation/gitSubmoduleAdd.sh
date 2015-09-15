@@ -389,6 +389,26 @@ if [[ ${droneMissionPlannerROSModule}  && $droneMissionPlannerROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneMissionScheduleProcessor
+if [[ ${droneMissionScheduleProcessor}  && $droneMissionScheduleProcessor = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneMissionScheduleProcessor
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneMissionScheduleProcessorROSModule
+if [[ ${droneMissionScheduleProcessorROSModule}  && $droneMissionScheduleProcessorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule
+		REPO_URL=https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #droneOpenTLDTranslatorROS
 if [[ ${droneOpenTLDTranslatorROS}  && $droneOpenTLDTranslatorROS = true ]]
 	then
@@ -935,7 +955,6 @@ if [[ ${leap_motion}  && $leap_motion = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-
 #droneSpeechROSModule
 if [[ ${droneSpeechROSModule}  && $droneSpeechROSModule = true ]]
 	then
@@ -967,3 +986,32 @@ if [[ ${ueye_cam}  && $ueye_cam = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#supervision_system
+if [[ ${supervision_system}  && $supervision_system = true ]]
+	then
+		MODULE_PATH=stack/supervision_system
+		REPO_URL=https://bitbucket.org/Ortinson/supervision_system.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#lib_levmar-2.6
+if [[ ${lib_levmar_2_6}  && $lib_levmar_2_6 = true ]]
+	then
+		MODULE_PATH=stack/libraries/lib_levmar-2.6
+		REPO_URL=https://bitbucket.org/joselusl/lib_levmar-2.6
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneObstacleDistanceCalculatorROSModule
+if [[ ${droneObstacleDistanceCalculatorROSModule}  && $droneObstacleDistanceCalculatorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule
+		REPO_URL=https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi

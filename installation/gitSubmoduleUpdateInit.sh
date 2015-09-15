@@ -351,6 +351,24 @@ if [[ ${droneMissionPlannerROSModule}  && $droneMissionPlannerROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneMissionScheduleProcessor
+if [[ ${droneMissionScheduleProcessor}  && $droneMissionScheduleProcessor = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneMissionScheduleProcessor
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneMissionScheduleProcessorROSModule
+if [[ ${droneMissionScheduleProcessorROSModule}  && $droneMissionScheduleProcessorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #droneOpenTLDTranslatorROS
 if [[ ${droneOpenTLDTranslatorROS}  && $droneOpenTLDTranslatorROS = true ]]
 	then
@@ -866,6 +884,33 @@ fi
 if [[ ${ueye_cam}  && $ueye_cam = true ]]
 	then
 		MODULE_PATH=stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#supervision_system
+if [[ ${supervision_system}  && $supervision_system = true ]]
+	then
+		MODULE_PATH=stack/supervision_system
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#lib_levmar_2_6
+if [[ ${lib_levmar_2_6}  && $lib_levmar_2_6 = true ]]
+	then
+		MODULE_PATH=stack/libraries/lib_levmar-2.6
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#droneObstacleDistanceCalculatorROSModule
+if [[ ${droneObstacleDistanceCalculatorROSModule}  && $droneObstacleDistanceCalculatorROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule
 		# git submodule deinit $MODULE_PATH > /dev/null
 		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
 		echo " -Added package in: $MODULE_PATH"

@@ -1015,3 +1015,14 @@ if [[ ${droneObstacleDistanceCalculatorROSModule}  && $droneObstacleDistanceCalc
 		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
+
+#droneSoundROSModule
+if [[ ${droneSoundROSModule}  && $droneSoundROSModule = true ]]
+	then
+		MODULE_PATH=stack/HMI/droneSoundROSModule
+		REPO_URL=https://bitbucket.org/joselusl/dronesoundrosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddBitbucketPrivRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+

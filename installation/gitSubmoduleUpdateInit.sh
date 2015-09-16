@@ -916,3 +916,12 @@ if [[ ${droneObstacleDistanceCalculatorROSModule}  && $droneObstacleDistanceCalc
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#droneSoundROSModule
+if [[ ${droneSoundROSModule}  && $droneSoundROSModule = true ]]
+	then
+		MODULE_PATH=stack/HMI/droneSoundROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+

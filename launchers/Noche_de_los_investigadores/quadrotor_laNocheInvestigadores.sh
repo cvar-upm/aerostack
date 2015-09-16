@@ -99,6 +99,9 @@ roslaunch ${DRONE_STACK}/launchers/sound_play.launch --wait drone_id_namespace:=
 	--tab --title "DroneSpeechModule" --command "bash -c \"
 roslaunch droneSpeechROSModule droneSpeechROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} voice:=voice_el_diphone;
 						exec bash\""  \
+	--tab --title "DroneSoundModule" --command "bash -c \"
+roslaunch droneSoundROSModule droneSoundROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
 	--tab --title "DroneCommunicationManager" --command "bash -c \"
 roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \

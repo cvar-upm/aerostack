@@ -99,6 +99,9 @@ roslaunch ${DRONE_STACK}/launchers/sound_play.launch --wait drone_id_namespace:=
 	--tab --title "DroneSpeechModule" --command "bash -c \"
 roslaunch droneSpeechROSModule droneSpeechROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} voice:=voice_el_diphone;
 						exec bash\""  \
+	--tab --title "DroneSoundModule" --command "bash -c \"
+roslaunch droneSoundROSModule droneSoundROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
 	--tab --title "DroneCommunicationManager" --command "bash -c \"
 roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
@@ -109,7 +112,7 @@ roslaunch performance_monitor performance_monitor.launch --wait drone_id_namespa
 roslaunch droneManagerOfActionsROSModule droneManagerOfActionsROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
 	--tab --title "DroneMissionScheduler" --command "bash -c \"
-roslaunch droneMissionScheduleProcessorROSModule droneMissionSheduleProcessorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_Estimated_Pose_Topic_Name:=ArucoSlam_EstimatedPose mission_config_file:=missionSchedule_short.xml;
+roslaunch droneMissionScheduleProcessorROSModule droneMissionSheduleProcessorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_Estimated_Pose_Topic_Name:=ArucoSlam_EstimatedPose mission_config_file:=missionSchedule.xml;
 						exec bash\"" &
 						
 

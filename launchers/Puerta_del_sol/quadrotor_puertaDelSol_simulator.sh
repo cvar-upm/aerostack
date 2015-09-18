@@ -16,8 +16,8 @@ fi
 if [ -z $NUMID_DRONE ] # Check if NUMID_DRONE is NULL
   then
   	#Argument 1 empty
-    	echo "-Setting droneId = 1"
-    	NUMID_DRONE=1
+    	echo "-Setting droneId = 2"
+    	NUMID_DRONE=2
   else
     	echo "-Setting droneId = $1"
 fi

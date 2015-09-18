@@ -381,3 +381,7 @@
 	path = stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule
 	url = https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
 	branch = master
+[submodule "stack/HMI/droneSoundROSModule"]
+	path = stack/HMI/droneSoundROSModule
+	url = https://bitbucket.org/joselusl/dronesoundrosmodule.git
+	branch = master

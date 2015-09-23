@@ -18,6 +18,7 @@ sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 # leap_motion
 # install the sdk
 https://developer.leapmotion.com/
+# See documentation/leap_motion_installation.txt
 
 # voices
 # the voices are in /usr/share/festival

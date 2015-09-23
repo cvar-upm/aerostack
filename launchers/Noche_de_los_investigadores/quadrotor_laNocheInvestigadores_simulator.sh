@@ -87,6 +87,9 @@ roslaunch droneYawCommanderROSModule droneYawCommanderROSModule.launch --wait dr
 	--tab --title "openTLD translator"	--command "bash -c \"
 roslaunch droneOpenTLDTranslatorROS droneOpenTLDTranslatorROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
+  --tab --title "tracker Eye"	--command "bash -c \"
+roslaunch droneTrackerEyeROSModule droneTrackerEyeROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+						exec bash\""  \
 	--tab --title "DroneCommunicationManager" --command "bash -c \"
 roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
@@ -117,9 +120,7 @@ roslaunch droneInterfaceROSModule droneInterface_jp_ROSModule.launch --wait dron
 
 
 
-#	--tab --title "tracker Eye"	--command "bash -c \"
-#roslaunch droneTrackerEyeROSModule droneTrackerEyeROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
-#						exec bash\""  \
+
 # rosrun ardrone_autonomy ardrone_driver;
 # gnome-terminal  --window --full-screen  \ # window part opens an unused tab
 

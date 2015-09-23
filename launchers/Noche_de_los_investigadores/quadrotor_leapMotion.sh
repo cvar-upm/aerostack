@@ -52,7 +52,7 @@ fi
 #gnome-terminal  --full-screen  \
 gnome-terminal  \
 	--tab --title "ArDrone Autonomy"	--command "bash -c \"
-roslaunch ${DRONE_STACK}/launchers/ardrone_launch/ardrone_indoors.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} owner_mac:=84:A6:C8:4E:DE:3C;
+roslaunch ${DRONE_STACK}/launchers/ardrone_launch/ardrone_indoors.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} owner_mac:=24:FD:52:4D:0E:9C;
 						exec bash\""  \
 	--tab --title "Driver Parrot"	--command "bash -c \"
 roslaunch driverParrotARDroneROSModule driverParrotARDroneROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};

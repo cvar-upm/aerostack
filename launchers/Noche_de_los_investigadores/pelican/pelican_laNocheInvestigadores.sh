@@ -24,8 +24,8 @@ fi
 if [ -z $DRONE_IP ] # Check if NUMID_DRONE is NULL
   then
   	#Argument 3 is empty
-    	echo "-Setting droneIp = 192.168.1.1"
-    	DRONE_IP=192.168.1.1
+    	echo "-Setting droneIp = 192.168.0.40"
+    	DRONE_IP=192.168.0.10
   else
     	echo "-Setting droneIp = $3"
 fi

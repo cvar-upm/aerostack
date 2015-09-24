@@ -8,13 +8,16 @@ screen -S pelican -X screen -t midlevel_node               ${DRONE_STACK}/launch
 screen -S pelican -X screen -t ekf_odometry                ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_ekf_odometry.sh
 screen -S pelican -X screen -t trajectory_controller       ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_trajectory_controller.sh
 screen -S pelican -X screen -t ueycam_front		                   ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_cvg_ueye_03_front.sh
-screen -S pelican -X screen -t ueycam_left		                   ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_cvg_ueye_02_left.sh
-screen -S pelican -X screen -t ueycam_right                              ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_cvg_ueye_04_right.sh
 screen -S pelican -X screen -t aruco_eye_front                        ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_arucoeye_front.sh
-screen -S pelican -X screen -t aruco_eye_left                            ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_arucoeye_left.sh
-screen -S pelican -X screen -t aruco_eye_right                        ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_arucoeye_right.sh
-screen -S pelican -X screen -t aruco_eye_right                        ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_localizer.sh
-screen -S pelican -X screen -t Supervisor                  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_supervisor_node.sh
+screen -S pelican -X screen -t localizer                                        ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_localizer.sh
+screen -S pelican -X screen -t obstacle_processor                ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_obstacle_processor.sh
+screen -S pelican -X screen -t obstacle_distance_calculator   ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_obstacle_distance_calculator.sh
+screen -S pelican -X screen -t  trajectory_planner  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_trajectory_planner.sh
+screen -S pelican -X screen -t  yaw_commander  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_yaw_commander.sh
+screen -S pelican -X screen -t  run_communication_manager  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_communication_manager.sh
+screen -S pelican -X screen -t  run_manager  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_manager.sh
+screen -S pelican -X screen -t  run_mission_scheduler  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_mission_scheduler.sh                                  
+screen -S pelican -X screen -t supervisor                   ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_supervisor_node.sh
 
 screen -S pelican -X screen -t lider_lite                  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_laser_altimeter.sh
 

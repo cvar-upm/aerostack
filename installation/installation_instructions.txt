@@ -15,6 +15,11 @@ sudo apt-get install libiw-dev
 # sudo apt-get install ros-jade-audio-common
 sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 
+# leap_motion
+# install the sdk
+https://developer.leapmotion.com/
+# See documentation/leap_motion_installation.txt
+
 # voices
 # the voices are in /usr/share/festival
 # info at http://ubuntuforums.org/showthread.php?t=751169
@@ -124,3 +129,33 @@ cd ..
 source devel/setup.bash
 qtcreator
 #put the build folder in the correct path!
+
+
+# REQUIRED LIBRARIES FOR HUMAN MACHINE INTERFACE
+
+# Run the following command to download and install the necessary dependencies
+    $ sudo apt-get build-dep openscenegraph
+
+# Download OpenSceneGraph 3.2.2, extract the files and store the folder OpenSceneGraph-3.2.2 in your home path
+http://trac.openscenegraph.org/downloads/developer_releases/OpenSceneGraph-3.2.2.zip
+
+# Installation OpenSceneGraph 3.2.2. Please be patient in this step, it could take up a lot of time
+    $ cd ~/OpenSceneGraph-3.2.2
+    $ ./configure
+    $ make      
+    $ sudo make install
+
+# Configure the enviromental variables. 
+
+Edit your ~/.bashrc file, add the following lines in it (at the end). 
+Keep in mind, to change /home/myaccount to your real home path (cd ~ && pwd).
+    export PATH=${PATH}:/home/myaccount/OpenSceneGraph-3.2.2/bin
+    export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/myaccount/OpenSceneGraph-3.2.2/lib
+
+# Download human_machine_interface
+cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/stack/HMI
+git clone https://bitbucket.org/yolanda_de_la_hoz_simon/hmi_cvg_stack.git 
+cd hmi_cvg_stack
+./installation/set_environmental_variables.sh
+cd ~/<my_workspace>
+catkin_make

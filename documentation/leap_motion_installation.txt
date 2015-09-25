@@ -18,5 +18,5 @@ https://developer.leapmotion.com/documentation/cpp/devguide/Leap_Overview.html
 
 # ADD to ~/.bashrc
 # LEAP MOTION SDK
-export LEAP_SDK=true
+# export LEAP_SDK=true
 export PYTHONPATH=$PYTHONPATH:$HOME/workspace/LeapSDK/lib:$HOME/workspace/LeapSDK/lib/x64

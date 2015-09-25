@@ -33,7 +33,7 @@ if [ -z $DRONE_WCHANNEL ] # Check if NUMID_DRONE is NULL
   then
   	#Argument 4 is empty
     	echo "-Setting droneChannel = 3"
-    	DRONE_WCHANNEL=6
+    	DRONE_WCHANNEL=3
   else
     	echo "-Setting droneChannel = $4"
 fi
@@ -94,7 +94,7 @@ roslaunch droneSpeechROSModule droneSpeechROSModule.launch --wait drone_id_names
 roslaunch droneSoundROSModule droneSoundROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
 	--tab --title "DroneCommunicationManager" --command "bash -c \"
-roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
+roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} estimated_pose_topic_name:=ArucoSlam_EstimatedPose;
 						exec bash\""  \
 	--tab --title "DroneSupervisor"	--command "bash -c \"
 roslaunch performance_monitor performance_monitor.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_ip_address:=192.168.1.1;

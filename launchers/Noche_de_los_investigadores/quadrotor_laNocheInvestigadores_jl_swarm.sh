@@ -39,10 +39,10 @@ if [ -z $DRONE_WCHANNEL ] # Check if NUMID_DRONE is NULL
 fi
 
 
-#{
-#echo ./set_IP_Ch.sh $DRONE_IP $DRONE_WCHANNEL
-#echo exit
-#} | telnet 192.168.1.1
+{
+echo ./set_IP_Ch.sh $DRONE_IP $DRONE_WCHANNEL
+echo exit
+} | telnet 192.168.1.1
 #	--tab --title "Ardrone_Autonomy"	--command "bash -c \"
 #roslaunch ./ardrone_launch/ardrone_indoors.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_ip:=$DRONE_IP;
 #						exec bash\""  \
@@ -97,7 +97,7 @@ roslaunch droneSoundROSModule droneSoundROSModule.launch --wait drone_id_namespa
 roslaunch droneCommunicationManagerROSModule droneCommunicationManagerROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};
 						exec bash\""  \
 	--tab --title "DroneSupervisor"	--command "bash -c \"
-roslaunch performance_monitor performance_monitor.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_ip_address:=192.168.1.2;
+roslaunch performance_monitor performance_monitor.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK} drone_ip_address:=192.168.1.1;
 						exec bash\"" \
 	--tab --title "DroneManagerofActions" --command "bash -c \"
 roslaunch droneManagerOfActionsROSModule droneManagerOfActionsROSModule.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_id_int:=$NUMID_DRONE my_stack_directory:=${DRONE_STACK};

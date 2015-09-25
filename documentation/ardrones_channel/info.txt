@@ -1,0 +1,7 @@
+1. copy set_IP_Ch.sh in drone
+2. give chmod +x permission
+3. put the following lines in the launcher sh
+{
+echo ./set_IP_Ch.sh $DRONE_IP $DRONE_WCHANNEL
+echo exit
+} | telnet 192.168.1.1

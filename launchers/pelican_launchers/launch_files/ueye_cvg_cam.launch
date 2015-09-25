@@ -15,7 +15,7 @@
 			<param name="topic_name"	 value="camera/$(arg camera_name_str)" type="string"/>
 			<param name="droneId"            value="$(arg drone_id_int)"           type="int"/>
 			<param name="stackPath"          value="$(arg my_stack_directory)"     type="string"/>
-                        <param name="cam_intr_filename"  value=""                              type="string"/> <!-- default: ~/.ros/camera_info/<camera_name>.yaml -->
+                        <param name="cam_intr_filename"  value="$(arg my_stack_directory)/configs/drone$(arg drone_id_int)/$(arg camera_name_str).yaml"      type="string"/> 
 		</node>
                
 		<node ns="/drone$(arg drone_id_int)/camera/$(arg camera_name_str)" pkg="image_proc" type="image_proc" name="image_proc" />

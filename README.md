@@ -14,9 +14,18 @@ We present a cost-effective framework for the prototyping of vision-based quadro
 The current distribution supports only the usage of the AR Drone 1.0 & 2.0. The architecture has been modified to be able to handle other platforms such as the: UASTech LinkQuad, Mikrokopter Oktokopter and the Asctec Pelican. Suitable driver modules for these quadrotors are currently in development.
 
 The connectivity between modules of the stack is specified in:
-`${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. The functionality of the modules is explained in the following paper:
+`${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 
 
-- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, P. Campoy. “Visual Quadrotor Swarm for IMAV 2013 Indoor Competition”. In 2013 International Micro Aerial Vehicle Conference and Flight Competition (IMAV 2013). Toulouse (France). September, 17-20, 2013. [Link](http://uvs-info.com/phocadownload/02_2clh_Technical-Session-4_Vision/Visual_Quadrotor_Swarm_for_IMAV_2013_Indoor_Competition.pdf "IMAV_2013 CVG group paper").
+The functionality of the modules and the full AeroStack is explained in the following papers, please, refer to them in your work:
+- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, P. Campoy. "A Reliable Open-Source System Architecture for the Fast Designing and Prototyping of Autonomous Multi-UAV Systems: Simulation and Experimentation". Journal of Intelligent and Robotic Systems. Online: Oct. 2015. Springer Netherlands. Online ISSN: 0921-0296. DOI: 10.1007/s10846-015-0288-x.
+- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, R. Suarez-Fernandez, P. Campoy. "A System for the Design and Development of Vision-based Multi-robot Quadrotor Swarms". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 640-648. DOI: 10.1109/ICUAS.2014.6842308.
+
+Other related papers (selection):
+- J. L. Sanchez-Lopez, J. Pestana, J.-F. Collumeau, R. Suarez-Fernandez, P. Campoy, M. Molina. "A Vision Based Aerial Robot solution for the Mission 7 of the International Aerial Robotics Competition". Unmanned Aircraft Systems (ICUAS), 2015 International Conference on. Denver, (CO, USA). 9-12 June 2015. Pp: 1391 – 1400. Print ISBN: 978-1-4799-6009-5. DOI: 10.1109/ICUAS.2015.7152435
+- J. Pestana, J. L. Sanchez-Lopez, P. de la Puente, A. Carrio, P. Campoy. "A Vision-based Quadrotor Swarm for the participation in the 2013 International Micro Air Vehicle Competition". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 617-622. DOI: 10.1109/ICUAS.2014.6842305.
+- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, A. Carrio, P. Campoy. "Visual Quadrotor Swarm for the IMAV 2013 Indoor Competition". Robot 2013: First Iberian Robotics Conference (ROBOT 2013). Madrid (Spain). Nov. 28-29, 2013. Book title: Robot 2013: First Iberian Robotics Conference. Book subtitle: Advances in intelligent Systems and Computing. Vol. 253. Published year: 2014. Pp: 55-63. DOI: 10.1007/978-3-319-03653-3_5. Print ISBN: 978-3-319-03652-6. Online ISBN: 978-3-319-03653-3. Publisher: Springer International Publishing.
+
+The functionality of the modules and the full AeroStack is explained in the following webpages:
 - [http://www.vision4uav.eu/?q=quadrotor_stack](http://www.vision4uav.eu/?q=quadrotor_stack "http://www.vision4uav.eu")
 - [http://www.vision4uav.eu/?q=swarm](http://www.vision4uav.eu/?q=swarm "http://www.vision4uav.eu")
 - [http://www.vision4uav.eu/?q=imav13](http://www.vision4uav.eu/?q=imav13 "http://www.vision4uav.eu")
@@ -45,6 +54,8 @@ This driver has been tested on Linux machines running Ubuntu 12.10 (64 bit). How
 ### Installation Steps
 
 The installation follows the same steps needed usually to compile a self-contained ROS stack.
+
+NOT UPDATED!!!!!!! FOR INSTALATION GO TO installation/installation_instructions.txt
 
 * Install ncurses and the boost libraries in your system.
 

@@ -301,11 +301,17 @@ This software stack uses other third-party open-source libraries (some of them a
 
 - [PhD. Paloma De La Puente](http://es.linkedin.com/pub/paloma-de-la-puente/b/265/14  "PhD. Paloma De La Puente"): Postdoctoral position at [ACIN Institute of Automation and Control](http://www.acin.tuwien.ac.at/?id=248&amp;L=1 "ACIN Institute of Automation and Control"), V4R group, TU Vienna.
 
-- [Eng. Adrian Carrio](http://es.linkedin.com/pub/adri%C3%A1n-carrio/57/a5a/753/en "Eng. Adrian Carrio"): PhD. Candidate at [CVG](http://www.vision4uav.com/ "Computer Vision Group, CVG, CAR, UPM-CSIC"), CAR, CSIC-UPM.
+- [Msc. Adrian Carrio](http://es.linkedin.com/pub/adri%C3%A1n-carrio/57/a5a/753/en "Eng. Adrian Carrio"): PhD. Candidate at [CVG](http://www.vision4uav.com/ "Computer Vision Group, CVG, CAR, UPM-CSIC"), CAR, CSIC-UPM.
 
 - [Msc. Ramon Suarez](http://www.vision4uav.com/?q=ramon/personal "Msc. Ramon Suarez"): PhD. Candidate at [CVG](http://www.vision4uav.com/ "Computer Vision Group, CVG, CAR, UPM-CSIC"), CAR, CSIC-UPM.
 
+- Msc. Hriday Bavle
+
+- Msc. Carlos Sampedro
+
 - [Professor Dr. Pascual Campoy](http://www.vision4uav.com/?q=pascual "Professor Dr. Pascual Campoy"): head of the , CAR, CSIC-UPM.
+
+- Professor Dr. Sergio Dominguez
 
 
 ## Contact Information

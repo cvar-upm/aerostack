@@ -313,6 +313,12 @@ This software stack uses other third-party open-source libraries (some of them a
 
 - Professor Dr. Sergio Dominguez
 
+- Professor Dr. Martin Molina
+
+- Other Members of the CVG, CAR, CSIC-UPM
+
+- Other Memebrs of the DIA, UPM
+
 
 ## Contact Information
 

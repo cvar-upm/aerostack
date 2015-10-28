@@ -4,14 +4,16 @@ You are using this software at your own risk. The authors decline any responsibi
 
 Some drones supported by this framework ARE NOT TOYS. Even operation by expert users might cause SERIOUS INJURIES to people around. So, please consider flying in a properly screened or isolated flight area.
 
-## cvg_quadrotor_swarm stack
+## AeroStack
 
 
-NOT UPDATED. FOR INSTALATION GO TO installation/installation_instructions.txt
+We present a cost-effective framework for the prototyping of vision-based quadrotor multi-robot systems, which core characteristics are: modularity, compatibility with different platforms and being flight-proven. The framework is fully operative and based on [ROS](http://ros.org/ "Robot Operating System"). It works in simulation and in real flight tests of up to 5 drones, and was firstly introduced and demonstrated during our participation in the 2013 International Micro Air Vehicle Indoor Flight Competition [IMAV2013](http://www.imav2013.org/ "2013 International Micro Air Vehicle Indoor Flight Competition") (Toulouse, France).
 
-We present a cost-effective framework for the prototyping of vision-based quadrotor multi-robot systems, which core characteristics are: modularity, compatibility with different platforms and being flight-proven. The framework is fully operative and based on [ROS](http://ros.org/ "Robot Operating System"). It works in simulation and in real flight tests of up to 5 drones, and was demonstrated during our participation in the 2013 International Micro Air Vehicle Indoor Flight Competition [IMAV2013](http://www.imav2013.org/ "2013 International Micro Air Vehicle Indoor Flight Competition") (Toulouse, France).
+The current distribution supports the usage of mutiple aerial platdorms, including, but not limited to:
 
-The current distribution supports only the usage of the AR Drone 1.0 & 2.0. The architecture has been modified to be able to handle other platforms such as the: UASTech LinkQuad, Mikrokopter Oktokopter and the Asctec Pelican. Suitable driver modules for these quadrotors are currently in development.
+- Parrot AR Drone 1.0 & 2.0.
+- Asctec Pelican
+- Mikrokopter Oktokopter
 
 The connectivity between modules of the stack is specified in:
 `${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 
@@ -52,7 +54,7 @@ The functionality of the modules and the full AeroStack is explained in the foll
 ## Installation
 ### Pre-requirements 
 
-This driver has been tested on Linux machines running Ubuntu 12.10 (64 bit). However it should also work on any other mainstream Linux distributions. The driver has been tested on ROS "groovy". The code requires a compiler that is compatible with the C++11 standard. Additional required libraries are: boost and ncurses. The ROS package depends on these ROS packages: `ardrone_autonomy`, `opencv2`, `roscpp`, `image_transport`, `sensor_msgs` and `std_srvs`.
+This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). However it should also work on any other mainstream Linux distributions. The driver has been tested on ROS "groovy". The code requires a compiler that is compatible with the C++11 standard. Additional required libraries are: boost and ncurses. The ROS package depends on these ROS packages: `ardrone_autonomy`, `opencv2`, `roscpp`, `image_transport`, `sensor_msgs` and `std_srvs`.
 
 ### Installation Steps
 
@@ -191,6 +193,8 @@ The sign convention for the commands, received by the multirotor's ROS driver, i
 
 ## Launch scripts
 
+NOT UPDATED!
+
 In order to compile the stack, the following scripts are provided (please take a look at them to understand how to modify them for your own purposes):
 
 - `${DRONE_STACK}/launchers/rosmake_sim_01.sh` : for simulated flights.
@@ -232,6 +236,8 @@ NOTE: all the launchfiles open a separate terminal with multiple tabs, where eac
 
 ## How to Run
 
+NOT UPDATED!
+
 The launch scripts have to be called using the following sintax in the shell terminal: 
 
         ```bash
@@ -241,6 +247,8 @@ The launch scripts have to be called using the following sintax in the shell ter
 
 ### Architecture, Map and Mission configuration
 
+NOT UPDATED!
+
 Check the `${DRONE_STACK}/documentation/matlab_dependencies.txt` file to understand how to configure a mission. More specifically, after adding the related Matlab libraries to your Matlab path, check the following files:
 	`${DRONE_STACK}/configs/Mission_10b/script_Mission10b_Generator.m`, 
 	`${DRONE_STACK}/configs/Mission_11c/script_Mission11c_Generator.m`, 
@@ -249,9 +257,13 @@ Once you run these scripts, copy the created drone${NUMID\_DRONE} configuration 
 
 ### Complete mission execution
 
+NOT UPDATED!
+
 In order to start the modules automatically the flight is started using the brain node, which starts the mission by clicking 's'.
 
 ### Navigation with console UI
+
+NOT UPDATED!
 
 The keybindings of the interface are specified in the file: `${DRONE_STACK}/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt`; and are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` . 
 
@@ -260,6 +272,8 @@ In order to start the modules automatically the flight is started using the brai
 As an alternative, the user can start the modules by hand (or editing a convenient shell script) by using the `/droneModuleName/start` service of every module in the architecture.
 
 ## Other README files
+
+NOT UPDATED!
 
 - `${DRONE_STACK}/documentation/how_to_setup_and_use_chrony.txt`
 
@@ -291,6 +305,8 @@ This software stack uses other third-party open-source libraries (some of them a
 - newmat11 library, a matrix library in C++ ([newmat11](http://www.robertnz.net/nm11.htm "newmat11, a matrix library in C++")), original license: ([newmat11 license](http://www.robertnz.net/nm11.htm#use "newmat11 library license")), included as source in the stack in the `lib_newmat` package.
 
 - other software libraries used by this stack also uses licenses similar to `BSD` and `MIT` licenses: [ncurses](https://www.gnu.org/software/ncurses/ "GNU ncurses") and [boost](http://www.boost.org "boost c++ libraries").
+
+NOT UPDATED!
 
 
 ## Contributors

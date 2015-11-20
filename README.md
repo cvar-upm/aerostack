@@ -6,7 +6,6 @@ Some drones supported by this framework ARE NOT TOYS. Even operation by expert u
 
 ## AeroStack
 
-
 We present a cost-effective framework for the prototyping of vision-based quadrotor multi-robot systems, which core characteristics are: modularity, compatibility with different platforms and being flight-proven. The framework is fully operative and based on [ROS](http://ros.org/ "Robot Operating System"). It works in simulation and in real flight tests of up to 5 drones, and was firstly introduced and demonstrated during our participation in the 2013 International Micro Air Vehicle Indoor Flight Competition [IMAV2013](http://www.imav2013.org/ "2013 International Micro Air Vehicle Indoor Flight Competition") (Toulouse, France).
 
 The current distribution supports the usage of mutiple aerial platdorms, including, but not limited to:
@@ -14,6 +13,8 @@ The current distribution supports the usage of mutiple aerial platdorms, includi
 - Parrot AR Drone 1.0 & 2.0.
 - Asctec Pelican
 - Mikrokopter Oktokopter
+- Bebop drone/Ardrone 3 (currently under development)
+- Pixhawk (currently under development)
 
 The connectivity between modules of the stack is specified in:
 `${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 
@@ -54,195 +55,168 @@ The functionality of the modules and the full AeroStack is explained in the foll
 ## Installation
 ### Pre-requirements 
 
-This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). However it should also work on any other mainstream Linux distributions. The driver has been tested on ROS "groovy". The code requires a compiler that is compatible with the C++11 standard. Additional required libraries are: boost and ncurses. The ROS package depends on these ROS packages: `ardrone_autonomy`, `opencv2`, `roscpp`, `image_transport`, `sensor_msgs` and `std_srvs`.
+This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). However it should also work on any other mainstream Linux distributions. The driver has been tested on ROS "Jade". The code requires a compiler that is compatible with the C++11 standard. Additional required libraries are: boost and ncurses. The ROS package depends on these ROS packages: `ardrone_autonomy`, `opencv2`, `roscpp`, `image_transport`, `sensor_msgs` and `std_srvs`.
 
 ### Installation Steps
 
 The installation follows the same steps needed usually to compile a self-contained ROS stack.
 
-NOT UPDATED!!!!!!! FOR INSTALATION GO TO installation/installation_instructions.txt
+* External libraries that should be installed
 
-* Install ncurses and the boost libraries in your system.
+* Install ncurses,boost and expect libraries in your system.
 
         sudo apt-get install libncurses5
         sudo apt-get install ncurses-bin
         sudo apt-get install ncurses-dev
         sudo apt-get install libboost1.49-dev
 
+        sudo apt-get install expect
 
-* Create a ROS_WORKSPACE to install the stack and the required external ROS packages and stacks. For example, A ROS_WORKSPACE can be configured in the folder. `~/workspace/ros/quadrotor`. The following steps are advised:
+* Install libraries required by ardrone autonomy package in your system
 
-        # create the ~/workspace/ros/quadrotor folder
+        sudo apt-get install libsdl1.2-dev
+        sudo apt-get install libudev-dev
+        sudo apt-get install libiw-dev
+
+
+* Install sound play libraries in your system
+
+        sudo apt-get install ros-jade-audio-common
+        sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+
+* Install voices for the sound play libraries in your system
+
+        # the voices are in /usr/share/festival
+        # info at http://ubuntuforums.org/showthread.php?t=751169
+        # To get the voice sintetizer
+        sudo apt-get install festlex-cmu
+        # To get voices
+        sudo apt-cache search festvox
+        # British English male speaker for festival, 16khz sample rate [voice_rab_diphone]
+        sudo apt-get install festvox-rablpc16k
+        # American English male speaker for festival, 16khz sample rate [voice_kal_diphone]
+        sudo apt-get install festvox-kallpc16k
+        # Castilian Spanish male speaker for Festival [voice_el_diphone]
+        sudo apt-get install festvox-ellpc11k
+
+
+* Install libraries for Leap motion device
+
+         # install the sdk
+         https://developer.leapmotion.com/
+         # See documentation/leap_motion_installation.txt for further steps
+
+* Install levmar libraries in your system
+
+        # Lapack
+        sudo apt-get install liblapack3 liblapack-dev
+        # Blas
+        sudo apt-get install libblas3 libblas-dev
+        # F2C
+        sudo apt-get install libf2c2 libf2c2-dev
+
+* Install drivers for ueyecameras 
+    
+        # The drivers can be downloaded from the following website
+        #https://en.ids-imaging.com/download-ueye.html
+      
+
+* Uninstall environmet variables of other (older) versions of the Aerostack (This step is only important is the Aerostack was installed before on the system)
+        
+        # This step is only required if you have installed the Aerostack before
+        sed -i '/DRONE_WORKSPACE/d' ~/.bashrc
+        sed -i '/DRONE_STACK/d' ~/.bashrc
+
+* Create a CATKIN_WORKSPACE to install the Aerostack and the required external ROS packages and stacks. For example, A CATKIN_WORKSPACE can be configured in the folder `~/workspace/ros/quadrotor_stack_catkin `. The following steps are advised:
+
+        # create the ~/workspace/ros/quadrotor_stack_catkin folder
         cd ~
         mkdir workspace
         cd workspace
         mkdir ros
         cd ros
-        mkdir quadrotor
-        cd quadrotor
-        # initialize ROS workspace using ROS groovy
-        rosws init ./ /opt/ros/groovy
-
-
-* Download the required ROS packages using git or rosws:
-
-        # create folder where external ROS stacks are downloaded
-        rosws set ./extStack
-        # set folder to download the ardrone_autonomy ROS package
-        rosws set ./extStack/ardrone_autonomy --git https://github.com/AutonomyLab/ardrone_autonomy.git --version=fuerte
-        # set folder to download the cvg_quadrotor_swarm ROS package
-        rosws set ./stack --git https://bitbucket.org/joselusl/quadrotor_swarm.git
-        # set folder to download the Mikrokopter Oktokopter driver 
-        rosws set ./extStack/okto_driver --git https://bitbucket.org/Vision4UAV/okto_driver.git
-        # set folder to download the AscTec Quadrotor drivers
-        rosws set ./extStack/asctec_drivers --git https://github.com/ccny-ros-pkg/asctec_drivers --version=fuerte
-        # set folder to download the Px4Flow drivers
-        rosws set ./extStack/px-ros-pkg --git https://github.com/cvg/px-ros-pkg --version=rosbuild
-        # set folder to download the ROS Micro Air Vehicle tools
-        rosws set ./extStack/mav_tools --git https://github.com/ccny-ros-pkg/mav_tools --version=fuerte
-        # set folder to download the OpenTLD tracker
-        rosws set ./extStack/ros_opentld --git https://github.com/Ronan0912/ros_opentld
-        # download latest version of all packages using git, through the rosws command
-        rosws update
-
-
-* Set up the `DRONE_STACK` and `DRONE_WORKSPACE` environment variables. 
-
-        ./stack/documentation/installation/installers/installWS.sh
-        cd stack
-        ./documentation/installation/installers/installStack.sh
-
+        mkdir quadrotor_stack_catkin
+        cd quadrotor_stack_catkin
         
+        # First built of the CATKIN_WORKSPACE
+        source /opt/ros/indigo/setup.bash      
+        mkdir src
+        cd src
+        catkin_init_workspace
+        cd ..
+        catkin_make
 
-* Each time the cvg_quadrotor_swarm is going to be used, do the following (note that the ROS_WORKSPACE and other ROS environment variables should not be loaded in the .bashrc file or other ubuntu terminal startup files):
+        # source the Aerostack
+        source devel/setup.bash
+
+* Download the Aerostack in your system 
+        
+        # choose branch. By default master!
+        git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
+       
+
+* Set up the `DRONE_STACK` and `DRONE_WORKSPACE` environment variables.
+         
+         # setup the DRONE_STACK
+         cd ~/workspace/ros/quadrotor_stack_catkin  
+        ./src/quadrotor_stack/installation/installers/installWS.sh
+        
+         # setup the DRONE_WORKSPACE
+         cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack
+         ./installation/installers/installStack.sh
+
+        #close terminal and reopen it, or alternatively execute
+        source ~/.bashrc 
+   
+* Download the required ROS packages of the Aerostack (this step can be little time consuming):
+      
+        cd $DRONE_STACK
+        #set to true packages required in installation/configSubmodules.cfg
+        #if the packages are not already defined in the stack run script to add submodules
+        ./installation/gitSubmoduleAdd.sh installation/configSubmodules.cfg
+        #if the packages are already defined in the stack run script to init submodules
+        ./installation/gitSubmoduleUpdateInit.sh installation/configSubmodules.cfg
+  
+* Each time the Aerostack is going to be used, do the following (note that the ROS_WORKSPACE and other ROS environment variables should not be loaded in the .bashrc file or other ubuntu terminal startup files):
 
         cd ${DRONE_STACK}
         source setup.sh
-
-        
-* Final steps installation instructions:
-
-        cd ${DRONE_STACK}
-        source setup.sh
-        rospack profile
-        rosdep update
-        # Compile external ROS packages: ardrone_autonomy
-        cd ../extStack/ardrone_autonomy/
-        roscd ardrone_autonomy
-        ./build_sdk.sh
-
-        
+      
 * Compile the stack:
 
-        cd ${DRONE_STACK}/launchers/
-        ./rosmake_01.sh
-        ./rosmake_sim_01.sh
-
+        cd ${DRONE_STACK}
+        source setup.sh
+        
+        cd $DRONE_WORKSPACE
+        catkin_make
         
 ## Network setup
 
-First: checkout the related ROS tutorial `http://wiki.ros.org/ROS/NetworkSetup` .
-
-Then, follow these steps:
-
-1. Configure a LAN network connection to communicate this ground stations with the rest using ROS. The configuration that we have used during testing is shown in the image (in this folder): `${DRONE_STACK}/documentation/network_configuration/ROS_NETWORK_config.png` (from now called ROS_NETWORK).
-
-2. Edit the hosts file, all the computers in the network have to be included in it. The IPs have to be the same that is specified in the configuration of each computer's ROS_NETWORK configuration.
-
-	- to edit the hosts file, run: sudo gedit /etc/hosts
-	- an example of it is shown in the file (in this folder): `${DRONE_STACK}/documentation/network_configuration/hosts`
-
-3. Restart your network for the configuration changes to take place.
-
-## Coordinate Frames
-
-There are several coordinate frames, which location is briefly documented in `${DRONE_STACK}/documentation/Coordinate_Frames/Coordinate_Frames_documentation.tex/pdf`. Please, refer to this documentation to understand the coordinate frames involved in running the software stack.
+For network setup please refer to $DRONE_STACK/documentation/configureNetwork/LAN_GroundStations_Setup.txt.
+NOTE: There is no need of a network setup when using an Ardrone as it can be connected directly to the groundstation using WIFI.
 
 ### Multirotor coordinate frame
 
-In the documentation located in `${DRONE_STACK}/documentation/Coordinate_Frames/Coordinate_Frames_documentation.tex/pdf`, this reference frame is called F_{drone_LMrT}.
-
-The reference frame that is used to reference the multirotor's telemetry, broadcasted by the multirotor's ROS driver, is:
-
-	[Fm] the mobile reference frame is centered on the drone, with:
-	 [xm] horizontal and pointing forward (same direction as the optical axis of the frontal camera
-	 [ym] horizontal and pointing rightwards from the center of the drone
-	 [zm] vertical and pointing downwards
-	
-	[F] the fixed reference frame:
-	 [x] horizontal and pointing "North" (where the magnetometer reading finds the North)
-	 [y] horizontal and pointing "East"
-	 [z] vertical and pointing downwards (the z coordinate of the drone is, thus, always negative)
-	
-	[yaw (mobile to fixed)] increases when the drones rotate in clock-wise direction
-
-The sign convention for the commands, received by the multirotor's ROS driver, is the following:
-
-	[paraphrased] The yaw, pitch, roll angles commands are related to the above mentioned [Fm] reference frame (thus setting their sign convention). The dz/"gaz" command is such that the AR Drone is commanded to go higher (increased altitude) when dz/"gaz" is positive. It can be thought of as the dz/"gaz" command setting a higher thrust on the propellers. 
-
-	[comment] the following phrases are understood from the point of view of a person sitting on the drone looking forward (looking in the same direction as the frontal camera), under no external wind conditions.
-	[pitch][+] move backwards
-	[pitch][-] move forward
-	[roll][+] move rightwards
-	[roll][-] move leftwards
-	[dyaw][+][speed command] rotate clockwise (as seen from above), or N > E > S > W > N > ...
-	[dyaw][-][speed command] rotate counter-clockwise (as seen from above), or N > W > S > E > N > ...
-	[dz][+][speed command] increase altitude, move upwards
-	[dz][-][speed command] decrease altitude, move downwards
-
+For Documentation regarding coordinate frames please refer to $DRONE_STACK/documentation/Coordinate_Frames/Multirotor_coordinate_frames.txt
 
 ## Launch scripts
 
-NOT UPDATED!
+In order to launch files particular to a drone there are launch files provided for each drone inside $DRONE_STACK/launchers. 
+For example, for launching ARdrone2 there are launch files present inside $DRONE_STACK/launchers/ardrone_launch. The launching instruction can for the ardrone can be found in a file called ardrone_realflight_instructions.md inside this same folder. 
 
-In order to compile the stack, the following scripts are provided (please take a look at them to understand how to modify them for your own purposes):
+NOTE: Screen needs to be installed for launching these files using screen which can be installed by sudo apt-get install screen. 
+Also it is recommended not to launch the interface using screen and it should be launhced in a seperate terminal using the following command
+${DRONE_STACK}/launchers/ardrone_launch/sh_files/run_interface_node.sh.
 
-- `${DRONE_STACK}/launchers/rosmake_sim_01.sh` : for simulated flights.
-
-- `${DRONE_STACK}/launchers/rosmake_01.sh` : for experimental flights.
-
-
-In order to run the stack, it was decided to run each node in a separate tab of a terminal window. The initialization of the architecture is done by executing shell scripts that open a new terminal with each node running in its tab. The scripts that are available are the following (please take a look at them to understand how do they work):
-
-- `${DRONE_STACK}/launchers/quadrotor_Test02.sh` : runs all the nodes required for an experimental flight.
-
-- `${DRONE_STACK}/launchers/quadrotor_Test02_no_logging.sh` : same as previous, but without logging.
-
-- `${DRONE_STACK}/launchers/quadrotor_Testsim02.sh` : runs all the nodes required for simulation.
-
-- `${DRONE_STACK}/launchers/quadrotor_Testsim03.sh` : same as previous, but runs the ArucoEye simulator module.
-
-- `${DRONE_STACK}/launchers/quadrotor_Testsim03_logging.sh` : same as previous, but with logging.
-
-- `${DRONE_STACK}/launchers/rvizInterface_Test.sh` : runs rviz with an specific configuration and an interfacing mode that converts some architecture messages to rviz markers.
-
-The launch scripts have to be called using the following sintax in the shell terminal: 
-
-```bash
-$ cd ${DRONE_STACK}/launchers
-$ launcher_script.sh NUMID_DRONE NETWORK_ROSCORE DRONE_IP DRONE_WIFI_CHANNEL
-$ # example
-$ launcher_script.sh 2 ROS_10 '' 11
-```
-- The configuration files (mission, known ArUco markers locations, controller configuration, etc) are located in `${DRONE_STACK}/configs/drone${NUMID\_DRONE}/` . Many of the stack nodes access these files in order to read their configuration parameters.
-
-
-
-NOTE: all the launchfiles open a separate terminal with multiple tabs, where each tab usually runs only one tab. If you close the terminal tabs using the close button at the corner of the window which has multiple tabs, then only one of the tabs will be closed correctly (the one that is currently selected):
-
-- The easiest way to do this fast, and cleanly is to: first, press `control+c` on every tab (navigating with `control+repag` and `control+avpag`), second, use the shortcut `ctrl+shift+w` to close first all terminal tabs and, third, `ctrl+shift+q` to close the las terminal tab (which closes the window too) including all tabs. 
-
-- The following script might be used to send a SIG\_TERM to all the terminals (equivalent to pressing `control+c` in them): ${DRONE_STACK}/launchers/stop.sh .
+For launching an complete autonoumous mission using Ardrone2, please refer to $DRONE_STACK/documentation/launch_scripts.txt. 
 
 ## How to Run
 
-NOT UPDATED!
-
-The launch scripts have to be called using the following sintax in the shell terminal: 
+For running an complete mission the launch scripts have to be called using the following syntax in the shell terminal: 
 
         ```bash
-        $ cd ${DRONE_STACK}/launchers
-        $ launcher\_script.sh NUMID\_DRONE NETWORK\_ROSCORE DRONE\_IP DRONE\_WIFI\_CHANNEL
+        $ cd ${DRONE_STACK}/launchers/Noche_de_los_investigadores
+        $ quadrotor_laNocheInvestigadores.sh NUMID_DRONE NETWORK_ROSCORE DRONE_IP DRONE_WIFI_CHANNEL
         ```
 
 ### Architecture, Map and Mission configuration
@@ -257,21 +231,22 @@ Once you run these scripts, copy the created drone${NUMID\_DRONE} configuration 
 
 ### Complete mission execution
 
-NOT UPDATED!
-
-In order to start the modules automatically the flight is started using the brain node, which starts the mission by clicking 's'.
+After launching all required launch files in order to start the mission type in a new terminal 
+  `rosservice call /drone{NUMID_DRONE}/droneMissionScheduleProcessorROSModule/start` 
 
 ### Navigation with console UI
 
-NOT UPDATED!
+The drone Interface is the screen which shows all the data regarding the drone example the battery status, rotation angles etc. The user can also give manual commands to the drone using the drone interface
 
-The keybindings of the interface are specified in the file: `${DRONE_STACK}/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt`; and are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` . 
+The keybindings of the interface are specified in the file: `${DRONE_STACK}/HMI/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt`; and are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` . 
 
-In order to start the modules automatically the flight is started using the brain node, which starts the mission by clicking 's'. Once the mission is started, the user can enter the hovering mode of the AR Drone by clicking 'h' on the UI console. Then by killing the mission planner and the trajectory planner, he can access full control of the drone through the UI console (and send commands to the trajectory controller and so on).
-
-As an alternative, the user can start the modules by hand (or editing a convenient shell script) by using the `/droneModuleName/start` service of every module in the architecture.
+If something goes wrong during the execution of the mission the user can always make the drone land or hover by giving commands using the interface. 
 
 ## Other README files
+
+- `${DRONE_STACK}/installation/installation_instructions.txt`
+
+- `${DRONE_STACK}/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt` : keybindings of the console UI, which are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` .
 
 NOT UPDATED!
 
@@ -280,11 +255,6 @@ NOT UPDATED!
 - `${DRONE_STACK}/documentation/how_to_use_dronelogger.txt`
 
 - `${DRONE_STACK}/documentation/matlab_dependencies.txt`
-
-- `${DRONE_STACK}/documentation/qtcreator_instructions.txt`
-
-- `${DRONE_STACK}/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt` : keybindings of the console UI, which are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` .
-
 
 ## License
 

@@ -1,0 +1,31 @@
+In the documentation located in `${DRONE_STACK}/documentation/Coordinate_Frames/Coordinate_Frames_documentation.tex/pdf`, this reference frame is called F_{drone_LMrT}.
+
+The reference frame that is used to reference the multirotor's telemetry, broadcasted by the multirotor's ROS driver, is:
+
+	[Fm] the mobile reference frame is centered on the drone, with:
+	 [xm] horizontal and pointing forward (same direction as the optical axis of the frontal camera
+	 [ym] horizontal and pointing rightwards from the center of the drone
+	 [zm] vertical and pointing downwards
+	
+	[F] the fixed reference frame:
+	 [x] horizontal and pointing "North" (where the magnetometer reading finds the North)
+	 [y] horizontal and pointing "East"
+	 [z] vertical and pointing downwards (the z coordinate of the drone is, thus, always negative)
+	
+	[yaw (mobile to fixed)] increases when the drones rotate in clock-wise direction
+
+The sign convention for the commands, received by the multirotor's ROS driver, is the following:
+
+	[paraphrased] The yaw, pitch, roll angles commands are related to the above mentioned [Fm] reference frame (thus setting their sign convention). The dz/"gaz" command is such that the AR Drone is commanded to go higher (increased altitude) when dz/"gaz" is positive. It can be thought of as the dz/"gaz" command setting a higher thrust on the propellers. 
+
+	[comment] the following phrases are understood from the point of view of a person sitting on the drone looking forward (looking in the same direction as the frontal camera), under no external wind conditions.
+	[pitch][+] move backwards
+	[pitch][-] move forward
+	[roll][+] move rightwards
+	[roll][-] move leftwards
+	[dyaw][+][speed command] rotate clockwise (as seen from above), or N > E > S > W > N > ...
+	[dyaw][-][speed command] rotate counter-clockwise (as seen from above), or N > W > S > E > N > ...
+	[dz][+][speed command] increase altitude, move upwards
+	[dz][-][speed command] decrease altitude, move downwards
+
+

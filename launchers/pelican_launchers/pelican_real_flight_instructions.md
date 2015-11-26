@@ -8,7 +8,7 @@ screen -S pelican -X screen -t midlevel_node               ${DRONE_STACK}/launch
 screen -S pelican -X screen -t ekf_odometry                ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_ekf_odometry.sh
 screen -S pelican -X screen -t trajectory_controller       ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_trajectory_controller.sh
 screen -S pelican -X screen -t ibvs_controller             ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_IBVS_controller.sh
-screen -S pelican -X screen -t ueycam		                   ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_cvg_ueye_04_front.sh
+screen -S pelican -X screen -t ueycam		                   ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_cvg_ueye_02_front.sh
 screen -S pelican -X screen -t Supervisor                  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_supervisor_node.sh
 
 screen -S pelican -X screen -t lider_lite                  ${DRONE_STACK}/launchers/pelican_launchers/sh_files/run_laser_altimeter.sh

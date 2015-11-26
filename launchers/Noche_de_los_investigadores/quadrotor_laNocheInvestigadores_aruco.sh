@@ -39,10 +39,10 @@ if [ -z $DRONE_WCHANNEL ] # Check if NUMID_DRONE is NULL
 fi
 
 
-#{
-#echo ./set_IP_Ch.sh $DRONE_IP $DRONE_WCHANNEL
-#echo exit
-#} | telnet 192.168.1.1
+{
+echo ./set_IP_Ch.sh $DRONE_IP $DRONE_WCHANNEL
+echo exit
+} | telnet 192.168.1.1
 #	--tab --title "Ardrone_Autonomy"	--command "bash -c \"
 #roslaunch ./ardrone_launch/ardrone_indoors.launch --wait drone_id_namespace:=drone$NUMID_DRONE drone_ip:=$DRONE_IP;
 #						exec bash\""  \

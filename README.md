@@ -157,11 +157,11 @@ The installation follows the same steps needed usually to compile a self-contain
 
 * Set up the `DRONE_STACK` and `DRONE_WORKSPACE` environment variables.
          
-         # setup the DRONE_STACK
+         # setup the DRONE_WORSPACE
          cd ~/workspace/ros/quadrotor_stack_catkin  
         ./src/quadrotor_stack/installation/installers/installWS.sh
         
-         # setup the DRONE_WORKSPACE
+         # setup the DRONE_STACK
          cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack
          ./installation/installers/installStack.sh
 

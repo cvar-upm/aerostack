@@ -123,6 +123,7 @@ The installation follows the same steps needed usually to compile a self-contain
 * Install mavlink which is required for building mavros package
         
         sudo apt-get install ros-jade-mavlink 
+        sudo apt-get install ros-jade-control-toolbox
 
         #NOTE: if there is an error while building due to the mavros package please refer the documentation/                      
         pixhawk_documentation/building_mavros.txt           

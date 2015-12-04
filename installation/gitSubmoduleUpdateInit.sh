@@ -112,6 +112,23 @@ if [[ ${driverParrotARDroneROSModule}  && $driverParrotARDroneROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#mavros
+if [[ ${mavros}  && $mavros = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixhawk/mavros
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#driverPixhawkROSModule
+if [[ ${driverPixhawkROSModule}  && $driverPixhawkROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixhawk/driverPixhawkROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
 
 #driver_camera_ueye
 if [[ ${driver_camera_ueye}  && $driver_camera_ueye = true ]]

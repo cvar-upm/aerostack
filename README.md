@@ -119,7 +119,13 @@ The installation follows the same steps needed usually to compile a self-contain
     
         # The drivers can be downloaded from the following website
         #https://en.ids-imaging.com/download-ueye.html
-      
+
+* Install mavlink which is required for building mavros package
+        
+        sudo apt-get install ros-jade-mavlink 
+
+        #NOTE: if there is an error while building due to the mavros package please refer the documentation/                      
+        pixhawk_documentation/building_mavros.txt           
 
 * Uninstall environmet variables of other (older) versions of the Aerostack (This step is only important is the Aerostack was installed before on the system)
         
@@ -139,7 +145,7 @@ The installation follows the same steps needed usually to compile a self-contain
         cd quadrotor_stack_catkin
         
         # First built of the CATKIN_WORKSPACE
-        source /opt/ros/indigo/setup.bash      
+        source /opt/ros/jade/setup.bash      
         mkdir src
         cd src
         catkin_init_workspace

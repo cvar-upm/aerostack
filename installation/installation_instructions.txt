@@ -42,6 +42,12 @@ sudo apt-get install libblas3 libblas-dev
 # F2C
 sudo apt-get install libf2c2 libf2c2-dev
 
+# mavlink which is required for building mavros package
+
+sudo apt-get install ros-jade-mavlink 
+
+#NOTE: if there is an error while building due to mavros package please refer the documentation/pixhawk_documentation/        
+       building_mavros 
 
 
 #drivers

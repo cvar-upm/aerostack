@@ -1,8 +1,7 @@
-If while building the stack the mavros package gives an error it means you need to install a latest copy of mavlink. 
+If while building the Aerostack the mavros package gives an error it means you need to install a latest copy of mavlink. 
 It can be done as follows
 1. cd /tmp  
-2. enter to the following link http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink (change from jade to indigo if using indigo)
-3. install the latest version of mavlink from the website as follows
+2. install the latest version of mavlink from the website as follows
    wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2015.11.25-0trusty-20151125-1807-+0000_amd64.deb
-4. sudo dpkg -i *mavlink*deb
+3. sudo dpkg -i *mavlink*deb
 

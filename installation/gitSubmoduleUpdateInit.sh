@@ -842,16 +842,6 @@ if [[ ${mavlink}  && $mavlink = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-#mavros
-if [[ ${mavros}  && $mavros = true ]]
-	then
-		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
-		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
-		echo " -Added package in: $MODULE_PATH"
-fi
-
-
 #droneCommunicationManagerROSModule
 if [[ ${droneCommunicationManagerROSModule}  && $droneCommunicationManagerROSModule = true ]]
 	then

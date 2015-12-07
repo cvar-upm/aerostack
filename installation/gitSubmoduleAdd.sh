@@ -930,18 +930,6 @@ if [[ ${mavlink}  && $mavlink = true ]]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-
-#mavros
-if [[ ${mavros}  && $mavros = true ]]
-	then
-		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverPixHawk/mavros
-		REPO_URL=https://github.com/mavlink/mavros.git
-		REPO_BRANCH=master
-		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
-		echo " -Added package in: $MODULE_PATH"
-fi
-
-
 #droneCommunicationManagerROSModule
 if [[ ${droneCommunicationManagerROSModule}  && $droneCommunicationManagerROSModule = true ]]
 	then

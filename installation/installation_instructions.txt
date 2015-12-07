@@ -45,7 +45,7 @@ sudo apt-get install libf2c2 libf2c2-dev
 # mavlink which is required for building mavros package
 
 sudo apt-get install ros-jade-mavlink 
-sudo apt-get install ros-jade-mavlink
+sudo apt-get install ros-jade-control-toolbox
 
 #NOTE: if there is an error while building due to mavros package please refer the documentation/pixhawk_documentation/        
        building_mavros 
@@ -73,7 +73,7 @@ mkdir quadrotor_stack_catkin
 cd quadrotor_stack_catkin
 
 CREATION OF THE CATKING WORKSPACE and first built
-source /opt/ros/indigo/setup.bash
+source /opt/ros/jade/setup.bash
 mkdir src
 cd src
 catkin_init_workspace
@@ -131,7 +131,7 @@ catkin_make
 OPENING STACK with qtcreator
 cd $DRONE_WORKSPACE/src
 rm CMakeLists.txt
-cp /opt/ros/indigo/share/catkin/cmake/toplevel.cmake CMakeLists.txt
+cp /opt/ros/jade/share/catkin/cmake/toplevel.cmake CMakeLists.txt
 cd ..
 source devel/setup.bash
 qtcreator

@@ -1,0 +1,111 @@
+IMPORTANT
+Select platform as ubuntu(armhf) when installing ROS in Odroid
+
+EXTERNAL LIBRARIES THAT SHOULD BE INSTALLED
+#ncurses
+sudo apt-get install libncurses5
+sudo apt-get install ncurses-bin
+sudo apt-get install ncurses-dev
+#expect
+sudo apt-get install expect
+
+# sound_play
+# sudo apt-get install ros-jade-audio-common
+sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+
+## LEVMAR
+# Lapack
+sudo apt-get install liblapack3 liblapack-dev
+# Blas
+sudo apt-get install libblas3 libblas-dev
+# F2C
+sudo apt-get install libf2c2 libf2c2-dev
+
+# Packages required for building Mavros in odroid
+
+sudo apt-get install ros-jade-mavlink 
+sudo apt-get install ros-jade-control-toolbox
+sudo apt-get install ros-jade-angles
+sudo apt-get install ros-jade-eigen-conversions
+sudo apt-get install ros-jade-urdf
+
+#NOTE: if there is an error while building the Aerostack due to mavros package please refer the documentation/pixhawk_documentation/        
+       building_mavros_odroid.txt
+
+#drivers
+#you will also need drivers for some devices like ueye cameras.
+#https://en.ids-imaging.com/download-ueye.html
+#download the ueye drivers from the above website for Embedded system (Hard Float) and follow the instructions provided there to install them.
+
+#As the ROS installation on Odroid is Bare-bones install the following ROS packages required by the Aerostack 
+sudo apt-get install ros-jade-interactive-markers
+sudo apt-get install ros-jade-cv-bridge
+sudo apt-get install ros-jade-camera-info-manager
+sudo apt-get install ros-jade-diagnostic-updater
+
+
+#Install Eigen 
+mkdir workspace
+cd workspace
+hg clone https://bitbucket.org/eigen/eigen/
+mkdir build 
+cd build
+cmake .. 
+make
+sudo make install
+
+DEINSTALL ENVIRONMENT VARIABLES OF OTHER (OLDER) VERSIONS OF THE STACK
+sed -i '/DRONE_WORKSPACE/d' ~/.bashrc
+sed -i '/DRONE_STACK/d' ~/.bashrc
+
+NAVIGATE TO WORKSPACE OF ROS (OR CREATE IT)
+#example
+cd ~/workspace/ros
+
+CREATE A FOLDER FOR THE WHOLE STACK APPLICATION
+mkdir quadrotor_stack_catkin
+cd quadrotor_stack_catkin
+
+CREATION OF THE CATKING WORKSPACE and first built
+source /opt/ros/jade/setup.bash
+mkdir src
+cd src
+catkin_init_workspace
+cd ..
+catkin_make
+
+SOURCERING THE STACK
+source devel/setup.bash
+
+DOWNLOAD STACK
+#choose branch. By default master!
+git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
+
+
+INSTALL THE WORKSPACE -> for the setup.sh
+./src/quadrotor_stack/installation/installers/installWS.sh
+
+INSTALL THE STACK -> for the launchers and the logs
+cd src/quadrotor_stack
+./installation/installers/installStack.sh
+
+#close terminal and reopen it, or alternatively execute
+source ~/.bashrc
+
+
+DOWNLOAD REQUIRED PACKAGES OF THE STACK -> This step is slow, so, be patient!
+cd $DRONE_STACK
+#set to true packages required in installation/configSubmodules.cfg
+#if the packages are not already defined in the stack run script to add submodules
+./installation/gitSubmoduleAdd.sh installation/configSubmodules.cfg
+#if the packages are already defined in the stack run script to init submodules
+./installation/gitSubmoduleUpdateInit.sh installation/configSubmodules.cfg
+
+DELETE THE PACKAGES RELATED TO ARDRONE (This step is necessary because the Ardrone packages do no build in arm system)
+rm -rf $DRONE_STACK/stack/droneDrivers/driversPlatforms/driverParrotARDrone
+
+COMPILE STACK
+cd $DRONE_STACK
+source setup.sh
+cd $DRONE_WORKSPACE
+catkin_make

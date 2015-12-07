@@ -108,4 +108,4 @@ COMPILE STACK
 cd $DRONE_STACK
 source setup.sh
 cd $DRONE_WORKSPACE
-catkin_make
+catkin_make -j2 -l2

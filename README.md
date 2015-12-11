@@ -13,8 +13,9 @@ The current distribution supports the usage of mutiple aerial platdorms, includi
 - Parrot AR Drone 1.0 & 2.0.
 - Asctec Pelican
 - Mikrokopter Oktokopter
+- Pixhawk 
 - Bebop drone/Ardrone 3 (currently under development)
-- Pixhawk (currently under development)
+
 
 The connectivity between modules of the stack is specified in:
 `${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 

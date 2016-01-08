@@ -4,13 +4,13 @@
 	<arg name="drone_id_int" 	default="2" />
 	<arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
 	<group ns="$(arg drone_id_namespace)">
-		<!-- Altitude Okto -->
-		<node name="altitudeROSModuleokto" pkg="driver_px4flow_interface_ROSModule_okto" type="px4flowAltitudeROSModuleokto" output="screen">
+		<!-- Altitude from lidarlite sensor -->
+		<node name="altitudeROSModule" pkg="driverLidarliteInterfaceROSModule" type="lidarliteAltitudeNode" output="screen">
 			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
 			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
 		</node>
-		<!-- GroundSpeed Okto -->
-		<node name="groundSpeedROSModuleokto" pkg="driver_px4flow_interface_ROSModule_okto" type="px4flowInterfaceROSModuleokto" output="screen">
+		<!-- GroundSpeed from px4flow sensor -->
+		<node name="groundSpeedROSModule" pkg="driver_px4flow_interface_ROSModule_okto" type="px4flowInterfaceROSModuleokto" output="screen">
 			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
 			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
 		</node>

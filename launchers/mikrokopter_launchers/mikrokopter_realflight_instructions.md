@@ -4,7 +4,7 @@ screen -S    okto -X screen -t roscore              ${DRONE_STACK}/launchers/scr
 
 screen -S    okto -X screen -t okto_driver          ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_mikrokopter_driver.sh
 screen -S    okto -X screen -t px4flow_sensor       ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_px4flow_node.sh
-screen -S    okto -X screen -t px4flow_interface    ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_px4flow_interface_okto.sh
+screen -S    okto -X screen -t px4flow_interface    ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_px4flow_interface_lidar.sh
 screen -S    okto -X screen -t driverOktoROSmodule  ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_mikrokopter_driver_ros_module.sh
 screen -S    okto -X screen -t midlevel_autopilot   ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_midlevelautopilot_node.sh
 screen -S    okto -X screen -t ekf_odometry         ${DRONE_STACK}/launchers/mikrokopter_launchers/sh_files/run_ekf_odometry.sh

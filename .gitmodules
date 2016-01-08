@@ -285,10 +285,6 @@
 	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module
 	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
 	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto"]
-	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
-	url = https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
-	branch = master
 [submodule "stack/droneDrivers/driversSensors/utils/rosserial"]
 	path = stack/droneDrivers/driversSensors/utils/rosserial
 	url = https://github.com/ros-drivers/rosserial.git
@@ -392,4 +388,8 @@
 [submodule "stack/droneDrivers/driversPlatforms/driverPixhawk/mavros"]
 	path = stack/droneDrivers/driversPlatforms/driverPixhawk/mavros
 	url = https://github.com/mavlink/mavros.git
+	branch = master
+[submodule "stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule"]
+	path = stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule
+	url = https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
 	branch = master

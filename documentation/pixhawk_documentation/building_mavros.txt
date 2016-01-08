@@ -2,6 +2,6 @@ If while building the Aerostack the mavros package gives an error it means you n
 It can be done as follows
 1. cd /tmp  
 2. install the latest version of mavlink from the website as follows
-   wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2015.11.25-0trusty-20151125-1807-+0000_amd64.deb
+   wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.1.8-0trusty-20160108-0507-+0000_amd64.deb
 3. sudo dpkg -i *mavlink*deb
 

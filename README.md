@@ -120,11 +120,15 @@ The installation follows the same steps needed usually to compile a self-contain
         # The drivers can be downloaded from the following website
         #https://en.ids-imaging.com/download-ueye.html
 
-* Install mavlink which is required for building mavros package
+* Install packages which are required for building mavros package
         
-        sudo apt-get install ros-jade-mavlink 
         sudo apt-get install ros-jade-control-toolbox
-
+        
+        #Install a fresh copy of Mavlink for building Mavros
+        cd /tmp
+        wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.1.8-0trusty-20160108-0507-+0000_amd64.deb
+        sudo dpkg -i *mavlink*deb
+        
         #NOTE: if there is an error while building due to the mavros package please refer the documentation/                      
         pixhawk_documentation/building_mavros.txt           
 

@@ -42,10 +42,14 @@ sudo apt-get install libblas3 libblas-dev
 # F2C
 sudo apt-get install libf2c2 libf2c2-dev
 
-# mavlink which is required for building mavros package
+# Packages which are required for building mavros package
 
-sudo apt-get install ros-jade-mavlink 
 sudo apt-get install ros-jade-control-toolbox
+
+#Install a fresh copy of Mavlink for building Mavros
+cd /tmp
+wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.1.8-0trusty-20160108-0507-+0000_amd64.deb
+sudo dpkg -i *mavlink*deb
 
 #NOTE: if there is an error while building due to mavros package please refer the documentation/pixhawk_documentation/        
        building_mavros 
@@ -56,12 +60,9 @@ sudo apt-get install ros-jade-control-toolbox
 #https://en.ids-imaging.com/download-ueye.html
 
 
-
 DEINSTALL ENVIRONMENT VARIABLES OF OTHER (OLDER) VERSIONS OF THE STACK
 sed -i '/DRONE_WORKSPACE/d' ~/.bashrc
 sed -i '/DRONE_STACK/d' ~/.bashrc
-
-
 
 
 NAVIGATE TO WORKSPACE OF ROS (OR CREATE IT)
@@ -90,10 +91,8 @@ DOWNLOAD STACK
 git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
 
 
-
 INSTALL THE WORKSPACE -> for the setup.sh
 ./src/quadrotor_stack/installation/installers/installWS.sh
-
 
 
 INSTALL THE STACK -> for the launchers and the logs
@@ -105,8 +104,6 @@ cd src/quadrotor_stack
 source ~/.bashrc
 
 
-
-
 DOWNLOAD REQUIRED PACKAGES OF THE STACK -> This step is slow, so, be patient!
 cd $DRONE_STACK
 #set to true packages required in installation/configSubmodules.cfg
@@ -116,16 +113,11 @@ cd $DRONE_STACK
 ./installation/gitSubmoduleUpdateInit.sh installation/configSubmodules.cfg
 
 
-
-
-
 COMPILE STACK
 cd $DRONE_STACK
 source setup.sh
 cd $DRONE_WORKSPACE
 catkin_make
-
-
 
 
 OPENING STACK with qtcreator

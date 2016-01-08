@@ -184,11 +184,11 @@ if [[ ${driver_px4flow_interface_ROSModule}  && $driver_px4flow_interface_ROSMod
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-#driver_px4flow_interface_ROSModule_okto
-if [[ ${driver_px4flow_interface_ROSModule_okto}  && $driver_px4flow_interface_ROSModule_okto = true ]]
+#driverLidarliteInterfaceROSModule
+if [[ ${driverLidarliteInterfaceROSModule}  && $driverLidarliteInterfaceROSModule = true ]]
 	then
-		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
-		REPO_URL=https:https://bitbucket.org/hridaybavle/driver_px4flow_interface_rosmodule_okto.git
+		MODULE_PATH=stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule
+		REPO_URL=https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
 		REPO_BRANCH=master
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
@@ -203,9 +203,6 @@ if [[ ${rosserial}  && $rosserial = true ]]
 		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
-
-
-
 
 #droneObstacleProcessorVisualMarks
 if [[ ${droneObstacleProcessorVisualMarks}  && $droneObstacleProcessorVisualMarks = true ]]

@@ -168,12 +168,12 @@ if [[ ${driver_px4flow_interface_ROSModule}  && $driver_px4flow_interface_ROSMod
 		echo " -Added package in: $MODULE_PATH"
 fi
 
-#driver_px4flow_interface_ROSModule_okto
-if [[ ${driver_px4flow_interface_ROSModule_okto}  && $driver_px4flow_interface_ROSModule_okto = true ]]
+#driverLidarliteInterfaceROSModule
+if [[ ${driverLidarliteInterfaceROSModule}  && $driverLidarliteInterfaceROSModule = true ]]
 	then
-		MODULE_PATH=stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule_okto
+		MODULE_PATH=stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule
 		# git submodule deinit $MODULE_PATH > /dev/null
-		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		./installation/gitSubmoduleUpdateInitPublRepo.sh $MODULE_PATH > /dev/null
 		echo " -Added package in: $MODULE_PATH"
 fi
 

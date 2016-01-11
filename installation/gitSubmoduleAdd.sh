@@ -122,6 +122,26 @@ if [[ ${driverParrotARDroneROSModule}  && $driverParrotARDroneROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#driverBebopROSModule
+if [[ ${driverBebopROSModule}  && $driverBebopROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
+		REPO_URL=https://bitbucket.org/zorana/driverbeboprosmodule.git
+		REPO_BRANCH=master
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#bebop_autonomy
+if [[ ${bebop_autonomy}  && $bebop_autonomy = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
+		REPO_URL=https://github.com/AutonomyLab/bebop_autonomy.git
+		REPO_BRANCH=indigo-devel
+		./installation/gitSubmoduleAddPublRepo.sh $REPO_BRANCH $REPO_URL $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #mavros
 if [[ ${mavros}  && $mavros = true ]]
 	then

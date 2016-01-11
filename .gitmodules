@@ -393,3 +393,11 @@
 	path = stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule
 	url = https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
 	branch = master
+[submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy"]
+	path = stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
+	url = https://github.com/AutonomyLab/bebop_autonomy.git
+	branch = indigo-devel
+[submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule"]
+	path = stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
+	url = https://bitbucket.org/zorana/driverbeboprosmodule.git
+	branch = master

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+     <arg name="drone_id_namespace"  default="drone4" />
+     <arg name="drone_id_int" 	     default="4" />
+     <arg name="my_stack_directory"  default="$(env DRONE_STACK)" />
+     <arg name="wifi_selection_type"  default="1" />
+     <arg name="wifi_channel"	      default="5" />
+	
+     <group ns="$(arg drone_id_namespace)">
+        <node pkg="bebop_driver" name="bebop_driver" type="bebop_driver_node" output="screen">
+            <param name="camera_info_url" value="package://bebop_driver/data/bebop_camera_calib.yaml" />
+		<param name="NetworkSettingsWifiSelectionType" value="$(arg wifi_selection_type)" type="int" />
+		<param name="NetworkSettingsWifiSelectionChannel" value="$(arg wifi_channel)" type="int" />
+            <rosparam command="load" file="$(env DRONE_STACK)/launchers/bebop_launchers/defaults.yaml" />
+			
+        </node>
+    </group>
+</launch>

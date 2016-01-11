@@ -112,6 +112,24 @@ if [[ ${driverParrotARDroneROSModule}  && $driverParrotARDroneROSModule = true ]
 		echo " -Added package in: $MODULE_PATH"
 fi
 
+#bebop_autonomy
+if [[ ${bebop_autonomy}  && $bebop_autonomy = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitPublRepo.sh $MODULE_PATH > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
+#driverBebopROSModule
+if [[ ${driverBebopROSModule}  && $driverBebopROSModule = true ]]
+	then
+		MODULE_PATH=stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
+		# git submodule deinit $MODULE_PATH > /dev/null
+		./installation/gitSubmoduleUpdateInitBitbucketPrivRepo.sh $MODULE_PATH $bitbucketUsername $bitbucketPassword > /dev/null
+		echo " -Added package in: $MODULE_PATH"
+fi
+
 #mavros
 if [[ ${mavros}  && $mavros = true ]]
 	then

@@ -74,7 +74,8 @@ The installation follows the same steps needed usually to compile a self-contain
 * Run the installation script file
   
   cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
-  ./Installation.sh
+  
+./Installation.sh
   
   Re-open the Terminal and the Aerostack in ready to be used. 
           

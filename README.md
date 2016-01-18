@@ -62,23 +62,21 @@ This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). How
 
 The installation follows the same steps needed usually to compile a self-contained ROS stack.
 
-* Create the following directories
+#Create the following directories
 
-      mkdir workspace/ros/quadrotor_stack_catkin
+      mkdir -p workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack
+    
+#Download the Aerostack 
+       
+       cd workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack 
+       git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git
 
-      cd workspace/ros/quadrotor_stack_catkin
-
-* Download the Aerostack 
-
-       git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
-
-* Run the installation script file
+#Run the installation script file
   
        cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
+       ./Installation.sh
   
-      ./Installation.sh
-  
-*Re-open the Terminal and the Aerostack in ready to be used. 
+#Re-open the Terminal and the Aerostack is ready to be used. 
           
 ## Network setup
 

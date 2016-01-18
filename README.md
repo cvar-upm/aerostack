@@ -64,20 +64,21 @@ The installation follows the same steps needed usually to compile a self-contain
 
 * Create the following directories
 
-   mkdir workspace/ros/quadrotor_stack_catkin
-   cd workspace/ros/quadrotor_stack_catkin
+      mkdir workspace/ros/quadrotor_stack_catkin
+
+      cd workspace/ros/quadrotor_stack_catkin
 
 * Download the Aerostack 
 
-  git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
+       git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
 
 * Run the installation script file
   
-  cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
+       cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
   
-./Installation.sh
+      ./Installation.sh
   
-  Re-open the Terminal and the Aerostack in ready to be used. 
+*Re-open the Terminal and the Aerostack in ready to be used. 
           
 ## Network setup
 

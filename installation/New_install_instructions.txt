@@ -1,0 +1,10 @@
+For installing the Aerostack do the following 
+
+#Create the following Directories
+mkdir workspace/ros/quadrotor_stack_catkin
+cd workspace/ros/quadrotor_stack_catkin
+git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
+#Run the following sh file
+cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
+./Installation.sh
+

@@ -64,12 +64,12 @@ The installation follows the same steps needed usually to compile a self-contain
 
 #Create the following directories
 
-      mkdir -p workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack
+      mkdir -p workspace/ros/quadrotor_stack_catkin
     
 #Download the Aerostack 
        
-       cd workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack 
-       git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git
+       cd workspace/ros/quadrotor_stack_catkin
+       git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
 
 #Run the installation script file
   

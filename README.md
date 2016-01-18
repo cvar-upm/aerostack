@@ -69,7 +69,7 @@ The installation follows the same steps needed usually to compile a self-contain
         sudo apt-get install libncurses5
         sudo apt-get install ncurses-bin
         sudo apt-get install ncurses-dev
-        sudo apt-get install libboost1.49-dev
+        sudo apt-get install libboost1.54-dev
 
         sudo apt-get install expect
 

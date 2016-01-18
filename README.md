@@ -62,146 +62,22 @@ This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). How
 
 The installation follows the same steps needed usually to compile a self-contained ROS stack.
 
-* External libraries that should be installed
+* Create the following directories
 
-* Install ncurses,boost and expect libraries in your system.
+   mkdir workspace/ros/quadrotor_stack_catkin
+   cd workspace/ros/quadrotor_stack_catkin
 
-        sudo apt-get install libncurses5
-        sudo apt-get install ncurses-bin
-        sudo apt-get install ncurses-dev
-        sudo apt-get install libboost1.54-dev
+* Download the Aerostack 
 
-        sudo apt-get install expect
+  git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
 
-* Install libraries required by ardrone autonomy package in your system
-
-        sudo apt-get install libsdl1.2-dev
-        sudo apt-get install libudev-dev
-        sudo apt-get install libiw-dev
-
-
-* Install sound play libraries in your system
-
-        sudo apt-get install ros-jade-audio-common
-        sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
-
-* Install voices for the sound play libraries in your system
-
-        # the voices are in /usr/share/festival
-        # info at http://ubuntuforums.org/showthread.php?t=751169
-        # To get the voice sintetizer
-        sudo apt-get install festlex-cmu
-        # To get voices
-        sudo apt-cache search festvox
-        # British English male speaker for festival, 16khz sample rate [voice_rab_diphone]
-        sudo apt-get install festvox-rablpc16k
-        # American English male speaker for festival, 16khz sample rate [voice_kal_diphone]
-        sudo apt-get install festvox-kallpc16k
-        # Castilian Spanish male speaker for Festival [voice_el_diphone]
-        sudo apt-get install festvox-ellpc11k
-
-
-* Install libraries for Leap motion device
-
-         # install the sdk
-         https://developer.leapmotion.com/
-         # See documentation/leap_motion_installation.txt for further steps
-
-* Install levmar libraries in your system
-
-        # Lapack
-        sudo apt-get install liblapack3 liblapack-dev
-        # Blas
-        sudo apt-get install libblas3 libblas-dev
-        # F2C
-        sudo apt-get install libf2c2 libf2c2-dev
-
-* Install drivers for ueyecameras 
-    
-        # The drivers can be downloaded from the following website
-        #https://en.ids-imaging.com/download-ueye.html
-
-* Install packages which are required for building mavros package
-        
-        sudo apt-get install ros-jade-control-toolbox
-        
-        #Install a fresh copy of Mavlink for building Mavros
-        cd /tmp
-        wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.1.8-0trusty-20160108-0507-+0000_amd64.deb
-        sudo dpkg -i *mavlink*deb
-        
-        #NOTE: if there is an error while building due to the mavros package please refer the documentation/                      
-        pixhawk_documentation/building_mavros.txt           
-
-* Uninstall environmet variables of other (older) versions of the Aerostack (This step is only important is the Aerostack was installed before on the system)
-        
-        # This step is only required if you have installed the Aerostack before
-        sed -i '/DRONE_WORKSPACE/d' ~/.bashrc
-        sed -i '/DRONE_STACK/d' ~/.bashrc
-
-* Create a CATKIN_WORKSPACE to install the Aerostack and the required external ROS packages and stacks. For example, A CATKIN_WORKSPACE can be configured in the folder `~/workspace/ros/quadrotor_stack_catkin `. The following steps are advised:
-
-        # create the ~/workspace/ros/quadrotor_stack_catkin folder
-        cd ~
-        mkdir workspace
-        cd workspace
-        mkdir ros
-        cd ros
-        mkdir quadrotor_stack_catkin
-        cd quadrotor_stack_catkin
-        
-        # First built of the CATKIN_WORKSPACE
-        source /opt/ros/jade/setup.bash      
-        mkdir src
-        cd src
-        catkin_init_workspace
-        cd ..
-        catkin_make
-
-        # source the Aerostack
-        source devel/setup.bash
-
-* Download the Aerostack in your system 
-        
-        # choose branch. By default master!
-        git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
-       
-
-* Set up the `DRONE_STACK` and `DRONE_WORKSPACE` environment variables.
-         
-         # setup the DRONE_WORSPACE
-         cd ~/workspace/ros/quadrotor_stack_catkin  
-        ./src/quadrotor_stack/installation/installers/installWS.sh
-        
-         # setup the DRONE_STACK
-         cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack
-         ./installation/installers/installStack.sh
-
-        #close terminal and reopen it, or alternatively execute
-        source ~/.bashrc 
-   
-* Download the required ROS packages of the Aerostack (this step can be little time consuming):
-      
-        cd $DRONE_STACK
-        #set to true packages required in installation/configSubmodules.cfg
-        #if the packages are not already defined in the stack run script to add submodules
-        ./installation/gitSubmoduleAdd.sh installation/configSubmodules.cfg
-        #if the packages are already defined in the stack run script to init submodules
-        ./installation/gitSubmoduleUpdateInit.sh installation/configSubmodules.cfg
+* Run the installation script file
   
-* Each time the Aerostack is going to be used, do the following (note that the ROS_WORKSPACE and other ROS environment variables should not be loaded in the .bashrc file or other ubuntu terminal startup files):
-
-        cd ${DRONE_STACK}
-        source setup.sh
-      
-* Compile the stack:
-
-        cd ${DRONE_STACK}
-        source setup.sh
-        
-        cd $DRONE_WORKSPACE
-        catkin_make
-        
+  cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
+  ./Installation.sh
+  
+  Re-open the Terminal and the Aerostack in ready to be used. 
+          
 ## Network setup
 
 For network setup please refer to $DRONE_STACK/documentation/configureNetwork/LAN_GroundStations_Setup.txt.

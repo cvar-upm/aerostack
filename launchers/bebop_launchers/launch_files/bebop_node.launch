@@ -15,5 +15,7 @@
             <rosparam command="load" file="$(env DRONE_STACK)/launchers/bebop_launchers/defaults.yaml" />
 			
         </node>
+	<node ns="camera/front" pkg="image_proc" type="image_proc" name="image_proc" />
+
     </group>
 </launch>

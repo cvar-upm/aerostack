@@ -16,6 +16,10 @@ sudo apt-get install libsdl1.2-dev
 sudo apt-get install libudev-dev
 sudo apt-get install libiw-dev
 echo "---------------------------"
+echo "Installing Bebop Autonomy dependencies"
+echo "---------------------------"
+echo sudo apt-get install build-essential python-rosdep python-catkin-tools
+echo "---------------------------"
 echo "Installing Sound Play"
 echo "---------------------------"
 sudo apt-get install ros-$ROS_DISTRO-audio-common

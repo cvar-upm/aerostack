@@ -401,3 +401,7 @@
 	path = stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
 	url = https://bitbucket.org/zorana/driverbeboprosmodule.git
 	branch = master
+[submodule "installation/installer_script"]
+	path = installation/installer_script
+	url = https://bitbucket.org/joselusl/aerostack_installer
+	branch = master

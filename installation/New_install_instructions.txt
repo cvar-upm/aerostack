@@ -1,10 +1,12 @@
 For installing the Aerostack do the following 
 
-#Create the following Directories
-mkdir workspace/ros/quadrotor_stack_catkin
-cd workspace/ros/quadrotor_stack_catkin
-git clone -b master https://bitbucket.org/joselusl/quadrotor_swarm_sub.git ./src/quadrotor_stack
-#Run the following sh file
-cd ~/workspace/ros/quadrotor_stack_catkin/src/quadrotor_stack/installation
-./Installation.sh
+#Download the installation script file
+
+        git clone https://bitbucket.org/joselusl/aerostack_installer ~/temp
+    
+#Run it in a non-ARM Architecture Computer with Linux Ubuntu 14.04 and ROS Jade
+       
+        ~/temp/installation_script.sh
+  
+#Re-open the Terminal and the Aerostack is ready to be used. 
 

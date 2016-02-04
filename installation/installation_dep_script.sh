@@ -35,7 +35,9 @@ echo "---------------------------"
 echo "Installing Bebop Autonomy dependencies"
 echo "---------------------------"
 sudo apt-get install build-essential python-rosdep python-catkin-tools
-
+cd ${DRONE_WORKSPACE}
+rosdep update
+rosdep install --from-paths src/quadrotor_stack/stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy -i
 echo "---------------------------"
 echo "Installing Sound Play & Dependencies"
 echo "---------------------------"
@@ -53,7 +55,6 @@ sudo apt-get install festvox-rablpc16k
 sudo apt-get install festvox-kallpc16k
 # Castilian Spanish male speaker for Festival [voice_el_diphone]
 sudo apt-get install festvox-ellpc11k
-
 
 echo "----------------------------"
 echo "Installing Mavros dependencies"

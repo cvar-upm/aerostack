@@ -8,6 +8,8 @@ Some drones supported by this framework ARE NOT TOYS. Even operation by expert u
 
 We present a cost-effective framework for the prototyping of vision-based quadrotor multi-robot systems, which core characteristics are: modularity, compatibility with different platforms and being flight-proven. The framework is fully operative and based on [ROS](http://ros.org/ "Robot Operating System"). It works in simulation and in real flight tests of up to 5 drones, and was firstly introduced and demonstrated during our participation in the 2013 International Micro Air Vehicle Indoor Flight Competition [IMAV2013](http://www.imav2013.org/ "2013 International Micro Air Vehicle Indoor Flight Competition") (Toulouse, France).
 
+Please visit our webpage for more information: [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.aerostack.org/")
+
 The current distribution supports the usage of mutiple aerial platdorms, including, but not limited to:
 
 - Parrot AR Drone 1.0 & 2.0.
@@ -16,20 +18,10 @@ The current distribution supports the usage of mutiple aerial platdorms, includi
 - Pixhawk 
 - Bebop drone/Ardrone 3 (currently under development)
 
-
-The connectivity between modules of the stack is specified in:
-`${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 
-
 The functionality of the modules and the full AeroStack is explained in the following papers, please, refer to them in your work:
 
 - J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, P. Campoy. "A Reliable Open-Source System Architecture for the Fast Designing and Prototyping of Autonomous Multi-UAV Systems: Simulation and Experimentation". Journal of Intelligent and Robotic Systems. Online: Oct. 2015. Springer Netherlands. Online ISSN: 0921-0296. DOI: 10.1007/s10846-015-0288-x.
 - J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, R. Suarez-Fernandez, P. Campoy. "A System for the Design and Development of Vision-based Multi-robot Quadrotor Swarms". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 640-648. DOI: 10.1109/ICUAS.2014.6842308.
-
-Other related papers (selection):
-
-- J. L. Sanchez-Lopez, J. Pestana, J.-F. Collumeau, R. Suarez-Fernandez, P. Campoy, M. Molina. "A Vision Based Aerial Robot solution for the Mission 7 of the International Aerial Robotics Competition". Unmanned Aircraft Systems (ICUAS), 2015 International Conference on. Denver, (CO, USA). 9-12 June 2015. Pp: 1391 – 1400. Print ISBN: 978-1-4799-6009-5. DOI: 10.1109/ICUAS.2015.7152435
-- J. Pestana, J. L. Sanchez-Lopez, P. de la Puente, A. Carrio, P. Campoy. "A Vision-based Quadrotor Swarm for the participation in the 2013 International Micro Air Vehicle Competition". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 617-622. DOI: 10.1109/ICUAS.2014.6842305.
-- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, A. Carrio, P. Campoy. "Visual Quadrotor Swarm for the IMAV 2013 Indoor Competition". Robot 2013: First Iberian Robotics Conference (ROBOT 2013). Madrid (Spain). Nov. 28-29, 2013. Book title: Robot 2013: First Iberian Robotics Conference. Book subtitle: Advances in intelligent Systems and Computing. Vol. 253. Published year: 2014. Pp: 55-63. DOI: 10.1007/978-3-319-03653-3_5. Print ISBN: 978-3-319-03652-6. Online ISBN: 978-3-319-03653-3. Publisher: Springer International Publishing.
 
 The functionality of the modules and the full AeroStack is explained in the following webpages:
 
@@ -37,23 +29,33 @@ The functionality of the modules and the full AeroStack is explained in the foll
 - [http://www.vision4uav.eu/?q=swarm](http://www.vision4uav.eu/?q=swarm "http://www.vision4uav.eu")
 - [http://www.vision4uav.eu/?q=imav13](http://www.vision4uav.eu/?q=imav13 "http://www.vision4uav.eu")
 
+
+This software migth content bugs or errors. We will be very happy if you inform us about them.
+
+
 ## Table of Contents
 
 - [Installation](#installation)
 	- [Pre-requirements](#pre-requirements)
 	- [Installation Steps](#installation-steps)
-- [Network setup](#Network-setup)
-- [Launch scripts](#Launch-scripts)
-- [Coordinate Frames](#Coordinate-Frames)
 - [How to Run](#how-to-run)
+  - [Network setup](#Network-setup)
+  - [Launch scripts](#Launch-scripts)
+  - [Basic commands](#Basic-commands)
 	- [Navigation with console UI](#Navigation-with-console UI)
 	- [Complete mission execution](#Complete-mission-execution)
-- [Other README files](#Other-README-files)
+- [Documentation](#Documentation)
+  - [Components](#Components)
+  - [Coordinate Frames](#Coordinate-Frames)
+  - [Other README files](#Other-README-files)
 - [License](#license)
+- [Citation](#citation)
 - [Contributors](#Contributors)
 - [Contact Information](#Contact-Information)
 
+
 ## Installation
+
 ### Pre-requirements 
 
 This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). However it should also work on any other mainstream Linux distributions. The driver has been tested on ROS "Jade". The code requires a compiler that is compatible with the C++11 standard. Additional required libraries are: boost and ncurses. The ROS package depends on these ROS packages: `ardrone_autonomy`, `opencv2`, `roscpp`, `image_transport`, `sensor_msgs` and `std_srvs`.
@@ -62,27 +64,29 @@ This driver has been tested on Linux machines running Ubuntu 14.04 (64 bit). How
 
 The installation follows the same steps needed usually to compile a self-contained ROS stack.
 
-#Download the installation script file
+#### Download the installation script file
 
         git clone https://bitbucket.org/joselusl/aerostack_installer ~/temp
     
-#Run it in a non-ARM Architecture Computer with Linux Ubuntu 14.04 and ROS Jade
+#### Run it in a non-ARM Architecture Computer with Linux Ubuntu 14.04 and ROS Jade
        
         ~/temp/installation_script.sh
   
-#Re-open the Terminal and the Aerostack is ready to be used. 
-          
+#### Re-open the Terminal and the Aerostack is ready to be used. 
+    
+      
+## How to Run
 
-## Network setup
+Please, visit [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.aerostack.org/") for an updated documentation.
+
+### Network setup
 
 For network setup please refer to $DRONE_STACK/documentation/configureNetwork/LAN_GroundStations_Setup.txt.
 NOTE: There is no need of a network setup when using an Ardrone as it can be connected directly to the groundstation using WIFI.
 
-### Multirotor coordinate frame
+### Launch scripts
 
-For Documentation regarding coordinate frames please refer to $DRONE_STACK/documentation/Coordinate_Frames/Multirotor_coordinate_frames.txt
-
-## Launch scripts
+NOT UPDATED!
 
 In order to launch files particular to a drone there are launch files provided for each drone inside $DRONE_STACK/launchers. 
 For example, for launching ARdrone2 there are launch files present inside $DRONE_STACK/launchers/ardrone_launch. The launching instruction can for the ardrone can be found in a file called ardrone_realflight_instructions.md inside this same folder. 
@@ -93,7 +97,9 @@ ${DRONE_STACK}/launchers/ardrone_launch/sh_files/run_interface_node.sh.
 
 For launching an complete autonoumous mission using Ardrone2, please refer to $DRONE_STACK/documentation/launch_scripts.txt. 
 
-## How to Run
+### Basic Commands
+
+NOT UPDATED!
 
 For running an complete mission the launch scripts have to be called using the following syntax in the shell terminal: 
 
@@ -114,10 +120,14 @@ Once you run these scripts, copy the created drone${NUMID\_DRONE} configuration 
 
 ### Complete mission execution
 
+NOT UPDATED!
+
 After launching all required launch files in order to start the mission type in a new terminal 
   `rosservice call /drone{NUMID_DRONE}/droneMissionScheduleProcessorROSModule/start` 
 
 ### Navigation with console UI
+
+NOT UPDATED!
 
 The drone Interface is the screen which shows all the data regarding the drone example the battery status, rotation angles etc. The user can also give manual commands to the drone using the drone interface
 
@@ -125,7 +135,27 @@ The keybindings of the interface are specified in the file: `${DRONE_STACK}/HMI/
 
 If something goes wrong during the execution of the mission the user can always make the drone land or hover by giving commands using the interface. 
 
-## Other README files
+
+## Documentation
+
+Please, visit [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.aerostack.org/") for an updated documentation.
+
+### Components
+
+NOT UPDATED!
+
+The connectivity between modules of the stack is specified in:
+`${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 
+
+### Multirotor coordinate frame
+
+NOT UPDATED!
+
+For Documentation regarding coordinate frames please refer to $DRONE_STACK/documentation/Coordinate_Frames/Multirotor_coordinate_frames.txt
+
+### Other README files
+
+NOT UPDATED!
 
 - `${DRONE_STACK}/installation/installation_instructions.txt`
 
@@ -139,9 +169,10 @@ NOT UPDATED!
 
 - `${DRONE_STACK}/documentation/matlab_dependencies.txt`
 
+
 ## License
 
-All distributed software, except the packages listed in the following, are subject to `3-clause BSD` license (see the file: `LICENSE`). 
+All distributed software, except the packages listed in the following, are subject to `GPL-3.0` license: http://www.gnu.org/licenses/gpl-3.0.en.html (see the file: `LICENSE`). 
 
 This software stack uses other third-party open-source libraries (some of them are inluded in the soure of the stack as separate packages):
 
@@ -160,6 +191,20 @@ This software stack uses other third-party open-source libraries (some of them a
 - other software libraries used by this stack also uses licenses similar to `BSD` and `MIT` licenses: [ncurses](https://www.gnu.org/software/ncurses/ "GNU ncurses") and [boost](http://www.boost.org "boost c++ libraries").
 
 NOT UPDATED!
+
+
+## Citation
+
+The functionality of the modules and the full AeroStack is explained in the following papers, please, refer to them in your work:
+
+- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, P. Campoy. "A Reliable Open-Source System Architecture for the Fast Designing and Prototyping of Autonomous Multi-UAV Systems: Simulation and Experimentation". Journal of Intelligent and Robotic Systems. Online: Oct. 2015. Springer Netherlands. Online ISSN: 0921-0296. DOI: 10.1007/s10846-015-0288-x.
+- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, R. Suarez-Fernandez, P. Campoy. "A System for the Design and Development of Vision-based Multi-robot Quadrotor Swarms". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 640-648. DOI: 10.1109/ICUAS.2014.6842308.
+
+Other related papers (selection):
+
+- J. L. Sanchez-Lopez, J. Pestana, J.-F. Collumeau, R. Suarez-Fernandez, P. Campoy, M. Molina. "A Vision Based Aerial Robot solution for the Mission 7 of the International Aerial Robotics Competition". Unmanned Aircraft Systems (ICUAS), 2015 International Conference on. Denver, (CO, USA). 9-12 June 2015. Pp: 1391 – 1400. Print ISBN: 978-1-4799-6009-5. DOI: 10.1109/ICUAS.2015.7152435
+- J. Pestana, J. L. Sanchez-Lopez, P. de la Puente, A. Carrio, P. Campoy. "A Vision-based Quadrotor Swarm for the participation in the 2013 International Micro Air Vehicle Competition". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 617-622. DOI: 10.1109/ICUAS.2014.6842305.
+- J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, A. Carrio, P. Campoy. "Visual Quadrotor Swarm for the IMAV 2013 Indoor Competition". Robot 2013: First Iberian Robotics Conference (ROBOT 2013). Madrid (Spain). Nov. 28-29, 2013. Book title: Robot 2013: First Iberian Robotics Conference. Book subtitle: Advances in intelligent Systems and Computing. Vol. 253. Published year: 2014. Pp: 55-63. DOI: 10.1007/978-3-319-03653-3_5. Print ISBN: 978-3-319-03652-6. Online ISBN: 978-3-319-03653-3. Publisher: Springer International Publishing.
 
 
 ## Contributors
@@ -191,7 +236,11 @@ NOT UPDATED!
 
 ## Contact Information
 
-Current CVG (CAR, UPM-CSIC) staff that can give limited support to the usage of this stack are:
+Please, write a mail to:
+
+- aerostack.vision4uav@gmail.com
+
+Current and former CVG (CAR, UPM-CSIC) staff that can give limited support to the usage of this stack are:
 
 - Jose Luis Sanchez-Lopez: jl.sanchez@upm.es
 

@@ -1,0 +1,19 @@
+
+TO PUSH OR UPDATE THE PRIVATE REPO TO THE PUBLIC REPO
+
+# Create a new branch (release) in the local repository from a local branch
+  git checkout -b release
+# Add the url of the release remote (github) repository
+  git remote add github https://github.com/Vision4UAV/Aerostack
+# Pull master release remote (github) branch into the current local branch (release)
+  git pull github
+# Do all the changes you want and commit them as usual
+# Push the current local branch (release) into the branch master of the release remote (github) repository
+  git push github release:master
+# Switch to the previous branch in the local repo
+  git checkout master
+
+
+
+
+

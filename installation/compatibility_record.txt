@@ -7,7 +7,7 @@ LINUX UBUNTU:  [cmd to check the version: lsb_release -a ]
 
 
 ROS:
-	- Indigo: Tested by Jose Luis Sanchez Lopez (09-2014)
+	- Jade: Tested by Jose Luis Sanchez Lopez (09-2015)
 
 
 

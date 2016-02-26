@@ -69,7 +69,11 @@ else
   echo "!!!Error installing Mavros dependencies. Distro non supported!!!"
 fi
 sudo dpkg -i *mavlink*deb
+
+cd ${DRONE_STACK}
 rm -rf ./temp
+rm -rf temp/
+
 
 echo "------------------------------------------------------"
 echo "Installing Ueyecamera drivers"

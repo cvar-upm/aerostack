@@ -405,3 +405,11 @@
 	path = installation/installer_script
 	url = https://bitbucket.org/joselusl/aerostack_installer
 	branch = master
+[submodule "stack/dronePerception/drone_aruco_eye/aruco_eye"]
+	path = stack/dronePerception/drone_aruco_eye/aruco_eye
+	url = https://github.com/joselusl/aruco_eye
+	branch = master
+[submodule "stack/dronePerception/drone_aruco_eye/drone_aruco_eye_ros_module"]
+	path = stack/dronePerception/drone_aruco_eye/drone_aruco_eye_ros_module
+	url = https://bitbucket.org/joselusl/drone_aruco_eye_ros_module
+	branch = master

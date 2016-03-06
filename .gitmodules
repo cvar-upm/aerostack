@@ -1,9 +1,9 @@
 [submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye"]
-	path = stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
+	path = stack_deprecated/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
 	url = https://bitbucket.org/jespestana/driver_camera_ueye.git
 	branch = master
 [submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule"]
-	path = stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
+	path = stack_deprecated/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 	url = https://bitbucket.org/jespestana/driver_camera_ueye_rosmodule.git
 	branch = master
 [submodule "stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg"]
@@ -71,7 +71,7 @@
 	url = https://bitbucket.org/joselusl/lib_pose.git
 	branch = master
 [submodule "stack/libraries/lib_pugixml"]
-	path = stack/libraries/lib_pugixml
+	path = stack_obsolete/libraries/lib_pugixml
 	url = https://bitbucket.org/joselusl/lib_pugixml.git
 	branch = master
 [submodule "stack/libraries/referenceFrames"]
@@ -79,7 +79,7 @@
 	url = https://bitbucket.org/joselusl/referenceframes.git
 	branch = master
 [submodule "stack/utils/videoPublisherROSModule"]
-	path = stack/utils/videoPublisherROSModule
+	path = stack_deprecated/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
 	branch = master
 [submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator"]
@@ -218,11 +218,11 @@
 	url = https://bitbucket.org/jespestana/droneoktosimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator"]
-	path = stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
+	path = stack_obsolete/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
 	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule"]
-	path = stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
+	path = stack_obsolete/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
 	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule"]
@@ -378,11 +378,11 @@
 	url = https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy"]
-	path = stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
+	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
 	url = https://github.com/AutonomyLab/bebop_autonomy.git
 	branch = indigo-devel
 [submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
+	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
 	url = https://bitbucket.org/zorana/driverbeboprosmodule.git
 	branch = master
 [submodule "installation/installer_script"]

@@ -294,15 +294,15 @@
 	url = https://bitbucket.org/csampedro/dronemanagerofactions
 	branch = master
 [submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule"]
-	path = stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule
+	path = stack_devel/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule
 	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule
 	branch = master
 [submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2"]
-	path = stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2
+	path = stack_devel/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2
 	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule_v2
 	branch = master
 [submodule "stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule"]
-	path = stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
+	path = stack_devel/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
 	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
 	branch = master
 [submodule "stack/droneHighLevelControl/droneIBVSControl/droneTrackerEyeROSModule"]

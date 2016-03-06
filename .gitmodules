@@ -413,3 +413,7 @@
 	path = stack/dronePerception/drone_aruco_eye/drone_aruco_eye_ros_module
 	url = https://bitbucket.org/joselusl/drone_aruco_eye_ros_module
 	branch = master
+[submodule "stack/libraries/pugixml"]
+	path = stack/libraries/pugixml
+	url = https://github.com/joselusl/pugixml
+	branch = master

@@ -31,11 +31,11 @@
 	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver"]
-	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
+	path = stack_deprecated/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
 	url = https://bitbucket.org/Vision4UAV/okto_driver.git
 	branch = catkin
 [submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
+	path = stack_deprecated/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
 	url = https://bitbucket.org/joselusl/driveroktorosmodule.git
 	branch = master
 [submodule "stack/droneStackBasics/droneMsgsROS"]

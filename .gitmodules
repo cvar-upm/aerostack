@@ -214,7 +214,7 @@
 	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule"]
-	path = stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule
+	path = stack_deprecated/droneSimulators/droneOktoSimulatorROSModule
 	url = https://bitbucket.org/jespestana/droneoktosimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator"]

@@ -1,0 +1,34 @@
+<!-- Launches: task_based_mission_planner_process -->
+<launch>
+
+	<arg name="drone_id_namespace"  default="drone1" />
+	<arg name="drone_id" 	    default="1" />
+	<arg name="my_stack_directory" 	default="$(env DRONE_STACK)" />
+
+	<arg name="drone_Approved_Action_Topic_Name" 	       default="approved_action" />
+	<arg name="drone_Requested_Action_Topic_Name" 	   	   default="requested_action" />
+	<arg name="drone_Completed_Action_Topic_Name" 	   	   default="completed_action" />
+	<arg name="drone_Aruco_Observation_Topic_Name" 	       default="arucoObservation" />
+	<arg name="drone_Battery_Topic_Name" 	               default="battery" />
+	<arg name="drone_Current_Pose_Topic_Name"              default="EstimatedPose_droneGMR_wrt_GFF" />
+	<arg name="mission_config_file" 			           default="mission_specification_test.xml" />
+
+	<group ns="$(arg drone_id_namespace)">
+
+		<node name="task_based_mission_planner" pkg="task_based_mission_planner_process" type="task_based_mission_planner_process_main" output="screen">
+			
+			<param name="drone_Completed_Action_Topic_Name" 		    value="$(arg drone_Completed_Action_Topic_Name)" 	            type="string"/>
+			<param name="drone_Approved_Action_Topic_Name" 		        value="$(arg drone_Approved_Action_Topic_Name)" 	            type="string"/>
+			<param name="drone_Requested_Action_Topic_Name" 		    value="$(arg drone_Requested_Action_Topic_Name)" 	            type="string"/>
+			<param name="drone_Aruco_Observation_Topic_Name" 		    value="$(arg drone_Aruco_Observation_Topic_Name)" 	            type="string"/>
+			<param name="drone_Battery_Topic_Name" 		                value="$(arg drone_Battery_Topic_Name)" 	            type="string"/>
+			<param name="droneId"                                       value="$(arg drone_id)"                                         type="string"/>
+			<param name="stackPath"                                     value="$(arg my_stack_directory)"                               type="string"/>
+			<param name="mission_config_file" 			                value="$(arg mission_config_file)" 		                        type="string"/>
+            <param name="drone_Current_Pose_Topic_Name" 		        value="$(arg drone_Current_Pose_Topic_Name)" 	                type="string"/>
+
+		</node>
+
+	</group>
+
+</launch>

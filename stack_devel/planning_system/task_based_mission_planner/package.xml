@@ -1,0 +1,19 @@
+<package>
+	<name>task_based_mission_planner</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is task_based_mission_planner.
+	</description>
+	<author email="adrian.diazm@outlook.com">Adrian Diaz Moreno</author>
+	<maintainer email="adrian.diazm@outlook.com">Adrian Diaz Moreno</maintainer>
+  	<license>BSD</license>
+	<url>http://ros.org/wiki/task_based_mission_planner</url>
+
+  	<buildtool_depend>catkin</buildtool_depend>
+	<build_depend>lib_pugixml</build_depend>
+	<run_depend>lib_pugixml</run_depend>
+
+
+</package>
+
+

@@ -417,3 +417,11 @@
 	path = stack_deprecated/dronePerception/droneArucoEye/droneArucoEyeROSModule
 	url = https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 	branch = master
+[submodule "stack_devel/planning_system/task_based_mission_planner/task_based_mission_planner"]
+	path = stack_devel/planning_system/task_based_mission_planner/task_based_mission_planner
+	url = https://bitbucket.org/Adrian_Diaz/task_based_mission_planner.git
+	branch = master
+[submodule "stack_devel/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
+	path = stack_devel/planning_system/task_based_mission_planner/task_based_mission_planner_process
+	url = https://bitbucket.org/Adrian_Diaz/task_based_mission_planner_process.git
+	branch = master

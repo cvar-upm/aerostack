@@ -20,12 +20,12 @@ The current distribution supports the usage of mutiple aerial platdorms, includi
 - Pixhawk 
 - Bebop drone/Ardrone 3 (currently under development)
 
-The functionality of the modules and the full AeroStack is explained in the following papers, please, refer to them in your work:
+The functionality of the modules and the full Aerostack is explained in the following papers, please, refer to them in your work:
 
 - J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, P. Campoy. "A Reliable Open-Source System Architecture for the Fast Designing and Prototyping of Autonomous Multi-UAV Systems: Simulation and Experimentation". Journal of Intelligent and Robotic Systems. Online: Oct. 2015. Springer Netherlands. Online ISSN: 0921-0296. DOI: 10.1007/s10846-015-0288-x.
 - J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, R. Suarez-Fernandez, P. Campoy. "A System for the Design and Development of Vision-based Multi-robot Quadrotor Swarms". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 640-648. DOI: 10.1109/ICUAS.2014.6842308.
 
-The functionality of the modules and the full AeroStack is explained in the following webpages:
+The functionality of the modules and the full Aerostack is explained in the following webpages:
 
 - [http://www.vision4uav.eu/?q=quadrotor_stack](http://www.vision4uav.eu/?q=quadrotor_stack "http://www.vision4uav.eu")
 - [http://www.vision4uav.eu/?q=swarm](http://www.vision4uav.eu/?q=swarm "http://www.vision4uav.eu")
@@ -197,7 +197,7 @@ NOT UPDATED!
 
 ## Citation
 
-The functionality of the modules and the full AeroStack is explained in the following papers, please, refer to them in your work:
+The functionality of the modules and the full Aerostack is explained in the following papers, please, refer to them in your work:
 
 - J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, P. Campoy. "A Reliable Open-Source System Architecture for the Fast Designing and Prototyping of Autonomous Multi-UAV Systems: Simulation and Experimentation". Journal of Intelligent and Robotic Systems. Online: Oct. 2015. Springer Netherlands. Online ISSN: 0921-0296. DOI: 10.1007/s10846-015-0288-x.
 - J. L. Sanchez-Lopez, J. Pestana, P. de la Puente, R. Suarez-Fernandez, P. Campoy. "A System for the Design and Development of Vision-based Multi-robot Quadrotor Swarms". 2014 International Conference on Unmanned Aircraft Systems (ICUAS’14). Orlando (FL, USA). May 27-30, 2014. Pp: 640-648. DOI: 10.1109/ICUAS.2014.6842308.

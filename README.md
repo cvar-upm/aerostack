@@ -1,3 +1,5 @@
+![Logo Aerostack 3.png](https://bitbucket.org/repo/rokr9B/images/1055643018-Logo%20Aerostack%203.png)
+
 ## Safety Warning and Disclaimer
 
 You are using this software at your own risk. The authors decline any responsibility for personal injuries and/or property damage.

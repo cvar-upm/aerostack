@@ -4,7 +4,7 @@ You are using this software at your own risk. The authors decline any responsibi
 
 Some drones supported by this framework ARE NOT TOYS. Even operation by expert users might cause SERIOUS INJURIES to people around. So, please consider flying in a properly screened or isolated flight area.
 
-## AeroStack
+## Aerostack
 
 We present a cost-effective framework for the prototyping of vision-based quadrotor multi-robot systems, which core characteristics are: modularity, compatibility with different platforms and being flight-proven. The framework is fully operative and based on [ROS](http://ros.org/ "Robot Operating System"). It works in simulation and in real flight tests of up to 5 drones, and was firstly introduced and demonstrated during our participation in the 2013 International Micro Air Vehicle Indoor Flight Competition [IMAV2013](http://www.imav2013.org/ "2013 International Micro Air Vehicle Indoor Flight Competition") (Toulouse, France).
 

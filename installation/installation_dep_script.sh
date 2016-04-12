@@ -64,7 +64,7 @@ cd ${DRONE_STACK}
 mkdir temp && cd $_
 if [ "$ROS_DISTRO" == "jade" ]  ;
 then
-  wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.3.3-0trusty-20160319-040346-0700_amd64.deb
+  wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.4.4-0trusty-20160403-172852-0700_amd64.deb
 else
   echo "!!!Error installing Mavros dependencies. Distro non supported!!!"
 fi

@@ -26,8 +26,8 @@
 	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
 	url = https://bitbucket.org/joselusl/asctec_drivers.git
 	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/driverPelicanROSModule
+[submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver"]

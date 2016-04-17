@@ -6,26 +6,6 @@
 	path = stack_deprecated/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 	url = https://bitbucket.org/jespestana/driver_camera_ueye_rosmodule.git
 	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg"]
-	path = stack/droneDrivers/driversSensors/driver_px4flow/px-ros-pkg
-	url = https://github.com/cvg/px-ros-pkg.git
-	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule"]
-	path = stack/droneDrivers/driversSensors/driver_px4flow/driver_px4flow_interface_ROSModule
-	url = https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/driverParrotARDroneROSModule
-	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools"]
-	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/mav_tools
-	url = https://bitbucket.org/joselusl/mav_tools.git
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers"]
-	path = stack/droneDrivers/driversPlatforms/driverAsctecPelican/asctec_drivers
-	url = https://bitbucket.org/joselusl/asctec_drivers.git
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
@@ -257,22 +237,6 @@
 	path = stack_deprecated/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
 	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy"]
-	path = stack/droneDrivers/driversPlatforms/driverParrotARDrone/ardrone_autonomy
-	url = https://github.com/AutonomyLab/ardrone_autonomy.git
-	branch = indigo-devel
-[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver"]
-	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver
-	url = https://bitbucket.org/hridaybavle/mikrokopter_driver
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module"]
-	path = stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/mikrokopter_driver_ros_module
-	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
-	branch = master
-[submodule "stack/droneDrivers/driversSensors/utils/rosserial"]
-	path = stack/droneDrivers/driversSensors/utils/rosserial
-	url = https://github.com/ros-drivers/rosserial.git
-	branch = indigo-devel
 [submodule "stack/droneHighLevelControl/droneIBVSControl/droneIBVSController"]
 	path = stack/droneHighLevelControl/droneIBVSControl/droneIBVSController
 	url = https://bitbucket.org/hridaybavle/droneibvscontroller.git
@@ -333,10 +297,6 @@
 	path = stack/HMI/droneSpeechROSModule
 	url = https://bitbucket.org/joselusl/dronespeechrosmodule.git
 	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion"]
-	path = stack/droneDrivers/driversSensors/driver_leapmotion/leap_motion
-	url = https://github.com/ros-drivers/leap_motion
-	branch = master
 [submodule "stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule"]
 	path = stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
 	url = https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
@@ -344,10 +304,6 @@
 [submodule "stack/droneCommunication/droneCommunicationManagerROSModule"]
 	path = stack/droneCommunication/droneCommunicationManagerROSModule
 	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
-	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam"]
-	path = stack/droneDrivers/driversSensors/driver_camera_ueye/ueye_cam
-	url = https://github.com/anqixu/ueye_cam
 	branch = master
 [submodule "configs"]
 	path = configs
@@ -364,18 +320,6 @@
 [submodule "stack/HMI/droneSoundROSModule"]
 	path = stack/HMI/droneSoundROSModule
 	url = https://bitbucket.org/joselusl/dronesoundrosmodule.git
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverPixhawk/driverPixhawkROSModule"]
-	path = stack/droneDrivers/driversPlatforms/driverPixhawk/driverPixhawkROSModule
-	url = https://bitbucket.org/hridaybavle/driverpixhawkrosmodule.git
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverPixhawk/mavros"]
-	path = stack/droneDrivers/driversPlatforms/driverPixhawk/mavros
-	url = https://github.com/mavlink/mavros.git
-	branch = master
-[submodule "stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule"]
-	path = stack/droneDrivers/driversSensors/driverLidarlite/driverLidarliteInterfaceROSModule
-	url = https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy"]
 	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
@@ -444,4 +388,60 @@
 [submodule "documentation"]
 	path = documentation
 	url = https://bitbucket.org/Vision4UAV/aerostack_documentation
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/mav_tools"]
+	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/mav_tools
+	url = https://bitbucket.org/joselusl/mav_tools.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/asctec_drivers"]
+	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/asctec_drivers
+	url = https://bitbucket.org/joselusl/asctec_drivers.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller"]
+	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller_process
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy"]
+	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy
+	url = https://github.com/AutonomyLab/ardrone_autonomy.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process
+	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
+	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
+	url = https://github.com/mavlink/mavros.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/driver_pixhawk_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/driver_pixhawk_process
+	url = https://bitbucket.org/hridaybavle/driverpixhawkrosmodule.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_sensors/driver_leapmotion/leap_motion"]
+	path = stack/hardware_interface/drivers_sensors/driver_leapmotion/leap_motion
+	url = https://github.com/ros-drivers/leap_motion
+	branch = master
+[submodule "stack/hardware_interface/drivers_sensors/utils/rosserial"]
+	path = stack/hardware_interface/drivers_sensors/utils/rosserial
+	url = https://github.com/ros-drivers/rosserial.git
+	branch = indigo-devel
+[submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_process"]
+	path = stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_process
+	url = https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/px-ros-pkg"]
+	path = stack/hardware_interface/drivers_sensors/driver_px4flow/px-ros-pkg
+	url = https://github.com/cvg/px-ros-pkg.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_sensors/driver_camera_ueye/ueye_cam"]
+	path = stack/hardware_interface/drivers_sensors/driver_camera_ueye/ueye_cam
+	url = https://github.com/anqixu/ueye_cam
+	branch = master
+[submodule "stack/hardware_interface/drivers_sensors/driver_lidar_lite/driver_lidar_lite_process"]
+	path = stack/hardware_interface/drivers_sensors/driver_lidar_lite/driver_lidar_lite_process
+	url = https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
 	branch = master

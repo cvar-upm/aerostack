@@ -1,6 +1,0 @@
-To checkout a remote branch in a local branch:
-git checkout -b branch origin/branch
-
-#ej:
-git checkout -b imav13 origin/imav13
-git checkout -b iarc14 origin/iarc14

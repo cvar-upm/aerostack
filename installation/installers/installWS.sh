@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#DRONE_WORKSPACE
-echo "export DRONE_WORKSPACE=`pwd`" >> $HOME/.bashrc
+#AEROSTACK_WORKSPACE
+echo "export AEROSTACK_WORKSPACE=`pwd`" >> $HOME/.bashrc
 

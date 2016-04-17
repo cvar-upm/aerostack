@@ -68,7 +68,7 @@ The installation follows the same steps needed usually to compile a self-contain
 
 #### Download the installation script file
 
-        git clone https://bitbucket.org/joselusl/aerostack_installer ~/temp
+        git clone https://bitbucket.org/Vision4UAV/aerostack_installer ~/temp
     
 #### Run it in a non-ARM Architecture Computer with Linux Ubuntu 14.04 and ROS Jade
        
@@ -83,21 +83,21 @@ Please, visit [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.
 
 ### Network setup
 
-For network setup please refer to $DRONE_STACK/documentation/configureNetwork/LAN_GroundStations_Setup.txt.
+For network setup please refer to $AEROSTACK_STACK/documentation/configureNetwork/LAN_GroundStations_Setup.txt.
 NOTE: There is no need of a network setup when using an Ardrone as it can be connected directly to the groundstation using WIFI.
 
 ### Launch scripts
 
 NOT UPDATED!
 
-In order to launch files particular to a drone there are launch files provided for each drone inside $DRONE_STACK/launchers. 
-For example, for launching ARdrone2 there are launch files present inside $DRONE_STACK/launchers/ardrone_launch. The launching instruction can for the ardrone can be found in a file called ardrone_realflight_instructions.md inside this same folder. 
+In order to launch files particular to a drone there are launch files provided for each drone inside $AEROSTACK_STACK/launchers. 
+For example, for launching ARdrone2 there are launch files present inside $AEROSTACK_STACK/launchers/ardrone_launch. The launching instruction can for the ardrone can be found in a file called ardrone_realflight_instructions.md inside this same folder. 
 
 NOTE: Screen needs to be installed for launching these files using screen which can be installed by sudo apt-get install screen. 
 Also it is recommended not to launch the interface using screen and it should be launhced in a seperate terminal using the following command
-${DRONE_STACK}/launchers/ardrone_launch/sh_files/run_interface_node.sh.
+${AEROSTACK_STACK}/launchers/ardrone_launch/sh_files/run_interface_node.sh.
 
-For launching an complete autonoumous mission using Ardrone2, please refer to $DRONE_STACK/documentation/launch_scripts.txt. 
+For launching an complete autonoumous mission using Ardrone2, please refer to $AEROSTACK_STACK/documentation/launch_scripts.txt. 
 
 ### Basic Commands
 
@@ -106,7 +106,7 @@ NOT UPDATED!
 For running an complete mission the launch scripts have to be called using the following syntax in the shell terminal: 
 
         ```bash
-        $ cd ${DRONE_STACK}/launchers/Noche_de_los_investigadores
+        $ cd ${AEROSTACK_STACK}/launchers/Noche_de_los_investigadores
         $ quadrotor_laNocheInvestigadores.sh NUMID_DRONE NETWORK_ROSCORE DRONE_IP DRONE_WIFI_CHANNEL
         ```
 
@@ -114,11 +114,11 @@ For running an complete mission the launch scripts have to be called using the f
 
 NOT UPDATED!
 
-Check the `${DRONE_STACK}/documentation/matlab_dependencies.txt` file to understand how to configure a mission. More specifically, after adding the related Matlab libraries to your Matlab path, check the following files:
-	`${DRONE_STACK}/configs/Mission_10b/script_Mission10b_Generator.m`, 
-	`${DRONE_STACK}/configs/Mission_11c/script_Mission11c_Generator.m`, 
-	`${DRONE_STACK}/configs/Mission_IMAV13/script_IMAV13_Generator.m` .
-Once you run these scripts, copy the created drone${NUMID\_DRONE} configuration folders to the ${DRONE_STACK}/configs folder.
+Check the `${AEROSTACK_STACK}/documentation/matlab_dependencies.txt` file to understand how to configure a mission. More specifically, after adding the related Matlab libraries to your Matlab path, check the following files:
+	`${AEROSTACK_STACK}/configs/Mission_10b/script_Mission10b_Generator.m`, 
+	`${AEROSTACK_STACK}/configs/Mission_11c/script_Mission11c_Generator.m`, 
+	`${AEROSTACK_STACK}/configs/Mission_IMAV13/script_IMAV13_Generator.m` .
+Once you run these scripts, copy the created drone${NUMID\_DRONE} configuration folders to the ${AEROSTACK_STACK}/configs folder.
 
 ### Complete mission execution
 
@@ -133,7 +133,7 @@ NOT UPDATED!
 
 The drone Interface is the screen which shows all the data regarding the drone example the battery status, rotation angles etc. The user can also give manual commands to the drone using the drone interface
 
-The keybindings of the interface are specified in the file: `${DRONE_STACK}/HMI/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt`; and are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` . 
+The keybindings of the interface are specified in the file: `${AEROSTACK_STACK}/HMI/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt`; and are programmed in the following source file: `${AEROSTACK_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` . 
 
 If something goes wrong during the execution of the mission the user can always make the drone land or hover by giving commands using the interface. 
 
@@ -147,29 +147,29 @@ Please, visit [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.
 NOT UPDATED!
 
 The connectivity between modules of the stack is specified in:
-`${DRONE_STACK}/documentation/system_module_architecture.png` . Where ${DRONE_STACK} refers to the folder where this software stack was downloaded. 
+`${AEROSTACK_STACK}/documentation/system_module_architecture.png` . Where ${AEROSTACK_STACK} refers to the folder where this software stack was downloaded. 
 
 ### Multirotor coordinate frame
 
 NOT UPDATED!
 
-For Documentation regarding coordinate frames please refer to $DRONE_STACK/documentation/Coordinate_Frames/Multirotor_coordinate_frames.txt
+For Documentation regarding coordinate frames please refer to $AEROSTACK_STACK/documentation/Coordinate_Frames/Multirotor_coordinate_frames.txt
 
 ### Other README files
 
 NOT UPDATED!
 
-- `${DRONE_STACK}/installation/installation_instructions.txt`
+- `${AEROSTACK_STACK}/installation/installation_instructions.txt`
 
-- `${DRONE_STACK}/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt` : keybindings of the console UI, which are programmed in the following source file: `${DRONE_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` .
+- `${AEROSTACK_STACK}/droneInterfaceROSModule/other/keybindings_interfacejp_tentative.txt` : keybindings of the console UI, which are programmed in the following source file: `${AEROSTACK_STACK}/droneInterfaceROSModule/src/sources/droneInterface_jp_ROSModuleNode.cpp` .
 
 NOT UPDATED!
 
-- `${DRONE_STACK}/documentation/how_to_setup_and_use_chrony.txt`
+- `${AEROSTACK_STACK}/documentation/how_to_setup_and_use_chrony.txt`
 
-- `${DRONE_STACK}/documentation/how_to_use_dronelogger.txt`
+- `${AEROSTACK_STACK}/documentation/how_to_use_dronelogger.txt`
 
-- `${DRONE_STACK}/documentation/matlab_dependencies.txt`
+- `${AEROSTACK_STACK}/documentation/matlab_dependencies.txt`
 
 
 ## License

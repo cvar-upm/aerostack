@@ -35,7 +35,7 @@ echo "---------------------------"
 echo "Installing Bebop Autonomy dependencies"
 echo "---------------------------"
 sudo apt-get install build-essential python-rosdep python-catkin-tools
-cd ${DRONE_WORKSPACE}
+cd ${AEROSTACK_WORKSPACE}
 rosdep update
 rosdep install --from-paths src/quadrotor_stack/stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy -i
 echo "---------------------------"
@@ -60,7 +60,7 @@ echo "----------------------------"
 echo "Installing Mavros dependencies"
 echo "----------------------------"
 sudo apt-get install ros-$ROS_DISTRO-control-toolbox
-cd ${DRONE_STACK}
+cd ${AEROSTACK_STACK}
 mkdir temp && cd $_
 if [ "$ROS_DISTRO" == "jade" ]  ;
 then
@@ -70,7 +70,7 @@ else
 fi
 sudo dpkg -i *mavlink*deb
 
-cd ${DRONE_STACK}
+cd ${AEROSTACK_STACK}
 rm -rf ./temp
 rm -rf temp/
 
@@ -78,6 +78,6 @@ rm -rf temp/
 echo "------------------------------------------------------"
 echo "Installing Ueyecamera drivers"
 echo "------------------------------------------------------"
-cd ${DRONE_STACK}/installation
+cd ${AEROSTACK_STACK}/installation/drivers
 sudo ./ueyesdk-setup-4.60-usb-amd64.gz.run 
 

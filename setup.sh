@@ -2,7 +2,7 @@
 #echo "Running setup.sh .."
 echo "-Setting ROS workspace"
 #http://stackoverflow.com/questions/16011245/source-files-in-a-bash-script
-. ${DRONE_WORKSPACE}/devel/setup.bash
+. ${AEROSTACK_WORKSPACE}/devel/setup.bash
 
 NETWORK_ROSCORE=$1
 # http://stackoverflow.com/questions/6482377/bash-shell-script-check-input-argument

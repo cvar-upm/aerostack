@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#DRONE_STACK
-echo "export DRONE_STACK=`pwd`" >> $HOME/.bashrc
+#AEROSTACK_STACK
+echo "export AEROSTACK_STACK=`pwd`" >> $HOME/.bashrc

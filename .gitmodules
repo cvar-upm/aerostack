@@ -62,26 +62,6 @@
 	path = stack_deprecated/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
 	branch = master
-[submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator"]
-	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimator
-	url = https://bitbucket.org/jespestana/droneekfstateestimator.git
-	branch = master
-[submodule "stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule"]
-	path = stack/droneSelfLocalization/droneOdometryPoseEstimator/droneEKFStateEstimatorROSModule
-	url = https://bitbucket.org/jespestana/droneekfstateestimatorrosmodule.git
-	branch = master
-[submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer"]
-	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizer
-	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
-	branch = master
-[submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule"]
-	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/droneVisualMarkersLocalizerROSModule
-	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
-	branch = master
-[submodule "stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS"]
-	path = stack/droneSelfLocalization/droneVisualMarkersLocalizer/referenceFramesROS
-	url = https://bitbucket.org/joselusl/referenceframesros.git
-	branch = master
 [submodule "stack/droneLogging/lib_cvglogger"]
 	path = stack/droneLogging/lib_cvglogger
 	url = https://bitbucket.org/jespestana/lib_cvglogger.git
@@ -109,14 +89,6 @@
 [submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule"]
 	path = stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
 	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
-	branch = master
-[submodule "stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks"]
-	path = stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarks
-	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
-	branch = master
-[submodule "stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule"]
-	path = stack/droneEnvironmentUnderstanding/droneObstacleProcessorVisualMarks/droneObstacleProcessorVisualMarksROSModule
-	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
 	branch = master
 [submodule "stack/droneHighLevelControl/dronePBVSPositionMidLevelController"]
 	path = stack/droneHighLevelControl/dronePBVSPositionMidLevelController
@@ -245,14 +217,6 @@
 	path = stack/droneHighLevelControl/droneIBVSControl/droneIBVSControllerROSModule
 	url = https://bitbucket.org/hridaybavle/droneibvscontrollerrosmodule.git
 	branch = master
-[submodule "stack/dronePerception/openTLD/droneOpenTLDTranslatorROS"]
-	path = stack/dronePerception/openTLD/droneOpenTLDTranslatorROS
-	url = https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
-	branch = master
-[submodule "stack/dronePerception/openTLD/ros_opentld"]
-	path = stack/dronePerception/openTLD/ros_opentld
-	url = https://github.com/Ronan0912/ros_opentld.git
-	branch = master
 [submodule "stack/droneActionsManaging/droneManagerOfActions"]
 	path = stack/droneActionsManaging/droneManagerOfActions
 	url = https://bitbucket.org/csampedro/dronemanagerofactions
@@ -313,10 +277,6 @@
 	path = stack/libraries/lib_levmar-2.6
 	url = https://bitbucket.org/joselusl/lib_levmar-2.6
 	branch = master
-[submodule "stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule"]
-	path = stack/droneEnvironmentUnderstanding/droneObstacleDistanceCalculation/droneObstacleDistanceCalculatorROSModule
-	url = https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
-	branch = master
 [submodule "stack/HMI/droneSoundROSModule"]
 	path = stack/HMI/droneSoundROSModule
 	url = https://bitbucket.org/joselusl/dronesoundrosmodule.git
@@ -332,14 +292,6 @@
 [submodule "installation/installer_script"]
 	path = installation/installer_script
 	url = https://bitbucket.org/Vision4UAV/aerostack_installer
-	branch = master
-[submodule "stack/dronePerception/drone_aruco_eye/aruco_eye"]
-	path = stack/dronePerception/drone_aruco_eye/aruco_eye
-	url = https://github.com/joselusl/aruco_eye
-	branch = master
-[submodule "stack/dronePerception/drone_aruco_eye/drone_aruco_eye_ros_module"]
-	path = stack/dronePerception/drone_aruco_eye/drone_aruco_eye_ros_module
-	url = https://bitbucket.org/joselusl/drone_aruco_eye_ros_module
 	branch = master
 [submodule "stack/libraries/pugixml"]
 	path = stack/libraries/pugixml
@@ -444,4 +396,52 @@
 [submodule "stack/hardware_interface/drivers_sensors/driver_lidar_lite/driver_lidar_lite_process"]
 	path = stack/hardware_interface/drivers_sensors/driver_lidar_lite/driver_lidar_lite_process
 	url = https://bitbucket.org/hridaybavle/driverlidarliteinterfacerosmodule
+	branch = master
+[submodule "stack/feature_extraction_system/drone_aruco_eye/aruco_eye_process"]
+	path = stack/feature_extraction_system/drone_aruco_eye/aruco_eye_process
+	url = https://bitbucket.org/joselusl/drone_aruco_eye_ros_module
+	branch = master
+[submodule "stack/feature_extraction_system/drone_aruco_eye/aruco_eye"]
+	path = stack/feature_extraction_system/drone_aruco_eye/aruco_eye
+	url = https://github.com/joselusl/aruco_eye
+	branch = master
+[submodule "stack/feature_extraction_system/opentld/opentld_process"]
+	path = stack/feature_extraction_system/opentld/opentld_process
+	url = https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
+	branch = master
+[submodule "stack/feature_extraction_system/opentld/ros_opentld"]
+	path = stack/feature_extraction_system/opentld/ros_opentld
+	url = https://github.com/Ronan0912/ros_opentld.git
+	branch = master
+[submodule "stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer_process"]
+	path = stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer_process
+	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
+	branch = master
+[submodule "stack/situation_awareness_system/visual_markers_localizer/reference_frames"]
+	path = stack/situation_awareness_system/visual_markers_localizer/reference_frames
+	url = https://bitbucket.org/joselusl/referenceframesros.git
+	branch = master
+[submodule "stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer"]
+	path = stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer
+	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
+	branch = master
+[submodule "stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator"]
+	path = stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator
+	url = https://bitbucket.org/jespestana/droneekfstateestimator.git
+	branch = master
+[submodule "stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator_process"]
+	path = stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator_process
+	url = https://bitbucket.org/jespestana/droneekfstateestimatorrosmodule.git
+	branch = master
+[submodule "stack/situation_awareness_system/obstacle_distance_calculator/obstacle_distance_calculator_process"]
+	path = stack/situation_awareness_system/obstacle_distance_calculator/obstacle_distance_calculator_process
+	url = https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
+	branch = master
+[submodule "stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process"]
+	path = stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process
+	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
+	branch = master
+[submodule "stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
+	path = stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
+	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
 	branch = master

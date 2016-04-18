@@ -78,18 +78,6 @@
 	path = stack/droneLogging/dronePelicanLoggerROSModule
 	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
 	branch = master
-[submodule "stack/droneYawCommanding/droneYawCommanderROSModule"]
-	path = stack/droneYawCommanding/droneYawCommanderROSModule
-	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
-	branch = master
-[submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlanner"]
-	path = stack/droneTrajectoryPlanning/droneTrajectoryPlanner
-	url = https://bitbucket.org/joselusl/dronetrajectoryplanner.git
-	branch = master
-[submodule "stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule"]
-	path = stack/droneTrajectoryPlanning/droneTrajectoryPlannerROSModule
-	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
-	branch = master
 [submodule "stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule"]
 	path = stack_deprecated/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
 	url = https://bitbucket.org/jespestana/droneiarc14missionschedulerrosmodule.git
@@ -181,10 +169,6 @@
 	path = stack_deprecated/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
 	branch = master
-[submodule "stack/droneActionsManaging/droneManagerOfActions"]
-	path = stack/droneActionsManaging/droneManagerOfActions
-	url = https://bitbucket.org/csampedro/dronemanagerofactions
-	branch = master
 [submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule"]
 	path = stack_devel/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule
 	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule
@@ -197,10 +181,6 @@
 	path = stack_devel/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
 	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
 	branch = master
-[submodule "stack/droneActionsManaging/droneManagerOfActionsROSModule"]
-	path = stack/droneActionsManaging/droneManagerOfActionsROSModule
-	url = https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule
-	branch = master
 [submodule "stack/utils/audio_common"]
 	path = stack/utils/audio_common
 	url = https://github.com/ros-drivers/audio_common
@@ -209,14 +189,6 @@
 	path = stack/supervision_system
 	url = https://bitbucket.org/Ortinson/supervision_system
 	branch = master
-[submodule "stack/droneMissionPlanning/droneMissionScheduleProcessor"]
-	path = stack/droneMissionPlanning/droneMissionScheduleProcessor
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
-	branch = master
-[submodule "stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule"]
-	path = stack/droneMissionPlanning/droneMissionScheduleProcessorROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
-	branch = master
 [submodule "stack/HMI/droneSpeechROSModule"]
 	path = stack/HMI/droneSpeechROSModule
 	url = https://bitbucket.org/joselusl/dronespeechrosmodule.git
@@ -224,10 +196,6 @@
 [submodule "stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule"]
 	path = stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
 	url = https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
-	branch = master
-[submodule "stack/droneCommunication/droneCommunicationManagerROSModule"]
-	path = stack/droneCommunication/droneCommunicationManagerROSModule
-	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
 	branch = master
 [submodule "configs"]
 	path = configs
@@ -444,4 +412,36 @@
 [submodule "stack/feature_extraction_system/aruco_eye/aruco_eye"]
 	path = stack/feature_extraction_system/aruco_eye/aruco_eye
 	url = https://github.com/joselusl/aruco_eye
+	branch = master
+[submodule "stack/executive_system/manager_of_actions/manager_of_actions"]
+	path = stack/executive_system/manager_of_actions/manager_of_actions
+	url = https://bitbucket.org/csampedro/dronemanagerofactions
+	branch = master
+[submodule "stack/executive_system/manager_of_actions/manager_of_actions_process"]
+	path = stack/executive_system/manager_of_actions/manager_of_actions_process
+	url = https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule
+	branch = master
+[submodule "stack/planning_system/trajectory_planner/trajectory_planner_process"]
+	path = stack/planning_system/trajectory_planner/trajectory_planner_process
+	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
+	branch = master
+[submodule "stack/planning_system/trajectory_planner/trajectory_planner"]
+	path = stack/planning_system/trajectory_planner/trajectory_planner
+	url = https://bitbucket.org/joselusl/dronetrajectoryplanner.git
+	branch = master
+[submodule "stack/planning_system/mission_planner/task_based_mission_planner_process"]
+	path = stack/planning_system/mission_planner/task_based_mission_planner_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
+	branch = master
+[submodule "stack/planning_system/mission_planner/task_based_mission_planner"]
+	path = stack/planning_system/mission_planner/task_based_mission_planner
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
+	branch = master
+[submodule "stack/planning_system/yaw_planner/yaw_planner_process"]
+	path = stack/planning_system/yaw_planner/yaw_planner_process
+	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
+	branch = master
+[submodule "stack/communication_system/communication_manager_process"]
+	path = stack/communication_system/communication_manager_process
+	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
 	branch = master

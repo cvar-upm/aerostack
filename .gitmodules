@@ -22,10 +22,6 @@
 	path = stack/libraries/lib_cvgekf
 	url = https://bitbucket.org/joselusl/lib_cvgekf.git
 	branch = master
-[submodule "stack/libraries/lib_cvgthread"]
-	path = stack/libraries/lib_cvgthread
-	url = https://bitbucket.org/jespestana/lib_cvgthread.git
-	branch = master
 [submodule "stack/libraries/lib_cvgutils"]
 	path = stack/libraries/lib_cvgutils
 	url = https://bitbucket.org/jespestana/lib_cvgutils.git
@@ -34,37 +30,13 @@
 	path = stack/libraries/lib_newmat11
 	url = https://bitbucket.org/joselusl/lib_newmat11.git
 	branch = master
-[submodule "stack/libraries/lib_pose"]
-	path = stack/libraries/lib_pose
-	url = https://bitbucket.org/joselusl/lib_pose.git
-	branch = master
 [submodule "stack/libraries/lib_pugixml"]
 	path = stack_obsolete/libraries/lib_pugixml
 	url = https://bitbucket.org/joselusl/lib_pugixml.git
 	branch = master
-[submodule "stack/libraries/referenceFrames"]
-	path = stack/libraries/referenceFrames
-	url = https://bitbucket.org/joselusl/referenceframes.git
-	branch = master
 [submodule "stack/utils/videoPublisherROSModule"]
 	path = stack_deprecated/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
-	branch = master
-[submodule "stack/droneLogging/lib_cvglogger"]
-	path = stack/droneLogging/lib_cvglogger
-	url = https://bitbucket.org/jespestana/lib_cvglogger.git
-	branch = master
-[submodule "stack/droneLogging/lib_cvgloggerROS"]
-	path = stack/droneLogging/lib_cvgloggerROS
-	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
-	branch = master
-[submodule "stack/droneLogging/droneLoggerROSModule"]
-	path = stack/droneLogging/droneLoggerROSModule
-	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
-	branch = master
-[submodule "stack/droneLogging/dronePelicanLoggerROSModule"]
-	path = stack/droneLogging/dronePelicanLoggerROSModule
-	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
 	branch = master
 [submodule "stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule"]
 	path = stack_deprecated/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
@@ -126,22 +98,6 @@
 	path = stack_deprecated/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrosmodule.git
 	branch = master
-[submodule "stack/HMI/droneArchitectureRvizInterfaceROSModule"]
-	path = stack/HMI/droneArchitectureRvizInterfaceROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronearchitecturervizinterfacerosmodule.git
-	branch = master
-[submodule "stack/HMI/droneEkfSimulatorRvizROSModule"]
-	path = stack/HMI/droneEkfSimulatorRvizROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/droneekfsimulatorrvizrosmodule.git
-	branch = master
-[submodule "stack/HMI/droneInterfaceROSModule"]
-	path = stack/HMI/droneInterfaceROSModule
-	url = https://bitbucket.org/joselusl/droneinterfacerosmodule.git
-	branch = master
-[submodule "stack/HMI/droneSimulatorRvizROSModule"]
-	path = stack/HMI/droneSimulatorRvizROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronesimulatorrvizrosmodule.git
-	branch = master
 [submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
 	path = stack_deprecated/HMI/IARC14/robotSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
@@ -162,14 +118,6 @@
 	path = stack/utils/audio_common
 	url = https://github.com/ros-drivers/audio_common
 	branch = master
-[submodule "stack/HMI/droneSpeechROSModule"]
-	path = stack/HMI/droneSpeechROSModule
-	url = https://bitbucket.org/joselusl/dronespeechrosmodule.git
-	branch = master
-[submodule "stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule"]
-	path = stack/HMI/droneLeapMotionDroneControlUserInterfaceROSModule
-	url = https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
-	branch = master
 [submodule "configs"]
 	path = configs
 	url = https://bitbucket.org/joselusl/quadrotor_stack_configs
@@ -177,10 +125,6 @@
 [submodule "stack/libraries/lib_levmar-2.6"]
 	path = stack/libraries/lib_levmar-2.6
 	url = https://bitbucket.org/joselusl/lib_levmar-2.6
-	branch = master
-[submodule "stack/HMI/droneSoundROSModule"]
-	path = stack/HMI/droneSoundROSModule
-	url = https://bitbucket.org/joselusl/dronesoundrosmodule.git
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy"]
 	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
@@ -445,4 +389,60 @@
 [submodule "stack/common/aerostack_msgs"]
 	path = stack/common/aerostack_msgs
 	url = https://bitbucket.org/joselusl/dronemsgsros.git
+	branch = master
+[submodule "stack/ground_control_system/rviz/droneEkfSimulatorRvizROSModule"]
+	path = stack/ground_control_system/rviz/droneEkfSimulatorRvizROSModule
+	url = https://bitbucket.org/ramon_suarez_fernandez/droneekfsimulatorrvizrosmodule.git
+	branch = master
+[submodule "stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule"]
+	path = stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronearchitecturervizinterfacerosmodule.git
+	branch = master
+[submodule "stack/ground_control_system/rviz/droneSimulatorRvizROSModule"]
+	path = stack/ground_control_system/rviz/droneSimulatorRvizROSModule
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronesimulatorrvizrosmodule.git
+	branch = master
+[submodule "stack/ground_control_system/cli/cli_process"]
+	path = stack/ground_control_system/cli/cli_process
+	url = https://bitbucket.org/joselusl/droneinterfacerosmodule.git
+	branch = master
+[submodule "stack/ground_control_system/leap_motion/leap_motion_process"]
+	path = stack/ground_control_system/leap_motion/leap_motion_process
+	url = https://bitbucket.org/joselusl/droneleapmotiondronecontroluserinterfacerosmodule
+	branch = master
+[submodule "stack/ground_control_system/speech/speech_process"]
+	path = stack/ground_control_system/speech/speech_process
+	url = https://bitbucket.org/joselusl/dronespeechrosmodule.git
+	branch = master
+[submodule "stack/ground_control_system/sound/sound_process"]
+	path = stack/ground_control_system/sound/sound_process
+	url = https://bitbucket.org/joselusl/dronesoundrosmodule.git
+	branch = master
+[submodule "stack/logging_system/lib_cvgloggerROS"]
+	path = stack/logging_system/lib_cvgloggerROS
+	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
+	branch = master
+[submodule "stack/logging_system/lib_cvglogger"]
+	path = stack/logging_system/lib_cvglogger
+	url = https://bitbucket.org/jespestana/lib_cvglogger.git
+	branch = master
+[submodule "stack/logging_system/droneLoggerROSModule"]
+	path = stack/logging_system/droneLoggerROSModule
+	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
+	branch = master
+[submodule "stack/logging_system/dronePelicanLoggerROSModule"]
+	path = stack/logging_system/dronePelicanLoggerROSModule
+	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
+	branch = master
+[submodule "stack_obsolete/libraries/lib_pose"]
+	path = stack_obsolete/libraries/lib_pose
+	url = https://bitbucket.org/joselusl/lib_pose.git
+	branch = master
+[submodule "stack_obsolete/libraries/referenceFrames"]
+	path = stack_obsolete/libraries/referenceFrames
+	url = https://bitbucket.org/joselusl/referenceframes.git
+	branch = master
+[submodule "stack_obsolete/libraries/lib_cvgthread"]
+	path = stack_obsolete/libraries/lib_cvgthread
+	url = https://bitbucket.org/jespestana/lib_cvgthread.git
 	branch = master

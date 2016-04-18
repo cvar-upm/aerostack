@@ -18,18 +18,6 @@
 	path = stack_deprecated/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
 	url = https://bitbucket.org/joselusl/driveroktorosmodule.git
 	branch = master
-[submodule "stack/droneStackBasics/droneMsgsROS"]
-	path = stack/droneStackBasics/droneMsgsROS
-	url = https://bitbucket.org/joselusl/dronemsgsros.git
-	branch = master
-[submodule "stack/droneStackBasics/droneModuleROS"]
-	path = stack/droneStackBasics/droneModuleROS
-	url = https://bitbucket.org/joselusl/dronemoduleros.git
-	branch = master
-[submodule "stack/droneStackBasics/droneModuleInterfaceROS"]
-	path = stack/droneStackBasics/droneModuleInterfaceROS
-	url = https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
-	branch = master
 [submodule "stack/libraries/lib_cvgekf"]
 	path = stack/libraries/lib_cvgekf
 	url = https://bitbucket.org/joselusl/lib_cvgekf.git
@@ -114,17 +102,6 @@
 	path = stack_deprecated/dronePerception/droneCV2DTo3DROSModule
 	url = https://bitbucket.org/joselusl/dronecv2dto3drosmodule.git
 	branch = master
-[submodule "stack/droneSimulators/droneSimulator/droneSimulator"]
-	path = stack/droneSimulators/droneSimulator/droneSimulator
-	url = https://bitbucket.org/jespestana/droneSimulator.git
-[submodule "stack/droneSimulators/droneSimulator/droneSimulatorROSModule"]
-	path = stack/droneSimulators/droneSimulator/droneSimulatorROSModule
-	url = https://bitbucket.org/joselusl/dronesimulatorrosmodule.git
-	branch = master
-[submodule "stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule"]
-	path = stack/droneSimulators/droneSimulator/dronePelicanSimulatorROSModule
-	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
-	branch = master
 [submodule "stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule"]
 	path = stack_deprecated/droneSimulators/droneOktoSimulatorROSModule
 	url = https://bitbucket.org/jespestana/droneoktosimulatorrosmodule.git
@@ -184,10 +161,6 @@
 [submodule "stack/utils/audio_common"]
 	path = stack/utils/audio_common
 	url = https://github.com/ros-drivers/audio_common
-	branch = master
-[submodule "stack/supervision_system"]
-	path = stack/supervision_system
-	url = https://bitbucket.org/Ortinson/supervision_system
 	branch = master
 [submodule "stack/HMI/droneSpeechROSModule"]
 	path = stack/HMI/droneSpeechROSModule
@@ -444,4 +417,32 @@
 [submodule "stack/communication_system/communication_manager_process"]
 	path = stack/communication_system/communication_manager_process
 	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
+	branch = master
+[submodule "stack/supervision_system/process_monitor/process_monitor_process"]
+	path = stack/supervision_system/process_monitor/process_monitor_process
+	url = https://bitbucket.org/Vision4UAV/process_monitor_process
+	branch = master
+[submodule "stack/simulation_system/drone_simulator/drone_simulator"]
+	path = stack/simulation_system/drone_simulator/drone_simulator
+	url = https://bitbucket.org/jespestana/droneSimulator.git
+	branch = master
+[submodule "stack/simulation_system/drone_simulator/drone_simulator_process"]
+	path = stack/simulation_system/drone_simulator/drone_simulator_process
+	url = https://bitbucket.org/joselusl/dronesimulatorrosmodule.git
+	branch = master
+[submodule "stack/simulation_system/drone_simulator/asctec_pelican_simulator_process"]
+	path = stack/simulation_system/drone_simulator/asctec_pelican_simulator_process
+	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
+	branch = master
+[submodule "stack/common/drone_process"]
+	path = stack/common/drone_process
+	url = https://bitbucket.org/joselusl/dronemoduleros.git
+	branch = master
+[submodule "stack/common/drone_process_interface"]
+	path = stack/common/drone_process_interface
+	url = https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
+	branch = master
+[submodule "stack/common/aerostack_msgs"]
+	path = stack/common/aerostack_msgs
+	url = https://bitbucket.org/joselusl/dronemsgsros.git
 	branch = master

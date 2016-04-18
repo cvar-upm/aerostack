@@ -442,3 +442,7 @@
 	path = stack_obsolete/libraries/lib_cvgthread
 	url = https://bitbucket.org/jespestana/lib_cvgthread.git
 	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy"]
+	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy
+	url = https://github.com/AutonomyLab/ardrone_autonomy.git
+	branch = indigo-devel

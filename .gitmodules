@@ -202,10 +202,6 @@
 	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller_process
 	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy"]
-	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy
-	url = https://github.com/AutonomyLab/ardrone_autonomy.git
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process
 	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git

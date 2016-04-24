@@ -194,14 +194,6 @@
 	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/asctec_drivers
 	url = https://bitbucket.org/joselusl/asctec_drivers.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller"]
-	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller
-	url = https://bitbucket.org/hridaybavle/mikrokopter_driver
-	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller_process"]
-	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_fligth_controller/driver_mikrokopter_fligth_controller_process
-	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process
 	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
@@ -342,14 +334,6 @@
 	path = stack/planning_system/trajectory_planner/trajectory_planner
 	url = https://bitbucket.org/joselusl/dronetrajectoryplanner.git
 	branch = master
-[submodule "stack/planning_system/mission_planner/task_based_mission_planner_process"]
-	path = stack/planning_system/mission_planner/task_based_mission_planner_process
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
-	branch = master
-[submodule "stack/planning_system/mission_planner/task_based_mission_planner"]
-	path = stack/planning_system/mission_planner/task_based_mission_planner
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
-	branch = master
 [submodule "stack/planning_system/yaw_planner/yaw_planner_process"]
 	path = stack/planning_system/yaw_planner/yaw_planner_process
 	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
@@ -414,22 +398,6 @@
 	path = stack/ground_control_system/sound/sound_process
 	url = https://bitbucket.org/joselusl/dronesoundrosmodule.git
 	branch = master
-[submodule "stack/logging_system/lib_cvgloggerROS"]
-	path = stack/logging_system/lib_cvgloggerROS
-	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
-	branch = master
-[submodule "stack/logging_system/lib_cvglogger"]
-	path = stack/logging_system/lib_cvglogger
-	url = https://bitbucket.org/jespestana/lib_cvglogger.git
-	branch = master
-[submodule "stack/logging_system/droneLoggerROSModule"]
-	path = stack/logging_system/droneLoggerROSModule
-	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
-	branch = master
-[submodule "stack/logging_system/dronePelicanLoggerROSModule"]
-	path = stack/logging_system/dronePelicanLoggerROSModule
-	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
-	branch = master
 [submodule "stack_obsolete/libraries/lib_pose"]
 	path = stack_obsolete/libraries/lib_pose
 	url = https://bitbucket.org/joselusl/lib_pose.git
@@ -446,3 +414,35 @@
 	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy
 	url = https://github.com/AutonomyLab/ardrone_autonomy.git
 	branch = indigo-devel
+[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller"]
+	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller_process
+	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
+	branch = master
+[submodule "stack/logging/lib_cvgloggerROS"]
+	path = stack/logging/lib_cvgloggerROS
+	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
+	branch = master
+[submodule "stack/logging/lib_cvglogger"]
+	path = stack/logging/lib_cvglogger
+	url = https://bitbucket.org/jespestana/lib_cvglogger.git
+	branch = master
+[submodule "stack/logging/droneLoggerROSModule"]
+	path = stack/logging/droneLoggerROSModule
+	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
+	branch = master
+[submodule "stack/logging/dronePelicanLoggerROSModule"]
+	path = stack/logging/dronePelicanLoggerROSModule
+	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
+	branch = master
+[submodule "stack/planning_system/mission_planner/mission_scheduler_process"]
+	path = stack/planning_system/mission_planner/mission_scheduler_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
+	branch = master
+[submodule "stack/planning_system/mission_planner/mission_scheduler"]
+	path = stack/planning_system/mission_planner/mission_scheduler
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
+	branch = master

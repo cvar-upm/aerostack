@@ -10,7 +10,7 @@ Some drones supported by this framework ARE NOT TOYS. Even operation by expert u
 
 We present a cost-effective framework for the prototyping of vision-based quadrotor multi-robot systems, which core characteristics are: modularity, compatibility with different platforms and being flight-proven. The framework is fully operative and based on [ROS](http://ros.org/ "Robot Operating System"). It works in simulation and in real flight tests of up to 5 drones, and was firstly introduced and demonstrated during our participation in the 2013 International Micro Air Vehicle Indoor Flight Competition [IMAV2013](http://www.imav2013.org/ "2013 International Micro Air Vehicle Indoor Flight Competition") (Toulouse, France).
 
-Please visit our webpage for more information: [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.aerostack.org/")
+Please visit our [wiki](https://bitbucket.org/Vision4UAV/aerostack/wiki/Home) and our webpage for more information: [http://www.aerostack.org/](http://www.aerostack.org/ "http://www.aerostack.org/")
 
 The current distribution supports the usage of mutiple aerial platdorms, including, but not limited to:
 

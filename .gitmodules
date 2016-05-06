@@ -449,6 +449,8 @@
 [submodule "stack_devel/common/drone_process"]
 	path = stack_devel/common/drone_process
 	url = https://bitbucket.org/DavidNPalacios/drone_process.git
+        branch = master
 [submodule "stack_devel/supervision_system/process_monitor/process_monitor_process"]
 	path = stack_devel/supervision_system/process_monitor/process_monitor_process
 	url = https://bitbucket.org/DavidNPalacios/process_monitor_process.git
+        branch = master

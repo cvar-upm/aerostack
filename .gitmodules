@@ -342,10 +342,6 @@
 	path = stack/communication_system/communication_manager_process
 	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
 	branch = master
-[submodule "stack/supervision_system/process_monitor/process_monitor_process"]
-	path = stack/supervision_system/process_monitor/process_monitor_process
-	url = https://bitbucket.org/Vision4UAV/process_monitor_process
-	branch = master
 [submodule "stack/simulation_system/drone_simulator/drone_simulator"]
 	path = stack/simulation_system/drone_simulator/drone_simulator
 	url = https://bitbucket.org/jespestana/droneSimulator.git
@@ -357,10 +353,6 @@
 [submodule "stack/simulation_system/drone_simulator/asctec_pelican_simulator_process"]
 	path = stack/simulation_system/drone_simulator/asctec_pelican_simulator_process
 	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
-	branch = master
-[submodule "stack/common/drone_process"]
-	path = stack/common/drone_process
-	url = https://bitbucket.org/joselusl/dronemoduleros.git
 	branch = master
 [submodule "stack/common/drone_process_interface"]
 	path = stack/common/drone_process_interface
@@ -446,14 +438,6 @@
 	path = stack/planning_system/mission_planner/mission_scheduler
 	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
 	branch = master
-[submodule "stack_devel/common/drone_process"]
-	path = stack_devel/common/drone_process
-	url = https://bitbucket.org/DavidNPalacios/drone_process.git
-        branch = master
-[submodule "stack_devel/supervision_system/process_monitor/process_monitor_process"]
-	path = stack_devel/supervision_system/process_monitor/process_monitor_process
-	url = https://bitbucket.org/DavidNPalacios/process_monitor_process.git
-        branch = master
 [submodule "stack_devel/supervision_system/action_monitor/action_monitor_process"]
 	path = stack_devel/supervision_system/action_monitor/action_monitor_process
 	url = https://bitbucket.org/DavidNPalacios/action_monitor_process.git
@@ -465,4 +449,16 @@
 [submodule "stack_devel/executive_system/skill_manager/skill_manager_process"]
 	path = stack_devel/executive_system/skill_manager/skill_manager_process
 	url = https://bitbucket.org/DavidNPalacios/skill_manager_process.git
+	branch = master
+[submodule "stack/supervision_system/process_monitor/process_monitor_process"]
+	path = stack/supervision_system/process_monitor/process_monitor_process
+	url = https://bitbucket.org/DavidNPalacios/process_monitor_process.git
+	branch = master
+[submodule "stack/common/drone_process"]
+	path = stack/common/drone_process
+	url = https://bitbucket.org/DavidNPalacios/drone_process.git
+	branch = master
+[submodule "stack/common/drone_module"]
+	path = stack/common/drone_module
+	url = https://bitbucket.org/joselusl/dronemoduleros.git
 	branch = master

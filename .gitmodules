@@ -438,10 +438,6 @@
 	path = stack/planning_system/mission_planner/mission_scheduler
 	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
 	branch = master
-[submodule "stack_devel/ground_control_system/human_machine_interface"]
-	path = stack_devel/ground_control_system/human_machine_interface
-	url = https://bitbucket.org/german_quintero_rey/human_machine_interface.git
-	branch = interface_dev
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
 	path = stack/supervision_system/process_monitor/process_monitor_process
 	url = https://bitbucket.org/DavidNPalacios/process_monitor_process.git
@@ -462,3 +458,7 @@
 	path = stack/supervision_system/action_monitor/action_monitor_process
 	url = https://bitbucket.org/DavidNPalacios/action_monitor_process.git
 	branch = master
+[submodule "stack/ground_control_system/human_machine_interface"]
+	path = stack/ground_control_system/human_machine_interface
+	url = https://bitbucket.org/german_quintero_rey/human_machine_interface.git
+	branch = interface_dev

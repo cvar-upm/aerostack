@@ -470,3 +470,15 @@
 	path = stack_devel/droneDrivers/drivers_sensors/driver_hokuyo/hokuyo_node
 	url = https://github.com/ros-drivers/hokuyo_node.git
 	branch = indigo-devel
+[submodule "stack_devel/planning_system/navigation_stack/mrpt_navigation"]
+	path = stack_devel/planning_system/navigation_stack/mrpt_navigation
+	url = https://github.com/mrpt-ros-pkg/mrpt_navigation.git
+	branch = master
+[submodule "stack_devel/planning_system/navigation_stack/navigation_stack_ros_module"]
+	path = stack_devel/planning_system/navigation_stack/navigation_stack_ros_module
+	url = https://bitbucket.org/alejodosr/navigation_stack_ros_module.git
+	branch = master
+[submodule "stack_devel/droneSelfLocalization/imav_pose_estimation/laser_based_pose_estimation"]
+	path = stack_devel/droneSelfLocalization/imav_pose_estimation/laser_based_pose_estimation
+	url = https://bitbucket.org/alejodosr/laser_based_pose_estimation.git
+	branch = master

@@ -79,11 +79,11 @@
 	url = https://bitbucket.org/jespestana/droneoktosimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator"]
-	path = stack_deprecated/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
+	path = stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
 	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.git
 	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule"]
-	path = stack_deprecated/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
+	path = stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
 	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulatorrosmodule.git
 	branch = master
 [submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule"]

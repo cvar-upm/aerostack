@@ -134,10 +134,6 @@
 	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
 	url = https://bitbucket.org/zorana/driverbeboprosmodule.git
 	branch = master
-[submodule "installation/installer_script"]
-	path = installation/installer_script
-	url = https://bitbucket.org/Vision4UAV/aerostack_installer
-	branch = master
 [submodule "stack/libraries/pugixml"]
 	path = stack/libraries/pugixml
 	url = https://github.com/joselusl/pugixml

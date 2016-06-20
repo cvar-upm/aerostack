@@ -346,10 +346,6 @@
 	path = stack/simulation_system/drone_simulator/asctec_pelican_simulator_process
 	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
 	branch = master
-[submodule "stack/common/drone_process_interface"]
-	path = stack/common/drone_process_interface
-	url = https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
-	branch = master
 [submodule "stack/common/aerostack_msgs"]
 	path = stack/common/aerostack_msgs
 	url = https://bitbucket.org/joselusl/dronemsgsros.git
@@ -439,7 +435,7 @@
 	url = https://bitbucket.org/DavidNPalacios/drone_process.git
 	branch = master
 [submodule "stack/common/drone_module"]
-	path = stack/common/drone_module
+	path = stack_deprecated/common/drone_module
 	url = https://bitbucket.org/joselusl/dronemoduleros.git
 	branch = master
 [submodule "stack/executive_system/skill_manager/skill_manager_process"]
@@ -481,4 +477,8 @@
 [submodule "stack_devel/droneSelfLocalization/imav_pose_estimation/laser_based_pose_estimation"]
 	path = stack_devel/droneSelfLocalization/imav_pose_estimation/laser_based_pose_estimation
 	url = https://bitbucket.org/alejodosr/laser_based_pose_estimation.git
+	branch = master
+[submodule "stack_deprecated/common/drone_module_interface"]
+	path = stack_deprecated/common/drone_module_interface
+	url = https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
 	branch = master

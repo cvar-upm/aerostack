@@ -31,13 +31,14 @@ sudo apt-get install libsdl1.2-dev
 sudo apt-get install libudev-dev
 sudo apt-get install libiw-dev
 
-echo "---------------------------"
-echo "Installing Bebop Autonomy dependencies"
-echo "---------------------------"
-sudo apt-get install build-essential python-rosdep python-catkin-tools
-cd ${AEROSTACK_WORKSPACE}
-rosdep update
-rosdep install --from-paths src/quadrotor_stack/stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy -i
+#echo "---------------------------"
+#echo "Installing Bebop Autonomy dependencies"
+#echo "---------------------------"
+#sudo apt-get install build-essential python-rosdep python-catkin-tools
+#cd ${AEROSTACK_WORKSPACE}
+#rosdep update
+#rosdep install --from-paths src/quadrotor_stack/stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy -i
+
 echo "---------------------------"
 echo "Installing Sound Play & Dependencies"
 echo "---------------------------"
@@ -56,30 +57,33 @@ sudo apt-get install festvox-kallpc16k
 # Castilian Spanish male speaker for Festival [voice_el_diphone]
 sudo apt-get install festvox-ellpc11k
 
-echo "----------------------------"
-echo "Installing Mavros dependencies"
-echo "----------------------------"
-sudo apt-get install ros-$ROS_DISTRO-control-toolbox
-cd ${AEROSTACK_STACK}
-#mkdir temp && cd $_
-if [ "$ROS_DISTRO" == "jade" ]  ;
-then
-  #wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.5.20-0trusty-20160520-075452-0700_amd64.deb
-  #sudo dpkg -i *mavlink*deb
-  sudo dpkg -i installation/drivers/*mavlink*deb
-else
-  echo "!!!Error installing Mavros dependencies. Distro non supported!!!"
-fi
-
-
-cd ${AEROSTACK_STACK}
-rm -rf ./temp
-rm -rf temp/
-
-
 echo "------------------------------------------------------"
 echo "Installing Ueyecamera drivers"
 echo "------------------------------------------------------"
-cd ${AEROSTACK_STACK}/installation/drivers
-sudo ./ueyesdk-setup-4.60-usb-amd64.gz.run 
+sudo ${AEROSTACK_STACK}/installation/drivers/ueyesdk-setup-4.60-usb-amd64.gz.run 
+
+#echo "----------------------------"
+#echo "Installing Mavros dependencies"
+#echo "----------------------------"
+#sudo apt-get install ros-$ROS_DISTRO-control-toolbox
+#sudo apt-get install ros-$ROS_DISTRO-mavlink
+#cd ${AEROSTACK_STACK}
+#mkdir temp && cd $_
+#if [ "$ROS_DISTRO" == "jade" ]  ;
+#then
+  #wget http://packages.ros.org/ros-shadow-fixed/ubuntu/pool/main/r/ros-jade-mavlink/ros-jade-mavlink_2016.5.20-0trusty-20160520-075452-0700_amd64.deb
+  #sudo dpkg -i *mavlink*deb
+#  sudo dpkg -i installation/drivers/*mavlink*deb
+#else
+#  echo "!!!Error installing Mavros dependencies. Distro non supported!!!"
+#fi
+#cd ${AEROSTACK_STACK}
+#rm -rf ./temp
+#rm -rf temp/
+
+echo "------------------------------------------------------"
+echo "Installing All ROS dependencies"
+echo "------------------------------------------------------"
+rosdep update
+rosdep install --from-paths ${AEROSTACK_WORKSPACE} --ignore-src --rosdistro=$ROSDISTRO
 

@@ -62,6 +62,14 @@ echo "Installing Ueyecamera drivers"
 echo "------------------------------------------------------"
 sudo ${AEROSTACK_STACK}/installation/drivers/ueyesdk-setup-4.60-usb-amd64.gz.run 
 
+#echo "---------------------------"
+#echo "Installing Navigation Stack dependencies"
+#echo "---------------------------"
+#sudo apt-get install ros-jade-pcl-ros
+#sudo apt-get install ros-jade-mrpt-navigation
+#sudo apt-get install ros-jade-amcl
+#sudo apt-get install ros-jade-move-base
+
 #echo "----------------------------"
 #echo "Installing Mavros dependencies"
 #echo "----------------------------"

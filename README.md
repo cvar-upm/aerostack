@@ -1,8 +1,5 @@
 ## Aerostack
 
-Please visit the for a complete project documentation:
+Please visit the [public Aerostack Wiki](https://github.com/Vision4UAV/Aerostack/wiki) for the project documentation.
 
-* [Public Aerostack Wiki](https://github.com/Vision4UAV/Aerostack/wiki)
-
-* [Private Aerostack Wiki for Aerostack Developers](https://bitbucket.org/Vision4UAV/aerostack.git/wiki) (additional permissions required, please contact with Aerostack Admins)
-
+If you want to contribute to this project as a developer, please contact with Aerostack Admins to get access to the [private Aerostack Wiki for Developers](https://bitbucket.org/Vision4UAV/aerostack.git/wiki) 

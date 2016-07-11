@@ -478,3 +478,11 @@
 	path = stack_deprecated/common/drone_module_interface
 	url = https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
 	branch = master
+[submodule "stack_devel/planning_system/dronesubmissionplannerrosmodule"]
+	path = stack_devel/planning_system/dronesubmissionplannerrosmodule
+	url = https://bitbucket.org/hridaybavle/dronesubmissionplannerrosmodule.git
+	branch = master
+[submodule "stack_devel/planning_system/droneglobalmissionplannermodule"]
+	path = stack_devel/planning_system/droneglobalmissionplannermodule
+	url = https://bitbucket.org/hridaybavle/droneglobalmissionplannermodule.git
+	branch = master

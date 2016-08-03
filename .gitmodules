@@ -486,3 +486,7 @@
 	path = stack_devel/planning_system/droneglobalmissionplannermodule
 	url = https://bitbucket.org/hridaybavle/droneglobalmissionplannermodule.git
 	branch = master
+[submodule "stack_devel/situation_awareness_system/altitude_filtering_module/altitude_filtering"]
+	path = stack_devel/situation_awareness_system/altitude_filtering_module/altitude_filtering
+	url = https://bitbucket.org/zorana/altitude_filtering.git
+	branch = master

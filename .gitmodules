@@ -491,6 +491,6 @@
 	url = https://bitbucket.org/zorana/altitude_filtering.git
 	branch = master
 [submodule "stack_devel/perception_system/shapecolor_objectdetection"]
-	path = stack_devel/perception_system/shapecolor_objectdetection
+	path = stack_devel/perception_system/visual_perception/shapecolor_objectdetection
 	url = https://bitbucket.org/csampedro/shapecolor_objectdetection.git
 	branch = master

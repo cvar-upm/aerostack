@@ -60,7 +60,7 @@ sudo apt-get install festvox-ellpc11k
 echo "------------------------------------------------------"
 echo "Installing Ueyecamera drivers"
 echo "------------------------------------------------------"
-sudo ${AEROSTACK_STACK}/installation/drivers/ueyesdk-setup-4.60-usb-amd64.gz.run 
+sudo ${AEROSTACK_STACK}/installation/drivers/ueyesdk-setup-4.80-usb-amd64.gz.run
 
 #echo "---------------------------"
 #echo "Installing Navigation Stack dependencies"

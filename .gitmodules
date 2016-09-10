@@ -494,3 +494,7 @@
 	path = stack_devel/perception_system/visual_perception/shapecolor_objectdetection
 	url = https://bitbucket.org/csampedro/shapecolor_objectdetection.git
 	branch = master
+[submodule "stack_devel/situation_awareness_system/hector_slam/hector_slam_ros_module"]
+	path = stack_devel/situation_awareness_system/hector_slam/hector_slam_ros_module
+	url = https://bitbucket.org/hridaybavle/hector_slam_ros_module.git
+	branch = master

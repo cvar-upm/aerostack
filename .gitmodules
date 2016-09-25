@@ -510,11 +510,3 @@
 	path = stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam
 	url = https://github.com/bosch-ros-pkg/usb_cam.git
 	branch = develop
-[submodule "stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam_red"]
-	path = stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam_red
-	url = https://bitbucket.org/carriojazz/usb_cam_red.git
-	branch = master
-[submodule "stack_devel/motor_system/vs_reference_republish"]
-	path = stack_devel/motor_system/vs_reference_republish
-	url = https://bitbucket.org/carriojazz/vs_reference_republish.git
-	branch = master

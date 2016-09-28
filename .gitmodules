@@ -510,3 +510,11 @@
 	path = stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam
 	url = https://github.com/bosch-ros-pkg/usb_cam.git
 	branch = develop
+[submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/ros_lightware"]
+	path = stack_devel/droneDrivers/drivers_sensors/driver_lightware/ros_lightware
+	url = https://github.com/hridaybavle/ros_lightware.git
+	branch = master
+[submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port"]
+	path = stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port
+	url = https://github.com/wavelab/cereal_port.git
+	branch = master

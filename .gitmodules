@@ -518,3 +518,7 @@
 	path = stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port
 	url = https://github.com/wavelab/cereal_port.git
 	branch = master
+[submodule "stack_devel/situation_awareness_system/landing_module/drone_landing"]
+	path = stack_devel/situation_awareness_system/landing_module/drone_landing
+	url = https://bitbucket.org/zorana/drone_landing.git
+	branch = master

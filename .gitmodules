@@ -494,10 +494,6 @@
 	path = stack_devel/situation_awareness_system/hector_slam/hector_slam_ros_module
 	url = https://bitbucket.org/hridaybavle/hector_slam_ros_module.git
 	branch = master
-[submodule "stack_devel/motor_system/droneVSFollowingFromTopROSModule"]
-	path = stack_devel/motor_system/droneVSFollowingFromTopROSModule
-	url = https://bitbucket.org/carriojazz/dronevsfollowingfromtoprosmodule.git
-	branch = master
 [submodule "stack_devel/perception_system/tactile_perception/tactile_object_detection"]
 	path = stack_devel/perception_system/tactile_perception/tactile_object_detection
 	url = https://bitbucket.org/csampedro/tactile_perception.git

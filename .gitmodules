@@ -522,3 +522,7 @@
 	path = stack_devel/motor_system/droneVSFollowingFromTopROSModule
 	url = https://bitbucket.org/carriojazz/dronevsfollowingfromtoprosmodule.git
 	branch = master
+[submodule "stack_devel/droneDrivers/drivers_sensors/driver_realsense/realsense_stable"]
+	path = stack_devel/droneDrivers/drivers_sensors/driver_realsense/realsense_stable
+	url = https://bitbucket.org/hridaybavle/realsense_stable.git
+	branch = master

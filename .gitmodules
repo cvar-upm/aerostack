@@ -222,10 +222,6 @@
 	path = stack/feature_extraction_system/opentld/opentld_process
 	url = https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
 	branch = master
-[submodule "stack/feature_extraction_system/opentld/ros_opentld"]
-	path = stack/feature_extraction_system/opentld/ros_opentld
-	url = https://github.com/Ronan0912/ros_opentld.git
-	branch = master
 [submodule "stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer_process"]
 	path = stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer_process
 	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git

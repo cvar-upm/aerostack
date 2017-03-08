@@ -542,3 +542,7 @@
 	path = stack/situation_awareness_system/obstacle2d_converter/obstacle2d_converter
 	url = https://bitbucket.org/joselusl/obstacle2d_converter
 	branch = master
+[submodule "stack/feature_extraction_system/opentld/ros_opentld"]
+	path = stack/feature_extraction_system/opentld/ros_opentld
+	url = https://github.com/hridaybavle/ros_opentld
+	branch = master

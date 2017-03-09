@@ -31,6 +31,22 @@ sudo apt-get install libsdl1.2-dev
 sudo apt-get install libudev-dev
 sudo apt-get install libiw-dev
 
+if [ "$ROS_DISTRO" = "kinetic" ]
+then 
+	echo "----------------------------"
+	echo "Install driver common required in kinectic"
+	echo "----------------------------"
+	mkdir -p /tmp/driver_common/src
+	cd /tmp/driver_common/src
+	git clone https://github.com/ros-drivers/driver_common
+	cd ..
+	catkin_make install -DCMAKE_INSTALL_PREFIX=/tmp/ros/kinetic
+	sudo cp -R /tmp/ros/kinetic /opt/ros/
+	rm -rf /tmp/ros
+	rm -rf /tmp/driver_common
+fi
+
+
 #echo "---------------------------"
 #echo "Installing Bebop Autonomy dependencies"
 #echo "---------------------------"

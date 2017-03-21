@@ -558,3 +558,7 @@
 	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driver_rotors_simulator_process.git
 	branch = master
+[submodule "stack_devel/situation_awareness_system/quaternion_algebra/quaternion_algebra"]
+	path = stack_devel/situation_awareness_system/quaternion_algebra/quaternion_algebra
+	url = https://bitbucket.org/joselusl/quaternion_algebra
+	branch = master

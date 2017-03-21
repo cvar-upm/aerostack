@@ -18,11 +18,12 @@ echo "-----------------------"
 sudo apt-get install expect
 
 echo "---------------------------"
-echo "Installing Lapack, Blas and F2C Libraries"
+echo "Installing Lapack, Blas, protobuf and F2C Libraries"
 echo "---------------------------"
 sudo apt-get install liblapack3 liblapack-dev
 sudo apt-get install libblas3 libblas-dev
 sudo apt-get install libf2c2 libf2c2-dev
+sudo apt-get install protobuf-compiler
 
 echo "---------------------------"
 echo "Installing ARdrone Autonomy dependencies"

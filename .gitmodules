@@ -562,3 +562,11 @@
 	path = stack_devel/situation_awareness_system/quaternion_algebra/quaternion_algebra
 	url = https://bitbucket.org/joselusl/quaternion_algebra
 	branch = master
+[submodule "stack_devel/situation_awareness_system/time_stamp/time_stamp"]
+	path = stack_devel/situation_awareness_system/time_stamp/time_stamp
+	url = https://bitbucket.org/joselusl/time_stamp
+	branch = master
+[submodule "stack_devel/situation_awareness_system/buffer/buffer"]
+	path = stack_devel/situation_awareness_system/buffer/buffer
+	url = https://bitbucket.org/joselusl/buffer
+	branch = master

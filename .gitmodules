@@ -570,3 +570,7 @@
 	path = stack_devel/situation_awareness_system/buffer/buffer
 	url = https://bitbucket.org/joselusl/buffer
 	branch = master
+[submodule "stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface"]
+	path = stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface
+	url = https://bitbucket.org/joselusl/msf_localization_interface
+	branch = master

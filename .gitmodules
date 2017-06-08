@@ -574,3 +574,19 @@
 	path = stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface
 	url = https://bitbucket.org/joselusl/msf_localization_interface
 	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros
+	url = https://bitbucket.org/ramon_suarez_fernandez/dji_sdk_ros.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
+	branch = master
+[submodule "stack/libraries/eigen_catkin"]
+	path = stack/libraries/eigen_catkin
+	url = https://github.com/suarez-ramon/eigen_catkin
+	branch = master
+[submodule "stack/libraries/catkin_simple"]
+	path = stack/libraries/catkin_simple
+	url = https://github.com/suarez-ramon/catkin_simple
+	branch = master

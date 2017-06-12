@@ -590,12 +590,12 @@
 	path = stack/libraries/catkin_simple
 	url = https://github.com/suarez-ramon/catkin_simple
 	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_coordinator_process"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_coordinator_process
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
 	url = https://bitbucket.org/albertcp_/behavior_coordinator_process
 	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_process"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_process
+[submodule "stack_devel/common/behavior_process"]
+	path = stack_devel/common/behavior_process
 	url = https://bitbucket.org/albertcp_/behavior_process
 	branch = master
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
@@ -614,9 +614,9 @@
 	path = stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager_process
 	url = https://bitbucket.org/albertcp_/resource_manager_process
 	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behaviors"]
-	path = stack_devel/executive_system/behavior_management_system/behaviors
-	url = https://bitbucket.org/Rafa403/behaviors
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_library"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_library
+	url = https://bitbucket.org/Rafa403/behavior_library
 	branch = master
 [submodule "stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager"]
 	path = stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager

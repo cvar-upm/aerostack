@@ -420,11 +420,11 @@
 	branch = master
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
 	path = stack/supervision_system/process_monitor/process_monitor_process
-	url = https://bitbucket.org/DavidNPalacios/process_monitor_process.git
+	url = https://bitbucket.org/albertcp_/process_monitor_process.git
 	branch = master
 [submodule "stack/common/drone_process"]
 	path = stack/common/drone_process
-	url = https://bitbucket.org/DavidNPalacios/drone_process.git
+	url = https://bitbucket.org/albertcp_/drone_process.git
 	branch = master
 [submodule "stack/common/drone_module"]
 	path = stack_deprecated/common/drone_module
@@ -432,23 +432,23 @@
 	branch = master
 [submodule "stack/executive_system/skill_manager/skill_manager_process"]
 	path = stack/executive_system/skill_manager/skill_manager_process
-	url = https://bitbucket.org/DavidNPalacios/skill_manager_process.git
+	url = https://bitbucket.org/albertcp_/skill_manager_process.git
 	branch = master
 [submodule "stack/supervision_system/action_monitor/action_monitor_process"]
 	path = stack/supervision_system/action_monitor/action_monitor_process
-	url = https://bitbucket.org/DavidNPalacios/action_monitor_process.git
+	url = https://bitbucket.org/albertcp_/action_monitor_process.git
 	branch = master
 [submodule "stack/ground_control_system/human_machine_interface"]
 	path = stack/ground_control_system/human_machine_interface
-	url = https://bitbucket.org/german_quintero_rey/human_machine_interface.git
+	url = https://bitbucket.org/JorgeLPascual/human_machine_interface.git
 	branch = interface_dev
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner
-	url = https://bitbucket.org/Adrian_Diaz/task_based_mission_planner.git
+	url = https://bitbucket.org/albertcp_/task_based_mission_planner.git
 	branch = master
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner_process
-	url = https://bitbucket.org/Adrian_Diaz/task_based_mission_planner_process.git
+	url = https://bitbucket.org/albertcp_/task_based_mission_planner_process.git
 	branch = master
 [submodule "stack_devel/situation_awareness_system/hector_slam/hector_slam"]
 	path = stack_devel/situation_awareness_system/hector_slam/hector_slam
@@ -573,4 +573,64 @@
 [submodule "stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface"]
 	path = stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface
 	url = https://bitbucket.org/joselusl/msf_localization_interface
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros
+	url = https://bitbucket.org/ramon_suarez_fernandez/dji_sdk_ros.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
+	branch = master
+[submodule "stack/libraries/eigen_catkin"]
+	path = stack/libraries/eigen_catkin
+	url = https://github.com/suarez-ramon/eigen_catkin
+	branch = master
+[submodule "stack/libraries/catkin_simple"]
+	path = stack/libraries/catkin_simple
+	url = https://github.com/suarez-ramon/catkin_simple
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
+	url = https://bitbucket.org/albertcp_/behavior_coordinator_process
+	branch = master
+[submodule "stack_devel/common/behavior_process"]
+	path = stack_devel/common/behavior_process
+	url = https://bitbucket.org/albertcp_/behavior_process
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process
+	url = https://bitbucket.org/albertcp_/behavior_specialist_process
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist
+	url = https://bitbucket.org/albertcp_/behavior_specialist
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager"]
+	path = stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager
+	url = https://bitbucket.org/albertcp_/resource_manager
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager_process"]
+	path = stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager_process
+	url = https://bitbucket.org/albertcp_/resource_manager_process
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_library"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_library
+	url = https://bitbucket.org/Rafa403/behavior_library
+	branch = master
+[submodule "stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager"]
+	path = stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager
+	url = https://bitbucket.org/albertcp_/belief_manager
+	branch = master
+[submodule "stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process"]
+	path = stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process
+	url = https://bitbucket.org/albertcp_/belief_manager_process
+	branch = master
+[submodule "stack_devel/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process"]
+	path = stack_devel/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process
+	url = https://bitbucket.org/albertcp_/belief_updater_process
+	branch = master
+[submodule "stack_devel/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
+	path = stack_devel/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
+	url = https://bitbucket.org/albertcp_/python_based_mission_interpreter_process
 	branch = master

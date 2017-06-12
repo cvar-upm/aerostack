@@ -45,6 +45,18 @@ then
 	sudo cp -R /tmp/ros/kinetic /opt/ros/
 	rm -rf /tmp/ros
 	rm -rf /tmp/driver_common
+
+	echo "----------------------------"
+	echo "Install keyboard required in kinectic"
+	echo "----------------------------"
+	mkdir -p /tmp/keyboard/src
+	cd /tmp/keyboard/src
+	git clone https://github.com/lrse/ros-keyboard.git
+	cd ..
+	catkin_make install -DCMAKE_INSTALL_PREFIX=/tmp/ros/kinetic
+	sudo cp -R /tmp/ros/kinetic /opt/ros/
+	rm -rf /tmp/ros
+	rm -rf /tmp/keyboard
 fi
 
 

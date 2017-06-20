@@ -433,7 +433,7 @@
 [submodule "stack/executive_system/skill_manager/skill_manager_process"]
 	path = stack/executive_system/skill_manager/skill_manager_process
 	url = https://bitbucket.org/albertcp_/skill_manager_process.git
-	branch = master
+	branch = os-update
 [submodule "stack/supervision_system/action_monitor/action_monitor_process"]
 	path = stack/supervision_system/action_monitor/action_monitor_process
 	url = https://bitbucket.org/albertcp_/action_monitor_process.git
@@ -441,7 +441,7 @@
 [submodule "stack/ground_control_system/human_machine_interface"]
 	path = stack/ground_control_system/human_machine_interface
 	url = https://bitbucket.org/JorgeLPascual/human_machine_interface.git
-	branch = interface_dev
+	branch = os-update
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner
 	url = https://bitbucket.org/albertcp_/task_based_mission_planner.git

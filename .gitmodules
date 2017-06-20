@@ -304,11 +304,11 @@
 	branch = master
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
 	path = stack/supervision_system/process_monitor/process_monitor_process
-	url = https://bitbucket.org/DavidNPalacios/process_monitor_process.git
+	url = https://bitbucket.org/albertcp_/process_monitor_process.git
 	branch = master
 [submodule "stack/common/drone_process"]
 	path = stack/common/drone_process
-	url = https://bitbucket.org/DavidNPalacios/drone_process.git
+	url = https://bitbucket.org/albertcp_/drone_process.git
 	branch = master
 [submodule "stack/common/drone_module"]
 	path = stack_deprecated/common/drone_module
@@ -316,23 +316,23 @@
 	branch = master
 [submodule "stack/executive_system/skill_manager/skill_manager_process"]
 	path = stack/executive_system/skill_manager/skill_manager_process
-	url = https://bitbucket.org/DavidNPalacios/skill_manager_process.git
+	url = https://bitbucket.org/albertcp_/skill_manager_process.git
 	branch = master
 [submodule "stack/supervision_system/action_monitor/action_monitor_process"]
 	path = stack/supervision_system/action_monitor/action_monitor_process
-	url = https://bitbucket.org/DavidNPalacios/action_monitor_process.git
+	url = https://bitbucket.org/albertcp_/action_monitor_process.git
 	branch = master
 [submodule "stack/ground_control_system/human_machine_interface"]
 	path = stack/ground_control_system/human_machine_interface
-	url = https://bitbucket.org/german_quintero_rey/human_machine_interface.git
+	url = https://bitbucket.org/JorgeLPascual/human_machine_interface.git
 	branch = interface_dev
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner
-	url = https://bitbucket.org/Adrian_Diaz/task_based_mission_planner.git
+	url = https://bitbucket.org/albertcp_/task_based_mission_planner.git
 	branch = master
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner_process
-	url = https://bitbucket.org/Adrian_Diaz/task_based_mission_planner_process.git
+	url = https://bitbucket.org/albertcp_/task_based_mission_planner_process.git
 	branch = master
 [submodule "stack_deprecated/common/drone_module_interface"]
 	path = stack_deprecated/common/drone_module_interface

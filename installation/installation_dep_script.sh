@@ -122,5 +122,5 @@ echo "------------------------------------------------------"
 echo "Installing All ROS dependencies"
 echo "------------------------------------------------------"
 rosdep update
-rosdep install --from-paths ${AEROSTACK_WORKSPACE} --ignore-src --rosdistro=$ROSDISTRO
+rosdep install -r --from-paths ${AEROSTACK_WORKSPACE} --ignore-src --rosdistro=$ROSDISTRO
 

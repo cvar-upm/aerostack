@@ -634,3 +634,11 @@
 	path = stack_devel/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
 	url = https://bitbucket.org/albertcp_/python_based_mission_interpreter_process
 	branch = master
+[submodule "stack_devel/situation_awareness_system/multiplane_localization/multiplane_localization"]
+	path = stack_devel/situation_awareness_system/multiplane_localization/multiplane_localization
+	url = https://bitbucket.org/hridaybavle/multiplane_localization.git
+	branch = master
+[submodule "stack_devel/situation_awareness_system/multiplane_localization/EKF_SLAM"]
+	path = stack_devel/situation_awareness_system/multiplane_localization/EKF_SLAM
+	url = https://bitbucket.org/hridaybavle/ekf_slam.git
+	branch = master

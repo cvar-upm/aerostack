@@ -522,26 +522,6 @@
 	path = stack_devel/droneDrivers/drivers_sensors/driver_realsense/realsense_stable
 	url = https://bitbucket.org/hridaybavle/realsense_stable.git
 	branch = master
-[submodule "stack/planning_system/trajectory_planner/trajectory_planner2d_interface"]
-	path = stack_devel/planning_system/trajectory_planner2d_interface/trajectory_planner2d_interface
-	url = https://bitbucket.org/joselusl/trajectory_planner2d_interface/
-	branch = master
-[submodule "stack/situation_awareness_system/msf_localization/msf_localization"]
-	path = stack_devel/situation_awareness_system/msf_localization/msf_localization
-	url = https://bitbucket.org/joselusl/msf_localization/
-	branch = master
-[submodule "stack/situation_awareness_system/vm_obstacle_detector/vm_obstacle_detector"]
-	path = stack_devel/situation_awareness_system/vm_obstacle_detector/vm_obstacle_detector
-	url = https://bitbucket.org/joselusl/vm_obstacle_detector
-	branch = master
-[submodule "stack/situation_awareness_system/obstacle_publisher/obstacle_publisher"]
-	path = stack_devel/situation_awareness_system/obstacle_publisher/obstacle_publisher
-	url = https://bitbucket.org/joselusl/obstacle_publisher
-	branch = master
-[submodule "stack/situation_awareness_system/obstacle2d_converter/obstacle2d_converter"]
-	path = stack_devel/situation_awareness_system/obstacle2d_converter/obstacle2d_converter
-	url = https://bitbucket.org/joselusl/obstacle2d_converter
-	branch = master
 [submodule "stack/feature_extraction_system/opentld/ros_opentld"]
 	path = stack/feature_extraction_system/opentld/ros_opentld
 	url = https://github.com/hridaybavle/ros_opentld
@@ -557,22 +537,6 @@
 [submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driver_rotors_simulator_process.git
-	branch = master
-[submodule "stack_devel/situation_awareness_system/quaternion_algebra/quaternion_algebra"]
-	path = stack_devel/situation_awareness_system/quaternion_algebra/quaternion_algebra
-	url = https://bitbucket.org/joselusl/quaternion_algebra
-	branch = master
-[submodule "stack_devel/situation_awareness_system/time_stamp/time_stamp"]
-	path = stack_devel/situation_awareness_system/time_stamp/time_stamp
-	url = https://bitbucket.org/joselusl/time_stamp
-	branch = master
-[submodule "stack_devel/situation_awareness_system/buffer/buffer"]
-	path = stack_devel/situation_awareness_system/buffer/buffer
-	url = https://bitbucket.org/joselusl/buffer
-	branch = master
-[submodule "stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface"]
-	path = stack_devel/situation_awareness_system/msf_localization_interface/msf_localization_interface
-	url = https://bitbucket.org/joselusl/msf_localization_interface
 	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros"]
 	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros

@@ -606,3 +606,19 @@
 	path = stack_devel/situation_awareness_system/multiplane_localization/EKF_SLAM
 	url = https://bitbucket.org/hridaybavle/ekf_slam.git
 	branch = master
+[submodule "stack_devel/perception_system/visual_perception/deep_learning_object_recognition"]
+	path = stack_devel/perception_system/visual_perception/deep_learning_object_recognition
+	url = https://bitbucket.org/csampedro/deep_learning_object_recognition.git
+	branch = master
+[submodule "stack_devel/motor_system/robot_reinforcement_learning"]
+	path = stack_devel/motor_system/robot_reinforcement_learning
+	url = https://bitbucket.org/csampedro/robot_reinforcement_learning.git
+	branch = master
+[submodule "stack_devel/perception_system/visual_perception/ml_stack"]
+	path = stack_devel/perception_system/visual_perception/ml_stack
+	url = https://bitbucket.org/csampedro/ml_stack.git
+	branch = master
+[submodule "stack_devel/perception_system/visual_perception/modelbased_objectdetection"]
+	path = stack_devel/perception_system/visual_perception/modelbased_objectdetection
+	url = https://bitbucket.org/csampedro/modelbased_objectdetection.git
+	branch = master

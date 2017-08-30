@@ -1,0 +1,15 @@
+diff --git a/packages/ARSDKTools/json-c/atom.mk b/packages/ARSDKTools/json-c/atom.mk
+index a860442..36a890f 100644
+--- a/packages/ARSDKTools/json-c/atom.mk
++++ b/packages/ARSDKTools/json-c/atom.mk
+@@ -23,8 +23,9 @@ LOCAL_CREATE_LINKS += \
+ endif
+ 
+ # Remove so version for android shared libraries
+-ifeq ("$(TARGET_OS_FLAVOUR)","android")
+ LOCAL_AUTOTOOLS_PATCHES := 0001-android_avoid_so_version.patch
++ifeq ("$(TARGET_OS_FLAVOUR)","android")
++#LOCAL_AUTOTOOLS_PATCHES := 0001-android_avoid_so_version.patch
+ 
+ # If targetting an API level before 21, also apply the following patches
+ ifneq ("$(firstword $(sort $(TARGET_ANDROID_APILEVEL) 21))", "21")

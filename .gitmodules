@@ -622,3 +622,12 @@
 	path = stack_devel/perception_system/visual_perception/modelbased_objectdetection
 	url = https://bitbucket.org/csampedro/modelbased_objectdetection.git
 	branch = master
+[submodule "stack_devel/manuel_processes/imagebasedvisualservo"]
+	path = stack_devel/manuel_processes/imagebasedvisualservo
+	url = https://bitbucket.org/ManuelRucci/imagebasedvisualservo.git
+[submodule "stack_devel/qr_recognizer"]
+	path = stack_devel/qr_recognizer
+	url = https://bitbucket.org/rafa403/qr_recognizer
+[submodule "stack_devel/executive_system/self_localization_selector_process"]
+	path = stack_devel/executive_system/self_localization_selector_process
+	url = https://bitbucket.org/albertcp_/self_localization_selector_process

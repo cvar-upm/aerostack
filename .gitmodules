@@ -631,3 +631,7 @@
 [submodule "stack_devel/executive_system/self_localization_selector_process"]
 	path = stack_devel/executive_system/self_localization_selector_process
 	url = https://bitbucket.org/albertcp_/self_localization_selector_process
+[submodule "stack_devel/qr_popup"]
+	path = stack_devel/qr_popup
+	url = https://bitbucket.org/cvlaray/qr_popup
+	branch = master

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>parrot_arsdk</name>
+  <version>3.12.61</version>
+  <description>Catkin wrapper for the official ARSDK from Parrot</description>
+  <author email="unknow@parrot.com">Parrot S.A.</author>
+
+  <maintainer email="mmonajje@sfu.ca">Mani Monajjemi</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://wiki.ros.org/parrot_arsdk</url>
+  <url type="repository">https://github.com/AutonomyLab/parrot_arsdk</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>automake</build_depend>
+  <build_depend>autoconf</build_depend>
+  <build_depend>libtool</build_depend>
+  <build_depend>yasm</build_depend>
+  <build_depend>nasm</build_depend>
+  <build_depend>zlib</build_depend>
+  <build_depend>unzip</build_depend>
+  <build_depend>curl</build_depend>
+  <build_depend>ffmpeg</build_depend>
+  <build_depend>libncurses-dev</build_depend>
+  <build_depend>libavahi-client-dev</build_depend>
+  <build_depend>libavahi-core-dev</build_depend>
+
+  <export>
+  </export>
+</package>

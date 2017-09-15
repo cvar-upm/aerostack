@@ -1,0 +1,12 @@
+diff --git a/build.py b/build.py
+index 5f5cc30..0765c2e 100755
+--- a/build.py
++++ b/build.py
+@@ -623,5 +623,5 @@ def main():
+ 
+     if sys.platform != "win32" and os.geteuid() == 0:
+         logging.error("Please do not run this script as root.")
+-        sys.exit(1)
++        # sys.exit(1)
+ 
+    # Check product/variant

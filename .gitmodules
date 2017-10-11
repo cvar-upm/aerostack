@@ -554,50 +554,6 @@
 	path = stack/libraries/catkin_simple
 	url = https://github.com/suarez-ramon/catkin_simple
 	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
-	url = https://bitbucket.org/albertcp_/behavior_coordinator_process
-	branch = master
-[submodule "stack_devel/common/behavior_process"]
-	path = stack_devel/common/behavior_process
-	url = https://bitbucket.org/albertcp_/behavior_process
-	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process
-	url = https://bitbucket.org/albertcp_/behavior_specialist_process
-	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_specialist/behavior_specialist
-	url = https://bitbucket.org/albertcp_/behavior_specialist
-	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager"]
-	path = stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager
-	url = https://bitbucket.org/albertcp_/resource_manager
-	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager_process"]
-	path = stack_devel/executive_system/behavior_management_system/resource_manager/resource_manager_process
-	url = https://bitbucket.org/albertcp_/resource_manager_process
-	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_library"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_library
-	url = https://bitbucket.org/Rafa403/behavior_library
-	branch = master
-[submodule "stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager"]
-	path = stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager
-	url = https://bitbucket.org/albertcp_/belief_manager
-	branch = master
-[submodule "stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process"]
-	path = stack_devel/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process
-	url = https://bitbucket.org/albertcp_/belief_manager_process
-	branch = master
-[submodule "stack_devel/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process"]
-	path = stack_devel/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process
-	url = https://bitbucket.org/albertcp_/belief_updater_process
-	branch = master
-[submodule "stack_devel/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
-	path = stack_devel/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
-	url = https://bitbucket.org/albertcp_/python_based_mission_interpreter_process
-	branch = master
 [submodule "stack_devel/situation_awareness_system/multiplane_localization/multiplane_localization"]
 	path = stack_devel/situation_awareness_system/multiplane_localization/multiplane_localization
 	url = https://bitbucket.org/hridaybavle/multiplane_localization.git
@@ -628,10 +584,59 @@
 [submodule "stack_devel/qr_recognizer"]
 	path = stack_devel/qr_recognizer
 	url = https://bitbucket.org/rafa403/qr_recognizer
-[submodule "stack_devel/executive_system/self_localization_selector_process"]
-	path = stack_devel/executive_system/self_localization_selector_process
-	url = https://bitbucket.org/albertcp_/self_localization_selector_process
 [submodule "stack_devel/qr_popup"]
 	path = stack_devel/qr_popup
 	url = https://bitbucket.org/cvlaray/qr_popup
+	branch = master
+[submodule "stack/common/behavior_process"]
+	path = stack/common/behavior_process
+	url = https://bitbucket.org/albertcp_/behavior_process
+	branch = master
+[submodule "stack/executive_system/self_localization_selector_process"]
+	path = stack/executive_system/self_localization_selector_process
+	url = https://bitbucket.org/albertcp_/self_localization_selector_process
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
+	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
+	url = https://bitbucket.org/albertcp_/behavior_coordinator_process
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/behavior_library"]
+	path = stack/executive_system/behavior_management_system/behavior_library
+	url = https://bitbucket.org/Rafa403/behavior_library
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist"]
+	path = stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist
+	url = https://bitbucket.org/albertcp_/behavior_specialist
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
+	path = stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process
+	url = https://bitbucket.org/albertcp_/behavior_specialist_process
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/resource_manager/resource_manager"]
+	path = stack/executive_system/behavior_management_system/resource_manager/resource_manager
+	url = https://bitbucket.org/albertcp_/resource_manager
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/resource_manager/resource_manager_process"]
+	path = stack/executive_system/behavior_management_system/resource_manager/resource_manager_process
+	url = https://bitbucket.org/albertcp_/resource_manager_process
+	branch = master
+[submodule "stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager"]
+	path = stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager
+	url = https://bitbucket.org/albertcp_/belief_manager
+	branch = master
+[submodule "stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process"]
+	path = stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process
+	url = https://bitbucket.org/albertcp_/belief_manager_process
+	branch = master
+[submodule "stack/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process"]
+	path = stack/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process
+	url = https://bitbucket.org/albertcp_/belief_updater_process
+	branch = master
+[submodule "stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
+	path = stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
+	url = https://bitbucket.org/albertcp_/python_based_mission_interpreter_process
+	branch = master
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
+	url = https://bitbucket.org/Rafa403/behavior_library_devel
 	branch = master

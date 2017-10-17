@@ -598,7 +598,7 @@
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
 	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
-	url = https://bitbucket.org/albertcp_/behavior_coordinator_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator_process
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_library"]
 	path = stack/executive_system/behavior_management_system/behavior_library

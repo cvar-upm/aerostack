@@ -440,7 +440,7 @@
 	branch = master
 [submodule "stack/ground_control_system/human_machine_interface"]
 	path = stack/ground_control_system/human_machine_interface
-	url = https://bitbucket.org/JorgeLPascual/human_machine_interface.git
+	url = https://bitbucket.org/visionaerialrobotics/human_machine_interface.git
 	branch = os-update
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner

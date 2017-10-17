@@ -424,7 +424,7 @@
 	branch = master
 [submodule "stack/common/drone_process"]
 	path = stack/common/drone_process
-	url = https://bitbucket.org/albertcp_/drone_process.git
+	url = https://bitbucket.org/visionaerialrobotics/drone_process.git
 	branch = master
 [submodule "stack/common/drone_module"]
 	path = stack_deprecated/common/drone_module
@@ -590,11 +590,11 @@
 	branch = master
 [submodule "stack/common/behavior_process"]
 	path = stack/common/behavior_process
-	url = https://bitbucket.org/albertcp_/behavior_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_process
 	branch = master
 [submodule "stack/executive_system/self_localization_selector_process"]
 	path = stack/executive_system/self_localization_selector_process
-	url = https://bitbucket.org/albertcp_/self_localization_selector_process
+	url = https://bitbucket.org/visionaerialrobotics/self_localization_selector_process
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
 	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
@@ -602,39 +602,39 @@
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_library"]
 	path = stack/executive_system/behavior_management_system/behavior_library
-	url = https://bitbucket.org/Rafa403/behavior_library
+	url = https://bitbucket.org/visionaerialrobotics/behavior_library
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist"]
 	path = stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist
-	url = https://bitbucket.org/albertcp_/behavior_specialist
+	url = https://bitbucket.org/visionaerialrobotics/behavior_specialist
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
 	path = stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process
-	url = https://bitbucket.org/albertcp_/behavior_specialist_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_specialist_process
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/resource_manager/resource_manager"]
 	path = stack/executive_system/behavior_management_system/resource_manager/resource_manager
-	url = https://bitbucket.org/albertcp_/resource_manager
+	url = https://bitbucket.org/visionaerialrobotics/resource_manager
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/resource_manager/resource_manager_process"]
 	path = stack/executive_system/behavior_management_system/resource_manager/resource_manager_process
-	url = https://bitbucket.org/albertcp_/resource_manager_process
+	url = https://bitbucket.org/visionaerialrobotics/resource_manager_process
 	branch = master
 [submodule "stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager"]
 	path = stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager
-	url = https://bitbucket.org/albertcp_/belief_manager
+	url = https://bitbucket.org/visionaerialrobotics/belief_manager
 	branch = master
 [submodule "stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process"]
 	path = stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process
-	url = https://bitbucket.org/albertcp_/belief_manager_process
+	url = https://bitbucket.org/visionaerialrobotics/belief_manager_process
 	branch = master
 [submodule "stack/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process"]
 	path = stack/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process
-	url = https://bitbucket.org/albertcp_/belief_updater_process
+	url = https://bitbucket.org/visionaerialrobotics/belief_updater_process
 	branch = master
 [submodule "stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
 	path = stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
-	url = https://bitbucket.org/albertcp_/python_based_mission_interpreter_process
+	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process
 	branch = master
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
 	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel

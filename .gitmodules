@@ -420,7 +420,7 @@
 	branch = master
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
 	path = stack/supervision_system/process_monitor/process_monitor_process
-	url = https://bitbucket.org/albertcp_/process_monitor_process.git
+	url = https://bitbucket.org/visionaerialrobotics/process_monitor_process.git
 	branch = master
 [submodule "stack/common/drone_process"]
 	path = stack/common/drone_process

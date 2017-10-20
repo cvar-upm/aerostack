@@ -85,7 +85,12 @@ sudo apt-get install festvox-rablpc16k
 sudo apt-get install festvox-kallpc16k
 # Castilian Spanish male speaker for Festival [voice_el_diphone]
 sudo apt-get install festvox-ellpc11k
-
+echo "------------------------------------------------------"
+echo "Installing qwt library"
+echo "------------------------------------------------------"
+sudo apt-get install libqwt-headers
+sudo apt-get install libqwt-qt5-dev
+sudo apt-get install libzbar-dev
 echo "------------------------------------------------------"
 echo "Installing Ueyecamera drivers"
 echo "------------------------------------------------------"

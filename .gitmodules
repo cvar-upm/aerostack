@@ -127,11 +127,11 @@
 	url = https://bitbucket.org/joselusl/lib_levmar-2.6
 	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy"]
-	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy
+	path = stack/hardware_interface/drivers_platforms/driver_bebop/bebop_autonomy
 	url = https://github.com/AutonomyLab/bebop_autonomy.git
 	branch = indigo-devel
 [submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule"]
-	path = stack_devel/droneDrivers/driversPlatforms/driverBebopDrone/driverBebopROSModule
+	path = stack/hardware_interface/drivers_platforms/driver_bebop/driverBebopROSModule
 	url = https://bitbucket.org/zorana/driverbeboprosmodule.git
 	branch = master
 [submodule "stack/libraries/pugixml"]
@@ -455,7 +455,7 @@
 	url = https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
 	branch = catkin
 [submodule "stack_devel/droneDrivers/drivers_sensors/driver_hokuyo/hokuyo_node"]
-	path = stack_devel/droneDrivers/drivers_sensors/driver_hokuyo/hokuyo_node
+	path = stack/hardware_interface/drivers_sensors/driver_hokuyo/hokuyo_node
 	url = https://github.com/ros-drivers/hokuyo_node.git
 	branch = indigo-devel
 [submodule "stack_devel/planning_system/navigation_stack/navigation_stack_ros_module"]
@@ -499,15 +499,15 @@
 	url = https://bitbucket.org/csampedro/perception_manager.git
 	branch = master
 [submodule "stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam"]
-	path = stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam
+	path = stack/hardware_interface/drivers_sensors/driver_usb_cam/usb_cam
 	url = https://github.com/bosch-ros-pkg/usb_cam.git
 	branch = develop
 [submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/ros_lightware"]
-	path = stack_devel/droneDrivers/drivers_sensors/driver_lightware/ros_lightware
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/ros_lightware
 	url = https://github.com/hridaybavle/ros_lightware.git
 	branch = master
 [submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port"]
-	path = stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/cereal_port
 	url = https://github.com/wavelab/cereal_port.git
 	branch = master
 [submodule "stack_devel/situation_awareness_system/landing_module/drone_landing"]

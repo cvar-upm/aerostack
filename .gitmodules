@@ -423,7 +423,7 @@
 	url = https://bitbucket.org/visionaerialrobotics/process_monitor_process.git
 	branch = master
 [submodule "stack/common/drone_process"]
-	path = stack/common/drone_process
+	path = stack_deprecated/common/drone_process
 	url = https://bitbucket.org/visionaerialrobotics/drone_process.git
 	branch = master
 [submodule "stack/common/drone_module"]
@@ -431,11 +431,11 @@
 	url = https://bitbucket.org/joselusl/dronemoduleros.git
 	branch = master
 [submodule "stack/executive_system/skill_manager/skill_manager_process"]
-	path = stack/executive_system/skill_manager/skill_manager_process
+	path = stack_obsolete/executive_system/skill_manager/skill_manager_process
 	url = https://bitbucket.org/albertcp_/skill_manager_process.git
 	branch = os-update
 [submodule "stack/supervision_system/action_monitor/action_monitor_process"]
-	path = stack/supervision_system/action_monitor/action_monitor_process
+	path = stack_obsolete/supervision_system/action_monitor/action_monitor_process
 	url = https://bitbucket.org/albertcp_/action_monitor_process.git
 	branch = master
 [submodule "stack/ground_control_system/human_machine_interface"]
@@ -593,7 +593,7 @@
 	url = https://bitbucket.org/visionaerialrobotics/behavior_process
 	branch = master
 [submodule "stack/executive_system/self_localization_selector_process"]
-	path = stack/executive_system/self_localization_selector_process
+	path = stack/situation_awareness_system/self_localization_selector/self_localization_selector_process
 	url = https://bitbucket.org/visionaerialrobotics/self_localization_selector_process
 	branch = master
 [submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
@@ -639,4 +639,8 @@
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
 	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
 	url = https://bitbucket.org/Rafa403/behavior_library_devel
+	branch = master
+[submodule "stack/common/robot_process"]
+	path = stack/common/robot_process
+	url = https://bitbucket.org/visionaerialrobotics/robot_process
 	branch = master

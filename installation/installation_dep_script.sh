@@ -17,6 +17,11 @@ echo "Installing expect"
 echo "-----------------------"
 sudo apt-get install expect
 
+echo "-----------------------"
+echo "Installing pyinotify"
+echo "-----------------------"
+sudo apt-get install python-pyinotify
+
 echo "---------------------------"
 echo "Installing Lapack, Blas, protobuf and F2C Libraries"
 echo "---------------------------"
@@ -33,7 +38,7 @@ sudo apt-get install libudev-dev
 sudo apt-get install libiw-dev
 
 if [ "$ROS_DISTRO" = "kinetic" ]
-then 
+then
 	echo "----------------------------"
 	echo "Install driver common required in kinectic"
 	echo "----------------------------"
@@ -72,7 +77,7 @@ echo "---------------------------"
 echo "Installing Sound Play & Dependencies"
 echo "---------------------------"
 sudo apt-get install ros-$ROS_DISTRO-audio-common
-sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev 
+sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 
 echo "---------------------------"
 echo "Installing Voices for Sound Play"
@@ -128,4 +133,3 @@ echo "Installing All ROS dependencies"
 echo "------------------------------------------------------"
 rosdep update
 rosdep install -r --from-paths ${AEROSTACK_WORKSPACE} --ignore-src --rosdistro=$ROSDISTRO
-

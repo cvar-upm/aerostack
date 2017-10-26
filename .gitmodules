@@ -121,7 +121,7 @@
 [submodule "configs"]
 	path = configs
 	url = https://bitbucket.org/joselusl/quadrotor_stack_configs
-	branch = master
+	branch = examples
 [submodule "stack/libraries/lib_levmar-2.6"]
 	path = stack/libraries/lib_levmar-2.6
 	url = https://bitbucket.org/joselusl/lib_levmar-2.6
@@ -165,7 +165,7 @@
 [submodule "launchers"]
 	path = launchers
 	url = https://bitbucket.org/Vision4UAV/aerostack_launchers
-	branch = master
+	branch = examples
 [submodule "etc"]
 	path = etc
 	url = https://bitbucket.org/Vision4UAV/aerostack_etc

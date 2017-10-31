@@ -426,3 +426,11 @@
 	path = stack/common/robot_process
 	url = https://bitbucket.org/visionaerialrobotics/robot_process
 	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros
+	url = https://bitbucket.org/ramon_suarez_fernandez/dji_sdk_ros.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
+	branch = master

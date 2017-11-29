@@ -1,10 +1,10 @@
 /*!*********************************************************************************
- *  \file       behavior_specialist_process.h
- *  \brief      CameraOverlay definition file.
- *  \details    This file contains the CameraOverlay declaration.
+ *  \file       first_view_process.h
+ *  \brief      FirstView definition file.
+ *  \details    This file contains the FirstView declaration.
  *              To obtain more information about it's definition consult
  *              the behavior_specialist_process.cpp file.
- *  \authors    Alberto Camporredondo.
+ *  \authors    Daniel Rabasco.
  *  \copyright  Copyright 2017 Universidad Politecnica de Madrid (UPM)
  *
  *     This program is free software: you can redistribute it and/or modify
@@ -21,27 +21,21 @@
  *     along with this program. If not, see http://www.gnu.org/licenses/.
  ********************************************************************************/
 
-#ifndef CAMERA_OVERLAY_PROCESS_H
-#define CAMERA_OVERLAY_PROCESS_H
+#ifndef FIRST_VIEW_PROCESS_H
+#define FIRST_VIEW_PROCESS_H
 
 
 #include <ros/ros.h>
-#include <opencv2/opencv.hpp>
 #include <image_transport/image_transport.h>
 #include "image_converter.h"
-#include <camera_info_manager/camera_info_manager.h>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <cv_bridge/cv_bridge.h>
-#include <sstream>
-#include <boost/assign/list_of.hpp>
+
 
 #include <robot_process.h>
 
-static std::string VIDEO_STREAM_INPUT=/*"/videofile/image_raw";*/"/camera/front/image_raw";//name of the receiving topic
+static std::string VIDEO_STREAM_INPUT="/camera/front/image_raw";//name of the receiving topic
 
 
-class CameraOverlay : public RobotProcess
+class FirstView : public RobotProcess
 {
 private:
   ros::NodeHandle nh_;
@@ -59,8 +53,8 @@ private:
 
 
 public:
-  CameraOverlay();
-  ~CameraOverlay();
+  FirstView();
+  ~FirstView();
 
 private://DroneProcess
   void ownSetUp();

@@ -608,7 +608,7 @@ void ImageConverter::imageOverlayCbBlack(const image_transport::Publisher &image
   {
 
     auto t1 = Clock::now();    // Start the frame timer
-    cv::Mat image= cv::imread("/home/cefiro/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/stack_devel/camera/camera_overlay/icons/black.png", CV_LOAD_IMAGE_COLOR);
+    cv::Mat image= cv::imread("/home/cefiro/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/stack/ground_control_system/HUD/first_view/icons/black.png", CV_LOAD_IMAGE_COLOR);
     const sensor_msgs::ImageConstPtr& black_img  = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();
     try
     {

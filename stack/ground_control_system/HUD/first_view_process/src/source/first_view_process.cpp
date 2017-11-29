@@ -1,7 +1,7 @@
 /*!*******************************************************************************************
- *  \file       camera_overlay_process.cpp
- *  \brief      CameraOverlay implementation file.
- *  \details    This file implements the CameraOverlay class.
+ *  \file       first_view_process.cpp
+ *  \brief      FirstView implementation file.
+ *  \details    This file implements the FirstView class.
  *  \authors    Daniel Rabasco García.
  *  \copyright  Copyright 2017 Universidad Politecnica de Madrid (UPM)
  *
@@ -19,20 +19,20 @@
  *     along with this program. If not, see http://www.gnu.org/licenses/.
  ********************************************************************************/
 
-#include "../include/camera_overlay_process.h"
+#include "../include/first_view_process.h"
 
-CameraOverlay::CameraOverlay(): it_(nh_)
+FirstView::FirstView(): it_(nh_)
 {
   drone_publishing = false;
 }
 
-CameraOverlay::~CameraOverlay()
+FirstView::~FirstView()
 {
 
 }
 
 
-void CameraOverlay::ownSetUp()
+void FirstView::ownSetUp()
 {
 
 
@@ -48,18 +48,18 @@ void CameraOverlay::ownSetUp()
 
 }
 
-void CameraOverlay::ownStart()
+void FirstView::ownStart()
 {
     // Subscribe to input video feed and other feeds and publish output video feeds
-    pose_sub_ = nh_.subscribe("/"+drone_id_namespace+"/EstimatedPose_droneGMR_wrt_GFF", 1000, &CameraOverlay::poseCallback,this);
-    spd_sub_ = nh_.subscribe("/"+drone_id_namespace+"/EstimatedSpeed_droneGMR_wrt_GFF", 1000, &CameraOverlay::spdCallback,this);
-    batt_sub_ = nh_.subscribe("/"+drone_id_namespace+"/battery", 1000, &CameraOverlay::battCallback,this);
-    image_sub_ = it_.subscribe("/"+drone_id_namespace+VIDEO_STREAM_INPUT, 1000, &CameraOverlay::imageCallback, this);
+    pose_sub_ = nh_.subscribe("/"+drone_id_namespace+"/EstimatedPose_droneGMR_wrt_GFF", 1000, &FirstView::poseCallback,this);
+    spd_sub_ = nh_.subscribe("/"+drone_id_namespace+"/EstimatedSpeed_droneGMR_wrt_GFF", 1000, &FirstView::spdCallback,this);
+    batt_sub_ = nh_.subscribe("/"+drone_id_namespace+"/battery", 1000, &FirstView::battCallback,this);
+    image_sub_ = it_.subscribe("/"+drone_id_namespace+VIDEO_STREAM_INPUT, 1000, &FirstView::imageCallback, this);
     image_pub_big_ = it_.advertise("/"+drone_id_namespace+"/camera/overlay/image_raw/big", 1000);
     image_pub_small_ = it_.advertise("/"+drone_id_namespace+"/camera/overlay/image_raw/small", 1000);
 }
 
-void CameraOverlay::ownStop()
+void FirstView::ownStop()
 {
     pose_sub_.shutdown();
     spd_sub_.shutdown();
@@ -67,37 +67,37 @@ void CameraOverlay::ownStop()
     image_sub_.shutdown();
 }
 
-void CameraOverlay::ownRun()
+void FirstView::ownRun()
 {
  // if(!drone_publishing)
   image_converter.imageOverlayCbBlack(image_pub_small_, image_pub_big_);
 }
 
-void CameraOverlay::imageCallback(const sensor_msgs::ImageConstPtr& msg)
+void FirstView::imageCallback(const sensor_msgs::ImageConstPtr& msg)
 { 
   drone_publishing = true;
   image_converter.imageOverlayCb(msg, image_pub_small_, image_pub_big_);
 }
 
-void CameraOverlay::poseCallback(const droneMsgsROS::dronePose::ConstPtr& msg)
+void FirstView::poseCallback(const droneMsgsROS::dronePose::ConstPtr& msg)
 {
   image_converter.poseInfoCb(msg);
 }
 
-void CameraOverlay::spdCallback(const droneMsgsROS::droneSpeeds::ConstPtr& msg)
+void FirstView::spdCallback(const droneMsgsROS::droneSpeeds::ConstPtr& msg)
 {
   image_converter.spdInfoCb(msg);
 }
 
-void CameraOverlay::battCallback(const droneMsgsROS::battery::ConstPtr& msg)
+void FirstView::battCallback(const droneMsgsROS::battery::ConstPtr& msg)
 {
   image_converter.battInfoCb(msg);
 }
 
-bool CameraOverlay::getDronePublishing(){
+bool FirstView::getDronePublishing(){
   return drone_publishing;
 }
 
-void CameraOverlay::setDronePublishing(bool publishing){
+void FirstView::setDronePublishing(bool publishing){
   drone_publishing = publishing;
 }

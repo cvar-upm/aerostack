@@ -18,7 +18,7 @@
     <!-- topics & services -->
      <param name="drone_console_interface_sensor_overlay_camera" value="$(arg drone_console_interface_sensor_overlay_camera)"   type="str" />
 
-    <node name="camera_overlay_process" pkg="camera_overlay_process" type="camera_overlay_process" output="screen"/>
+    <node name="first_view_process" pkg="first_view_process" type="first_view_process" output="screen"/>
 
   </group>
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(camera_overlay)
+project(first_view)
 
 ### Use version 2011 of C++ (c++11). By default ROS uses c++98
 #see: http://stackoverflow.com/questions/10851247/how-to-activate-c-11-in-cmake
@@ -7,21 +7,21 @@ project(camera_overlay)
 add_definitions(-std=c++11)
 
 # Directory definitions
-set(CAMERA_OVERLAY_SOURCE_DIR
+set(FIRST_VIEW_SOURCE_DIR
   src/source
 )
   
-set(CAMERA_OVERLAY_INCLUDE_DIR
+set(FIRST_VIEW_INCLUDE_DIR
   src/include
 ) 
 
 # Files declaration
-set(CAMERA_OVERLAY_SOURCE_FILES
-  ${CAMERA_OVERLAY_SOURCE_DIR}/image_converter.cpp 
+set(FIRST_VIEW_SOURCE_FILES
+  ${FIRST_VIEW_SOURCE_DIR}/image_converter.cpp 
 )
 
-set(CAMERA_OVERLAY_HEADER_FILES
-  ${CAMERA_OVERLAY_INCLUDE_DIR}/image_converter.h
+set(FIRST_VIEW_HEADER_FILES
+  ${FIRST_VIEW_INCLUDE_DIR}/image_converter.h
 )
 
 
@@ -45,8 +45,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS ${CAMERA_OVERLAY_INCLUDE_DIR}
-  LIBRARIES camera_overlay
+  INCLUDE_DIRS ${FIRST_VIEW_INCLUDE_DIR}
+  LIBRARIES first_view
   CATKIN_DEPENDS sensor_msgs cv_bridge roscpp std_msgs image_transport droneMsgsROS
   DEPENDS yaml-cpp
 )
@@ -58,8 +58,8 @@ catkin_package(
 find_package(OpenCV)
 
 include_directories(
-  ${CAMERA_OVERLAY_INCLUDE_DIR}
-  ${CAMERA_OVERLAY_SOURCE_DIR}
+  ${FIRST_VIEW_INCLUDE_DIR}
+  ${FIRST_VIEW_SOURCE_DIR}
 )
 include_directories(
   ${catkin_INCLUDE_DIRS}
@@ -67,14 +67,14 @@ include_directories(
 )
 
 ## Declare a C++ Library
-add_library(camera_overlay ${CAMERA_OVERLAY_SOURCE_FILES} ${CAMERA_OVERLAY_HEADER_FILES})
-add_dependencies(camera_overlay ${catkin_EXPORTED_TARGETS})
-target_link_libraries(camera_overlay ${catkin_LIBRARIES})
-target_link_libraries(camera_overlay ${OpenCV_LIBS} )
-target_link_libraries(camera_overlay ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-#target_link_libraries(camera_overlay yaml-cpp)
+add_library(first_view ${FIRST_VIEW_SOURCE_FILES} ${FIRST_VIEW_HEADER_FILES})
+add_dependencies(first_view ${catkin_EXPORTED_TARGETS})
+target_link_libraries(first_view ${catkin_LIBRARIES})
+target_link_libraries(first_view ${OpenCV_LIBS} )
+target_link_libraries(first_view ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+#target_link_libraries(first_view yaml-cpp)
 
-#add_executable(behavior_manager_process ${CAMERA_OVERLAY_SOURCE_DIR}/behavior_manager_main.cpp)
+#add_executable(behavior_manager_process ${FIRST_VIEW_SOURCE_DIR}/behavior_manager_main.cpp)
 #add_dependencies(behavior_manager_process ${catkin_EXPORTED_TARGETS})
 #target_link_libraries(behavior_manager_process behavior_manager_process_lib)
 #target_link_libraries(behavior_manager_process ${catkin_LIBRARIES})

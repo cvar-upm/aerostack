@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>camera_overlay_process</name>
+  <name>first_view_process</name>
   <version>0.5.0</version>
-  <description>The camera_overlay_process package</description>
+  <description>The first_view_process package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
@@ -39,7 +39,7 @@
   <build_depend>image_transport</build_depend>
   <build_depend>OpenCV</build_depend>
   <build_depend>droneMsgsROS</build_depend>
-  <build_depend>camera_overlay</build_depend>
+  <build_depend>first_view</build_depend>
   <build_depend>robot_process</build_depend>
 
   <!-- Use buildtool_depend for build tool packages: -->
@@ -49,7 +49,7 @@
   <buildtool_depend>std_msgs</buildtool_depend> 
   <buildtool_depend>image_transport</buildtool_depend>
   <buildtool_depend>OpenCV</buildtool_depend>
-  <buildtool_depend>camera_overlay</buildtool_depend>
+  <buildtool_depend>first_view</buildtool_depend>
   <buildtool_depend>robot_process</buildtool_depend>
   
   
@@ -62,7 +62,7 @@
   <run_depend>image_transport</run_depend>
   <run_depend>OpenCV</run_depend>
   <run_depend>droneMsgsROS</run_depend>
-  <run_depend>camera_overlay</run_depend>
+  <run_depend>first_view</run_depend>
   <run_depend>robot_process</run_depend>
 
   <!-- Use test_depend for packages you need only for testing: -->

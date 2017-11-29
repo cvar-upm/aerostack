@@ -1,7 +1,7 @@
 /*!*********************************************************************************
- *  \file       camera_overlay_process_main.cpp
- *  \brief      CameraOverlay main file.
- *  \details    This file implements the main function of the CameraOverlay.
+ *  \file       first_view_process_main.cpp
+ *  \brief      FirstView main file.
+ *  \details    This file implements the main function of the FirstView.
  *  \authors    Daniel Rabasco.
  *  \copyright  Copyright 2017 Universidad Politecnica de Madrid (UPM)
  *
@@ -19,7 +19,7 @@
  *     along with this program. If not, see http://www.gnu.org/licenses/.
  ********************************************************************************/
 
-#include "../include/camera_overlay_process.h"
+#include "../include/first_view_process.h"
 #include <thread>
 
 
@@ -30,24 +30,24 @@ int main(int argc, char** argv){
 
   std::cout << ros::this_node::getName() << std::endl;
 
-  CameraOverlay camera_overlay;
-  camera_overlay.setUp();
+  FirstView first_view;
+  first_view.setUp();
   ros::Rate rate(6);
 
   try{
-    camera_overlay.start();
+    first_view.start();
   }catch(std::exception &exception){
-    camera_overlay.notifyError(camera_overlay.SafeguardRecoverableError, 0, "ownStart()", exception.what());
-    camera_overlay.stop();
+    first_view.notifyError(first_view.SafeguardRecoverableError, 0, "ownStart()", exception.what());
+    first_view.stop();
   }
 
   while(ros::ok()) 
   {
        ros::spinOnce();
-       if(!camera_overlay.getDronePublishing())
-         camera_overlay.run();
+       if(!first_view.getDronePublishing())
+         first_view.run();
        else
-         camera_overlay.setDronePublishing(false); 
+         first_view.setDronePublishing(false); 
 
 
        rate.sleep();

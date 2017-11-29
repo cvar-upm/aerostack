@@ -606,9 +606,10 @@ cv::Point ImageConverter::rotatePoint(cv::Point center, cv::Point point, double 
 
 void ImageConverter::imageOverlayCbBlack(const image_transport::Publisher &image_pub_small_, const image_transport::Publisher &image_pub_big_) //Transformation of the image callback
   {
-
     auto t1 = Clock::now();    // Start the frame timer
-    cv::Mat image= cv::imread("/home/cefiro/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/stack/ground_control_system/HUD/first_view/icons/black.png", CV_LOAD_IMAGE_COLOR);
+    const char* env_variable = getenv("AEROSTACK_STACK");
+    std::string aerostack_stack(env_variable);
+    cv::Mat image= cv::imread(aerostack_stack+"/stack/ground_control_system/HUD/first_view/icons/black.png", CV_LOAD_IMAGE_COLOR);
     const sensor_msgs::ImageConstPtr& black_img  = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();
     try
     {

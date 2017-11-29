@@ -11,6 +11,7 @@
 
 #include <string>
 #include <iostream>
+#include <cstdlib>
 #include <math.h>
 #include <chrono>
 #include <time.h>

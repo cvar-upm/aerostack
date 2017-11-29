@@ -1,0 +1,28 @@
+<launch>
+  <!-- camera - images_receiver -->
+
+  <arg name="drone_id" default="1" />
+  <arg name="drone_id_namespace" default="drone1" />
+  <arg name="my_stack_directory"                     default="$(env AEROSTACK_STACK)" />
+  <arg name="executive_layer_configuration"          default="/configs/$(arg drone_id_namespace)/behavior_catalog.yaml" />
+  <arg name="drone_console_interface_sensor_overlay_camera" default="camera/overlay/image_raw" />
+  
+   <group ns="$(arg drone_id_namespace)">
+
+    <!-- Basic data -->
+    <param name="~drone_id_namespace"                 value="$(arg drone_id_namespace)"                 type="str" />
+    <param name="~drone_id"                           value="$(arg drone_id)"                           type="str" />
+    <param name="~my_stack_directory"                 value="$(arg my_stack_directory)"                 type="str" />
+    <param name="~executive_layer_configuration"      value="$(arg executive_layer_configuration)"      type="str" />
+
+    <!-- topics & services -->
+     <param name="drone_console_interface_sensor_overlay_camera" value="$(arg drone_console_interface_sensor_overlay_camera)"   type="str" />
+
+    <node name="camera_overlay_process" pkg="camera_overlay_process" type="camera_overlay_process" output="screen"/>
+
+  </group>
+
+</launch>
+
+
+

@@ -644,3 +644,11 @@
 	path = stack/common/robot_process
 	url = https://bitbucket.org/visionaerialrobotics/robot_process
 	branch = master
+[submodule "stack/ground_control_system/HUD/first_view"]
+	path = stack/ground_control_system/HUD/first_view
+	url = https://bitbucket.org/visionaerialrobotics/first_view.git
+	branch = master
+[submodule "stack/ground_control_system/HUD/first_view_process"]
+	path = stack/ground_control_system/HUD/first_view_process
+	url = https://bitbucket.org/visionaerialrobotics/first_view_process.git
+	branch = master

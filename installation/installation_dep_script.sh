@@ -17,6 +17,11 @@ echo "Installing expect"
 echo "-----------------------"
 sudo apt-get install expect
 
+echo "-----------------------"
+echo "Installing pyinotify"
+echo "-----------------------"
+sudo apt-get install python-pyinotify
+
 echo "---------------------------"
 echo "Installing Lapack, Blas, protobuf and F2C Libraries"
 echo "---------------------------"

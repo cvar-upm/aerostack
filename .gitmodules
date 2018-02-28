@@ -444,11 +444,11 @@
 	branch = master
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner
-	url = https://bitbucket.org/albertcp_/task_based_mission_planner.git
+	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner.git
 	branch = behavior-based
 [submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner_process
-	url = https://bitbucket.org/albertcp_/task_based_mission_planner_process.git
+	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner_process.git
 	branch = behavior-based
 [submodule "stack_devel/situation_awareness_system/hector_slam/hector_slam"]
 	path = stack_devel/situation_awareness_system/hector_slam/hector_slam

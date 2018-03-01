@@ -441,7 +441,3 @@
 	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
 	branch = master
-[submodule "stack_devel/planning_system/local_planners/eband_local_planner"]
-	path = stack_devel/planning_system/local_planners/eband_local_planner
-	url = https://github.com/utexas-bwi/eband_local_planner.git
-	branch = master

@@ -1,22 +1,6 @@
-[submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye"]
-	path = stack_obsolete/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye
-	url = https://bitbucket.org/jespestana/driver_camera_ueye.git
-	branch = master
-[submodule "stack/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule"]
-	path = stack_obsolete/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
-	url = https://bitbucket.org/jespestana/driver_camera_ueye_rosmodule.git
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
-	branch = master
-[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver"]
-	path = stack_obsolete/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
-	url = https://bitbucket.org/Vision4UAV/okto_driver.git
-	branch = catkin
-[submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule"]
-	path = stack_obsolete/droneDrivers/driversPlatforms/driverMikrokopterOkto/driverOktoROSModule
-	url = https://bitbucket.org/joselusl/driveroktorosmodule.git
 	branch = master
 [submodule "stack/libraries/lib_cvgekf"]
 	path = stack/libraries/lib_cvgekf
@@ -34,50 +18,6 @@
 	path = stack_deprecated/libraries/lib_pugixml
 	url = https://bitbucket.org/joselusl/lib_pugixml.git
 	branch = master
-[submodule "stack/utils/videoPublisherROSModule"]
-	path = stack_obsolete/utils/videoPublisherROSModule
-	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
-	branch = master
-[submodule "stack/droneMissionPlanning/droneIARC14MissionSchedulerROSModule"]
-	path = stack_obsolete/droneMissionPlanning/droneIARC14MissionSchedulerROSModule
-	url = https://bitbucket.org/jespestana/droneiarc14missionschedulerrosmodule.git
-	branch = master
-[submodule "stack/droneMissionPlanning/droneMissionPlanner"]
-	path = stack_obsolete/droneMissionPlanning/droneMissionPlanner
-	url = https://bitbucket.org/joselusl/dronemissionplanner.git
-	branch = master
-[submodule "stack/droneMissionPlanning/droneMissionPlannerROSModule"]
-	path = stack_obsolete/droneMissionPlanning/droneMissionPlannerROSModule
-	url = https://bitbucket.org/joselusl/dronemissionplannerrosmodule.git
-	branch = master
-[submodule "stack/dronePerception/droneArucoEye/lib_aruco"]
-	path = stack_obsolete/dronePerception/droneArucoEye/lib_aruco
-	url = https://bitbucket.org/joselusl/lib_aruco.git
-	branch = master
-[submodule "stack/dronePerception/droneArucoEye/arucoEye"]
-	path = stack_obsolete/dronePerception/droneArucoEye/arucoEye
-	url = https://bitbucket.org/joselusl/arucoeye.git
-	branch = master
-[submodule "stack/dronePerception/droneArucoEye/droneArucoEye"]
-	path = stack_obsolete/dronePerception/droneArucoEye/droneArucoEye
-	url = https://bitbucket.org/joselusl/dronearucoeye.git
-	branch = master
-[submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14"]
-	path = stack_obsolete/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14
-	url = https://bitbucket.org/Vision4UAV/dronecomputervisioniarc14.git
-	branch = master
-[submodule "stack/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule"]
-	path = stack_obsolete/dronePerception/droneComputerVisionIARC14/droneComputerVisionIARC14ROSModule
-	url = https://bitbucket.org/joselusl/dronecomputervisioniarc14rosmodule.git
-	branch = master
-[submodule "stack/dronePerception/droneCV2DTo3DROSModule"]
-	path = stack_obsolete/dronePerception/droneCV2DTo3DROSModule
-	url = https://bitbucket.org/joselusl/dronecv2dto3drosmodule.git
-	branch = master
-[submodule "stack/droneSimulators/droneSimulator/droneOktoSimulatorROSModule"]
-	path = stack_obsolete/droneSimulators/simulatorsIARC14/droneOktoSimulatorROSModule
-	url = https://bitbucket.org/jespestana/droneoktosimulatorrosmodule.git
-	branch = master
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator"]
 	path = stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulator
 	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulator.git
@@ -85,34 +25,6 @@
 [submodule "stack/droneSimulators/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule"]
 	path = stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/droneVisualMarkersEyeSimulatorROSModule
 	url = https://bitbucket.org/joselusl/dronevisualmarkerseyesimulatorrosmodule.git
-	branch = master
-[submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule"]
-	path = stack_obsolete/droneSimulators/simulatorsIARC14/droneSimulatorGridROSModule
-	url = https://bitbucket.org/joselusl/dronesimulatorgridrosmodule.git
-	branch = master
-[submodule "stack/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule"]
-	path = stack_obsolete/droneSimulators/simulatorsIARC14/droneSimulatoriRobotCVROSModule
-	url = https://bitbucket.org/jespestana/dronesimulatorirobotcvrosmodule.git
-	branch = master
-[submodule "stack/droneSimulators/simulatorsIARC14/robotSimulatorROSModule"]
-	path = stack_obsolete/droneSimulators/simulatorsIARC14/robotSimulatorROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrosmodule.git
-	branch = master
-[submodule "stack/HMI/IARC14/robotSimulatorRvizROSModule"]
-	path = stack_obsolete/HMI/IARC14/robotSimulatorRvizROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/robotsimulatorrvizrosmodule.git
-	branch = master
-[submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule"]
-	path = stack_devel/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule
-	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule
-	branch = master
-[submodule "stack/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2"]
-	path = stack_devel/droneSupervising/droneBasicSupervisor/droneSupervisorROSModule_v2
-	url = https://bitbucket.org/csampedro/dronesupervisorrosmodule_v2
-	branch = master
-[submodule "stack/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule"]
-	path = stack_devel/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
-	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
 	branch = master
 [submodule "stack/utils/audio_common"]
 	path = stack/utils/audio_common
@@ -138,30 +50,6 @@
 	path = stack/libraries/pugixml
 	url = https://github.com/joselusl/pugixml
 	branch = master
-[submodule "stack_deprecated/droneEnvironmentUnderstanding/robotLocalizationROSModule"]
-	path = stack_obsolete/droneEnvironmentUnderstanding/robotLocalizationROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/robotlocalizationrosmodule.git
-	branch = master
-[submodule "stack_deprecated/droneSupervising/droneIARC14BrainROSModule"]
-	path = stack_obsolete/droneSupervising/droneIARC14BrainROSModule
-	url = https://bitbucket.org/jespestana/droneiarc14brainrosmodule.git
-	branch = master
-[submodule "stack_deprecated/droneSupervising/droneBrainROSModule"]
-	path = stack_obsolete/droneSupervising/droneBrainROSModule
-	url = https://bitbucket.org/jespestana/dronebrainrosmodule.git
-	branch = master
-[submodule "stack_deprecated/dronePerception/droneArucoEye/droneArucoEyeROSModule"]
-	path = stack_obsolete/dronePerception/droneArucoEye/droneArucoEyeROSModule
-	url = https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
-	branch = master
-[submodule "stack_devel/droneSelfLocalization/droneRobotLocalizationROSModule"]
-	path = stack_devel/droneSelfLocalization/droneRobotLocalization/droneRobotLocalizationROSModule
-	url = https://bitbucket.org/hridaybavle/dronerobotlocalizationrosmodule
-	branch = master
-[submodule "stack_devel/droneSelfLocalization/droneRobotLocalization/robot_localization"]
-	path = stack_devel/droneSelfLocalization/droneRobotLocalization/robot_localization
-	url = https://github.com/cra-ros-pkg/robot_localization
-	branch = indigo-devel
 [submodule "launchers"]
 	path = launchers
 	url = https://bitbucket.org/Vision4UAV/aerostack_launchers
@@ -430,14 +318,6 @@
 	path = stack_deprecated/common/drone_module
 	url = https://bitbucket.org/joselusl/dronemoduleros.git
 	branch = master
-[submodule "stack/executive_system/skill_manager/skill_manager_process"]
-	path = stack_obsolete/executive_system/skill_manager/skill_manager_process
-	url = https://bitbucket.org/albertcp_/skill_manager_process.git
-	branch = os-update
-[submodule "stack/supervision_system/action_monitor/action_monitor_process"]
-	path = stack_obsolete/supervision_system/action_monitor/action_monitor_process
-	url = https://bitbucket.org/albertcp_/action_monitor_process.git
-	branch = master
 [submodule "stack/ground_control_system/human_machine_interface"]
 	path = stack/ground_control_system/graphical_user_interface
 	url = https://bitbucket.org/visionaerialrobotics/graphical_user_interface.git
@@ -450,53 +330,13 @@
 	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner_process
 	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner_process.git
 	branch = behavior-based
-[submodule "stack_devel/situation_awareness_system/hector_slam/hector_slam"]
-	path = stack_devel/situation_awareness_system/hector_slam/hector_slam
-	url = https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
-	branch = catkin
 [submodule "stack_devel/droneDrivers/drivers_sensors/driver_hokuyo/hokuyo_node"]
 	path = stack/hardware_interface/drivers_sensors/driver_hokuyo/hokuyo_node
 	url = https://github.com/ros-drivers/hokuyo_node.git
 	branch = indigo-devel
-[submodule "stack_devel/planning_system/navigation_stack/navigation_stack_ros_module"]
-	path = stack_devel/planning_system/navigation_stack/navigation_stack_ros_module
-	url = https://bitbucket.org/alejodosr/navigation_stack_ros_module.git
-	branch = master
-[submodule "stack_devel/droneSelfLocalization/imav_pose_estimation/laser_based_pose_estimation"]
-	path = stack_devel/droneSelfLocalization/imav_pose_estimation/laser_based_pose_estimation
-	url = https://bitbucket.org/alejodosr/laser_based_pose_estimation.git
-	branch = master
 [submodule "stack_deprecated/common/drone_module_interface"]
 	path = stack_deprecated/common/drone_module_interface
 	url = https://bitbucket.org/jespestana/dronemoduleinterfaceros.git
-	branch = master
-[submodule "stack_devel/planning_system/dronesubmissionplannerrosmodule"]
-	path = stack_devel/planning_system/dronesubmissionplannerrosmodule
-	url = https://bitbucket.org/hridaybavle/dronesubmissionplannerrosmodule.git
-	branch = master
-[submodule "stack_devel/planning_system/droneglobalmissionplannermodule"]
-	path = stack_devel/planning_system/droneglobalmissionplannermodule
-	url = https://bitbucket.org/hridaybavle/droneglobalmissionplannermodule.git
-	branch = master
-[submodule "stack_devel/situation_awareness_system/altitude_filtering_module/altitude_filtering"]
-	path = stack_devel/situation_awareness_system/altitude_filtering_module/altitude_filtering
-	url = https://bitbucket.org/zorana/altitude_filtering.git
-	branch = master
-[submodule "stack_devel/perception_system/shapecolor_objectdetection"]
-	path = stack_devel/perception_system/visual_perception/shapecolor_objectdetection
-	url = https://bitbucket.org/csampedro/shapecolor_objectdetection.git
-	branch = master
-[submodule "stack_devel/situation_awareness_system/hector_slam/hector_slam_ros_module"]
-	path = stack_devel/situation_awareness_system/hector_slam/hector_slam_ros_module
-	url = https://bitbucket.org/hridaybavle/hector_slam_ros_module.git
-	branch = master
-[submodule "stack_devel/perception_system/tactile_perception/tactile_object_detection"]
-	path = stack_devel/perception_system/tactile_perception/tactile_object_detection
-	url = https://bitbucket.org/csampedro/tactile_perception.git
-	branch = master
-[submodule "stack_devel/perception_system/perception_manager"]
-	path = stack_devel/perception_system/perception_manager
-	url = https://bitbucket.org/csampedro/perception_manager.git
 	branch = master
 [submodule "stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam"]
 	path = stack/hardware_interface/drivers_sensors/driver_usb_cam/usb_cam
@@ -509,18 +349,6 @@
 [submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port"]
 	path = stack/hardware_interface/drivers_sensors/driver_lightware/cereal_port
 	url = https://github.com/wavelab/cereal_port.git
-	branch = master
-[submodule "stack_devel/situation_awareness_system/landing_module/drone_landing"]
-	path = stack_devel/situation_awareness_system/landing_module/drone_landing
-	url = https://bitbucket.org/zorana/drone_landing.git
-	branch = master
-[submodule "stack_devel/motor_system/droneVSFollowingFromTopROSModule"]
-	path = stack_devel/motor_system/droneVSFollowingFromTopROSModule
-	url = https://bitbucket.org/carriojazz/dronevsfollowingfromtoprosmodule.git
-	branch = master
-[submodule "stack_devel/droneDrivers/drivers_sensors/driver_realsense/realsense_stable"]
-	path = stack_devel/droneDrivers/drivers_sensors/driver_realsense/realsense_stable
-	url = https://bitbucket.org/hridaybavle/realsense_stable.git
 	branch = master
 [submodule "stack/feature_extraction_system/opentld/ros_opentld"]
 	path = stack/feature_extraction_system/opentld/ros_opentld
@@ -538,14 +366,6 @@
 	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driver_rotors_simulator_process.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros"]
-	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros
-	url = https://bitbucket.org/ramon_suarez_fernandez/dji_sdk_ros.git
-	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process"]
-	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process
-	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
-	branch = master
 [submodule "stack/libraries/eigen_catkin"]
 	path = stack/libraries/eigen_catkin
 	url = https://github.com/suarez-ramon/eigen_catkin
@@ -553,40 +373,6 @@
 [submodule "stack/libraries/catkin_simple"]
 	path = stack/libraries/catkin_simple
 	url = https://github.com/suarez-ramon/catkin_simple
-	branch = master
-[submodule "stack_devel/situation_awareness_system/multiplane_localization/multiplane_localization"]
-	path = stack_devel/situation_awareness_system/multiplane_localization/multiplane_localization
-	url = https://bitbucket.org/hridaybavle/multiplane_localization.git
-	branch = master
-[submodule "stack_devel/situation_awareness_system/multiplane_localization/EKF_SLAM"]
-	path = stack_devel/situation_awareness_system/multiplane_localization/EKF_SLAM
-	url = https://bitbucket.org/hridaybavle/ekf_slam.git
-	branch = master
-[submodule "stack_devel/perception_system/visual_perception/deep_learning_object_recognition"]
-	path = stack_devel/perception_system/visual_perception/deep_learning_object_recognition
-	url = https://bitbucket.org/csampedro/deep_learning_object_recognition.git
-	branch = master
-[submodule "stack_devel/motor_system/robot_reinforcement_learning"]
-	path = stack_devel/motor_system/robot_reinforcement_learning
-	url = https://bitbucket.org/csampedro/robot_reinforcement_learning.git
-	branch = master
-[submodule "stack_devel/perception_system/visual_perception/ml_stack"]
-	path = stack_devel/perception_system/visual_perception/ml_stack
-	url = https://bitbucket.org/csampedro/ml_stack.git
-	branch = master
-[submodule "stack_devel/perception_system/visual_perception/modelbased_objectdetection"]
-	path = stack_devel/perception_system/visual_perception/modelbased_objectdetection
-	url = https://bitbucket.org/csampedro/modelbased_objectdetection.git
-	branch = master
-[submodule "stack_devel/manuel_processes/imagebasedvisualservo"]
-	path = stack_devel/manuel_processes/imagebasedvisualservo
-	url = https://bitbucket.org/ManuelRucci/imagebasedvisualservo.git
-[submodule "stack_devel/qr_recognizer"]
-	path = stack_devel/qr_recognizer
-	url = https://bitbucket.org/rafa403/qr_recognizer
-[submodule "stack_devel/qr_popup"]
-	path = stack_devel/qr_popup
-	url = https://bitbucket.org/cvlaray/qr_popup
 	branch = master
 [submodule "stack/common/behavior_process"]
 	path = stack/common/behavior_process
@@ -636,10 +422,6 @@
 	path = stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
 	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process
 	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
-	url = https://bitbucket.org/Rafa403/behavior_library_devel
-	branch = master
 [submodule "stack/common/robot_process"]
 	path = stack/common/robot_process
 	url = https://bitbucket.org/visionaerialrobotics/robot_process
@@ -651,6 +433,13 @@
 [submodule "stack/ground_control_system/HUD/first_view_process"]
 	path = stack/ground_control_system/HUD/first_view_process
 	url = https://bitbucket.org/visionaerialrobotics/first_view_process.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/dji_sdk_ros
+	url = https://bitbucket.org/ramon_suarez_fernandez/dji_sdk_ros.git
+	branch = master
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji_matrice/driver_dji_matrice_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
 	branch = master
 [submodule "stack_devel/planning_system/local_planners/eband_local_planner"]
 	path = stack_devel/planning_system/local_planners/eband_local_planner

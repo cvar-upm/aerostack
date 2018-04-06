@@ -656,3 +656,7 @@
 	path = stack_devel/planning_system/local_planners/eband_local_planner
 	url = https://github.com/utexas-bwi/eband_local_planner.git
 	branch = master
+[submodule "stack_devel/supervision_system/process_manager_process"]
+	path = stack_devel/supervision_system/process_manager_process
+	url = https://bitbucket.org/albertcp_/process_manager_process.git
+	branch = master

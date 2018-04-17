@@ -155,11 +155,11 @@
 	url = https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 	branch = master
 [submodule "stack_devel/droneSelfLocalization/droneRobotLocalizationROSModule"]
-	path = stack_devel/droneSelfLocalization/droneRobotLocalization/droneRobotLocalizationROSModule
+	path = stack/situation_awareness_system/robot_localization/droneRobotLocalizationROSModule
 	url = https://bitbucket.org/hridaybavle/dronerobotlocalizationrosmodule
 	branch = master
 [submodule "stack_devel/droneSelfLocalization/droneRobotLocalization/robot_localization"]
-	path = stack_devel/droneSelfLocalization/droneRobotLocalization/robot_localization
+	path = stack/situation_awareness_system/robot_localization/robot_localization
 	url = https://github.com/cra-ros-pkg/robot_localization
 	branch = indigo-devel
 [submodule "launchers"]

@@ -419,7 +419,7 @@
 	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
 	branch = master
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
-	path = stack/supervision_system/process_monitor/process_monitor_process
+	path = stack/process_management_system/process_monitor/process_monitor_process
 	url = https://bitbucket.org/visionaerialrobotics/process_monitor_process.git
 	branch = master
 [submodule "stack/common/drone_process"]
@@ -656,7 +656,15 @@
 	path = stack_devel/planning_system/local_planners/eband_local_planner
 	url = https://github.com/utexas-bwi/eband_local_planner.git
 	branch = master
-[submodule "stack_devel/supervision_system/process_manager_process"]
-	path = stack_devel/supervision_system/process_manager_process
-	url = https://bitbucket.org/albertcp_/process_manager_process.git
+[submodule "stack/process_management_system/process_manager/process_manager_process"]
+	path = stack/process_management_system/process_manager/process_manager_process
+	url = https://bitbucket.org/visionaerialrobotics/process_manager_process.git
+	branch = master
+[submodule "stack_devel/common/aerostack_msgs"]
+	path = stack_devel/common/aerostack_msgs
+	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git
+	branch = master
+[submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
+	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
 	branch = master

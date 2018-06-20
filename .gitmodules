@@ -668,3 +668,7 @@
 	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
 	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
 	branch = master
+[submodule "stack_devel/droneDrivers/driversPlatforms/parrot_arsdk"]
+	path = stack_devel/droneDrivers/driversPlatforms/parrot_arsdk
+	url = https://github.com/AutonomyLab/parrot_arsdk
+	branch = indigo-devel

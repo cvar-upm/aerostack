@@ -672,7 +672,7 @@
 	path = stack_devel/droneDrivers/driversPlatforms/parrot_arsdk
 	url = https://github.com/AutonomyLab/parrot_arsdk
 	branch = indigo-devel
-[submodule "stack_devel/path_planner_in_occupancy_grid"]
-	path = stack_devel/path_planner_in_occupancy_grid
-	url = https://GuillermoEBlanco@bitbucket.org/GuillermoEBlanco/path_planner_in_occupancy_grid.git
+[submodule "stack_devel/planning_system/path_planner_in_occupancy_grid"]
+	path = stack_devel/planning_system/path_planner_in_occupancy_grid
+	url = https://bitbucket.org/GuillermoEBlanco/path_planner_in_occupancy_grid.git
 	branch = master

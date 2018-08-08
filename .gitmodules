@@ -676,3 +676,11 @@
 	path = stack_devel/planning_system/path_planner_in_occupancy_grid
 	url = https://bitbucket.org/GuillermoEBlanco/path_planner_in_occupancy_grid.git
 	branch = master
+[submodule "stack_devel/situation_awareness_system/frame_based_localization/solvepnp"]
+	path = stack_devel/situation_awareness_system/frame_based_localization/solvepnp
+	url = https://bitbucket.org/luliang92/solvepnp.git
+	branch = master
+[submodule "stack_devel/situation_awareness_system/frame_based_localization/frame_localizer_process"]
+	path = stack_devel/situation_awareness_system/frame_based_localization/frame_localizer_process
+	url = https://bitbucket.org/hridaybavle/frame_localizer_process.git
+	branch = master

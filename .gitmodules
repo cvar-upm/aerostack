@@ -684,3 +684,11 @@
 	path = stack_devel/situation_awareness_system/frame_based_localization/frame_localizer_process
 	url = https://bitbucket.org/hridaybavle/frame_localizer_process.git
 	branch = master
+[submodule "stack_devel/motor_system/IBVS_onepoint"]
+	path = stack_devel/motor_system/IBVS_onepoint
+	url = https://bitbucket.org/santofimia/ibvs_onepoint.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/libpid_control"]
+	path = stack_devel/motor_system/generic_controller/libpid_control
+	url = https://bitbucket.org/santofimia/libpid_control.git
+	branch = master

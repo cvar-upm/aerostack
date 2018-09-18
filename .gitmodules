@@ -692,3 +692,39 @@
 	path = stack_devel/motor_system/generic_controller/libpid_control
 	url = https://bitbucket.org/santofimia/libpid_control.git
 	branch = master
+[submodule "stack_devel/motor_system/generic_controller/altitude_controller"]
+	path = stack_devel/motor_system/generic_controller/altitude_controller
+	url = https://bitbucket.org/santofimia/altitude_controller.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/drone_controller"]
+	path = stack_devel/motor_system/generic_controller/drone_controller
+	url = https://bitbucket.org/santofimia/drone_controller.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/libpidnn_control"]
+	path = stack_devel/motor_system/generic_controller/libpidnn_control
+	url = https://bitbucket.org/santofimia/libpidnn_control.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/position_controller"]
+	path = stack_devel/motor_system/generic_controller/position_controller
+	url = https://bitbucket.org/santofimia/position_controller.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/speed_controller"]
+	path = stack_devel/motor_system/generic_controller/speed_controller
+	url = https://bitbucket.org/santofimia/speed_controller.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/speed_controllernn"]
+	path = stack_devel/motor_system/generic_controller/speed_controllernn
+	url = https://bitbucket.org/santofimia/speed_controllernn.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/trajectory_controller"]
+	path = stack_devel/motor_system/generic_controller/trajectory_controller
+	url = https://bitbucket.org/santofimia/trajectory_controller.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/trajectory_speed_controller"]
+	path = stack_devel/motor_system/generic_controller/trajectory_speed_controller
+	url = https://bitbucket.org/santofimia/trajectory_speed_controller.git
+	branch = master
+[submodule "stack_devel/motor_system/generic_controller/yaw_controller"]
+	path = stack_devel/motor_system/generic_controller/yaw_controller
+	url = https://bitbucket.org/santofimia/yaw_controller.git
+	branch = master

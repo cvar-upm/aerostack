@@ -724,3 +724,9 @@
 	path = stack_devel/motor_system/generic_controller/yaw_controller
 	url = https://bitbucket.org/santofimia/yaw_controller.git
 	branch = master
+[submodule "stack/common/master"]
+	path = stack/common/master
+	url = https://bitbucket.org/acgroba/msgs_adapters/src/master/
+[submodule "stack/common/msgs_adapters"]
+	path = stack/common/msgs_adapters
+	url = https://acgroba@bitbucket.org/acgroba/msgs_adapters.git

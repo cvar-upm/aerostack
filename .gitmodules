@@ -730,3 +730,4 @@
 [submodule "stack/common/msgs_adapters"]
 	path = stack/common/msgs_adapters
 	url = https://acgroba@bitbucket.org/acgroba/msgs_adapters.git
+	branch = master

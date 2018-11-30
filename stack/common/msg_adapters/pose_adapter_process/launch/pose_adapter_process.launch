@@ -1,0 +1,38 @@
+<!-- Launches: pose_adapter_process -->
+<launch>
+
+  <!-- Basic data -->
+  <arg name="drone_id"                                            default="1" />
+  <arg name="drone_id_namespace"                                  default="drone$(arg drone_id)" />
+
+  <!-- topics & services-->
+  <arg name="geometric_pose"                                      default="geometric_pose" />
+  <arg name="EstimatedPose_droneGMR_wrt_GFF"                      default="EstimatedPose_droneGMR_wrt_GFF" />
+  <arg name="odometry_estimated_pose"                             default="odometry_estimated_pose" />
+  <arg name="ArucoSlam_EstimatedPose"                             default="ArucoSlam_EstimatedPose" />
+  <arg name="aruco_estimated_pose"                                default="aruco_estimated_pose" />
+  <arg name="trajectoryControllerPoseReferencesRebroadcast"       default="trajectoryControllerPoseReferencesRebroadcast" />
+  <arg name="trajectoryControllerPositionReferencesRebroadcast"   default="trajectoryControllerPositionReferencesRebroadcast" />
+
+  <group ns="$(arg drone_id_namespace)">
+
+    <!-- Basic data -->
+    <param name="~drone_id_namespace"                       value="$(arg drone_id_namespace)"                   type="str" />
+    <param name="~drone_id"                                 value="$(arg drone_id)"                             type="str" />
+
+    <!-- topics & services -->
+    <param name="~geometric_pose"                           value="$(arg geometric_pose)"                       type="str" />
+    <param name="~EstimatedPose_droneGMR_wrt_GFF"           value="$(arg EstimatedPose_droneGMR_wrt_GFF)"       type="str" />
+    <param name="~odometry_estimated_pose"                  value="$(arg odometry_estimated_pose)"              type="str" />
+    <param name="~ArucoSlam_EstimatedPose"                  value="$(arg ArucoSlam_EstimatedPose)"              type="str" />
+    <param name="~aruco_estimated_pose"                     value="$(arg aruco_estimated_pose)"                 type="str" />
+    
+    <param name="~trajectoryControllerPositionReferencesRebroadcast"    value="$(arg trajectoryControllerPositionReferencesRebroadcast)"    type="str" />
+    <param name="~trajectoryControllerPoseReferencesRebroadcast"        value="$(arg trajectoryControllerPoseReferencesRebroadcast)"        type="str" />
+
+
+    <node name="pose_adapter_process" pkg="pose_adapter_process" type="pose_adapter_process" output="screen"/>
+
+  </group>
+
+</launch>

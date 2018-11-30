@@ -726,7 +726,7 @@
 	branch = master
 [submodule "stack/common/master"]
 	path = stack/common/master
-	url = https://bitbucket.org/acgroba/msgs_adapters/src/master/
+	url = https://bitbucket.org/visionaerialrobotics/msgs_adapters/src/master/
 [submodule "stack/common/msgs_adapters"]
 	path = stack/common/msgs_adapters
 	url = https://acgroba@bitbucket.org/acgroba/msgs_adapters.git

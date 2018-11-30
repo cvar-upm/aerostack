@@ -1,0 +1,58 @@
+<!-- Launches: twist_adapter_process -->
+<launch>
+
+  <!-- Basic data -->
+  <arg name="drone_id"                               default="1" />
+  <arg name="drone_id_namespace"                     default="drone$(arg drone_id)" />
+  <arg name="my_stack_directory"                     default="$(env AEROSTACK_STACK)" />
+  <arg name="executive_layer_configuration"          default="/configs/general/behavior_catalog.yaml" />
+
+  <!-- topics & services-->
+  <arg name="trajectoryControllerSpeedReferencesRebroadcast"                 default="trajectoryControllerSpeedReferencesRebroadcast" />
+  <arg name="EstimatedSpeed_droneGMR_wrt_GFF"                 default="EstimatedSpeed_droneGMR_wrt_GFF" />
+  <arg name="SOEstimatedSpeeds"                 default="SOEstimatedSpeeds" />
+  <arg name="gazebo_estimated_speed"                 default="gazebo_estimated_speed" />
+  <arg name="droneSpeedsRefs"                 default="droneSpeedsRefs" />
+  <arg name="estimated_speed"                 default="estimated_speed" />
+
+  <arg name="trajectoryControllerTwistReferencesRebroadcast"                     default="trajectoryControllerTwistReferencesRebroadcast" />
+  <arg name="EstimatedTwist_droneGMR_wrt_GFF"                 default="EstimatedTwist_droneGMR_wrt_GFF" />
+  <arg name="SOEstimatedTwists"                 default="SOEstimatedTwists" />
+  <arg name="gazebo_estimated_twist"                 default="gazebo_estimated_twist" />
+  <arg name="droneTwistsRefs"                 default="droneTwistsRefs" />
+  <arg name="estimated_twist"                 default="estimated_twist" />
+
+  <group ns="$(arg drone_id_namespace)">
+
+    <!-- Basic data -->
+    <param name="~drone_id_namespace"                 value="$(arg drone_id_namespace)"                 type="str" />
+    <param name="~drone_id"                           value="$(arg drone_id)"                           type="str" />
+    <param name="~my_stack_directory"                 value="$(arg my_stack_directory)"                 type="str" />
+    <param name="~executive_layer_configuration"      value="$(arg executive_layer_configuration)"      type="str" />
+
+    <!-- topics & services -->
+    <param name="~trajectoryControllerSpeedReferencesRebroadcast"             value="$(arg trajectoryControllerSpeedReferencesRebroadcast)"             type="str" />
+    <param name="~EstimatedSpeed_droneGMR_wrt_GFF"                 value="$(arg EstimatedSpeed_droneGMR_wrt_GFF)"                 type="str" />
+    <param name="~SOEstimatedSpeeds"        value="$(arg SOEstimatedSpeeds)"        type="str" />
+    <param name="~gazebo_estimated_speed" value="$(arg gazebo_estimated_speed)" type="str" />
+    <param name="~droneSpeedsRefs"          value="$(arg droneSpeedsRefs)"          type="str" />
+    <param name="~estimated_speed"          value="$(arg estimated_speed)"          type="str" />
+
+    <param name="~trajectoryControllerTwistReferencesRebroadcast"      value="$(arg trajectoryControllerTwistReferencesRebroadcast)"      type="str" />
+    <param name="~EstimatedTwist_droneGMR_wrt_GFF"      value="$(arg EstimatedTwist_droneGMR_wrt_GFF)"      type="str" />
+    <param name="~SOEstimatedTwists"      value="$(arg SOEstimatedTwists)"      type="str" />
+    <param name="~gazebo_estimated_twist"      value="$(arg gazebo_estimated_twist)"      type="str" />
+    <param name="~droneTwistsRefs"      value="$(arg droneTwistsRefs)"      type="str" />
+    <param name="~estimated_twist"      value="$(arg estimated_twist)"      type="str" />
+
+
+    <node name="twist_adapter_process" pkg="twist_adapter_process" type="twist_adapter_process" output="screen"/>
+    <test test-name="twist_adapter_process_test"
+          pkg="twist_adapter_process"
+          type="twist_adapter_process_test"/>
+
+    <!--<test test-name="TwistAdapterTest" pkg="twist_adapter_process" type="TwistAdapterTest"/>-->
+
+  </group>
+
+</launch>

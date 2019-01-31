@@ -41,3 +41,6 @@ cd $AEROSTACK_STACK/stack/hardware_interface/drivers_platforms/driver_bebop/bebo
 git checkout -f indigo-devel
 
 echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$AEROSTACK_WORKSPACE/devel/lib/parrot_arsdk" >> ~/.bashrc
+
+sudo ln -s /usr/include/eigen3/Eigen /usr/local/include/Eigen
+

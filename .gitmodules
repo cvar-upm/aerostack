@@ -733,4 +733,4 @@
 	url = https://bitbucket.org/visionaerialrobotics/msgs_adapters.git
 [submodule "installation/docker_container"]
 	path = installation/docker_container
-	url = https://bitbucket.org/visionaerialrobotics/docker_container/
+	url = https://bitbucket.org/visionaerialrobotics/docker_container.git

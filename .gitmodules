@@ -734,3 +734,6 @@
 [submodule "installation/docker_container"]
 	path = installation/docker_container
 	url = https://bitbucket.org/visionaerialrobotics/docker_container.git
+[submodule "stack/simulation_system/vrep_simulator"]
+	path = stack/simulation_system/vrep_simulator
+	url = https://acgroba@bitbucket.org/visionaerialrobotics/vrep_simulator.git

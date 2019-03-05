@@ -737,3 +737,6 @@
 [submodule "stack/simulation_system/vrep_simulator"]
 	path = stack/simulation_system/vrep_simulator
 	url = https://acgroba@bitbucket.org/visionaerialrobotics/vrep_simulator.git
+[submodule "stack_devel/motor_system/flight_motion_pid_controller_process"]
+	path = stack_devel/motor_system/flight_motion_pid_controller_process
+	url = https://acgroba@bitbucket.org/visionaerialrobotics/flight_motion_pid_controller_process.git

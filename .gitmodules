@@ -743,3 +743,6 @@
 [submodule "stack_devel/executive_system/aerostack_executive"]
 	path = stack_devel/executive_system/aerostack_executive
 	url = https://acgroba@bitbucket.org/visionaerialrobotics/aerostack_executive.git
+[submodule "stack_devel/ground_control_system/alphanumeric_viewer"]
+	path = stack_devel/ground_control_system/alphanumeric_viewer
+	url = https://bitbucket.org/visionaerialrobotics/alphanumeric_viewer.git

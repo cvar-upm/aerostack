@@ -747,3 +747,6 @@
 	path = stack_devel/ground_control_system/alphanumeric_viewer
 	url = https://bitbucket.org/visionaerialrobotics/alphanumeric_viewer.git
 
+[submodule "projects_cvar"]
+	path = projects_cvar
+	url = https://bitbucket.org/visionaerialrobotics/projects_cvar

@@ -750,3 +750,6 @@
 [submodule "projects_cvar"]
 	path = projects_cvar
 	url = https://bitbucket.org/visionaerialrobotics/projects_cvar
+[submodule "stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid"]
+	path = stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid
+	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git

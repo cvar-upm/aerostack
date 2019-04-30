@@ -737,6 +737,9 @@
 [submodule "stack/simulation_system/vrep_simulator"]
 	path = stack/simulation_system/vrep_simulator
 	url = https://bitbucket.org/visionaerialrobotics/vrep_simulator.git
+[submodule "stack_devel/motor_system/quadrotor_pid_controller"]
+	path = stack_devel/motor_system/quadrotor_pid_controller
+	url = https://bitbucket.org/visionaerialrobotics/flight_motion_pid_controller_process.git
 [submodule "stack_devel/executive_system/aerostack_executive"]
 	path = stack_devel/executive_system/aerostack_executive
         url = https://bitbucket.org/visionaerialrobotics/aerostack_executive.git

@@ -753,3 +753,6 @@
 [submodule "stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid"]
 	path = stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid
 	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git
+[submodule "stack_devel/ground_control_system/keyboard_teleoperation_interface"]
+	path = stack_devel/ground_control_system/keyboard_teleoperation_interface
+	url = https://bitbucket.org/rodelgo7al/keyboard_teleoperation_interface.git

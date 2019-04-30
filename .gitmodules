@@ -713,7 +713,7 @@
 	url = https://bitbucket.org/santofimia/speed_controllernn.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/trajectory_controller"]
-	path = stack_devel/motor_system/trajectory_controller
+	path = stack_obsolete/motor_system/trajectory_controller
 	url = https://bitbucket.org/santofimia/trajectory_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/trajectory_speed_controller"]

@@ -689,7 +689,7 @@
 	url = https://bitbucket.org/santofimia/libpid_control.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/altitude_controller"]
-	path = stack_devel/motor_system/altitude_controller
+	path = stack_obsolete/motor_system/altitude_controller
 	url = https://bitbucket.org/santofimia/altitude_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/drone_controller"]

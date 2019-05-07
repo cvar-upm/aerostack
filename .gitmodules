@@ -685,47 +685,47 @@
 	url = https://bitbucket.org/hridaybavle/frame_localizer_process.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/libpid_control"]
-	path = stack_devel/motor_system/pid_control/pid_control
+	path = stack_obsolete/motor_system/pid_control/pid_control
 	url = https://bitbucket.org/santofimia/libpid_control.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/altitude_controller"]
-	path = stack_devel/motor_system/altitude_controller
+	path = stack_obsolete/motor_system/altitude_controller
 	url = https://bitbucket.org/santofimia/altitude_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/drone_controller"]
-	path = stack_devel/motor_system/flight_motion_controller
+	path = stack_obsolete/motor_system/flight_motion_controller
 	url = https://bitbucket.org/santofimia/drone_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/libpidnn_control"]
-	path = stack_devel/motor_system/generic_controller/libpidnn_control
+	path = stack_obsolete/motor_system/generic_controller/libpidnn_control
 	url = https://bitbucket.org/santofimia/libpidnn_control.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/position_controller"]
-	path = stack_devel/motor_system/position_controller
+	path = stack_obsolete/motor_system/position_controller
 	url = https://bitbucket.org/santofimia/position_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/speed_controller"]
-	path = stack_devel/motor_system/speed_controller
+	path = stack_obsolete/motor_system/speed_controller
 	url = https://bitbucket.org/santofimia/speed_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/speed_controllernn"]
-	path = stack_devel/motor_system/generic_controller/speed_controllernn
+	path = stack_obsolete/motor_system/generic_controller/speed_controllernn
 	url = https://bitbucket.org/santofimia/speed_controllernn.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/trajectory_controller"]
-	path = stack_devel/motor_system/trajectory_controller
+	path = stack_obsolete/motor_system/trajectory_controller
 	url = https://bitbucket.org/santofimia/trajectory_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/trajectory_speed_controller"]
-	path = stack_devel/motor_system/generic_controller/trajectory_speed_controller
+	path = stack_obsolete/motor_system/generic_controller/trajectory_speed_controller
 	url = https://bitbucket.org/santofimia/trajectory_speed_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/yaw_controller"]
-	path = stack_devel/motor_system/yaw_controller
+	path = stack_obsolete/motor_system/yaw_controller
 	url = https://bitbucket.org/santofimia/yaw_controller.git
 	branch = master
 [submodule "stack_devel/motor_system/generic_controller/position_to_command_controller"]
-	path = stack_devel/motor_system/generic_controller/position_to_command_controller
+	path = stack_obsolete/motor_system/generic_controller/position_to_command_controller
 	url = https://bitbucket.org/santofimia/position_to_command_controller.git
 	branch = master
 [submodule "stack/common/msgs_adapters"]
@@ -737,9 +737,9 @@
 [submodule "stack/simulation_system/vrep_simulator"]
 	path = stack/simulation_system/vrep_simulator
 	url = https://bitbucket.org/visionaerialrobotics/vrep_simulator.git
-[submodule "stack_devel/motor_system/flight_motion_pid_controller_process"]
-	path = stack_devel/motor_system/flight_motion_pid_controller_process
-	url = https://bitbucket.org/visionaerialrobotics/flight_motion_pid_controller_process.git
+[submodule "stack_devel/motor_system/quadrotor_pid_controller"]
+	path = stack_devel/motor_system/quadrotor_pid_controller
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_pid_controller.git
 [submodule "stack_devel/executive_system/aerostack_executive"]
 	path = stack_devel/executive_system/aerostack_executive
         url = https://bitbucket.org/visionaerialrobotics/aerostack_executive.git
@@ -753,3 +753,6 @@
 [submodule "stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid"]
 	path = stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid
 	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git
+[submodule "stack_devel/ground_control_system/keyboard_teleoperation_interface"]
+	path = stack_devel/ground_control_system/keyboard_teleoperation_interface
+	url = https://bitbucket.org/rodelgo7al/keyboard_teleoperation_interface.git

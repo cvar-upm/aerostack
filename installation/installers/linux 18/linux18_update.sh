@@ -8,10 +8,10 @@ sudo apt-get install libusb-dev
 git clone https://github.com/OctoMap/octomap_ros $AEROSTACK_STACK/stack_devel/octomap_ros
 
 cd $AEROSTACK_STACK
--find ./ -type f -readable -writable -exec sed -i "s/logError/CONSOLE_BRIDGE_logError/g" {} \;
--find ./ -type f -readable -writable -exec sed -i "s/logInform/CONSOLE_BRIDGE_logInform/g" {} \;
--find ./ -type f -readable -writable -exec sed -i "s/logDebug/CONSOLE_BRIDGE_logDebug/g" {} \;
--find ./ -type f -readable -writable -exec sed -i "s/logWarn/CONSOLE_BRIDGE_logWarn/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logError/CONSOLE_BRIDGE_logError/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logInform/CONSOLE_BRIDGE_logInform/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logDebug/CONSOLE_BRIDGE_logDebug/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logWarn/CONSOLE_BRIDGE_logWarn/g" {} \;
 
 sudo apt-get install libspnav-dev
 

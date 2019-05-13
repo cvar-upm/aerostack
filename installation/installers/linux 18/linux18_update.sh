@@ -8,10 +8,10 @@ sudo apt-get install libusb-dev
 git clone https://github.com/OctoMap/octomap_ros $AEROSTACK_STACK/stack_devel/octomap_ros
 
 cd $AEROSTACK_STACK
-find ./ -type f -readable -writable -exec sed -i "s/logError/CONSOLE_BRIDGE_logError/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/logInform/CONSOLE_BRIDGE_logInform/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/logDebug/CONSOLE_BRIDGE_logDebug/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/logWarn/CONSOLE_BRIDGE_logWarn/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logError/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logError/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logInform/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logInform/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logDebug/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logDebug/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logWarn/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logWarn/g" {} \;
 
 
 sudo apt-get install libspnav-dev
@@ -23,6 +23,8 @@ touch $AEROSTACK_STACK/stack/hardware_interface/drivers_sensors/utils/rosserial/
 touch $AEROSTACK_STACK/stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/CATKIN_IGNORE
 touch $AEROSTACK_STACK/stack/simulation_system/drone_simulator/asctec_pelican_simulator_process/CATKIN_IGNORE
 touch $AEROSTACK_STACK/stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/CATKIN_IGNORE
+touch $AEROSTACK_STACK/stack/logging/dronePelicanLoggerROSModule/CATKIN_IGNORE
+
 
 
 

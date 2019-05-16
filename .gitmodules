@@ -6,10 +6,6 @@
 	path = stack_obsolete/droneDrivers/driversSensors/driver_camera_ueye/driver_camera_ueye_ROSModule
 	url = https://bitbucket.org/jespestana/driver_camera_ueye_rosmodule.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process"]
-	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/driver_asctec_autopilot_process
-	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
-	branch = master
 [submodule "stack/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver"]
 	path = stack_obsolete/droneDrivers/driversPlatforms/driverMikrokopterOkto/okto_driver
 	url = https://bitbucket.org/Vision4UAV/okto_driver.git
@@ -169,14 +165,6 @@
 [submodule "documentation"]
 	path = documentation
 	url = https://bitbucket.org/Vision4UAV/aerostack_documentation
-	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/mav_tools"]
-	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/mav_tools
-	url = https://bitbucket.org/joselusl/mav_tools.git
-	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/asctec_drivers"]
-	path = stack/hardware_interface/drivers_platforms/driver_asctec_autopilot/asctec_drivers
-	url = https://bitbucket.org/joselusl/asctec_drivers.git
 	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process

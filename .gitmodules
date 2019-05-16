@@ -374,10 +374,6 @@
 	path = stack/logging/droneLoggerROSModule
 	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
 	branch = master
-[submodule "stack/logging/dronePelicanLoggerROSModule"]
-	path = stack/logging/dronePelicanLoggerROSModule
-	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
-	branch = master
 [submodule "stack/planning_system/mission_planner/mission_scheduler_process"]
 	path = stack/planning_system/mission_planner/mission_scheduler_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule

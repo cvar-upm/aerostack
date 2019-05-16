@@ -750,4 +750,4 @@
 	url = https://bitbucket.org/visionaerialrobotics/dronetrajectorystatemachine.git
 [submodule "projects"]
 	path = projects
-	url = ./projects
+	url = https://bitbucket.org/visionaerialrobotics/projects.git

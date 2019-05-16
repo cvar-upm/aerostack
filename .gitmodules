@@ -166,10 +166,6 @@
 	path = documentation
 	url = https://bitbucket.org/Vision4UAV/aerostack_documentation
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process"]
-	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/driver_parrot_ardrone_process
-	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
 	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
 	url = https://github.com/mavlink/mavros.git
@@ -358,10 +354,6 @@
 	path = stack_deprecated/libraries/lib_cvgthread
 	url = https://bitbucket.org/jespestana/lib_cvgthread.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy"]
-	path = stack/hardware_interface/drivers_platforms/driver_parrot_ardrone/ardrone_autonomy
-	url = https://github.com/AutonomyLab/ardrone_autonomy.git
-	branch = indigo-devel
 [submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller"]
 	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller
 	url = https://bitbucket.org/hridaybavle/mikrokopter_driver

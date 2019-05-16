@@ -314,10 +314,6 @@
 	path = stack/simulation_system/drone_simulator/drone_simulator_process
 	url = https://bitbucket.org/joselusl/dronesimulatorrosmodule.git
 	branch = master
-[submodule "stack/simulation_system/drone_simulator/asctec_pelican_simulator_process"]
-	path = stack/simulation_system/drone_simulator/asctec_pelican_simulator_process
-	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
-	branch = master
 [submodule "stack/common/droneMsgsROS"]
 	path = stack/common/droneMsgsROS
 	url = https://bitbucket.org/joselusl/dronemsgsros.git

@@ -194,10 +194,6 @@
 	path = stack/hardware_interface/drivers_sensors/driver_leapmotion/leap_motion
 	url = https://github.com/ros-drivers/leap_motion
 	branch = master
-[submodule "stack/hardware_interface/drivers_sensors/utils/rosserial"]
-	path = stack/hardware_interface/drivers_sensors/utils/rosserial
-	url = https://github.com/ros-drivers/rosserial.git
-	branch = indigo-devel
 [submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_process"]
 	path = stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_process
 	url = https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git

@@ -747,3 +747,7 @@
 [submodule "stack_devel/droneDrivers/drivers_sensors/utils/usb_cam"]
 	path = stack_devel/droneDrivers/drivers_sensors/utils/usb_cam
 	url = https://github.com/bosch-ros-pkg/usb_cam.git
+[submodule "projects"]
+	path = projects
+	url = ./projects
+

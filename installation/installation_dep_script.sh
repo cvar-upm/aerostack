@@ -66,10 +66,10 @@ echo "---------------------------"
 echo "Updating mavros logging system"
 echo "---------------------------"
 cd $AEROSTACK_STACK
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logError/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logError/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logInform/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logInform/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logDebug/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logDebug/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logWarn/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logWarn/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logError/CONSOLE_BRIDGE_CONSOLE_BRIDGE_CONSOLE_BRIDGE_logError/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logInform/CONSOLE_BRIDGE_CONSOLE_BRIDGE_CONSOLE_BRIDGE_logInform/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logDebug/CONSOLE_BRIDGE_CONSOLE_BRIDGE_CONSOLE_BRIDGE_logDebug/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logWarn/CONSOLE_BRIDGE_CONSOLE_BRIDGE_CONSOLE_BRIDGE_logWarn/g" {} \;
 
 echo "---------------------------"
 echo "Installing libARCommands"
@@ -99,8 +99,6 @@ catkin_make install -DCMAKE_INSTALL_PREFIX=/tmp/ros/$ROS_DISTRO
 sudo cp -R /tmp/ros/$ROS_DISTRO /opt/ros/
 rm -rf /tmp/ros
 rm -rf /tmp/keyboard
-fi
-
 echo "---------------------------"
 echo "Installing Sound Play & Dependencies"
 echo "---------------------------"
@@ -135,7 +133,6 @@ echo "Updating gazebo"
 echo "------------------------------------------------------"
 cd $AEROSTACK_STACK/stack/simulation_system/drone_simulator/rotors_simulator_gazebo/rotors_simulator
 git checkout -f  stable/gazebo9 
-
 echo "------------------------------------------------------"
 echo "Updating driver_bebop"
 echo "------------------------------------------------------"

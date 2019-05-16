@@ -744,3 +744,6 @@
 [submodule "stack/motor_system/trajectory_controller/dronetrajectorystatemachine"]
 	path = stack/motor_system/trajectory_controller/dronetrajectorystatemachine
 	url = https://bitbucket.org/visionaerialrobotics/dronetrajectorystatemachine.git
+[submodule "stack_devel/droneDrivers/drivers_sensors/utils/usb_cam"]
+	path = stack_devel/droneDrivers/drivers_sensors/utils/usb_cam
+	url = https://github.com/bosch-ros-pkg/usb_cam.git

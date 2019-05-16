@@ -66,10 +66,10 @@ echo "---------------------------"
 echo "Updating mavros logging system"
 echo "---------------------------"
 cd $AEROSTACK_STACK
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logError/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logError/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logInform/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logInform/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logDebug/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logDebug/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/CONSOLE_BRIDGE_logWarn/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logWarn/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logError/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logError/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logInform/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logInform/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logDebug/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logDebug/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/logWarn/CONSOLE_BRIDGE_CONSOLE_BRIDGE_logWarn/g" {} \;
 
 echo "---------------------------"
 echo "Installing libARCommands"

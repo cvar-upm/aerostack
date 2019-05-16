@@ -114,10 +114,6 @@
 	path = stack_devel/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
 	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
 	branch = master
-[submodule "stack/utils/audio_common"]
-	path = stack/utils/audio_common
-	url = https://github.com/ros-drivers/audio_common
-	branch = master
 [submodule "configs"]
 	path = configs
 	url = https://bitbucket.org/joselusl/quadrotor_stack_configs

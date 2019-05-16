@@ -745,3 +745,12 @@
 [submodule "stack_devel/droneDrivers/drivers_sensors/utils/rosserial"]
 	path = stack_devel/droneDrivers/drivers_sensors/utils/rosserial
 	url = https://github.com/ros-drivers/rosserial.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/driverpelicanrosmodule"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/driverpelicanrosmodule
+	url = https://bitbucket.org/ramon_suarez_fernandez/driverpelicanrosmodule.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/mav_tools"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/mav_tools
+	url = https://bitbucket.org/joselusl/mav_tools.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/asctec_drivers"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/asctec_drivers
+	url = https://bitbucket.org/joselusl/asctec_drivers.git

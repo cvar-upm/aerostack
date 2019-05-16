@@ -250,10 +250,6 @@
 	path = stack/motor_system/trajectory_controller/dronePBVSPositionMidLevelController
 	url = https://bitbucket.org/jespestana/dronepbvspositionmidlevelcontroller.git
 	branch = master
-[submodule "stack/motor_system/trayectory_controller/droneTrajectoryStateMachine"]
-	path = stack/motor_system/trajectory_controller/droneTrajectoryStateMachine
-	url = https://bitbucket.org/jespestana/dronetrajectorystatemachine.git
-	branch = master
 [submodule "stack/motor_system/trayectory_controller/droneTrajectoryControllerROSModule"]
 	path = stack/motor_system/trajectory_controller/droneTrajectoryControllerROSModule
 	url = https://bitbucket.org/jespestana/dronetrajectorycontrollerrosmodule.git

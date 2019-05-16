@@ -754,3 +754,6 @@
 [submodule "stack_deprecated/utils/audio_common"]
 	path = stack_deprecated/utils/audio_common
 	url = https://github.com/ros-drivers/audio_common
+[submodule "stack_devel/droneDrivers/drivers_sensors/utils/rosserial"]
+	path = stack_devel/droneDrivers/drivers_sensors/utils/rosserial
+	url = https://github.com/ros-drivers/rosserial.git

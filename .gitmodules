@@ -745,3 +745,6 @@
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/driver_dji_matrice_process"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/driver_dji_matrice_process
 	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process
+[submodule "stack/motor_system/trajectory_controller/dronetrajectorystatemachine"]
+	path = stack/motor_system/trajectory_controller/dronetrajectorystatemachine
+	url = https://bitbucket.org/visionaerialrobotics/dronetrajectorystatemachine.git

@@ -750,3 +750,7 @@
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/asctec_drivers"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_asctec_autopilot/asctec_drivers
 	url = https://bitbucket.org/joselusl/asctec_drivers.git
+
+[submodule "stack_devel/droneSimulators/dronepelicansimulatorrosmodule"]
+	path = stack_devel/droneSimulators/dronepelicansimulatorrosmodule
+	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git

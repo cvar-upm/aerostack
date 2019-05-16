@@ -743,3 +743,9 @@
 [submodule "stack_devel/loggin/dronepelicanloggerrosmodule"]
 	path = stack_devel/loggin/dronepelicanloggerrosmodule
 	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/dji_sdk_ros"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/dji_sdk_ros
+	url = https://bitbucket.org/ramon_suarez_fernandez/dji_sdk_ros.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/driver_dji_matrice_process"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/driver_dji_matrice_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/driver_dji_matrice_process

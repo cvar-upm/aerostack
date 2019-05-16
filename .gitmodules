@@ -748,3 +748,6 @@
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_parrot_ardrone/ardrone_autonomy"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_parrot_ardrone/ardrone_autonomy
 	url = https://github.com/AutonomyLab/ardrone_autonomy.git
+[submodule "stack_devel/loggin/dronepelicanloggerrosmodule"]
+	path = stack_devel/loggin/dronepelicanloggerrosmodule
+	url = https://bitbucket.org/jespestana/dronepelicanloggerrosmodule.git

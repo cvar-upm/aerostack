@@ -458,10 +458,6 @@
 	path = stack_devel/perception_system/perception_manager
 	url = https://bitbucket.org/csampedro/perception_manager.git
 	branch = master
-[submodule "stack_devel/droneDrivers/drivers_sensors/usb_cam/usb_cam"]
-	path = stack/hardware_interface/drivers_sensors/driver_usb_cam/usb_cam
-	url = https://github.com/bosch-ros-pkg/usb_cam.git
-	branch = develop
 [submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/ros_lightware"]
 	path = stack/hardware_interface/drivers_sensors/driver_lightware/ros_lightware
 	url = https://github.com/hridaybavle/ros_lightware.git

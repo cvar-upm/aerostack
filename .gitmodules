@@ -746,3 +746,9 @@
 [submodule "stack_devel/droneSimulators/dronepelicansimulatorrosmodule"]
 	path = stack_devel/droneSimulators/dronepelicansimulatorrosmodule
 	url = https://bitbucket.org/jespestana/dronepelicansimulatorrosmodule.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_parrot_ardrone/driverparrotardronerosmodule"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_parrot_ardrone/driverparrotardronerosmodule
+	url = https://bitbucket.org/joselusl/driverparrotardronerosmodule.git
+[submodule "stack_devel/droneDrivers/driversPlatforms/driver_parrot_ardrone/ardrone_autonomy"]
+	path = stack_devel/droneDrivers/driversPlatforms/driver_parrot_ardrone/ardrone_autonomy
+	url = https://github.com/AutonomyLab/ardrone_autonomy.git

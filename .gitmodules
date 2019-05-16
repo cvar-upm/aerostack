@@ -748,3 +748,6 @@
 [submodule "stack/motor_system/trajectory_controller/dronetrajectorystatemachine"]
 	path = stack/motor_system/trajectory_controller/dronetrajectorystatemachine
 	url = https://bitbucket.org/visionaerialrobotics/dronetrajectorystatemachine.git
+[submodule "projects"]
+	path = projects
+	url = ./projects

@@ -755,3 +755,6 @@
 [submodule "stack/common/behavior_execution_controller"]
 	path = stack/common/behavior_execution_controller
 	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_controller.git
+[submodule "stack_deprecated/utils/audio_common"]
+	path = stack_deprecated/utils/audio_common
+	url = https://github.com/ros-drivers/audio_common

@@ -749,5 +749,4 @@
 	url = https://github.com/bosch-ros-pkg/usb_cam.git
 [submodule "projects"]
 	path = projects
-	url = ./projects
-
+	url = https://bitbucket.org/visionaerialrobotics/projects.git

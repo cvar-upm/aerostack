@@ -750,3 +750,6 @@
 [submodule "projects"]
 	path = projects
 	url = https://bitbucket.org/visionaerialrobotics/projects.git
+[submodule "stack_devel/motor_system/path_tracker"]
+	path = stack_devel/motor_system/path_tracker
+	url = https://bitbucket.org/rodelgo7al/path_tracker.git

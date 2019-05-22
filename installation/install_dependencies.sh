@@ -66,10 +66,10 @@ echo "---------------------------"
 echo "Updating mavros logging system"
 echo "---------------------------"
 cd $AEROSTACK_STACK/stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
-find ./ -type f -readable -writable -exec sed -i "s/ logError/ CONSOLE_BRIDGE_logError/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/ logInform/ CONSOLE_BRIDGE_logInform/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/ logDebug/ CONSOLE_BRIDGE_logDebug/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/ logWarn/ CONSOLE_BRIDGE_logWarn/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/[[:blank:]]logError/ CONSOLE_BRIDGE_logError/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/[[:blank:]]logInform/ CONSOLE_BRIDGE_logInform/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/[[:blank:]]logDebug/ CONSOLE_BRIDGE_logDebug/g" {} \;
+find ./ -type f -readable -writable -exec sed -i "s/[[:blank:]]logWarn/ CONSOLE_BRIDGE_logWarn/g" {} \;
 cd $AEROSTACK_STACK
 echo "---------------------------"
 echo "Installing libARCommands"

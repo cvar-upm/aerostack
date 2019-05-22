@@ -78,9 +78,10 @@ if __name__ == '__main__':
                     prior_paths.append(current_path[2].replace('\n', ''))
                     # Configure the selected commit
                     try:
-                        if "commit = " in gt_list[i + 4]:
-                            prior_commits.append(gt_list[i + 4])
-                            prior_commits_submodule.append(prior_submodules[len(prior_submodules) - 1])
+                        for x in range(5):
+                            if "commit = " in gt_list[i + x]:
+                                prior_commits.append(gt_list[i + x])
+                                prior_commits_submodule.append(prior_submodules[len(prior_submodules) - 1])
                     except:
                         pass
     except:
@@ -180,11 +181,12 @@ if __name__ == '__main__':
                                 # print(gt_list[j + 3])
                                 with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                                     the_file.write(gt_list[j + 3])
-                            if commits[k - 1] != "":
-                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
-                                    the_file.write(commits[k - 1])
                         except:
                             pass
+                        # Include commit information
+                        if commits[k - 1] != "":
+                            with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
+                                the_file.write(commits[k - 1])
 
                         # Include in output script
                         with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:

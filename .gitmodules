@@ -703,7 +703,7 @@
 	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git
 [submodule "stack_devel/ground_control_system/keyboard_teleoperation_interface"]
 	path = stack_devel/ground_control_system/keyboard_teleoperation_interface
-	url = https://bitbucket.org/rodelgo7al/keyboard_teleoperation_interface.git
+	url = https://bitbucket.org/visionaerialrobotics/keyboard_teleoperation_interface.git
 [submodule "stack/common/behavior_execution_controller"]
 	path = stack/common/behavior_execution_controller
 	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_controller.git

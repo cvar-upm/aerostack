@@ -42,14 +42,14 @@ class ScrollableFrame(tk.Frame):
 
 if __name__ == '__main__':
     # Read arguments
-    devel=0
+    configure=0
     if len(sys.argv) < 3:
         print("ERROR: Correct syntax: 'python aerostack_project_selector.py <root_aerostack_path> <project_folder>'")
         exit()
         
-    if (len(sys.argv)>3 and sys.argv[3]=="-d"):
-        devel=1
-    if(devel):
+    if (len(sys.argv)>3 and sys.argv[3]=="-c"):
+        configure=1
+    if(configure):
         root = tk.Tk()
         checkbox_pane = ScrollableFrame(root, bg='#444444')
         checkbox_pane.pack(expand="true", fill="both")
@@ -61,16 +61,12 @@ if __name__ == '__main__':
 
     print("INFO: Project directory: "+ GITMODULES_ROOTDIR + PROJECT_CONFIG)
 
-    # Make a .gitmodules backup
-    copyfile(GITMODULES_ROOTDIR + ".gitmodules", GITMODULES_ROOTDIR + PROJECT_CONFIG + ".gitmodules_backup")
-    print("INFO: Backup of .gitmodules has been created (.gitmodules_backup)")
-
     print("INFO: Retrieving previous configuration if it exists...")
     prior_submodules = []
     prior_commits = []
     prior_commits_submodule = []
     try:
-        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + ".gitmodules", 'rb') as f:
+        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + "project_modules.txt", 'rb') as f:
             # Read lines
             gt_list = f.readlines()
             prior_paths = []
@@ -135,20 +131,20 @@ if __name__ == '__main__':
         # Try removing previous generated file
         print("INFO: Removing previous generated files if they exist...")
         try:
-            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules')
+            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.project_modules.txt')
         except:
             pass
 
         try:
-            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'git_submodule_sequence.sh')
+            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh')
         except:
             pass
 
         try:
-            os.remove(GITMODULES_ROOTDIR + 'git_submodule_sequence.sh')
+            os.remove(GITMODULES_ROOTDIR + 'update_project_modules.sh')
         except:
             pass
-        print("INFO: Managing CATKIN_IGNORE and creating git_submodule_sequence.sh...")
+        print("INFO: Managing CATKIN_IGNORE and creating update_project_modules.sh...")
         with open(GITMODULES_ROOTDIR + '.gitmodules', 'rb') as f:
             # Read lines
             gt_list = f.readlines()
@@ -164,43 +160,42 @@ if __name__ == '__main__':
                     except:
                         print("INFO: File already exists: " + os.path.join(GITMODULES_ROOTDIR, paths[k - 1] + "/CATKIN_IGNORE"))
                     val=0
-                    if (devel):
+                    if (configure):
                         val=var_list[k - 1].get()
                     else:
                         val=var_list[k - 1]  
                     if val == 1:
                         # Include file in new .gitmodules
-                        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
+                        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                             the_file.write(gt_list[j])
                         try:
                             if "path = " in gt_list[j + 1]:
                                 # print(gt_list[j + 1])
-                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
+                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                                     the_file.write(gt_list[j + 1])
                             if "url = " in gt_list[j + 2]:
                                 # print(gt_list[j + 2])
-                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
+                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                                     the_file.write(gt_list[j + 2])
                             if "branch = " in gt_list[j + 3]:
                                 # print(gt_list[j + 3])
-                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
+                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                                     the_file.write(gt_list[j + 3])
                         except:
                             pass
-
                         # Include commit information
                         if commits[k - 1] != "":
                             with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
                                 the_file.write(commits[k - 1])
 
                         # Include in output script
-                        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'git_submodule_sequence.sh', 'a') as the_file:
+                        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:
                             the_file.write("git submodule update --init " + paths[k - 1] + "\n")
 
                         if commits[k - 1] != "":
                             current_commit = commits[k - 1].split(' ')
                             current_commit = current_commit[2].replace('\n', '')
-                            with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'git_submodule_sequence.sh', 'a') as the_file:
+                            with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:
                                 the_file.write("cd " + paths[k - 1] + "\n")
                                 the_file.write("git checkout " + current_commit + "\n")
                                 the_file.write("cd -" + "\n")
@@ -209,15 +204,15 @@ if __name__ == '__main__':
                         os.remove(os.path.join(GITMODULES_ROOTDIR, paths[k - 1] + "/CATKIN_IGNORE"))
 
         # Copy script to aerostack root
-        copyfile(GITMODULES_ROOTDIR + PROJECT_CONFIG + "git_submodule_sequence.sh",
-                 GITMODULES_ROOTDIR + "git_submodule_sequence.sh")
+        copyfile(GITMODULES_ROOTDIR + PROJECT_CONFIG + "update_project_modules.sh",
+                 GITMODULES_ROOTDIR + "update_project_modules.sh")
 
         print("INFO: All modules but selected have been put into CATKIN_IGNORE")
         print("INFO: Project set successfully")
         print("INFO: Press Quit to update selected submodules")
 
     var_list = []
-    if(devel):
+    if(configure):
         for i, submodule in enumerate(submodules):
             var_list.append(tk.IntVar())
             var_list[i].set(prior_var[i])
@@ -230,5 +225,6 @@ if __name__ == '__main__':
     else:
         var_list =prior_var
         var_states()
+
 
 

@@ -529,9 +529,6 @@
 [submodule "stack_devel/manuel_processes/imagebasedvisualservo"]
 	path = stack_devel/manuel_processes/imagebasedvisualservo
 	url = https://bitbucket.org/ManuelRucci/imagebasedvisualservo.git
-[submodule "stack/qr_recognizer"]
-	path = stack/feature_extraction_system/qr_recognizer
-	url = https://bitbucket.org/rafa403/qr_recognizer
 [submodule "stack_devel/qr_popup"]
 	path = stack_devel/qr_popup
 	url = https://bitbucket.org/cvlaray/qr_popup

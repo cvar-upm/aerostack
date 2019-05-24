@@ -759,3 +759,6 @@
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK
 	url = https://github.com/dji-sdk/Onboard-SDK
+[submodule "stack/feature_extraction_system/qr_recognizer"]
+	path = stack/feature_extraction_system/qr_recognizer
+	url = https://bitbucket.org/visionaerialrobotics/qr_recognizer.git

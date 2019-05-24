@@ -185,7 +185,7 @@ if __name__ == '__main__':
                             pass
                         # Include commit information
                         if commits[k - 1] != "":
-                            with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.gitmodules', 'a') as the_file:
+                            with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                                 the_file.write(commits[k - 1])
 
                         # Include in output script

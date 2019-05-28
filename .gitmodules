@@ -529,9 +529,6 @@
 [submodule "stack_devel/manuel_processes/imagebasedvisualservo"]
 	path = stack_devel/manuel_processes/imagebasedvisualservo
 	url = https://bitbucket.org/ManuelRucci/imagebasedvisualservo.git
-[submodule "stack/qr_recognizer"]
-	path = stack/feature_extraction_system/qr_recognizer
-	url = https://bitbucket.org/rafa403/qr_recognizer
 [submodule "stack_devel/qr_popup"]
 	path = stack_devel/qr_popup
 	url = https://bitbucket.org/cvlaray/qr_popup
@@ -703,7 +700,7 @@
 	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git
 [submodule "stack_devel/ground_control_system/keyboard_teleoperation_interface"]
 	path = stack_devel/ground_control_system/keyboard_teleoperation_interface
-	url = https://bitbucket.org/rodelgo7al/keyboard_teleoperation_interface.git
+	url = https://bitbucket.org/visionaerialrobotics/keyboard_teleoperation_interface.git
 [submodule "stack/common/behavior_execution_controller"]
 	path = stack/common/behavior_execution_controller
 	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_controller.git
@@ -752,7 +749,7 @@
 	url = https://bitbucket.org/visionaerialrobotics/projects.git
 [submodule "stack_devel/motor_system/path_tracker"]
 	path = stack_devel/motor_system/path_tracker
-	url = https://bitbucket.org/rodelgo7al/path_tracker.git
+	url = https://bitbucket.org/visionaerialrobotics/path_tracker.git
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/dji_matrice_210_process"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/dji_matrice_210_process
 	url = https://bitbucket.org/hridaybavle/dji_matrice_210_process.git
@@ -762,3 +759,6 @@
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK
 	url = https://github.com/dji-sdk/Onboard-SDK
+[submodule "stack/feature_extraction_system/qr_recognizer"]
+	path = stack/feature_extraction_system/qr_recognizer
+	url = https://bitbucket.org/visionaerialrobotics/qr_recognizer.git

@@ -755,7 +755,7 @@
 	url = https://bitbucket.org/hridaybavle/dji_matrice_210_process.git
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK-ROS"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK-ROS
-	url = https://github.com/dji-sdk/Onboard-SDK-ROS
+	url = https://github.com/alejodosr/Onboard-SDK-ROS
 [submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK"]
 	path = stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK
 	url = https://github.com/dji-sdk/Onboard-SDK

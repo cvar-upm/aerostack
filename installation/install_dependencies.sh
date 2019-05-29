@@ -156,12 +156,6 @@ if [ "$ROS_DISTRO" = "melodic" ]
 	git checkout -f  stable/gazebo9 
 	
 	echo "------------------------------------------------------"
-	echo "Updating driver_bebop"
-	echo "------------------------------------------------------"
-	cd $AEROSTACK_STACK/stack/hardware_interface/drivers_platforms/driver_bebop/bebop_autonomy
-	git checkout -f indigo-devel
-
-	echo "------------------------------------------------------"
 	echo "Exporting parrot_arsdk lib"
 	echo "------------------------------------------------------"
 	echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$AEROSTACK_WORKSPACE/devel/lib/parrot_arsdk" >> ~/.bashrc
@@ -179,6 +173,11 @@ if [ "$ROS_DISTRO" = "melodic" ]
 	touch  $AEROSTACK_STACK/stack_deprecated/audio_common/CATKIN_IGNORE
 fi
 
+echo "------------------------------------------------------"
+echo "Updating driver_bebop"
+echo "------------------------------------------------------"
+cd $AEROSTACK_STACK/stack/hardware_interface/drivers_platforms/driver_bebop/bebop_autonomy
+git checkout -f indigo-devel
 
 echo "---------------------------"
 echo "Installing Voices for Sound Play"

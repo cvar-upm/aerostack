@@ -490,10 +490,6 @@
 	path = stack/simulation_system/drone_simulator/rotors_simulator_gazebo/mav_comm
 	url = https://github.com/suarez-ramon/mav_comm.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
-	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
-	url = https://bitbucket.org/ramon_suarez_fernandez/driver_rotors_simulator_process.git
-	branch = master
 [submodule "stack/libraries/eigen_catkin"]
 	path = stack/libraries/eigen_catkin
 	url = https://github.com/suarez-ramon/eigen_catkin

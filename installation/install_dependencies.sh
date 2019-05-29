@@ -179,10 +179,6 @@ if [ "$ROS_DISTRO" = "melodic" ]
 	touch  $AEROSTACK_STACK/stack_deprecated/audio_common/CATKIN_IGNORE
 fi
 
-echo "---------------------------"
-echo "Installing mav_msgs"
-echo "---------------------------"
-git clone https://github.com/ethz-asl/mav_comm.git $AEROSTACK_STACK/libraries/mav_msgs
 
 echo "---------------------------"
 echo "Installing Voices for Sound Play"

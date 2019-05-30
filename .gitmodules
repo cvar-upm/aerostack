@@ -761,3 +761,6 @@
 [submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
 	url = https://bitbucket.org/visionaerialrobotics/driver_rotors_simulator_process.git
+[submodule "stack_obsolete/executive_system/behavior_management_system/behavior_library_obsolete"]
+	path = stack_obsolete/executive_system/behavior_management_system/behavior_library_obsolete
+	url = https://bitbucket.org/visionaerialrobotics/behavior_library_obsolete.git

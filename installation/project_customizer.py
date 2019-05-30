@@ -63,8 +63,8 @@ if __name__ == '__main__':
 
     print("INFO: Retrieving previous configuration if it exists...")
     prior_submodules = []
-    prior_commits = []
-    prior_commits_submodule = []
+    prior_heads = []
+    prior_heads_submodule = []
     try:
         with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + "project_modules.txt", 'rb') as f:
             # Read lines
@@ -76,12 +76,12 @@ if __name__ == '__main__':
                     prior_submodules.append(os.path.split(current_path)[1])
                     current_path = gt_list[i + 1].split(' ')
                     prior_paths.append(current_path[2].replace('\n', ''))
-                    # Configure the selected commit
+                    # Configure the selected head point
                     try:
                         for x in range(5):
-                            if "commit = " in gt_list[i + x]:
-                                prior_commits.append(gt_list[i + x])
-                                prior_commits_submodule.append(prior_submodules[len(prior_submodules) - 1])
+                            if "HEAD = " in gt_list[i + x]:
+                                prior_heads.append(gt_list[i + x])
+                                prior_heads_submodule.append(prior_submodules[len(prior_submodules) - 1])
                     except:
                         pass
     except:
@@ -93,7 +93,7 @@ if __name__ == '__main__':
         paths = []
         submodules = []
         prior_var = []
-        commits = []
+        heads = []
         for i, row in enumerate(gt_list):
             if row.startswith("[submodule"):
                 # Find name of the submodule and activate prior activation for this project
@@ -103,18 +103,18 @@ if __name__ == '__main__':
                 prior_var.append(0)
                 current_path = gt_list[i + 1].split(' ')
                 paths.append(current_path[2].replace('\n', ''))
-                commits.append("")
+                heads.append("")
                 if len(prior_submodules) > 0:
                     # Activate those that where present
                     for prior_submodule in prior_submodules:
                         if prior_submodule == current_submodule:
                             prior_var[len(prior_var) - 1] = 1
 
-                    # Include specific commits
-                    for c, prior_submodule in enumerate(prior_commits_submodule):
+                    # Include specific head points
+                    for c, prior_submodule in enumerate(prior_heads_submodule):
                         if prior_submodule == current_submodule:
-                            commits[len(commits) - 1] = prior_commits[c]
-                            print("INFO: Found specific commit in module " + current_submodule + " (" + commits[len(commits) - 1] + ")")
+                            heads[len(heads) - 1] = prior_heads[c]
+                            print("INFO: Found specific HEAD point in module " + current_submodule + " (" + heads[len(heads) - 1] + ")")
 
     def var_states():
         # Remove all the CATKIN_IGNORE found
@@ -131,7 +131,7 @@ if __name__ == '__main__':
         # Try removing previous generated file
         print("INFO: Removing previous generated files if they exist...")
         try:
-            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + '.project_modules.txt')
+            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt')
         except:
             pass
 
@@ -165,7 +165,7 @@ if __name__ == '__main__':
                     else:
                         val=var_list[k - 1]  
                     if val == 1:
-                        # Include file in new .gitmodules
+                        # Include file in new project_modules.txt
                         with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                             the_file.write(gt_list[j])
                         try:
@@ -177,27 +177,24 @@ if __name__ == '__main__':
                                 # print(gt_list[j + 2])
                                 with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
                                     the_file.write(gt_list[j + 2])
-                            if "branch = " in gt_list[j + 3]:
-                                # print(gt_list[j + 3])
-                                with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
-                                    the_file.write(gt_list[j + 3])
                         except:
                             pass
-                        # Include commit information
-                        if commits[k - 1] != "":
+                        # Include head points information
+                        if heads[k - 1] != "":
                             with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt', 'a') as the_file:
-                                the_file.write(commits[k - 1])
+                                the_file.write(heads[k - 1])
 
                         # Include in output script
                         with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:
                             the_file.write("git submodule update --init " + paths[k - 1] + "\n")
 
-                        if commits[k - 1] != "":
-                            current_commit = commits[k - 1].split(' ')
-                            current_commit = current_commit[2].replace('\n', '')
+                        if heads[k - 1] != "":
+			    print(heads[k - 1].split(' '))
+                            current_head = heads[k - 1].split(' ')
+                            current_head = current_head[2].replace('\n', '')
                             with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:
                                 the_file.write("cd " + paths[k - 1] + "\n")
-                                the_file.write("git checkout " + current_commit + "\n")
+                                the_file.write("git checkout " + current_head + "\n")
                                 the_file.write("cd -" + "\n")
 
                         # Remove previously included CATKIN_IGNORE
@@ -225,6 +222,5 @@ if __name__ == '__main__':
     else:
         var_list =prior_var
         var_states()
-
 
 

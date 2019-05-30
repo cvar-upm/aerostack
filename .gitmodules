@@ -490,10 +490,6 @@
 	path = stack/simulation_system/drone_simulator/rotors_simulator_gazebo/mav_comm
 	url = https://github.com/suarez-ramon/mav_comm.git
 	branch = master
-[submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
-	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
-	url = https://bitbucket.org/ramon_suarez_fernandez/driver_rotors_simulator_process.git
-	branch = master
 [submodule "stack/libraries/eigen_catkin"]
 	path = stack/libraries/eigen_catkin
 	url = https://github.com/suarez-ramon/eigen_catkin
@@ -580,10 +576,6 @@
 [submodule "stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
 	path = stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
 	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process
-	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
-	url = https://bitbucket.org/Rafa403/behavior_library_devel
 	branch = master
 [submodule "stack/common/robot_process"]
 	path = stack/common/robot_process
@@ -762,3 +754,12 @@
 [submodule "stack/feature_extraction_system/qr_recognizer"]
 	path = stack/feature_extraction_system/qr_recognizer
 	url = https://bitbucket.org/visionaerialrobotics/qr_recognizer.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
+	url = https://bitbucket.org/visionaerialrobotics/driver_rotors_simulator_process.git
+[submodule "stack_obsolete/executive_system/behavior_management_system/behavior_library_obsolete"]
+	path = stack_obsolete/executive_system/behavior_management_system/behavior_library_obsolete
+	url = https://bitbucket.org/visionaerialrobotics/behavior_library_obsolete.git
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
+	url = https://bitbucket.org/visionaerialrobotics/behavior_library_devel.git

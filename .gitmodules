@@ -577,10 +577,6 @@
 	path = stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
 	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process
 	branch = master
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
-	url = https://bitbucket.org/Rafa403/behavior_library_devel
-	branch = master
 [submodule "stack/common/robot_process"]
 	path = stack/common/robot_process
 	url = https://bitbucket.org/visionaerialrobotics/robot_process

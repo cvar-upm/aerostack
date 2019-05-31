@@ -759,6 +759,3 @@
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
 	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
 	url = https://bitbucket.org/visionaerialrobotics/behavior_library_devel.git
-[submodule "stack/libraries/mav_comm"]
-	path = stack/libraries/mav_comm
-	url = https://github.com/suarez-ramon/mav_comm.git

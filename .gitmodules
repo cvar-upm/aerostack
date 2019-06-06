@@ -765,3 +765,6 @@
 [submodule "stack_deprecated/libraries/mav_comm_rotors"]
 	path = stack_deprecated/libraries/mav_comm_rotors
 	url = https://github.com/acgroba/mav_comm_rotors.git
+[submodule "stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
+	path = stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
+	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git

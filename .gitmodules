@@ -486,10 +486,6 @@
 	path = stack/simulation_system/drone_simulator/rotors_simulator_gazebo/rotors_simulator
 	url = https://github.com/suarez-ramon/rotors_simulator.git
 	branch = stable/kinetic
-[submodule "stack/simulation_system/drone_simulator/rotors_simulator_gazebo/mav_comm"]
-	path = stack/simulation_system/drone_simulator/rotors_simulator_gazebo/mav_comm
-	url = https://github.com/suarez-ramon/mav_comm.git
-	branch = master
 [submodule "stack/libraries/eigen_catkin"]
 	path = stack/libraries/eigen_catkin
 	url = https://github.com/suarez-ramon/eigen_catkin
@@ -763,3 +759,12 @@
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_library_devel"]
 	path = stack_devel/executive_system/behavior_management_system/behavior_library_devel
 	url = https://bitbucket.org/visionaerialrobotics/behavior_library_devel.git
+[submodule "stack/libraries/mav_comm"]
+	path = stack/libraries/mav_comm
+	url = https://github.com/ethz-asl/mav_comm.git
+[submodule "stack_deprecated/libraries/mav_comm_rotors"]
+	path = stack_deprecated/libraries/mav_comm_rotors
+	url = https://github.com/acgroba/mav_comm_rotors.git
+[submodule "stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
+	path = stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
+	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git

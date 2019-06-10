@@ -6,6 +6,7 @@ echo "-----------------------"
 sudo apt-get install libncurses5
 sudo apt-get install ncurses-bin
 sudo apt-get install ncurses-dev
+sudo apt-get install libncursesw5-dev
 
 echo "-----------------------"
 echo "Installing boost"

@@ -768,3 +768,6 @@
 [submodule "stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
 	path = stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
 	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
+[submodule "stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
+	path = stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git

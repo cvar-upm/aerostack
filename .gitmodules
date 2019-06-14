@@ -597,10 +597,6 @@
 	path = stack/common/aerostack_msgs
 	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git
 	branch = master
-[submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
-	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
-	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
-	branch = master
 [submodule "stack_devel/droneDrivers/driversPlatforms/parrot_arsdk"]
 	path = stack_devel/droneDrivers/driversPlatforms/parrot_arsdk
 	url = https://github.com/AutonomyLab/parrot_arsdk

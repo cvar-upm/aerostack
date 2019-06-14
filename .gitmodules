@@ -770,3 +770,6 @@
 [submodule "stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control"]
 	path = stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
+[submodule "stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
+	path = stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git

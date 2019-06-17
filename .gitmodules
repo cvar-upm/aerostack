@@ -597,10 +597,6 @@
 	path = stack/common/aerostack_msgs
 	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git
 	branch = master
-[submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
-	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
-	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
-	branch = master
 [submodule "stack_devel/droneDrivers/driversPlatforms/parrot_arsdk"]
 	path = stack_devel/droneDrivers/driversPlatforms/parrot_arsdk
 	url = https://github.com/AutonomyLab/parrot_arsdk
@@ -768,3 +764,12 @@
 [submodule "stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
 	path = stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
 	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
+[submodule "stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
+	path = stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git
+[submodule "stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control"]
+	path = stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
+[submodule "stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
+	path = stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git

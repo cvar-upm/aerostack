@@ -316,7 +316,7 @@
 	branch = master
 [submodule "stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronearchitecturervizinterfacerosmodule.git
+	url = https://bitbucket.org/visionaerialrobotics/dronearchitecturervizinterfacerosmodule.git
 	branch = master
 [submodule "stack/ground_control_system/rviz/droneSimulatorRvizROSModule"]
 	path = stack/ground_control_system/rviz/droneSimulatorRvizROSModule

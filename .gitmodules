@@ -769,3 +769,6 @@
 [submodule "stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
 	path = stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
 	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
+[submodule "stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule"]
+	path = stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule
+	url = https://bitbucket.org/visionaerialrobotics/dronearchitecturervizinterfacerosmodule.git

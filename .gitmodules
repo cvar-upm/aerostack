@@ -314,10 +314,6 @@
 	path = stack/ground_control_system/rviz/droneEkfSimulatorRvizROSModule
 	url = https://bitbucket.org/ramon_suarez_fernandez/droneekfsimulatorrvizrosmodule.git
 	branch = master
-[submodule "stack/ground_control_system/rviz/droneSimulatorRvizROSModule"]
-	path = stack/ground_control_system/rviz/droneSimulatorRvizROSModule
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronesimulatorrvizrosmodule.git
-	branch = master
 [submodule "stack/ground_control_system/cli/cli_process"]
 	path = stack/ground_control_system/cli/cli_process
 	url = https://bitbucket.org/joselusl/droneinterfacerosmodule.git
@@ -772,3 +768,6 @@
 [submodule "stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule
 	url = https://bitbucket.org/visionaerialrobotics/dronearchitecturervizinterfacerosmodule.git
+[submodule "stack/ground_control_system/rviz/droneSimulatorRvizROSModule"]
+	path = stack/ground_control_system/rviz/droneSimulatorRvizROSModule
+	url = https://bitbucket.org/visionaerialrobotics/dronesimulatorrvizrosmodule.git

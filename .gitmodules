@@ -771,3 +771,7 @@
 [submodule "stack/ground_control_system/rviz/droneSimulatorRvizROSModule"]
 	path = stack/ground_control_system/rviz/droneSimulatorRvizROSModule
 	url = https://bitbucket.org/visionaerialrobotics/dronesimulatorrvizrosmodule.git
+[submodule "stack_devel/planning_system/read_mission_points"]
+	path = stack_devel/planning_system/read_mission_points
+	url = https://bitbucket.org/hridaybavle/read_mission_points.git
+	branch = master

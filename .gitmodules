@@ -780,5 +780,5 @@
 	url = https://bitbucket.org/Vision4UAV/aerostack
 	branch = master
 [submodule "stack_obsolete/prueba"]
-	path = stack_obsolete/prueba
+	path = stack_deprecated/prueba
 	url = https://bitbucket.org/rodelgo7al/prueba.git

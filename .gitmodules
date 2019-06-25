@@ -775,9 +775,6 @@
 	path = stack_devel/planning_system/read_mission_points
 	url = https://bitbucket.org/hridaybavle/read_mission_points.git
 	branch = master
-[submodule "stack_obsolete/prueba"]
-	path = stack_obsolete/prueba
-	url = https://rodelgo7al@bitbucket.org/rodelgo7al/prueba.git
 [submodule "stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30_node"]
 	path = stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30_node
 	url = https://bitbucket.org/Vision4UAV/aerostack

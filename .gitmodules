@@ -779,3 +779,6 @@
 	path = stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30_node
 	url = https://bitbucket.org/Vision4UAV/aerostack
 	branch = master
+[submodule "stack_obsolete/prueba"]
+	path = stack_obsolete/prueba
+	url = https://bitbucket.org/rodelgo7al/prueba.git

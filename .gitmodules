@@ -158,14 +158,6 @@
 	path = launchers
 	url = https://bitbucket.org/Vision4UAV/aerostack_launchers
 	branch = examples
-[submodule "etc"]
-	path = etc
-	url = https://bitbucket.org/Vision4UAV/aerostack_etc
-	branch = master
-[submodule "documentation"]
-	path = documentation
-	url = https://bitbucket.org/Vision4UAV/aerostack_documentation
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
 	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
 	url = https://github.com/mavlink/mavros.git
@@ -779,3 +771,12 @@
 	path = stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30_node
 	url = https://bitbucket.org/hridaybavle/sf30-b.git
 	branch = master
+[submodule "obsolete/aerostack_documentation"]
+	path = obsolete/aerostack_documentation
+	url = https://bitbucket.org/Vision4UAV/aerostack_documentation.git
+[submodule "doc"]
+	path = doc
+	url = https://bitbucket.org/visionaerialrobotics/doc.git
+[submodule "obsolete/installation"]
+	path = obsolete/installation
+	url = https://bitbucket.org/visionaerialrobotics/installation.git

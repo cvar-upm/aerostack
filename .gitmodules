@@ -158,14 +158,6 @@
 	path = launchers
 	url = https://bitbucket.org/Vision4UAV/aerostack_launchers
 	branch = examples
-[submodule "etc"]
-	path = etc
-	url = https://bitbucket.org/Vision4UAV/aerostack_etc
-	branch = master
-[submodule "documentation"]
-	path = documentation
-	url = https://bitbucket.org/Vision4UAV/aerostack_documentation
-	branch = master
 [submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
 	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
 	url = https://github.com/mavlink/mavros.git
@@ -726,13 +718,13 @@
 [submodule "stack_devel/motor_system/path_tracker"]
 	path = stack_devel/motor_system/path_tracker
 	url = https://bitbucket.org/visionaerialrobotics/path_tracker.git
-[submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/dji_matrice_210_process"]
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji/dji_matrice_210_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_dji/dji_matrice_210_process
 	url = https://bitbucket.org/hridaybavle/dji_matrice_210_process.git
-[submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK-ROS"]
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK-ROS"]
 	path = stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK-ROS
 	url = https://github.com/alejodosr/Onboard-SDK-ROS
-[submodule "stack_devel/droneDrivers/driversPlatforms/driver_dji_matrice/Onboard-SDK"]
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK"]
 	path = stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK
 	url = https://github.com/alejodosr/Onboard-SDK
 [submodule "stack/feature_extraction_system/qr_recognizer"]
@@ -777,8 +769,14 @@
 	branch = master
 [submodule "stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30_node"]
 	path = stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30_node
-	url = https://bitbucket.org/Vision4UAV/aerostack
+	url = https://bitbucket.org/hridaybavle/sf30-b.git
 	branch = master
-[submodule "stack_obsolete/prueba"]
-	path = stack_deprecated/prueba
-	url = https://bitbucket.org/rodelgo7al/prueba.git
+[submodule "obsolete/aerostack_documentation"]
+	path = obsolete/aerostack_documentation
+	url = https://bitbucket.org/Vision4UAV/aerostack_documentation.git
+[submodule "doc"]
+	path = doc
+	url = https://bitbucket.org/visionaerialrobotics/doc.git
+[submodule "obsolete/installation"]
+	path = obsolete/installation
+	url = https://bitbucket.org/visionaerialrobotics/installation.git

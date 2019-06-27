@@ -134,12 +134,6 @@ if __name__ == '__main__':
             os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'project_modules.txt')
         except:
             pass
-
-        try:
-            os.remove(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh')
-        except:
-            pass
-
         try:
             os.remove(GITMODULES_ROOTDIR + 'update_project_modules.sh')
         except:
@@ -185,24 +179,20 @@ if __name__ == '__main__':
                                 the_file.write(heads[k - 1])
 
                         # Include in output script
-                        with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:
+                        with open(GITMODULES_ROOTDIR  + 'update_project_modules.sh', 'a') as the_file:
                             the_file.write("git submodule update --init " + paths[k - 1] + "\n")
 
                         if heads[k - 1] != "":
 			    print(heads[k - 1].split(' '))
                             current_head = heads[k - 1].split(' ')
                             current_head = current_head[2].replace('\n', '')
-                            with open(GITMODULES_ROOTDIR + PROJECT_CONFIG + 'update_project_modules.sh', 'a') as the_file:
+                            with open(GITMODULES_ROOTDIR + 'update_project_modules.sh', 'a') as the_file:
                                 the_file.write("cd " + paths[k - 1] + "\n")
                                 the_file.write("git checkout " + current_head + "\n")
                                 the_file.write("cd -" + "\n")
 
                         # Remove previously included CATKIN_IGNORE
                         os.remove(os.path.join(GITMODULES_ROOTDIR, paths[k - 1] + "/CATKIN_IGNORE"))
-
-        # Copy script to aerostack root
-        copyfile(GITMODULES_ROOTDIR + PROJECT_CONFIG + "update_project_modules.sh",
-                 GITMODULES_ROOTDIR + "update_project_modules.sh")
 
         print("INFO: All modules but selected have been put into CATKIN_IGNORE")
         print("INFO: Project set successfully")

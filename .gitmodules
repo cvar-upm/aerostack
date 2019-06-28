@@ -266,14 +266,6 @@
 	path = stack/feature_extraction_system/aruco_eye/aruco_eye
 	url = https://github.com/joselusl/aruco_eye
 	branch = master
-[submodule "stack/executive_system/manager_of_actions/manager_of_actions"]
-	path = stack/executive_system/manager_of_actions/manager_of_actions
-	url = https://bitbucket.org/csampedro/dronemanagerofactions
-	branch = master
-[submodule "stack/executive_system/manager_of_actions/manager_of_actions_process"]
-	path = stack/executive_system/manager_of_actions/manager_of_actions_process
-	url = https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule
-	branch = master
 [submodule "stack/planning_system/trajectory_planner/trajectory_planner_process"]
 	path = stack/planning_system/trajectory_planner/trajectory_planner_process
 	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
@@ -285,10 +277,6 @@
 [submodule "stack/planning_system/yaw_planner/yaw_planner_process"]
 	path = stack/planning_system/yaw_planner/yaw_planner_process
 	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
-	branch = master
-[submodule "stack/communication_system/communication_manager_process"]
-	path = stack/communication_system/communication_manager_process
-	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule
 	branch = master
 [submodule "stack/simulation_system/drone_simulator/drone_simulator"]
 	path = stack/simulation_system/drone_simulator/drone_simulator
@@ -354,14 +342,6 @@
 	path = stack/logging/droneLoggerROSModule
 	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
 	branch = master
-[submodule "stack/planning_system/mission_planner/mission_scheduler_process"]
-	path = stack/planning_system/mission_planner/mission_scheduler_process
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule
-	branch = master
-[submodule "stack/planning_system/mission_planner/mission_scheduler"]
-	path = stack/planning_system/mission_planner/mission_scheduler
-	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor
-	branch = master
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
 	path = stack/process_management_system/process_monitor/process_monitor_process
 	url = https://bitbucket.org/visionaerialrobotics/process_monitor_process.git
@@ -386,14 +366,6 @@
 	path = stack/ground_control_system/graphical_user_interface
 	url = https://bitbucket.org/visionaerialrobotics/graphical_user_interface.git
 	branch = master
-[submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
-	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner
-	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner.git
-	branch = behavior-based
-[submodule "stack/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
-	path = stack/planning_system/task_based_mission_planner/task_based_mission_planner_process
-	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner_process.git
-	branch = behavior-based
 [submodule "stack_devel/situation_awareness_system/hector_slam/hector_slam"]
 	path = stack_devel/situation_awareness_system/hector_slam/hector_slam
 	url = https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
@@ -516,46 +488,6 @@
 [submodule "stack/executive_system/self_localization_selector_process"]
 	path = stack/situation_awareness_system/self_localization_selector/self_localization_selector_process
 	url = https://bitbucket.org/visionaerialrobotics/self_localization_selector_process
-	branch = master
-[submodule "stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
-	path = stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
-	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator_process
-	branch = master
-[submodule "stack/executive_system/behavior_management_system/behavior_library"]
-	path = stack/executive_system/behavior_management_system/behavior_library
-	url = https://bitbucket.org/visionaerialrobotics/behavior_library
-	branch = master
-[submodule "stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist"]
-	path = stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist
-	url = https://bitbucket.org/visionaerialrobotics/behavior_specialist
-	branch = master
-[submodule "stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
-	path = stack/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process
-	url = https://bitbucket.org/visionaerialrobotics/behavior_specialist_process
-	branch = master
-[submodule "stack/executive_system/behavior_management_system/resource_manager/resource_manager"]
-	path = stack/executive_system/behavior_management_system/resource_manager/resource_manager
-	url = https://bitbucket.org/visionaerialrobotics/resource_manager
-	branch = master
-[submodule "stack/executive_system/behavior_management_system/resource_manager/resource_manager_process"]
-	path = stack/executive_system/behavior_management_system/resource_manager/resource_manager_process
-	url = https://bitbucket.org/visionaerialrobotics/resource_manager_process
-	branch = master
-[submodule "stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager"]
-	path = stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager
-	url = https://bitbucket.org/visionaerialrobotics/belief_manager
-	branch = master
-[submodule "stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process"]
-	path = stack/situation_awareness_system/belief_management_system/belief_manager/belief_manager_process
-	url = https://bitbucket.org/visionaerialrobotics/belief_manager_process
-	branch = master
-[submodule "stack/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process"]
-	path = stack/situation_awareness_system/belief_management_system/belief_updater/belief_updater_process
-	url = https://bitbucket.org/visionaerialrobotics/belief_updater_process
-	branch = master
-[submodule "stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
-	path = stack/planning_system/python_based_mission_interpreter/python_based_mission_interpreter_process
-	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process
 	branch = master
 [submodule "stack/common/robot_process"]
 	path = stack/common/robot_process
@@ -745,15 +677,6 @@
 [submodule "stack_deprecated/libraries/mav_comm_rotors"]
 	path = stack_deprecated/libraries/mav_comm_rotors
 	url = https://github.com/acgroba/mav_comm_rotors.git
-[submodule "stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
-	path = stack/executive_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
-	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
-[submodule "stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
-	path = stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
-	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git
-[submodule "stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control"]
-	path = stack/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control
-	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
 [submodule "stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
 	path = stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
 	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
@@ -780,3 +703,63 @@
 [submodule "obsolete/installation"]
 	path = obsolete/installation
 	url = https://bitbucket.org/visionaerialrobotics/installation.git
+[submodule "stack_obsolete/communication_system/communication_manager_process"]
+	path = stack_obsolete/communication_system/communication_manager_process
+	url = https://bitbucket.org/joselusl/dronecommunicationmanagerrosmodule.git
+[submodule "stack_obsolete/executive_system/manager_of_actions/manager_of_actions"]
+	path = stack_obsolete/executive_system/manager_of_actions/manager_of_actions
+	url = https://bitbucket.org/csampedro/dronemanagerofactions.git
+[submodule "stack_obsolete/executive_system/manager_of_actions/manager_of_actions_process"]
+	path = stack_obsolete/executive_system/manager_of_actions/manager_of_actions_process
+	url = https://bitbucket.org/csampedro/dronemanagerofactionsrosmodule.git
+[submodule "stack_obsolete/executive_system/behavior_management_system/behavior_specialist/behavior_specialist"]
+	path = stack_obsolete/executive_system/behavior_management_system/behavior_specialist/behavior_specialist
+	url = https://bitbucket.org/visionaerialrobotics/behavior_specialist.git
+[submodule "stack_obsolete/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process"]
+	path = stack_obsolete/executive_system/behavior_management_system/behavior_specialist/behavior_specialist_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_specialist_process.git
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
+	path = stack/execution_control_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator_process.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
+	path = stack/execution_control_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
+	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
+	path = stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git
+[submodule "stack/execution_control_system/behavior_management_system/resource_manager/resource_manager"]
+	path = stack/execution_control_system/behavior_management_system/resource_manager/resource_manager
+	url = https://bitbucket.org/visionaerialrobotics/resource_manager.git
+[submodule "stack/execution_control_system/behavior_management_system/resource_manager/resource_manager_process"]
+	path = stack/execution_control_system/behavior_management_system/resource_manager/resource_manager_process
+	url = https://bitbucket.org/visionaerialrobotics/resource_manager_process.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_library"]
+	path = stack/execution_control_system/behavior_management_system/behavior_library
+	url = https://bitbucket.org/visionaerialrobotics/behavior_library.git
+[submodule "stack_obsolete/planning_system/mission_planner/mission_scheduler"]
+	path = stack_obsolete/planning_system/mission_planner/mission_scheduler
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor.git
+[submodule "stack_obsolete/planning_system/mission_planner/mission_scheduler_process"]
+	path = stack_obsolete/planning_system/mission_planner/mission_scheduler_process
+	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessorrosmodule.git
+[submodule "stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner"]
+	path = stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner
+	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner.git
+[submodule "stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
+	path = stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner_process
+	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner_process.git
+[submodule "stack/mission_control_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
+	path = stack/mission_control_system/python_based_mission_interpreter/python_based_mission_interpreter_process
+	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process.git
+[submodule "stack/belief_management_system/belief_manager/belief_manager"]
+	path = stack/belief_management_system/belief_manager/belief_manager
+	url = https://bitbucket.org/visionaerialrobotics/belief_manager.git
+[submodule "stack/belief_management_system/belief_manager/belief_manager_process"]
+	path = stack/belief_management_system/belief_manager/belief_manager_process
+	url = https://bitbucket.org/visionaerialrobotics/belief_manager_process.git
+[submodule "stack/belief_management_system/belief_updater/belief_updater_process"]
+	path = stack/belief_management_system/belief_updater/belief_updater_process
+	url = https://bitbucket.org/visionaerialrobotics/belief_updater_process.git

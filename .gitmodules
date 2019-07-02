@@ -763,3 +763,6 @@
 [submodule "stack/belief_management_system/belief_updater/belief_updater_process"]
 	path = stack/belief_management_system/belief_updater/belief_updater_process
 	url = https://bitbucket.org/visionaerialrobotics/belief_updater_process.git
+[submodule "stack_devel/mission_control_system/emergency_manager"]
+	path = stack_devel/mission_control_system/emergency_manager
+	url = https://bitbucket.org/visionaerialrobotics/emergency_manager.git

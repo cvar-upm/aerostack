@@ -762,3 +762,39 @@
 [submodule "stack_devel/mission_control_system/emergency_manager"]
 	path = stack_devel/mission_control_system/emergency_manager
 	url = https://bitbucket.org/visionaerialrobotics/emergency_manager.git
+[submodule "stack_obsolete/ground_control_system/graphical_user_interface"]
+	path = stack_obsolete/ground_control_system/graphical_user_interface
+	url = https://bitbucket.org/visionaerialrobotics/graphical_user_interface.git
+[submodule "stack/ground_control_system/graphical_user_interface/integrated_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/integrated_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/integrated_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/vehicle_dynamics_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/vehicle_dynamics_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/vehicle_dynamics_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/teleoperation_control_window_process"]
+	path = stack/ground_control_system/graphical_user_interface/teleoperation_control_window_process
+	url = https://bitbucket.org/visionaerialrobotics/teleoperation_control_window_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/python_mission_control_window_process"]
+	path = stack/ground_control_system/graphical_user_interface/python_mission_control_window_process
+	url = https://bitbucket.org/visionaerialrobotics/python_mission_control_window_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/first_person_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/first_person_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/first_person_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/execution_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/execution_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/execution_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/environment_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/environment_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/environment_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/environment_editor_process"]
+	path = stack/ground_control_system/graphical_user_interface/environment_editor_process
+	url = https://bitbucket.org/visionaerialrobotics/environment_editor_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/behavior_tree_interpreter_process"]
+	path = stack/ground_control_system/graphical_user_interface/behavior_tree_interpreter_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_interpreter_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/behavior_tree_editor_process"]
+	path = stack/ground_control_system/graphical_user_interface/behavior_tree_editor_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_editor_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/alphanumeric_interface_process"]
+	path = stack/ground_control_system/graphical_user_interface/alphanumeric_interface_process
+	url = https://bitbucket.org/visionaerialrobotics/alphanumeric_interface_process.git

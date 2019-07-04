@@ -1,0 +1,116 @@
+{
+   
+   "ENVIRONMENT_VIEWER":{
+      "name":"Environment Viewer",
+      "width":750,
+      "height":790,
+      "position":{
+         "center":{
+            "x":-345,
+            "y":-395
+         },
+         "right":{
+            "x":30,
+            "y":-395
+         }
+      }
+   },
+   "TELEOPERATION_CONTROL":{
+      "name":"Teleoperation Control",
+      "width":500,
+      "height":365,
+      "position":{
+         "x":-845,
+         "y":-365
+      }
+   },
+   "FIRST_PERSON_VIEWER":{
+      "name":"First Person Viewer",
+      "width":500,
+      "height":378,
+      "widthBig":790,
+      "heightBig":600,
+      "position":{
+                  "little":{
+                            "x":-845,
+                            "y":17
+                  },
+                  "big":{
+			"x":-370,
+			"y":-300
+		}
+      }
+   },
+   "PYTHON_CONTROL":{
+      "name":"Python Mission Control",
+      "width":500,
+      "height":390,
+      "position":{
+         "x":-845,
+         "y":-365
+      }
+   },
+   "VEHICLE_DYNAMICS_VIEWER":{
+      "name":"Vehicle Dynamics",
+      "width":500,
+      "height":261,
+      "position":{
+         "x":405,
+         "y":135
+      }
+   },
+   "EXECUTION_VIEWER":{
+      "name":"Execution Viewer",
+      "width":500,
+      "height":500,
+      "position":{
+         "x":405,
+         "y":-395
+      }
+   },
+   "ALPHANUMERIC_INTERFACE_CONTROL":{
+      "name":"Alphanumeric Interface Control",
+      "width":75,
+      "height":22,
+      "position":{
+         "x":238,
+         "y":400
+      }
+   },
+   "BEHAVIOR_TREE_INTERPRETER":{
+      "name":"Behavior Tree Interpreter",
+      "width":500,
+      "height":790,
+      "position":{
+         "x":-845,
+         "y":-395
+      }
+   },
+  "PYTHON_MISSION_INTERPRETER":{
+      "name":"Python Mission Interpreter",
+      "width":50,
+      "height":19,
+      "position":{
+         "x":115,
+         "y":628
+      }
+   },
+   "BEHAVIOR_TREE_EDITOR":{
+      "name":"Behavior Tree Editor",
+      "width":750,
+      "height":790,
+      "position":{
+         "x":-720,
+         "y":-395
+      }
+   },
+   "ENVIRONMENT_MAP_EDITOR":{
+      "name":"Map Editor",
+      "width":940,
+      "height":750,
+      "position":{
+         "x":-470,
+         "y":-375
+      }
+   }
+}

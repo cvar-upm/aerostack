@@ -1,0 +1,8 @@
+<library path="lib/libattention_to_visual_markers">
+	<class name="attention_to_visual_markers/BehaviorPayAttentionToQRCode" type="attention_to_visual_markers::BehaviorPayAttentionToQRCode"
+		base_class_type="nodelet::Nodelet">
+		<description>
+			BehaviorPayAttentionToQRCode.
+		</description>
+	</class>
+</library>

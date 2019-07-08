@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(navigation_with_lidar)
+project(attention_to_visual_markers)
 
 ### Use version 2011 of C++ (c++11). By default ROS uses c++98
 #see: http://stackoverflow.com/questions/10851247/how-to-activate-c-11-in-cmake
@@ -7,24 +7,20 @@ project(navigation_with_lidar)
 add_definitions(-std=c++11)
 
 # Directories definition
-set(NAVIGATION_WITH_LIDAR_SOURCE_DIR
+set(ATTENTION_TO_QR_CODE_SOURCE_DIR
   src/source
 )
 
-set(NAVIGATION_WITH_LIDAR_INCLUDE_DIR
+set(ATTENTION_TO_QR_CODE_INCLUDE_DIR
   src/include
 )
 
-set(NAVIGATION_WITH_LIDAR_HEADER_FILES
-        ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_self_localize_and_map_with_lidar.h
-        ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_go_to_point_with_occupancy_grid.h
-        ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_generate_path_with_occupancy_grid.h
+set(ATTENTION_TO_QR_CODE_HEADER_FILES
+        ${ATTENTION_TO_QR_CODE_INCLUDE_DIR}/behavior_pay_attention_to_qr_code.h
 )
 
-set(NAVIGATION_WITH_LIDAR_SOURCE_FILES
-        ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_self_localize_and_map_with_lidar.cpp
-        ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_go_to_point_with_occupancy_grid.cpp
-        ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_generate_path_with_occupancy_grid.cpp
+set(ATTENTION_TO_QR_CODE_SOURCE_FILES
+        ${ATTENTION_TO_QR_CODE_SOURCE_DIR}/behavior_pay_attention_to_qr_code.cpp
 )
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -49,7 +45,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}
+  INCLUDE_DIRS ${ATTENTION_TO_QR_CODE_INCLUDE_DIR}
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS 
   roscpp 
@@ -75,13 +71,11 @@ include_directories(
 )
 
 ## Declare a C++ library
-add_library(navigation_with_lidar
-  src/source/behavior_self_localize_and_map_with_lidar.cpp
-  src/source/behavior_go_to_point_with_occupancy_grid.cpp
-  src/source/behavior_generate_path_with_occupancy_grid.cpp
+add_library(attention_to_visual_markers
+  src/source/behavior_pay_attention_to_qr_code.cpp
 )
-target_link_libraries(navigation_with_lidar ${catkin_LIBRARIES})
-target_link_libraries(navigation_with_lidar yaml-cpp)
+target_link_libraries(attention_to_visual_markers ${catkin_LIBRARIES})
+target_link_libraries(attention_to_visual_markers yaml-cpp)
 if(catkin_EXPORTED_LIBRARIES)
-  add_dependencies(navigation_with_lidar ${catkin_EXPORTED_LIBRARIES})
+  add_dependencies(attention_to_visual_markers ${catkin_EXPORTED_LIBRARIES})
 endif()

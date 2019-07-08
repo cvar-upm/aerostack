@@ -9,7 +9,7 @@
     <arg name="rotation_angles_topic"              default="rotation_angles" />
     <arg name="initialize_yaw_srv"                 default="droneOdometryStateEstimator/setInitDroneYaw" />
     <arg name="consult_belief"                     default="consult_belief" />
-    <arg name="behavior_system"                    default="navigation_with_lidar" />
+    <arg name="behavior_system"                    default="attention_to_visual_markers" />
     <arg name="odometry_str"                       default="change_self_localization_mode_to_odometry" />
    <group ns="$(arg namespace)/$(arg behavior_system)">
 	     <param name="~namespace"                           value="$(arg namespace)"                          type="str" />
@@ -24,13 +24,9 @@
              <param name="~behavior_system"                     value="$(arg behavior_system)"                    type="str" />
              <param name="~odometry_str"                        value="$(arg odometry_str)"                       type="str" /> 
             
-       <node pkg="nodelet" type="nodelet" args="manager" name="navigation_with_lidar_manager" output="screen" />
-       <node pkg="nodelet" type="nodelet" args="load navigation_with_lidar/BehaviorSelfLocalizeAndMapWithLidar navigation_with_lidar_manager"
-        name="behavior_self_localize_and_map_with_lidar" output="screen"/>
-       <node pkg="nodelet" type="nodelet" args="load navigation_with_lidar/BehaviorGoToPointWithOccupancyGrid navigation_with_lidar_manager"
-        name="behavior_go_to_point_with_occupancy_grid" output="screen"/>
-       <node pkg="nodelet" type="nodelet" args="load navigation_with_lidar/BehaviorGeneratePathWithOccupancyGrid navigation_with_lidar_manager"
-        name="behavior_generate_path_with_occupancy_grid" output="screen"/>
+       <node pkg="nodelet" type="nodelet" args="manager" name="attention_to_visual_markers_manager" output="screen" />
+       <node pkg="nodelet" type="nodelet" args="load attention_to_visual_markers/BehaviorPayAttentionToQRCode attention_to_visual_markers_manager"
+        name="behavior_pay_attention_to_qr_code" output="screen"/>
 
               
   </group>

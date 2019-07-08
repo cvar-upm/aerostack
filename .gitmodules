@@ -146,14 +146,6 @@
 	path = stack_obsolete/dronePerception/droneArucoEye/droneArucoEyeROSModule
 	url = https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 	branch = master
-[submodule "stack_devel/droneSelfLocalization/droneRobotLocalizationROSModule"]
-	path = stack/situation_awareness_system/robot_localization/droneRobotLocalizationROSModule
-	url = https://bitbucket.org/hridaybavle/dronerobotlocalizationrosmodule
-	branch = master
-[submodule "stack_devel/droneSelfLocalization/droneRobotLocalization/robot_localization"]
-	path = stack/situation_awareness_system/robot_localization/robot_localization
-	url = https://github.com/cra-ros-pkg/robot_localization
-	branch = indigo-devel
 [submodule "launchers"]
 	path = launchers
 	url = https://bitbucket.org/Vision4UAV/aerostack_launchers
@@ -189,38 +181,6 @@
 [submodule "stack/feature_extraction_system/opentld/opentld_process"]
 	path = stack/feature_extraction_system/opentld/opentld_process
 	url = https://bitbucket.org/hridaybavle/droneopentldtranslatorros.git
-	branch = master
-[submodule "stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer_process"]
-	path = stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer_process
-	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
-	branch = master
-[submodule "stack/situation_awareness_system/visual_markers_localizer/reference_frames"]
-	path = stack/situation_awareness_system/visual_markers_localizer/reference_frames
-	url = https://bitbucket.org/joselusl/referenceframesros.git
-	branch = master
-[submodule "stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer"]
-	path = stack/situation_awareness_system/visual_markers_localizer/visual_markers_localizer
-	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
-	branch = master
-[submodule "stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator"]
-	path = stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator
-	url = https://bitbucket.org/jespestana/droneekfstateestimator.git
-	branch = master
-[submodule "stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator_process"]
-	path = stack/situation_awareness_system/odometry_pose_estimator/odometry_pose_estimator_process
-	url = https://bitbucket.org/jespestana/droneekfstateestimatorrosmodule.git
-	branch = master
-[submodule "stack/situation_awareness_system/obstacle_distance_calculator/obstacle_distance_calculator_process"]
-	path = stack/situation_awareness_system/obstacle_distance_calculator/obstacle_distance_calculator_process
-	url = https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
-	branch = master
-[submodule "stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process"]
-	path = stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process
-	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
-	branch = master
-[submodule "stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
-	path = stack/situation_awareness_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
-	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
 	branch = master
 [submodule "stack/motor_system/basic_actions_controller/droneMidLevelAutopilotROSModule"]
 	path = stack/motor_system/basic_actions_controller/droneMidLevelAutopilotROSModule
@@ -266,18 +226,6 @@
 	path = stack/feature_extraction_system/aruco_eye/aruco_eye
 	url = https://github.com/joselusl/aruco_eye
 	branch = master
-[submodule "stack/planning_system/trajectory_planner/trajectory_planner_process"]
-	path = stack/planning_system/trajectory_planner/trajectory_planner_process
-	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
-	branch = master
-[submodule "stack/planning_system/trajectory_planner/trajectory_planner"]
-	path = stack/planning_system/trajectory_planner/trajectory_planner
-	url = https://bitbucket.org/joselusl/dronetrajectoryplanner.git
-	branch = master
-[submodule "stack/planning_system/yaw_planner/yaw_planner_process"]
-	path = stack/planning_system/yaw_planner/yaw_planner_process
-	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
-	branch = master
 [submodule "stack/simulation_system/drone_simulator/drone_simulator"]
 	path = stack/simulation_system/drone_simulator/drone_simulator
 	url = https://bitbucket.org/jespestana/droneSimulator.git
@@ -285,10 +233,6 @@
 [submodule "stack/simulation_system/drone_simulator/drone_simulator_process"]
 	path = stack/simulation_system/drone_simulator/drone_simulator_process
 	url = https://bitbucket.org/joselusl/dronesimulatorrosmodule.git
-	branch = master
-[submodule "stack/common/droneMsgsROS"]
-	path = stack/common/droneMsgsROS
-	url = https://bitbucket.org/joselusl/dronemsgsros.git
 	branch = master
 [submodule "stack/ground_control_system/rviz/droneEkfSimulatorRvizROSModule"]
 	path = stack/ground_control_system/rviz/droneEkfSimulatorRvizROSModule
@@ -329,18 +273,6 @@
 [submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller_process"]
 	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/driver_mikrokopter_flight_controller_process
 	url = https://bitbucket.org/hridaybavle/mikrokopter_driver_ros_module.git
-	branch = master
-[submodule "stack/logging/lib_cvgloggerROS"]
-	path = stack/logging/lib_cvgloggerROS
-	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
-	branch = master
-[submodule "stack/logging/lib_cvglogger"]
-	path = stack/logging/lib_cvglogger
-	url = https://bitbucket.org/jespestana/lib_cvglogger.git
-	branch = master
-[submodule "stack/logging/droneLoggerROSModule"]
-	path = stack/logging/droneLoggerROSModule
-	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
 	branch = master
 [submodule "stack/supervision_system/process_monitor/process_monitor_process"]
 	path = stack/process_management_system/process_monitor/process_monitor_process
@@ -434,10 +366,6 @@
 	path = stack/feature_extraction_system/opentld/ros_opentld
 	url = https://github.com/hridaybavle/ros_opentld
 	branch = master
-[submodule "stack/simulation_system/drone_simulator/rotors_simulator"]
-	path = stack/simulation_system/drone_simulator/rotors_simulator_gazebo/rotors_simulator
-	url = https://github.com/suarez-ramon/rotors_simulator.git
-	branch = stable/kinetic
 [submodule "stack/libraries/eigen_catkin"]
 	path = stack/libraries/eigen_catkin
 	url = https://github.com/suarez-ramon/eigen_catkin
@@ -480,10 +408,6 @@
 [submodule "stack/common/behavior_process"]
 	path = stack/common/behavior_process
 	url = https://bitbucket.org/visionaerialrobotics/behavior_process
-	branch = master
-[submodule "stack/executive_system/self_localization_selector_process"]
-	path = stack/situation_awareness_system/self_localization_selector/self_localization_selector_process
-	url = https://bitbucket.org/visionaerialrobotics/self_localization_selector_process
 	branch = master
 [submodule "stack/common/robot_process"]
 	path = stack/common/robot_process
@@ -591,9 +515,6 @@
 [submodule "projects_cvar"]
 	path = projects_cvar
 	url = https://bitbucket.org/visionaerialrobotics/projects_cvar
-[submodule "stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid"]
-	path = stack/planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid
-	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git
 [submodule "stack_devel/ground_control_system/keyboard_teleoperation_interface"]
 	path = stack_devel/ground_control_system/keyboard_teleoperation_interface
 	url = https://bitbucket.org/visionaerialrobotics/keyboard_teleoperation_interface.git
@@ -798,3 +719,63 @@
 [submodule "stack/ground_control_system/graphical_user_interface/alphanumeric_interface_process"]
 	path = stack/ground_control_system/graphical_user_interface/alphanumeric_interface_process
 	url = https://bitbucket.org/visionaerialrobotics/alphanumeric_interface_process.git
+[submodule "stack_deprecated/common/droneMsgsROS"]
+	path = stack_deprecated/common/droneMsgsROS
+	url = https://bitbucket.org/joselusl/dronemsgsros.git
+[submodule "stack_deprecated/logging/droneLoggerROSModule"]
+	path = stack_deprecated/logging/droneLoggerROSModule
+	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
+[submodule "stack_deprecated/logging/lib_cvglogger"]
+	path = stack_deprecated/logging/lib_cvglogger
+	url = https://bitbucket.org/jespestana/lib_cvglogger.git
+[submodule "stack_deprecated/logging/lib_cvgloggerROS"]
+	path = stack_deprecated/logging/lib_cvgloggerROS
+	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
+[submodule "stack/motion_planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid"]
+	path = stack/motion_planning_system/path_planner_in_occupancy_grid/path_planner_in_occupancy_grid
+	url = https://bitbucket.org/visionaerialrobotics/path_planner_in_occupancy_grid.git
+[submodule "stack/motion_planning_system/trajectory_planner/trajectory_planner"]
+	path = stack/motion_planning_system/trajectory_planner/trajectory_planner
+	url = https://bitbucket.org/joselusl/dronetrajectoryplanner.git
+[submodule "stack/motion_planning_system/trajectory_planner/trajectory_planner_process"]
+	path = stack/motion_planning_system/trajectory_planner/trajectory_planner_process
+	url = https://bitbucket.org/joselusl/dronetrajectoryplannerrosmodule.git
+[submodule "stack/motion_planning_system/yaw_planner/yaw_planner_process"]
+	path = stack/motion_planning_system/yaw_planner/yaw_planner_process
+	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
+[submodule "stack/simulation_system/rotors_simulator"]
+	path = stack/simulation_system/rotors_simulator
+	url = https://github.com/suarez-ramon/rotors_simulator.git
+[submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
+	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
+	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
+[submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process"]
+	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process
+	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
+[submodule "stack/localization_and_mapping_system/obstacle_distance_calculator/obstacle_distance_calculator_process"]
+	path = stack/localization_and_mapping_system/obstacle_distance_calculator/obstacle_distance_calculator_process
+	url = https://bitbucket.org/joselusl/droneobstacledistancecalculatorrosmodule.git
+[submodule "stack/localization_and_mapping_system/odometry_pose_estimator/odometry_pose_estimator"]
+	path = stack/localization_and_mapping_system/odometry_pose_estimator/odometry_pose_estimator
+	url = https://bitbucket.org/jespestana/droneekfstateestimator.git
+[submodule "stack/localization_and_mapping_system/odometry_pose_estimator/odometry_pose_estimator_process"]
+	path = stack/localization_and_mapping_system/odometry_pose_estimator/odometry_pose_estimator_process
+	url = https://bitbucket.org/jespestana/droneekfstateestimatorrosmodule.git
+[submodule "stack/localization_and_mapping_system/robot_localization/droneRobotLocalizationROSModule"]
+	path = stack/localization_and_mapping_system/robot_localization/droneRobotLocalizationROSModule
+	url = https://bitbucket.org/hridaybavle/dronerobotlocalizationrosmodule.git
+[submodule "stack/localization_and_mapping_system/robot_localization/robot_localization"]
+	path = stack/localization_and_mapping_system/robot_localization/robot_localization
+	url = https://github.com/cra-ros-pkg/robot_localization.git
+[submodule "stack/localization_and_mapping_system/self_localization_selector/self_localization_selector_process"]
+	path = stack/localization_and_mapping_system/self_localization_selector/self_localization_selector_process
+	url = https://bitbucket.org/visionaerialrobotics/self_localization_selector_process.git
+[submodule "stack/localization_and_mapping_system/visual_markers_localizer/reference_frames"]
+	path = stack/localization_and_mapping_system/visual_markers_localizer/reference_frames
+	url = https://bitbucket.org/joselusl/referenceframesros.git
+[submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer"]
+	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer
+	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
+[submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process"]
+	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process
+	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git

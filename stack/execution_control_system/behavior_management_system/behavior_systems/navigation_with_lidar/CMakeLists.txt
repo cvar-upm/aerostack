@@ -19,12 +19,14 @@ set(NAVIGATION_WITH_LIDAR_HEADER_FILES
         ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_self_localize_and_map_with_lidar.h
         ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_go_to_point_with_occupancy_grid.h
         ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_generate_path_with_occupancy_grid.h
+        ${NAVIGATION_WITH_LIDAR_INCLUDE_DIR}/behavior_follow_path_with_trajectory_controller.h
 )
 
 set(NAVIGATION_WITH_LIDAR_SOURCE_FILES
         ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_self_localize_and_map_with_lidar.cpp
         ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_go_to_point_with_occupancy_grid.cpp
         ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_generate_path_with_occupancy_grid.cpp
+        ${NAVIGATION_WITH_LIDAR_SOURCE_DIR}/behavior_follow_path_with_trajectory_controller.cpp
 )
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -79,6 +81,7 @@ add_library(navigation_with_lidar
   src/source/behavior_self_localize_and_map_with_lidar.cpp
   src/source/behavior_go_to_point_with_occupancy_grid.cpp
   src/source/behavior_generate_path_with_occupancy_grid.cpp
+  src/source/behavior_follow_path_with_trajectory_controller.cpp
 )
 target_link_libraries(navigation_with_lidar ${catkin_LIBRARIES})
 target_link_libraries(navigation_with_lidar yaml-cpp)

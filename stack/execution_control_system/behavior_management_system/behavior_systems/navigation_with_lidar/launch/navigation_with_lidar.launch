@@ -31,6 +31,8 @@
         name="behavior_go_to_point_with_occupancy_grid" output="screen"/>
        <node pkg="nodelet" type="nodelet" args="load navigation_with_lidar/BehaviorGeneratePathWithOccupancyGrid navigation_with_lidar_manager"
         name="behavior_generate_path_with_occupancy_grid" output="screen"/>
+       <node pkg="nodelet" type="nodelet" args="load navigation_with_lidar/BehaviorFollowPathWithTrajectoryController navigation_with_lidar_manager"
+        name="behavior_follow_path_with_trajectory_controller" output="screen"/>
 
               
   </group>

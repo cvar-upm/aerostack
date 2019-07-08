@@ -17,4 +17,10 @@
 			BehaviorGeneratePathWithOccupancyGrid.
 		</description>
 	</class>
+        <class name="navigation_with_lidar/BehaviorFollowPathWithTrajectoryController" type="navigation_with_lidar::BehaviorFollowPathWithTrajectoryController"
+		base_class_type="nodelet::Nodelet">
+		<description>
+			BehaviorFollowPathWithTrajectoryController.
+		</description>
+	</class>
 </library>

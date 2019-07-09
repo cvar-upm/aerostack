@@ -604,6 +604,12 @@
 [submodule "stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
 	path = stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/attention_to_visual_markers"]
+	path = stack/execution_control_system/behavior_management_system/behavior_systems/attention_to_visual_markers
+	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/navigation_with_lidar"]
+	path = stack/execution_control_system/behavior_management_system/behavior_systems/navigation_with_lidar
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_lidar.git
 [submodule "stack/execution_control_system/behavior_management_system/resource_manager/resource_manager"]
 	path = stack/execution_control_system/behavior_management_system/resource_manager/resource_manager
 	url = https://bitbucket.org/visionaerialrobotics/resource_manager.git

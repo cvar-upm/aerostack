@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+  <name>attention_to_visual_markers</name>
+  <version>0.1.0</version>
+  <description>attention_to_visual_markers</description>
+
+  <maintainer email="raul.cruz.benita@alumnos.upm.es">Raúl Cruz Benita</maintainer>
+
+  <license>BSD-3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>drone_process</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>behavior_execution_controller</build_depend>
+  <build_depend>droneMsgsROS</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>aerostack_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>nodelet</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>drone_process</run_depend>
+  <run_depend>behavior_execution_controller</run_depend>
+  <run_depend>droneMsgsROS</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>yaml-cpp</run_depend>
+  <run_depend>aerostack_msgs</run_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/attention_to_visual_markers.xml" />
+  </export>
+</package>

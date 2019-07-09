@@ -1,0 +1,33 @@
+<launch>
+    <arg name="namespace"                          default="drone1" />
+    <arg name="activate_behavior_srv"              default="activate_behavior" />
+    <arg name="deactivate_behavior_srv"            default="deactivate_behavior" />
+    <arg name="check_activation_conditions_srv"    default="check_activation_conditions" />
+    <arg name="activation_finished_topic"          default="behavior_activation_finished" />
+    <arg name="estimated_pose_topic"               default="self_localization/pose" />
+    <arg name="controllers_topic"                  default="command/high_level" />
+    <arg name="rotation_angles_topic"              default="rotation_angles" />
+    <arg name="initialize_yaw_srv"                 default="droneOdometryStateEstimator/setInitDroneYaw" />
+    <arg name="consult_belief"                     default="consult_belief" />
+    <arg name="behavior_system"                    default="attention_to_visual_markers" />
+    <arg name="odometry_str"                       default="change_self_localization_mode_to_odometry" />
+   <group ns="$(arg namespace)/$(arg behavior_system)">
+	     <param name="~namespace"                           value="$(arg namespace)"                          type="str" />
+             <param name="~activate_behavior_srv"               value="$(arg activate_behavior_srv)"              type="str" />
+             <param name="~deactivate_behavior_srv"             value="$(arg deactivate_behavior_srv)"            type="str" />
+             <param name="~check_activation_conditions_srv"     value="$(arg check_activation_conditions_srv)"    type="str" />
+	     <param name="~estimated_pose_topic"                value="$(arg estimated_pose_topic)"               type="str" />
+             <param name="~controllers_topic"                   value="$(arg controllers_topic)"                  type="str" />
+             <param name="~rotation_angles_topic"               value="$(arg rotation_angles_topic)"              type="str" />
+             <param name="~initialize_yaw_srv"                  value="$(arg initialize_yaw_srv)"                 type="str" />
+             <param name="~consult_belief"                      value="$(arg consult_belief)"                     type="str" />
+             <param name="~behavior_system"                     value="$(arg behavior_system)"                    type="str" />
+             <param name="~odometry_str"                        value="$(arg odometry_str)"                       type="str" /> 
+            
+       <node pkg="nodelet" type="nodelet" args="manager" name="attention_to_visual_markers_manager" output="screen" />
+       <node pkg="nodelet" type="nodelet" args="load attention_to_visual_markers/BehaviorPayAttentionToQRCode attention_to_visual_markers_manager"
+        name="behavior_pay_attention_to_qr_code" output="screen"/>
+
+              
+  </group>
+</launch>

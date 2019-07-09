@@ -737,7 +737,7 @@
 [submodule "launchers"]
 	path = launchers
 	url = https://bitbucket.org/visionaerialrobotics/launchers.git
-[submodule "configs"]
+[submodule "configs"] 
 	path = configs
 	url = https://bitbucket.org/visionaerialrobotics/configs.git
 [submodule "stack/motion_control_system/basic_actions_controller/droneMidLevelAutopilot"]

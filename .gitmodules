@@ -604,6 +604,12 @@
 [submodule "stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
 	path = stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/attention_to_visual_markers"]
+	path = stack/execution_control_system/behavior_management_system/behavior_systems/attention_to_visual_markers
+	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git
+[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/navigation_with_lidar"]
+	path = stack/execution_control_system/behavior_management_system/behavior_systems/navigation_with_lidar
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_lidar.git
 [submodule "stack/execution_control_system/behavior_management_system/resource_manager/resource_manager"]
 	path = stack/execution_control_system/behavior_management_system/resource_manager/resource_manager
 	url = https://bitbucket.org/visionaerialrobotics/resource_manager.git
@@ -703,6 +709,7 @@
 [submodule "stack/simulation_system/rotors_simulator"]
 	path = stack/simulation_system/rotors_simulator
 	url = https://github.com/suarez-ramon/rotors_simulator.git
+	branch = stable/kinetic
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
 	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
@@ -727,19 +734,10 @@
 [submodule "stack/localization_and_mapping_system/self_localization_selector/self_localization_selector_process"]
 	path = stack/localization_and_mapping_system/self_localization_selector/self_localization_selector_process
 	url = https://bitbucket.org/visionaerialrobotics/self_localization_selector_process.git
-[submodule "stack/localization_and_mapping_system/visual_markers_localizer/reference_frames"]
-	path = stack/localization_and_mapping_system/visual_markers_localizer/reference_frames
-	url = https://bitbucket.org/joselusl/referenceframesros.git
-[submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer"]
-	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer
-	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizer.git
-[submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process"]
-	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process
-	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
 [submodule "launchers"]
 	path = launchers
 	url = https://bitbucket.org/visionaerialrobotics/launchers.git
-[submodule "configs"]
+[submodule "configs"] 
 	path = configs
 	url = https://bitbucket.org/visionaerialrobotics/configs.git
 [submodule "stack/motion_control_system/basic_actions_controller/droneMidLevelAutopilot"]
@@ -769,3 +767,12 @@
 [submodule "stack/motion_control_system/visual_servoing_controller/visual_servoing_controller_process"]
 	path = stack/motion_control_system/visual_servoing_controller/visual_servoing_controller_process
 	url = https://bitbucket.org/hridaybavle/droneibvscontrollerrosmodule.git
+[submodule "stack/localization_and_mapping_system/visual_markers_localizer/reference_frames"]
+	path = stack/localization_and_mapping_system/visual_markers_localizer/reference_frames
+	url = https://bitbucket.org/visionaerialrobotics/reference_frames.git
+[submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer"]
+	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer
+	url = https://bitbucket.org/visionaerialrobotics/visual_markers_localizer.git
+[submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process"]
+	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process
+	url = https://bitbucket.org/visionaerialrobotics/visual_markers_localizer_process.git

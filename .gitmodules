@@ -110,10 +110,6 @@
 	path = stack_devel/droneSimulators/droneMissionPlanning/droneMissionPlannerEmulatorROSModule
 	url = https://bitbucket.org/csampedro/dronemissionplanneremulatorrosmodule
 	branch = master
-[submodule "configs"]
-	path = configs
-	url = https://bitbucket.org/joselusl/quadrotor_stack_configs
-	branch = examples
 [submodule "stack/libraries/lib_levmar-2.6"]
 	path = stack/libraries/lib_levmar-2.6
 	url = https://bitbucket.org/joselusl/lib_levmar-2.6
@@ -146,10 +142,6 @@
 	path = stack_obsolete/dronePerception/droneArucoEye/droneArucoEyeROSModule
 	url = https://bitbucket.org/joselusl/dronearucoeyerosmodule.git
 	branch = master
-[submodule "launchers"]
-	path = launchers
-	url = https://bitbucket.org/Vision4UAV/aerostack_launchers
-	branch = examples
 [submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
 	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
 	url = https://github.com/mavlink/mavros.git
@@ -779,3 +771,9 @@
 [submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process"]
 	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process
 	url = https://bitbucket.org/joselusl/dronevisualmarkerslocalizerrosmodule.git
+[submodule "launchers"]
+	path = launchers
+	url = https://bitbucket.org/visionaerialrobotics/launchers.git
+[submodule "configs"]
+	path = configs
+	url = https://bitbucket.org/visionaerialrobotics/configs.git

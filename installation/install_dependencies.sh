@@ -153,7 +153,7 @@ if [ "$ROS_DISTRO" = "melodic" ]
 	echo "------------------------------------------------------"
 	echo "Updating gazebo"
 	echo "------------------------------------------------------"
-	cd $AEROSTACK_STACK/stack/simulation_system/drone_simulator/rotors_simulator_gazebo/rotors_simulator
+	cd $AEROSTACK_STACK/stack/simulation_system/rotors_simulator
 	git checkout -f  stable/gazebo9 
 	
 	echo "------------------------------------------------------"

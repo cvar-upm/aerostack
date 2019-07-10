@@ -728,6 +728,7 @@
 [submodule "stack/localization_and_mapping_system/robot_localization/droneRobotLocalizationROSModule"]
 	path = stack/localization_and_mapping_system/robot_localization/droneRobotLocalizationROSModule
 	url = https://bitbucket.org/hridaybavle/dronerobotlocalizationrosmodule.git
+	branch = bugfix-rotors_imu
 [submodule "stack/localization_and_mapping_system/robot_localization/robot_localization"]
 	path = stack/localization_and_mapping_system/robot_localization/robot_localization
 	url = https://github.com/cra-ros-pkg/robot_localization.git

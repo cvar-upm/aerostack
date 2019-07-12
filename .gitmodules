@@ -774,6 +774,6 @@
 [submodule "stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process"]
 	path = stack/localization_and_mapping_system/visual_markers_localizer/visual_markers_localizer_process
 	url = https://bitbucket.org/visionaerialrobotics/visual_markers_localizer_process.git
-[submodule "stack/motion_control_system/trajectory_controller/dronetrajectorystatemachine"]
-	path = stack/motion_control_system/trajectory_controller/dronetrajectorystatemachine
+[submodule "stack/motion_control_system/dronetrajectorystatemachine"]
+	path = stack/motion_control_system/dronetrajectorystatemachine
 	url = https://bitbucket.org/visionaerialrobotics/dronetrajectorystatemachine.git

@@ -595,30 +595,6 @@
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control"]
 	path = stack_devel/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
-[submodule "stack/execution_control_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process"]
-	path = stack/execution_control_system/behavior_management_system/behavior_coordinator/behavior_coordinator_process
-	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator_process.git
-[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors"]
-	path = stack/execution_control_system/behavior_management_system/behavior_systems/basic_quadrotor_behaviors
-	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
-[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller"]
-	path = stack/execution_control_system/behavior_management_system/behavior_systems/quadrotor_motion_with_trajectory_controller
-	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_trajectory_controller.git
-[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/attention_to_visual_markers"]
-	path = stack/execution_control_system/behavior_management_system/behavior_systems/attention_to_visual_markers
-	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git
-[submodule "stack/execution_control_system/behavior_management_system/behavior_systems/navigation_with_lidar"]
-	path = stack/execution_control_system/behavior_management_system/behavior_systems/navigation_with_lidar
-	url = https://bitbucket.org/visionaerialrobotics/navigation_with_lidar.git
-[submodule "stack/execution_control_system/behavior_management_system/resource_manager/resource_manager"]
-	path = stack/execution_control_system/behavior_management_system/resource_manager/resource_manager
-	url = https://bitbucket.org/visionaerialrobotics/resource_manager.git
-[submodule "stack/execution_control_system/behavior_management_system/resource_manager/resource_manager_process"]
-	path = stack/execution_control_system/behavior_management_system/resource_manager/resource_manager_process
-	url = https://bitbucket.org/visionaerialrobotics/resource_manager_process.git
-[submodule "stack/execution_control_system/behavior_management_system/behavior_library"]
-	path = stack/execution_control_system/behavior_management_system/behavior_library
-	url = https://bitbucket.org/visionaerialrobotics/behavior_library.git
 [submodule "stack_obsolete/planning_system/mission_planner/mission_scheduler"]
 	path = stack_obsolete/planning_system/mission_planner/mission_scheduler
 	url = https://bitbucket.org/ramon_suarez_fernandez/dronemissionscheduleprocessor.git

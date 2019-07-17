@@ -732,3 +732,6 @@
 [submodule "obsolete/stack/utils/videoPublisherROSModule"]
 	path = obsolete/stack/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
+[submodule "stack/execution_control_system/behavior_systems/navigation_with_aruco_markers"]
+	path = stack/execution_control_system/behavior_systems/navigation_with_aruco_markers
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git

@@ -510,7 +510,7 @@
 	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
 [submodule "stack/simulation_system/rotors_simulator"]
 	path = stack/simulation_system/rotors_simulator
-	url = https://github.com/suarez-ramon/rotors_simulator.git
+	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
 	branch = stable/gazebo9
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks

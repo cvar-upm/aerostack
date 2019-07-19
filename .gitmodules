@@ -734,4 +734,4 @@
 [submodule "stack/simulation_system/rotors_simulator"]
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
-	branch = stable/gazebo9
+	branch = stable/kinetic

@@ -508,9 +508,6 @@
 [submodule "stack/motion_planning_system/yaw_planner/yaw_planner_process"]
 	path = stack/motion_planning_system/yaw_planner/yaw_planner_process
 	url = https://bitbucket.org/joselusl/droneyawcommanderrosmodule.git
-[submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
-	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
-	url = git clone https://bitbucket.org/visionaerialrobotics/obstacle_detector_visual_marks.git
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process
 	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git
@@ -734,3 +731,6 @@
 [submodule "stack/simulation_system/rotors_simulator"]
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
+[submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
+	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
+	url = https://bitbucket.org/visionaerialrobotics/obstacle_detector_visual_marks.git

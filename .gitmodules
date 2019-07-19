@@ -514,7 +514,7 @@
 	branch = stable/gazebo9
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
-	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarks.git
+	url = git clone https://bitbucket.org/visionaerialrobotics/obstacle_detector_visual_marks.git
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks_process
 	url = https://bitbucket.org/joselusl/droneobstacleprocessorvisualmarksrosmodule.git

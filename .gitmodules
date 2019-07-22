@@ -735,3 +735,12 @@
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
 	branch = stable/kinetic
+[submodule "stack/execution_control_system/behavior_systems/swarm_interaction"]
+	path = stack/execution_control_system/behavior_systems/swarm_interaction
+	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git
+[submodule "stack/execution_control_system/behaviors/behavior_inform_operator"]
+	path = stack/execution_control_system/behaviors/behavior_inform_operator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_inform_operator.git
+[submodule "stack/execution_control_system/behaviors/behavior_request_operator_assistance"]
+	path = stack/execution_control_system/behaviors/behavior_request_operator_assistance
+	url = https://bitbucket.org/visionaerialrobotics/behavior_request_operator_assistance.git

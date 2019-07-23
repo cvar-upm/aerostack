@@ -725,9 +725,6 @@
 [submodule "obsolete/stack/utils/videoPublisherROSModule"]
 	path = obsolete/stack/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
-[submodule "stack/execution_control_system/behavior_systems/navigation_with_aruco_markers"]
-	path = stack/execution_control_system/behavior_systems/navigation_with_aruco_markers
-	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
 	url = https://bitbucket.org/visionaerialrobotics/obstacle_detector_visual_marks.git
@@ -750,3 +747,6 @@
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
 	branch = stable/kinetic
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git

@@ -725,16 +725,9 @@
 [submodule "obsolete/stack/utils/videoPublisherROSModule"]
 	path = obsolete/stack/utils/videoPublisherROSModule
 	url = https://bitbucket.org/joselusl/videopublisherrosmodule.git
-[submodule "stack/execution_control_system/behavior_systems/navigation_with_aruco_markers"]
-	path = stack/execution_control_system/behavior_systems/navigation_with_aruco_markers
-	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
 	url = https://bitbucket.org/visionaerialrobotics/obstacle_detector_visual_marks.git
-[submodule "stack/simulation_system/rotors_simulator"]
-	path = stack/simulation_system/rotors_simulator
-	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
-	branch = stable/kinetic
 [submodule "stack/execution_control_system/behavior_systems/swarm_interaction"]
 	path = stack/execution_control_system/behavior_systems/swarm_interaction
 	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git
@@ -744,3 +737,16 @@
 [submodule "stack/execution_control_system/behaviors/behavior_request_operator_assistance"]
 	path = stack/execution_control_system/behaviors/behavior_request_operator_assistance
 	url = https://bitbucket.org/visionaerialrobotics/behavior_request_operator_assistance.git
+[submodule "stack/ground_control_system/graphical_user_interface/camera_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/camera_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/camera_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/parameters_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/parameters_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/parameters_viewer_process.git
+[submodule "stack/simulation_system/rotors_simulator"]
+	path = stack/simulation_system/rotors_simulator
+	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
+	branch = stable/kinetic
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git

@@ -744,3 +744,9 @@
 [submodule "stack/execution_control_system/behaviors/behavior_request_operator_assistance"]
 	path = stack/execution_control_system/behaviors/behavior_request_operator_assistance
 	url = https://bitbucket.org/visionaerialrobotics/behavior_request_operator_assistance.git
+[submodule "stack/ground_control_system/graphical_user_interface/camera_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/camera_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/camera_viewer_process.git
+[submodule "stack/ground_control_system/graphical_user_interface/parameters_viewer_process"]
+	path = stack/ground_control_system/graphical_user_interface/parameters_viewer_process
+	url = https://bitbucket.org/visionaerialrobotics/parameters_viewer_process.git

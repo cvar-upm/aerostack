@@ -731,10 +731,6 @@
 [submodule "stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks"]
 	path = stack/localization_and_mapping_system/obstacle_detector_visual_marks/obstacle_detector_visual_marks
 	url = https://bitbucket.org/visionaerialrobotics/obstacle_detector_visual_marks.git
-[submodule "stack/simulation_system/rotors_simulator"]
-	path = stack/simulation_system/rotors_simulator
-	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
-	branch = stable/kinetic
 [submodule "stack/execution_control_system/behavior_systems/swarm_interaction"]
 	path = stack/execution_control_system/behavior_systems/swarm_interaction
 	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git
@@ -750,3 +746,7 @@
 [submodule "stack/ground_control_system/graphical_user_interface/parameters_viewer_process"]
 	path = stack/ground_control_system/graphical_user_interface/parameters_viewer_process
 	url = https://bitbucket.org/visionaerialrobotics/parameters_viewer_process.git
+[submodule "stack/simulation_system/rotors_simulator"]
+	path = stack/simulation_system/rotors_simulator
+	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
+	branch = stable/kinetic

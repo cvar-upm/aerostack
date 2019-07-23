@@ -743,10 +743,10 @@
 [submodule "stack/ground_control_system/graphical_user_interface/parameters_viewer_process"]
 	path = stack/ground_control_system/graphical_user_interface/parameters_viewer_process
 	url = https://bitbucket.org/visionaerialrobotics/parameters_viewer_process.git
+[submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers"]
+	path = stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git
 [submodule "stack/simulation_system/rotors_simulator"]
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
 	branch = stable/kinetic
-[submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers"]
-	path = stack_devel/executive_system/behavior_management_system/behavior_systems/navigation_with_aruco_markers
-	url = https://bitbucket.org/visionaerialrobotics/navigation_with_aruco_markers.git

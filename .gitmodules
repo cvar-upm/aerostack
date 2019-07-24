@@ -404,9 +404,6 @@
 [submodule "stack_deprecated/libraries/mav_comm_rotors"]
 	path = stack_deprecated/libraries/mav_comm_rotors
 	url = https://github.com/acgroba/mav_comm_rotors.git
-[submodule "stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
-	path = stack_deprecated/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
-	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
 [submodule "stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule
 	url = https://bitbucket.org/visionaerialrobotics/dronearchitecturervizinterfacerosmodule.git
@@ -433,12 +430,6 @@
 [submodule "stack_devel/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control"]
 	path = stack_devel/executive_system/behavior_management_system/behavior_systems/quadrotor_motion_with_pid_control
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
-[submodule "stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner"]
-	path = stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner
-	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner.git
-[submodule "stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
-	path = stack_deprecated/planning_system/task_based_mission_planner/task_based_mission_planner_process
-	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner_process.git
 [submodule "stack/mission_control_system/python_based_mission_interpreter/python_based_mission_interpreter_process"]
 	path = stack/mission_control_system/python_based_mission_interpreter/python_based_mission_interpreter_process
 	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process.git
@@ -750,3 +741,12 @@
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
 	branch = stable/kinetic
+[submodule "obsolete/stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator"]
+	path = obsolete/stack/executive_system/behavior_management_system/behavior_coordinator/behavior_coordinator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_coordinator.git
+[submodule "obsolete/stack/planning_system/task_based_mission_planner/task_based_mission_planner"]
+	path = obsolete/stack/planning_system/task_based_mission_planner/task_based_mission_planner
+	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner.git
+[submodule "obsolete/stack/planning_system/task_based_mission_planner/task_based_mission_planner_process"]
+	path = obsolete/stack/planning_system/task_based_mission_planner/task_based_mission_planner_process
+	url = https://bitbucket.org/visionaerialrobotics/task_based_mission_planner_process.git

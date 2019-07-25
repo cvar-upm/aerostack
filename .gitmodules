@@ -405,3 +405,11 @@
 	path = stack/hardware_interface/drivers_sensors/driver_hokuyo/hokuyo_node
 	url = https://github.com/ros-drivers/hokuyo_node.git
 	branch = indigo-devel
+[submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/ros_lightware"]
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/ros_lightware
+	url = https://github.com/hridaybavle/ros_lightware.git
+	branch = master
+[submodule "stack_devel/droneDrivers/drivers_sensors/driver_lightware/cereal_port"]
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/cereal_port
+	url = https://github.com/wavelab/cereal_port.git
+	branch = master

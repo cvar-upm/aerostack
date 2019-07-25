@@ -401,3 +401,7 @@
 	path = stack/simulation_system/rotors_simulator
 	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
 	branch = stable/kinetic
+[submodule "stack_devel/droneDrivers/drivers_sensors/driver_hokuyo/hokuyo_node"]
+	path = stack/hardware_interface/drivers_sensors/driver_hokuyo/hokuyo_node
+	url = https://github.com/ros-drivers/hokuyo_node.git
+	branch = indigo-devel

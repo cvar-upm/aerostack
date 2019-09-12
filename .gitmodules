@@ -191,9 +191,6 @@
 [submodule "stack/simulation_system/vrep_simulator"]
 	path = stack/simulation_system/vrep_simulator
 	url = https://bitbucket.org/visionaerialrobotics/vrep_simulator.git
-[submodule "projects_cvar"]
-	path = projects_cvar
-	url = https://bitbucket.org/visionaerialrobotics/projects_cvar
 [submodule "stack/common/behavior_execution_controller"]
 	path = stack/common/behavior_execution_controller
 	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_controller.git

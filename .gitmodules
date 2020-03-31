@@ -211,7 +211,7 @@
 	url = https://github.com/ethz-asl/mav_comm.git
 [submodule "stack_deprecated/libraries/mav_comm_rotors"]
 	path = stack_deprecated/libraries/mav_comm_rotors
-	url = https://github.com/acgroba/mav_comm_rotors.git
+	url = https://bitbucket.org/visionaerialrobotics/mav_comm_rotors
 [submodule "stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule"]
 	path = stack/ground_control_system/rviz/droneArchitectureRvizInterfaceROSModule
 	url = https://bitbucket.org/visionaerialrobotics/dronearchitecturervizinterfacerosmodule.git

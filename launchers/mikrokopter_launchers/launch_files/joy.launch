@@ -1,0 +1,10 @@
+<!-- Launches: joyConverterNode, joy to pelican commands -->
+<launch>
+
+		<node name="joy_node" pkg="joy" type="joy_node" output="screen">
+
+			<param name="dev" 	value="/dev/input/js1" type="string"/>
+		</node>
+	
+	
+</launch>

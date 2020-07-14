@@ -1,0 +1,124 @@
+<Trajectory_Controller>
+
+	<Constants>
+		<Vmaxxy> 	0.75	</Vmaxxy>
+		<Vmaxz> 	0.40	</Vmaxz>
+		<t_90> 		5.00 	</t_90>
+	</Constants>
+        
+	<PID_Pitch>	
+	
+		<Gain>
+			<Kp> 0.50		</Kp>  <!--  Proportional Gain -->
+			<Kd> 0.05		</Kd>  <!--  Derivative Gain   --> 
+			<Ki> 0.15		</Ki>  <!--  Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.50	</SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.50	</SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 0.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.4 	</AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.4 	</AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 			0.60	</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Pitch>
+
+	<PID_Roll>	
+	
+		<Gain>
+			<Kp> 0.0200			</Kp>  <!--  Proportional Gain -->
+			<Kd> 0.0010			</Kd>  <!--  Derivative Gain  --> 
+			<Ki> 0.0035			</Ki>  <!--  Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.5	</SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.5	</SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 0.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.4 	</AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.4 	</AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 			0.60	</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Roll>
+
+	<PID_Dx>	
+	
+		<Gain>
+			<Kp> 0.50		</Kp>  <!--  Proportional Gain -->
+			<Kd> 0.05		</Kd>  <!--  Derivative Gain   --> 
+			<Ki> 0.15		</Ki>  <!--  Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 0.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.50	</SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.50	</SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 0.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.4 	</AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.4 	</AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 			0.60	</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Dx>
+
+	<PID_Dy>	
+	
+		<Gain>
+			<Kp> 0.50		</Kp>  <!--  Proportional Gain -->
+			<Kd> 0.05		</Kd>  <!--  Derivative Gain   --> 
+			<Ki> 0.15		</Ki>  <!--  Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 0.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.50	</SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.50	</SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 0.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.4 	</AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.4 	</AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 			0.60	</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Dy>
+
+	<PID_H>	
+	
+		<Gain>
+			<Kp> 1.25		</Kp>  <!--  Proportional Gain -->
+			<Kd> 0.15		</Kd>  <!--  Derivative Gain   --> 
+			<Ki> 0.50		</Ki>  <!--  Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.40	</SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.40	</SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.2 	</AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.6 	</AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 			0.60	</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_H>
+
+</Trajectory_Controller>

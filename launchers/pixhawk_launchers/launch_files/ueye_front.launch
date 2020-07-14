@@ -1,0 +1,69 @@
+<launch>
+
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+
+<group ns="$(arg drone_id_namespace)">	
+  <node name="check_ueye_api" pkg="ueye_cam" type="check_ueye_api" required="true" />
+  <arg name="nodelet_manager_name" value="nodelet_manager_front" />
+  <arg name="camera_name" value="camera_front" />
+
+  <node pkg="nodelet" type="nodelet" name="$(arg nodelet_manager_name)" args="manager" output="screen" />
+  
+  <node pkg="nodelet" type="nodelet" name="ueye_cam_nodelet"
+        args="load ueye_cam/ueye_cam_nodelet $(arg nodelet_manager_name)">
+    <param name="camera_name" type="str" value="$(arg camera_name)" /> <!-- == namespace for topics and services -->
+    <param name="camera_topic" type="str" value="image_raw" />
+    <param name="camera_id" type="int" value="0" /> <!-- 0 = any camera; 1+: camera ID -->
+    <param name="camera_intrinsics_file" type="string" value="" /> <!-- default: ~/.ros/camera_info/<camera_name>.yaml -->
+    <param name="camera_parameters_file" type="string" value="" /> <!-- default: ~/.ros/camera_conf/<camera_name>.ini -->
+
+    <param name="ext_trigger_mode" type="bool" value="False" /> <!-- if False, then camera will operate in free-run mode; otherwise, frames need to be triggered by hardware signal (falling-edge) on digital input pin of camera -->
+
+    <!-- the following are optional camera configuration parameters:
+         they will be loaded on the camera after the .ini configuration
+         file, and before dynamic_reconfigure. That means that any
+         (lingering) dynamic parameters from dynamic_reconfigure will
+         override these values, and that these will override parameters
+         from the .ini file.
+         See http://www.ros.org/wiki/ueye_cam for more details. -->
+
+    <param name="color_mode" type="str" value="rgb8" /> <!-- valid options: 'rgb8', 'mono8', 'bayer_rggb8' -->
+
+    <!-- WARNING: the following 4 parameters specify dimensions for camera's area of interest. Values for image_width and image_height that are smaller than your camera's maximum values will result in cropped field of view. For typical cases, one should modify values for sensor_scaling / binning / subsampling to downsample the resulting ROS image to the desired dimensions, without losing potential field of view. -->
+    <param name="image_width" type="int" value="640" />
+    <param name="image_height" type="int" value="480" />
+    <param name="image_top" type="int" value="-1" /> <!-- -1: center -->
+    <param name="image_left" type="int" value="-1" /> <!-- -1: center -->
+
+    <param name="subsampling" type="int" value="1" /> <!-- supported by only some UEye cameras -->
+    <param name="binning" type="int" value="1" /> <!-- supported by only some UEye cameras -->
+    <param name="sensor_scaling" type="double" value="1.0" /> <!-- supported by only some UEye cameras -->
+
+    <param name="auto_gain" type="bool" value="True" />
+    <param name="master_gain" type="int" value="0" />
+    <param name="red_gain" type="int" value="0" />
+    <param name="green_gain" type="int" value="1" />
+    <param name="blue_gain" type="int" value="16" />
+    <param name="gain_boost" type="bool" value="False" />
+
+    <param name="auto_exposure" type="bool" value="True" />
+    <param name="exposure" type="int" value="33" /> <!-- in ms -->
+
+    <param name="auto_white_balance" type="bool" value="True" />
+    <param name="white_balance_red_offset" type="int" value="0" />
+    <param name="white_balance_blue_offset" type="int" value="0" />
+    
+    <param name="flash_delay" type="int" value="0" /> <!-- in us -->
+    <param name="flash_duration" type="int" value="1000" /> <!-- in us -->
+    
+    <param name="auto_frame_rate" type="bool" value="False" />
+    <param name="frame_rate" type="double" value="30.0" />
+    <param name="pixel_clock" type="int" value="25" />
+
+    <param name="flip_upd" type="bool" value="False" />
+    <param name="flip_lr"  type="bool" value="False" />
+  </node>
+</group>  
+</launch>

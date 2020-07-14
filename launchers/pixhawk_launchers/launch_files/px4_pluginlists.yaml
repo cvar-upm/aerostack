@@ -1,0 +1,10 @@
+plugin_blacklist:
+# common
+- safety_area
+# extras
+- image_pub
+- vibration
+- global_position
+
+plugin_whitelist: []
+#- 'sys_*'

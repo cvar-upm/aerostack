@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<take_off_site>
+  <position>
+    <x> 0 </x>
+    <y> 0 </y>
+    <z> 0 </z>
+  </position>
+  <attitude>
+    <yaw> 0 </yaw>
+    <pitch>	   0.00	</pitch>
+    <roll>	   0.00	</roll>
+  </attitude>
+</take_off_site>
+<ekf_state_estimator_config>
+  <description>Configuration of the EKF in the Aerial Swarm architecture, by the CVG (CAR, CSIC-UPM).</description>
+  <module_frequency> 30.0 </module_frequency>
+  <ground_optical_flow_maximum_speed> 2.0 </ground_optical_flow_maximum_speed>
+  <state_estimation_mahalanobis_distance> -1.0 </state_estimation_mahalanobis_distance>
+  <state_model>
+    <number_of_states>    12 </number_of_states>
+    <integration_time> 0.033 </integration_time>
+    <standard_deviation>
+      <yaw> 1.000 </yaw>
+      <z> 0.01666 </z>
+      <x> 0.01666 </x>
+      <y> 0.01666 </y>
+      <vx> 0.01666 </vx>
+      <vy> 0.01666 </vy>
+    </standard_deviation>
+    <initial_state>
+      <standard_deviation>
+        <pitch> 0.666 </pitch>
+        <roll>  0.666 </roll>
+        <dyaw1> 1.666 </dyaw1>
+        <dyaw2> 1.666 </dyaw2>
+        <yaw>   240.0 </yaw>
+        <dz1>   0.066 </dz1>
+        <dz2>   0.066 </dz2>
+        <z> 1.666 </z>
+        <x> 6.666 </x>
+        <y> 6.666 </y>
+        <vx> 0.666 </vx>
+        <vy> 0.666 </vy>
+      </standard_deviation>
+    </initial_state>
+    <commands>
+      <number_of_inputs>  4 </number_of_inputs>
+      <standard_deviation>
+        <pitch> 0.333 </pitch>
+        <roll>  0.333 </roll>
+        <dyaw>  0.666 </dyaw>
+        <dz>    0.00033 </dz>
+      </standard_deviation>
+    </commands>
+  </state_model>
+  <observation_model>
+    <number_of_measurements> 13 </number_of_measurements>
+    <standard_deviation>
+      <pitch> 0.3333 </pitch>
+      <roll>  0.3333 </roll>
+      <yaw_odometry>  0.3333 </yaw_odometry>
+      <yaw_position>  0.1666 </yaw_position>
+      <z> 0.0666 </z>
+      <vx_odometry> 0.0666 </vx_odometry>
+      <vy_odometry> 0.0666 </vy_odometry>
+      <x> 0.0666 </x>
+      <y> 0.0666 </y>
+      <unused> 1e6 </unused>
+    </standard_deviation>
+  </observation_model>
+</ekf_state_estimator_config>

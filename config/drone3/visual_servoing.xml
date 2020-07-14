@@ -1,0 +1,35 @@
+<visual_servoing_config>
+
+	<description>Configuration file for the droneVSFollowingFromTop package, Aerostack, by Vision4UAV.</description>
+	
+	<front> 
+		<errors_array_length>   10   </errors_array_length>
+		<max_error_target_locked>   0.03   </max_error_target_locked>
+		<object_area>   0.01   </object_area>
+		<distance_reference>   0.7   </distance_reference>
+                <image_reference_x>   320   </image_reference_x>
+                <image_reference_y>   240   </image_reference_y>
+                <camera_offset_x> 0.0 </camera_offset_x>
+		<camera_offset_y> 0.0 </camera_offset_y>
+		<camera_offset_z> 0.0 </camera_offset_z>
+		<camera_pitch> 0.0 </camera_pitch>
+	</front>
+
+	<bottom> 
+		
+		<errors_array_length>   10   </errors_array_length>
+		<max_error_target_locked>   0.03   </max_error_target_locked>
+		<object_area>   0.0625   </object_area>
+		<distance_reference>   0.7   </distance_reference>		
+		<flight_altitude>   1.0   </flight_altitude>
+		<image_reference_left_x>   274   </image_reference_left_x>
+                <image_reference_left_y>   289   </image_reference_left_y>
+                <image_reference_right_x>   362   </image_reference_right_x>
+                <image_reference_right_y>   281   </image_reference_right_y>
+		<camera_offset_x> 0.04 </camera_offset_x>
+		<camera_offset_y> 0.0 </camera_offset_y>
+		<camera_offset_z> -0.03 </camera_offset_z>
+
+	</bottom>
+
+</visual_servoing_config>

@@ -1,0 +1,18 @@
+<launch>
+
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+
+<group ns="$(arg drone_id_namespace)">	
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video1" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+    <remap from="usb_cam/image_raw" to="camera_front/image_raw" />
+  </node>
+</group>
+</launch>

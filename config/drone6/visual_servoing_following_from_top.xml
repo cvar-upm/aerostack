@@ -1,0 +1,43 @@
+
+<drone_VS_following_from_top_config>
+    <description>Configuration file for the droneVSFollowingFromTop package, Aerostack, by Vision4UAV.</description>
+ 
+    <drone_VS_following_from_top> 
+	
+  	<Kp1_pitch>   0.125   </Kp1_pitch>
+	<Kd1_pitch>   0.1   </Kd1_pitch>
+
+  	<Kp2_pitch>   0.25   </Kp2_pitch>
+	<Kd2_pitch>   0.2   </Kd2_pitch>
+
+  	<Kp3_pitch>   0.5   </Kp3_pitch>
+	<Kd3_pitch>   0.4   </Kd3_pitch>
+
+  	<Kp1_roll>   0.075   </Kp1_roll>
+	<Kd1_roll>   0.055   </Kd1_roll>
+
+  	<Kp2_roll>   0.15   </Kp2_roll>
+	<Kd2_roll>   0.11   </Kd2_roll>
+
+  	<Kp3_roll>   0.3   </Kp3_roll>
+	<Kd3_roll>   0.22   </Kd3_roll>
+
+	<Kp_dZ>   0.1   </Kp_dZ>
+	<Kd_dZ>   5.0   </Kd_dZ>
+
+  	<sat_value_pitch>   0.1   </sat_value_pitch>
+	<sat_value_roll>   0.15   </sat_value_roll>
+	<sat_value_dZ>   0.1   </sat_value_dZ>
+
+	<reference_x>   320   </reference_x>
+	<reference_y>   240   </reference_y>
+
+	<pitch_offset>   0.0   </pitch_offset>
+	<roll_offset>   0.0   </roll_offset>
+      
+        <distance_reference>   1.0   </distance_reference>
+	<object_area>   0.0625   </object_area>
+
+    </drone_VS_following_from_top>
+
+</drone_VS_following_from_top_config>

@@ -1,0 +1,17 @@
+<!-- Launcher: msf_localization_interface -->
+<launch>
+	
+  <arg name="application_namespace" default="$(arg drone_id_namespace)"/>
+
+  <group ns="$(arg application_namespace)">
+    <node name="msf_localization_interface_pose_stamped" pkg="msf_localization_interface" type="msf_localization_interface_pose_stamped">
+
+    </node>
+
+    <node name="msf_localization_interface_twist_stamped" pkg="msf_localization_interface" type="msf_localization_interface_twist_stamped">
+
+    </node>
+
+  </group>
+
+</launch>

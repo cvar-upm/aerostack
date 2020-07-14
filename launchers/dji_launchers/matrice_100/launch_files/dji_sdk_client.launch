@@ -1,0 +1,12 @@
+<!-- launches the dji client demo-->
+<launch>
+   <arg name="drone_id_namespace"  default="drone0" />
+   <arg name="drone_id_int" 	      default="0" />
+   <arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+
+  <group ns="$(arg drone_id_namespace)">
+ 	<node pkg="dji_sdk_demo" type="dji_sdk_client" name="dji_sdk_client" output="screen">
+	</node>
+	</group> 
+
+</launch>

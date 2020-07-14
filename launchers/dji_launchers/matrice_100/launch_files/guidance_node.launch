@@ -1,0 +1,15 @@
+<!--launches the guidance node -->
+<launch>
+		<arg name="drone_id_namespace"  default="drone0" />
+    <arg name="drone_id_int" 	      default="0" />
+    <arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+     
+    <group ns="$(arg drone_id_namespace)">
+
+    <node pkg="guidance" type="guidanceNode" name="guidanceNode"/>
+    <!-- <node pkg="guidance" type="guidanceNodeCalibration" name="guidanceNodeCalibration"> -->
+		<param name="left_param_file" value="$(find guidance)/calibration_files/camera_params_left.yaml" />
+		<param name="right_param_file" value="$(find guidance)/calibration_files/camera_params_right.yaml" />
+		</group>
+</launch>
+

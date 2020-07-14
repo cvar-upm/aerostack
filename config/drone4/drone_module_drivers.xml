@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<main FormatVersion="1">
+  <drone_module_drivers>
+
+    <!-- DRIVER PARROT ARDRONE -->
+    <drone_module>droneRotationAngles</drone_module>
+    <drone_module>droneBattery</drone_module>
+    <drone_module>droneAltitude</drone_module>
+    <drone_module>droneFrontCamera</drone_module>
+    <drone_module>droneBottomCamera</drone_module>
+    <drone_module>droneCommand</drone_module>
+    <drone_module>droneStatus</drone_module>
+    <drone_module>droneGroundSpeed</drone_module>
+    <drone_module>droneGimbal</drone_module>
+    <drone_module>droneWifiChannel</drone_module>
+
+    <!-- DRIVER PELICAN -->
+    <!--
+    <drone_module>  </drone_module>
+    <drone_module>  </drone_module>
+    <drone_module>  </drone_module>
+    -->
+
+  </drone_module_drivers> 
+</main>

@@ -1,0 +1,10 @@
+<Trajectory_Speed_Controller>
+
+	<Constants>
+		<Vmaxxy> 	0.75	</Vmaxxy>
+		<Vmaxz> 	0.40	</Vmaxz>
+		<error_max>	0.35 	</error_max>
+		<radius>	0.75 	</radius>
+	</Constants>
+        
+</Trajectory_Speed_Controller>

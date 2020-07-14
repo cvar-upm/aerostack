@@ -1,0 +1,31 @@
+<!-- Launcher: msf_localization_ros -->
+<launch>
+	
+  <arg name="application_namespace" default="$(arg drone_id_namespace)"/>
+
+	<arg name="msf_localization_ros_node_name" 	default="msf_localization_ros_node" />
+
+  <arg name="robot_pose_rate" 	default="0" />
+
+  <arg name="predict_model_time" 	default="0" />
+
+  <arg name="new_measurement_notification_topic_name" 	default="msf_localization/new_measurement_notification" />
+
+	<arg name="msf_localization_config_file" 	default="$(arg my_stack_directory)/configs/drone$(arg drone_id_int)/msf_localization_config_file.xml" />
+
+  <group ns="$(arg application_namespace)">
+	  <include file="$(find msf_localization_ros)/launch/msf_localization_ros.launch">
+      <arg name="msf_localization_ros_node_name" value="$(arg msf_localization_ros_node_name)"/>
+
+      <arg name="msf_localization_config_file" value="$(arg msf_localization_config_file)"/>
+
+      <arg name="robot_pose_rate" 	value="$(arg robot_pose_rate)" />
+
+      <arg name="predict_model_time" 	value="$(arg predict_model_time)" />
+
+      <arg name="new_measurement_notification_topic_name" 	value="$(arg new_measurement_notification_topic_name)" />
+
+	  </include>
+  </group>
+
+</launch>

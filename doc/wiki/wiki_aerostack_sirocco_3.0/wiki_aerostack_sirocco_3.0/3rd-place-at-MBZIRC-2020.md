@@ -1,0 +1,7 @@
+Our group CVAR (Computer Vision and Aerial Robotics) from the “Universidad Politecnica de Madrid” [won the third place](https://vimeo.com/399391178/ea9e29efa0) of the Grand Challenge in the [International Robotic Competition MBZIRC 2020](https://www.mbzirc.com) that took place in February 25, 2020. The Aerostack software framework was successfully used for building the system architecture of aerial robots that participated in the competition as it is described in [this publication](https://www.researchgate.net/publication/339725858_The_Skyeye_Team_Participation_in_the_2020_Mohamed_Bin_Zayed_International_Robotics_Challenge).
+
+<a href="https://github.com/Vision4UAV/Aerostack/wiki/Example-projects"><p align="center">[[Files/PhotoMBZIRC2020_1.png]]</p></a>
+
+Our group CVAR participated as the coordinator of SkyTeam, a combined team that also integrated members from Universidad Pablo Olavide and Poznan University of Technology. The group SkyTeam was in charge of Challenge 1 and Challenge 3. The group French National Center for Scientific Research (CNRS) was in charge of Challenge 2. 
+
+<a href="https://github.com/Vision4UAV/Aerostack/wiki/Example-projects"><p align="center">[[Files/PhotoMBZIRC2020_2.png]]</p></a>

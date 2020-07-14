@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--==================================================
+| Defines the precision  of the actions 
+===================================================-->
+<precision_take_off value="0.6"/>               <!-- meters, Take off minimum accepted height-->
+<precision_land value="0.1"/>                   <!-- meters, Land maximum accepted height-->
+<precision_null_axis_speed value="0.05"/>
+<precision_null_rotation_speed value="0.12"/>   <!-- Used when checking wheter it has finished rotating -->
+<precision_null_pose value="0.1"/>              <!-- meters -->
+<precision_null_attitude value="0.5"/>          <!-- degrees -->
+<flip_front_pitch_value value="90"/>            <!-- degrees -->
+<precision_null_rad_yaw value="0.25"/>          <!-- radians, equivalent to 11.4592 degrees -->

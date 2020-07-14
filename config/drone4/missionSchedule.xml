@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+
+<mission description="Noche De Los Investigadores">
+
+	<config>
+		<precission>
+			<x>0.2</x>
+			<y>0.2</y>
+			<z>0.2</z>
+			<yaw>15.0</yaw> <!--deg-->
+		</precission>
+	</config>
+
+
+	<submission description="Take-off">
+		<config>
+			<id>01</id>
+		</config>
+		<task description="Take-off">
+			<config>
+				<id>01</id>
+			</config>
+			<speech>Despegando</speech>
+			<command>takeOff</command>
+			<modules>
+				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
+			</modules>
+		</task>
+	</submission>
+
+	<submission description="Navigation and Obstacle Avoidance">
+		<config>
+			<id>02</id>			
+		</config>
+
+    <task description="Sleep">
+			<config>
+				<id>10</id>
+        <time>2.0</time>
+			</config>
+			<command>sleep</command>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+		</task>
+
+    <task description="Altura">
+			<config>
+				<id>11</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<z>1.3</z>
+			</point>
+			<yaw>0.0</yaw>
+		</task>
+		
+		<task description="Move to point 1">
+			<config>
+				<id>30</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<point>
+        <x>2.0</x>
+				<y>1.5</y>
+				<z>1.3</z>
+			</point>
+			<yaw>0</yaw>
+		</task>
+
+    	<task description="Move to point 2">
+			<config>
+				<id>40</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>4.0</x>
+        <y>0.5</y>
+				<z>1.3</z>
+			</point>
+			<yaw>0</yaw>
+		</task>
+
+    <task description="Turn in Yaw">
+			<config>
+				<id>50</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>4.0</x>
+        <y>0.5</y>
+				<z>1.3</z>
+			</point>
+			<yaw>180</yaw>
+		</task> 
+
+     <task description="Move to Initial Point">
+			<config>
+				<id>60</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>0.0</x>
+        <y>0.5</y>
+				<z>1.3</z>
+			</point>
+			<yaw>180</yaw>
+		</task> 
+
+  </submission>
+		
+	
+
+	<submission description="FINAL LAND">
+		<config>
+			<id>05</id>
+		</config>
+
+    <task description="Move in altitude">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<point>
+				<z>1.3</z>
+			</point>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<yaw>0</yaw>
+		</task>
+
+		<task description="FINAL LAND">
+			<config>
+				<id>02</id>
+			</config>
+			<command>land</command>
+			<speech>Aterrizar</speech>
+			<modules>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+		</task>	
+	</submission>
+
+</mission>
+

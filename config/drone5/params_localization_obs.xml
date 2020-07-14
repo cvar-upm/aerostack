@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<main FormatVersion="1">
+    <params>
+    
+    	<!-- Localization -->
+    	  <!-- Init pose -->
+        <x_0>  2.0</x_0>
+        <y_0>  2.0</y_0>
+        <z_0>  0.7</z_0>
+        <roll_0>0.0</roll_0> <!-- Angles are given in degrees!! -->
+        <pitch_0>0.0</pitch_0>
+        <yaw_0>90.0</yaw_0>
+        
+        
+        <!-- Odom sigma -->
+        <sigma_odom_x>0.4</sigma_odom_x>
+        <sigma_odom_y>0.4</sigma_odom_y>
+        <sigma_odom_z>0.1</sigma_odom_z>
+        <sigma_odom_roll>5</sigma_odom_roll> <!-- Angles are given in degrees!! -->
+        <sigma_odom_pitch>5</sigma_odom_pitch>
+        <sigma_odom_yaw>5</sigma_odom_yaw>
+        <!-- Obs sigma -->
+        <sigma_obs_x>0.2</sigma_obs_x>
+        <sigma_obs_y>0.2</sigma_obs_y>
+        <sigma_obs_z>0.3</sigma_obs_z>
+        <sigma_obs_roll>10</sigma_obs_roll> <!-- Angles are given in degrees!! -->
+        <sigma_obs_pitch>10</sigma_obs_pitch>
+        <sigma_obs_yaw>10</sigma_obs_yaw>
+        
+        
+        <!-- Visual Markers -->
+        <VisualMarkerList description="List of visual markers that are going to be added to the visual markers SLAM">
+   <!--   <VisualMarker id="1" />
+          <VisualMarker id="2" />   -->
+          <VisualMarkersRange fromId="9" toId="100"/>
+        </VisualMarkerList>
+        
+        <!-- Visual Markers Landmarks -->
+        <Arucos description="List of visual markers considered as landmarks (previously known pose)">
+        <!-- Angles are given in degrees!! -->
+
+        		<!-- Pole 1 -->
+        		<Aruco id="9"    x="8.0"  y="6.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="10"   x="7.80" y="7.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
+			   <Aruco id="11"   x="8.0"  y="7.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+			   <Aruco id="12"   x="8.20" y="7.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+
+        		
+        		<!-- Pole 2 -->
+        		<Aruco id="13"   x="7.0"  y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="14"   x="6.80" y="6.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="15"   x="7.0"  y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="16"   x="7.20" y="6.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+  
+
+            <!-- Pole 3 -->
+         	<Aruco id="17"   x="5.50" y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="18"   x="5.30" y="6.00" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="19"   x="5.50" y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="20"   x="5.70" y="6.00" z="1.3" roll="0" pitch="0" yaw="0"/>
+
+<!--
+         	<Aruco id="17"   x="5.50" y="4.30" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="18"   x="5.30" y="4.50" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="19"   x="5.50" y="4.70" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="20"   x="5.70" y="4.50" z="1.3" roll="0" pitch="0" yaw="0"/>
+-->
+
+        		
+         	<!-- Pole 4 -->
+        		<Aruco id="21"   x="3.50" y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="22"   x="3.30" y="6.00" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="23"   x="3.50" y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="24"   x="3.70" y="6.00" z="1.3" roll="0" pitch="0" yaw="0"/>
+
+
+<!--
+        		<Aruco id="21"   x="3.50" y="4.30" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="22"   x="3.30" y="4.50" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="23"   x="3.50" y="4.70" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="24"   x="3.70" y="4.50" z="1.3" roll="0" pitch="0" yaw="0"/>
+-->
+
+
+           <!-- Pole 5 -->
+        		<Aruco id="25"   x="2.0"  y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="26"   x="1.80" y="6.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
+			   <Aruco id="27"   x="2.0"  y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+			   <Aruco id="28"   x="2.20" y="6.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+
+        		
+        		<!-- Pole 6 -->
+        		<Aruco id="29"   x="1.0"  y="6.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="30"   x="0.8" y="7.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="31"   x="1.0"  y="7.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="32"   x="1.20" y="7.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+
+          
+			<!-- Landmarks -->
+
+
+			<!-- Landmark 1 -->
+
+        		<Aruco id="61"  x="0.0" y="7.89"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="62"  x="0.0" y="8.11"    z="1.3" roll="0" pitch="0" yaw="45"/>
+
+			<!-- Landmark 2 -->
+
+        		<Aruco id="63"  x="0.0" y="10.89"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="64"  x="0.0" y="11.11"    z="1.3" roll="0" pitch="0" yaw="45"/>
+
+			<!-- Landmark 3 -->
+
+        		<Aruco id="65"  x="0.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="66"  x="1.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 4 -->
+
+        		<Aruco id="67"  x="2.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="68"  x="3.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 5 -->
+
+        		<Aruco id="69"  x="5.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="70"  x="6.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 6 -->
+	
+        		<Aruco id="71"  x="7.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="72"  x="8.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 7 -->
+
+        		<Aruco id="73"  x="9.0" y="11.11"    z="1.3" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="74"  x="9.0" y="10.89"    z="1.3" roll="0" pitch="0" yaw="225"/>
+
+			<!-- Landmark 8 -->
+
+        		<Aruco id="75"  x="9.0" y="8.11"    z="1.3" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="76"  x="9.2" y="7.89"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		
+
+			
+	
+        </Arucos>	
+        
+
+    </params>
+</main>
+

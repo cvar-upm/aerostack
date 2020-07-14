@@ -1,0 +1,92 @@
+<IBVS_OnePointControl>
+  <Rotate_Sign> -1.0 </Rotate_Sign>  <!-- 1.0 means counter-clockwise, -1.0 clockwise -->
+	<PID_Dz>
+
+		<Gain>
+			<Kp> 0.45  	</Kp>  <!-- <Kp> 0.85	  </Kp>  Proportional Gain 1.33-->
+			<Kd> 0.10	  </Kd>  <!-- <Kd> 0.03  </Kd> Derivative Gain   -0.35-->
+			<Ki> 0.20		</Ki>  <!-- <Ki> 0.30   </Ki>Integral Gain     0-->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.75 	</SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.75  </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<Kw> 0.60		</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+		<FeedForward>
+			<enable_feedforward> 0.0 </enable_feedforward> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<mass>  0.73 </mass>  <!--0.4 UAV mass -->
+			<factor>	0.36	</factor>  <!--0.66 Factor Value-->
+		</FeedForward>
+	</PID_Dz>
+
+	<PID_Roll>
+
+		<Gain>
+			<Kp> 0.0115	</Kp>  <!-- <Kp> 0.1   </Kp> Proportional Gain -->
+			<Kd> 0.0055	</Kd>  <!-- <Kd> 0.06 </Kd> Derivative Gain   -->
+			<Ki> 0.0001	</Ki>  <!-- <Ki> 0.0    </Ki> Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.50 </SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.50 </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<Kw> 0.30		</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Roll>
+
+	<PID_Dyaw>
+
+		<Gain>
+			<Kp> 0.0050	</Kp>  <!-- <Kp> 0.1   </Kp> Proportional Gain -->
+			<Kd> 0.0010	</Kd>  <!-- <Kd> 0.06 </Kd> Derivative Gain   -->
+			<Ki> 0.0000	</Ki>  <!-- <Ki> 0.0    </Ki> Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.38 </SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.38 </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<Kw> 0.30		</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Dyaw>
+
+	<PID_Pitch>
+
+		<Gain>
+			<Kp> 0.000145	</Kp>  <!-- <Kp> 0.1   </Kp> Proportional Gain -->
+			<Kd> 0.000035 </Kd>  <!-- <Kd> 0.06 </Kd> Derivative Gain   -->
+			<Ki> 0.000001	</Ki>  <!-- <Ki> 0.0    </Ki> Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.15 </SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.15 </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<Kw> 0.30		</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Pitch>
+
+</IBVS_OnePointControl>

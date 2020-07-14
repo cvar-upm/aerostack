@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  
+	<arg name="drone_id_namespace"  	default="drone0" />
+	<arg name="drone_id_int" 					default="0" />
+	<arg name="my_stack_directory" 		default="$(env AEROSTACK_STACK)" />
+  <arg name="geotiff_map_file_path" default="$(find hector_geotiff)/maps"/>
+
+  <param name="/use_sim_time" value="true"/>
+
+	 
+<group ns="$(arg drone_id_namespace)">
+
+  <node pkg="rviz" type="rviz" name="rviz"
+    args="-d $(arg my_stack_directory)/configs/drone5/mapping_demo.rviz"/>
+
+  <include file="$(arg my_stack_directory)/launchers/pixhawk_simulation_launchers/launch_files/mapping_default.launch"/>
+
+  <include file="$(find hector_geotiff)/launch/geotiff_mapper.launch">
+    <arg name="trajectory_source_frame_name" value="scanmatcher_frame"/>
+    <arg name="map_file_path" value="$(arg geotiff_map_file_path)"/>
+  </include>
+
+</group>
+
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+	
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 				default="0" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+
+<group ns="$(arg drone_id_namespace)">
+  <node pkg="rosserial_python" type="serial_node.py" name="serial_node">
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="57600"/>
+  </node>
+</group>
+</launch>

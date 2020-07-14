@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<channel1>
+	<minValue>   0.0 </minValue>
+	<maxValue>   0.915439  </maxValue>
+</channel1>
+
+<channel2>
+	<minValue>   0.257537 </minValue>
+	<maxValue>   0.626415  </maxValue>
+</channel2>
+
+<channel3>
+	<minValue>   0.310816 </minValue>
+	<maxValue>   0.845366 </maxValue>
+</channel3>
+

@@ -1,0 +1,35 @@
+<take_off_site> <!-- Frame_{drone_GMR_t=0} with respect to Frame_{GFF} -->
+        <position> <!-- units: m -->
+                <x>  0.0 </x>
+                <y>  0.0 </y>
+                <z>  0.0 </z>
+        </position>
+        <attitude> <!-- units: deg, wYvPuR -->
+                <yaw> 	   0.00   </yaw> 
+                <pitch>	   0.00	  </pitch>
+                <roll>	   0.00	  </roll>
+        </attitude>
+</take_off_site>
+
+<covariances> 
+<!--> Altitude data measured from the laser altimeter <-->  
+  <altitude>
+    <z> 0.009</z>
+    <dz>0.009</dz>
+  </altitude>
+
+<!--> optical flow data measured from the optical flow sensor <-->    
+  <optical_flow>
+    <dx>0.066</dx>
+    <dy>0.066</dy> 
+  </optical_flow>    
+
+<!--> controller commands, commanded by the high level controller <-->    
+  <controller_odom>
+    <pitch_command>     5.0 </pitch_command>
+    <roll_command>      5.0 </roll_command>
+    <daltitude_command> 5.0 </daltitude_command>
+    <dyaw_command>      5.0 </dyaw_command>
+  </controller_odom>      
+
+</covariances>     

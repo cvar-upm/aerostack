@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot>
+  <dimensions>0.6 0.6</dimensions>
+</robot>
+<map>
+  <config>
+    <dimensions>25 20</dimensions> <!-- 15 10 -->
+    <initPoint>-1.5 -8.5</initPoint>
+  </config>
+</map>
+<prm>
+  <generate>1</generate>
+  <save>0</save>
+  <config>
+    <numNodes>3500</numNodes>
+    <neigbourhood>5</neigbourhood>
+    <subzone>
+      <numNodes>1500</numNodes>
+      <initPoint>0.0 -1.0</initPoint>
+      <size>9.0 8.0</size>
+    </subzone>
+  </config>
+</prm>

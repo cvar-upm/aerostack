@@ -1,0 +1,4 @@
+| Distribution   |   Release date  |  Main features | Tested platforms | Requirements |  
+| :-----------| :---------| :--------|:-----|:------|
+| Version 1.0 Gregale Distribution| June, 2016 |Aerial robot library of software components (perception, control, planning, etc.), TML language for mission plan specification, human machine interface (HMI) for user-robot interaction. | Parrot AR Drone 1.0 and 2.0, Asctec Pelican, Mikrokopter Oktokopter, Pixhawk. | Ubuntu 14.04, ROS Jade|
+| Version 2.0 Levant Distribution| Planned to be released in September or October 2017| Behavior-based execution system, graphical user interface (GUI) for environment maps and mission plans, Python API for mission plans. | Parrot AR Drone 2.0, Pixhawk, Parrot Bebop 2 (with SLAM-dunk).| Ubuntu 16.04, ROS Kinetic|			

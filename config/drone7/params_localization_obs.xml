@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<main FormatVersion="1">
+  <params>
+    <x_0> 0 </x_0>
+    <y_0> -0 </y_0>
+    <z_0> 0.7 </z_0>
+    <roll_0>0.0</roll_0>
+    <pitch_0>0.0</pitch_0>
+    <yaw_0> 0 </yaw_0>
+    <sigma_odom_x>0.4</sigma_odom_x>
+    <sigma_odom_y>0.4</sigma_odom_y>
+    <sigma_odom_z>0.1</sigma_odom_z>
+    <sigma_odom_roll>5</sigma_odom_roll>
+    <sigma_odom_pitch>5</sigma_odom_pitch>
+    <sigma_odom_yaw>5</sigma_odom_yaw>
+    <sigma_obs_x>0.2</sigma_obs_x>
+    <sigma_obs_y>0.2</sigma_obs_y>
+    <sigma_obs_z>0.3</sigma_obs_z>
+    <sigma_obs_roll>10</sigma_obs_roll>
+    <sigma_obs_pitch>10</sigma_obs_pitch>
+    <sigma_obs_yaw>10</sigma_obs_yaw>
+    <VisualMarkerList description="List of visual markers that are going to be added to the visual markers SLAM">
+      <VisualMarkersRange fromId="9" toId="100" />
+    </VisualMarkerList>
+    <Arucos description="List of visual markers considered as landmarks (previously known pose)" />
+  </params>
+</main>

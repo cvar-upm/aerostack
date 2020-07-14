@@ -1,0 +1,142 @@
+default_behavior_values:
+  timeout: 15
+  category: goal_based
+
+behavior_descriptors:
+  - behavior: TAKE_OFF
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: LAND
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: GO_TO_POINT
+    timeout: 30
+    incompatible_lists: [motion_behaviors]
+    capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
+    arguments:
+      - argument: POSITION
+        allowed_values: [-100,100]
+        dimensions: 3
+      - argument: RELATIVE_COORDINATES
+        allowed_values: [-100,100]
+        dimensions: 3
+
+  - behavior: ROTATE
+    incompatible_lists: [motion_behaviors]
+    capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
+    arguments:
+      - argument: ANGLE
+        allowed_values: [-360,360]
+
+  - behavior: KEEP_MOVING
+    category: recurrent
+    incompatible_lists: [motion_behaviors]
+    capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
+    arguments:
+      - argument: SPEED
+        allowed_values: [0,30]
+      - argument: DIRECTION
+        allowed_values: [BACKWARD, FORWARD, UP, DOWN, LEFT, RIGHT]
+
+  - behavior: FOLLOW_OBJECT_IMAGE
+    timeout: 90
+    incompatible_lists: [motion_behaviors]
+    capabilities: [VISUAL_SERVOING]
+
+  - behavior: PAY_ATTENTION_TO_VISUAL_MARKERS
+    category: recurrent
+    capabilities: [VISUAL_MARKERS_RECOGNITION]
+
+  - behavior: WAIT
+    arguments:
+      - argument: DURATION
+        allowed_values: [1,1000]
+      - argument: UNTIL_OBSERVED_VISUAL_MARKER
+        allowed_values: [0,1023]
+
+  - behavior: KEEP_HOVERING
+    category: recurrent
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: SELF_LOCALIZE_BY_ODOMETRY
+    category: recurrent
+    incompatible_lists: [self_localization_behaviors]
+    capabilities:
+      - SELF_LOCALIZATION_BY_ODOMETRY
+      - DYNAMIC_SELF_LOCALIZATION_MODE
+
+  - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
+    category: recurrent
+    incompatible_lists: [self_localizaion_behaviors]
+    capabilities:
+      - SELF_LOCALIZATION_BY_ODOMETRY
+      - SELF_LOCALIZATION_BY_VISUAL_MARKERS
+      - OBSTACLE_DETECTION_BY_VISUAL_MARKERS
+      - VISUAL_MARKERS_RECOGNITION
+      - DYNAMIC_SELF_LOCALIZATION_MODE
+
+behavior_lists:
+  - list: motion_behaviors
+    behaviors:
+      - TAKE_OFF
+      - LAND
+      - FLIP
+      - KEEP_HOVERING
+      - FOLLOW_OBJECT_IMAGE
+      - LAND_ON_STATIC_PLATFORM
+      - KEEP_MOVING
+      - GO_TO_POINT
+      - ROTATE
+
+  - list: self_localization_behaviors
+    behaviors:
+      - SELF_LOCALIZE_BY_ODOMETRY
+      - SELF_LOCALIZE_BY_VISUAL_MARKERS
+
+# reactive_activation:
+#   - behavior: KEEP_HOVERING
+#     condition: flight_state(self, FLYING)
+#     priority: lower
+#
+#   - behavior: LAND
+#     condition: battery_level(self, LOW)
+#     priority: higher
+#
+#   - behavior: SELF_LOCALIZE_BY_ODOMETRY
+#     priority: lower
+
+capability_descriptors:
+  - capability: SETPOINT_BASED_FLIGHT_CONTROL
+    process_sequence: [droneTrajectoryController]
+    incompatible_capabilities: [VISUAL_SERVOING]
+
+  - capability: PATH_PLANNING
+    process_sequence: [droneTrajectoryPlanner, droneYawPlanner]
+
+  - capability: VISUAL_SERVOING
+    process_sequence: [trackerEye, open_tld_translator, droneIBVSController]
+    incompatible_capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
+
+  - capability: DYNAMIC_SELF_LOCALIZATION_MODE
+    process_sequence: [self_localization_selector_process]
+
+  - capability: SELF_LOCALIZATION_BY_ODOMETRY
+    process_sequence: [droneOdometryStateEstimator]
+    required_capabilities: [DYNAMIC_SELF_LOCALIZATION_MODE]
+
+  - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
+    process_sequence: [droneLocalizer]
+    required_capabilities:
+      - SELF_LOCALIZATION_BY_ODOMETRY
+      - VISUAL_MARKERS_RECOGNITION
+      - DYNAMIC_SELF_LOCALIZATION_MODE
+
+  - capability: OBSTACLE_DETECTION_BY_VISUAL_MARKERS
+    process_sequence:
+      - droneObstacleDistanceCalculator
+      - droneObstacleProcessor
+    required_capabilities: [SELF_LOCALIZATION_BY_VISUAL_MARKERS]
+
+  - capability: VISUAL_MARKERS_RECOGNITION
+    process_sequence:
+      - droneArucoEyeROSModule

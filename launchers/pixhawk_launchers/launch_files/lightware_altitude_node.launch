@@ -1,0 +1,18 @@
+<launch>
+	
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 				default="0" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+	<arg name="serial_port"	 				default="ttyUSB0" />
+
+	<param name="device" type="str" value="$(arg serial_port)" />
+
+<group ns="$(arg drone_id_namespace)">
+	
+		<node   pkg="altitude_sensor" name="altitude_sensor" type="altitude_sensor_node" />
+
+		<param name="serial_port" type="string" value="/dev/ttyUSB1" />
+</group>
+</launch>
+
+

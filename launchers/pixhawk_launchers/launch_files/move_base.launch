@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+  <master auto="start"/>
+	
+  <arg name="drone_id_namespace"  default="drone0" />
+  <arg name="drone_id_int" 	default="0" />
+  <arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+
+  <!-- Run the map server -->
+  <!--<node name="map_server" pkg="map_server" type="map_server" args="$(find my_map_package)/my_map.pgm my_map_resolution"/>-->
+
+<group ns="$(arg drone_id_namespace)">
+
+  <!--- Run AMCL -->
+  <include file="$(find amcl)/examples/amcl_omni.launch" />
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <!--<rosparam file="$(find mrpt_tutorials)/cfg/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find mrpt_tutorials)/cfg/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find mrpt_tutorials)/cfg/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find mrpt_tutorials)/cfg/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find mrpt_tutorials)/cfg/base_local_planner_params.yaml" command="load" />-->
+    <rosparam file="$(arg my_stack_directory)/configs/drone3/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(arg my_stack_directory)/configs/drone3/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(arg my_stack_directory)/configs/drone3/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(arg my_stack_directory)/configs/drone3/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(arg my_stack_directory)/configs/drone3/base_local_planner_params.yaml" command="load" />
+    <rosparam param="controller_frequency">13</rosparam>
+  </node>
+</group>
+</launch>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 				default="0" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+  <arg name="serial_port" 				default="/dev/ttyACM0"/>
+
+	
+<group ns="$(arg drone_id_namespace)">
+
+  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" respawn="false" output="screen">
+     <!-- Starts up faster, but timestamps will be inaccurate. --> 
+    <param name="calibrate_time" type="bool" value="false"/> 
+    <!-- Set the port to connect to here -->
+    <param name="port" type="string" value="$(arg serial_port)"/> 
+    <param name="intensity" type="bool" value="false"/>
+  </node>
+  
+</group>
+  
+</launch>

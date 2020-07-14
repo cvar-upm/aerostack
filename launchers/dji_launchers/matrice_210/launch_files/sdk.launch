@@ -1,0 +1,22 @@
+<!--launch file-->
+<launch>
+  	<arg name="drone_id_namespace"    default="drone6" />
+    <arg name="drone_id_int" 	        default="6" />
+    <arg name="my_stack_directory" 	  default="$(env AEROSTACK_STACK)" />
+ 
+    <group ns="$(arg drone_id_namespace)">	
+
+    <node pkg="dji_sdk" type="dji_sdk_node" name="dji_sdk" output="screen">
+    <!-- node parameters -->
+    <param name="serial_name" type="string" value="/dev/ttyTHS0"/>
+    <param name="baud_rate" type="int" value="921600"/>
+    <!--<param name="app_id" type="int" value="1047984"/>-->
+    <param name="app_id" type="int" value="1073520"/>
+    <param name="app_version" type="int" value="1"/>
+    <param name="align_time" type="bool" value="false"/>
+    <!--<param name="enc_key" type="string" value="b550d568a8f20455135ff74abd54cae89e2c5588d17664bf6b10270fef71dfdb"/>-->
+    <param name="enc_key" type="string" value="1ce9987d181096cb7874ccca5882e71108eea736eeae359353afa28bd44473af"/>
+    <param name="use_broadcast" type="bool" value="true"/>
+    </node>
+    </group>
+</launch>

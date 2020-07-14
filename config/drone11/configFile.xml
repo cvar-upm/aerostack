@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<robot>
+	<dimensions>1.0 1.0</dimensions> <!-- ARDrone 0.6 x 0.6 -->
+</robot>
+
+
+<map>
+	<config>
+		<dimensions>9.0 14.0</dimensions>
+		<initPoint>0.0 -1.0</initPoint> <!-- punto minimo del mapa -->
+	</config>
+</map>
+
+
+<prm>
+	<generate>1</generate>
+	<save>0</save> 
+
+	<config> 
+		<numNodes>5000</numNodes>
+		<neigbourhood>5</neigbourhood>
+	
+		<subzone>
+			<numNodes>1500</numNodes>
+			<initPoint>2 3</initPoint> 
+			<size>5 5</size>
+		</subzone>
+	
+		
+	</config>
+	
+</prm>

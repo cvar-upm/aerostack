@@ -1,0 +1,82 @@
+
+<midlevel_autopilot_config>
+    <description>Configuration file for the droneMidLevelAutopilotROSModule package (Pixhawk), Aerostack, by Vision4UAV.</description>
+ 
+    <midlevel_autopilot> 
+	<ON_GROUND_ALTITUDE> 0.30 </ON_GROUND_ALTITUDE>				<!-- m -->
+  <MODULE_FREQUENCY>   150   </MODULE_FREQUENCY>         <!-- hz --> 
+
+	<TAKE_OFF> 
+	  <TAKEOFF_SPEED>                 0.5  </TAKEOFF_SPEED>			<!-- m/s -->
+	  <TAKEOFF_FINAL_ALTITUDE>        1.0  </TAKEOFF_FINAL_ALTITUDE>	<!-- m   -->
+	  <TAKINGOFF_ALT_SPEED_COS_GAMMA> 2.15 </TAKINGOFF_ALT_SPEED_COS_GAMMA>	<!-- ??? -->
+	  <MAX_TAKINGOFF_TIME_S>          5.0  </MAX_TAKINGOFF_TIME_S>		<!-- s   -->
+	</TAKE_OFF>
+
+	<LANDING> 
+	  <LANDING_SPEED>                     0.40 </LANDING_SPEED>		        <!-- m/s -->
+	  <ALTITUDE_FOR_LANDING_WITH_TIME>    0.40 </ALTITUDE_FOR_LANDING_WITH_TIME>    <!-- m   -->
+	  <LANDING_WITH_TIME_MAX_SECONDS>     1.00 </LANDING_WITH_TIME_MAX_SECONDS>     <!-- s   -->
+	  <!-- 
+	  // 12 Dec 2015, Pixhawk (Full) Weight: 1.71 Kg
+	  //            
+	  -->
+	  <LANDING_WITH_TIME_FIXED_THRUST_KG> 0.32 </LANDING_WITH_TIME_FIXED_THRUST_KG> <!-- kg  -->
+	</LANDING>
+
+	<MAX_ALTITUDE>
+	  <MAX_ALTITUDE>                                    30.00 </MAX_ALTITUDE>				      <!-- m   -->
+	  <MAX_ALTITUDE_DESCENDING_SPEED>                    0.20 </MAX_ALTITUDE_DESCENDING_SPEED>		      <!-- m/s -->
+	  <MAX_ALTITUDE_TO_CONSIDER_UNKNOWN_STATE_AS_LANDED> 0.40 </MAX_ALTITUDE_TO_CONSIDER_UNKNOWN_STATE_AS_LANDED> <!-- m   -->
+	</MAX_ALTITUDE>
+
+	<CONTROLLER_SATURATIONS>
+	  <ML_AUTOPILOT_MAX_ALLOWED_YAW_SPEED>      30.0 </ML_AUTOPILOT_MAX_ALLOWED_YAW_SPEED>	    <!-- deg/s -->
+	  <ML_AUTOPILOT_MAX_ALLOWED_ALTITUDE_SPEED>  0.5 </ML_AUTOPILOT_MAX_ALLOWED_ALTITUDE_SPEED> <!-- m/s   -->
+	</CONTROLLER_SATURATIONS>
+
+	<LL_AUTOPILOT>
+	  <LL_AUTOPILOT_COMMAND_TILT_MIN_VALUE>    -35.00  </LL_AUTOPILOT_COMMAND_TILT_MIN_VALUE>   <!-- deg                     -->
+	  <LL_AUTOPILOT_COMMAND_TILT_MAX_VALUE>    +35.00  </LL_AUTOPILOT_COMMAND_TILT_MAX_VALUE>   <!-- deg                     -->
+	  <LL_AUTOPILOT_COMMAND_DYAW_MIN_VALUE>   -120.00  </LL_AUTOPILOT_COMMAND_DYAW_MIN_VALUE>   <!-- deg/s                   -->
+	  <LL_AUTOPILOT_COMMAND_DYAW_MAX_VALUE>   +120.00  </LL_AUTOPILOT_COMMAND_DYAW_MAX_VALUE>   <!-- deg/s                   -->
+	  <LL_AUTOPILOT_COMMAND_THRUST_MIN_VALUE>    0.00  </LL_AUTOPILOT_COMMAND_THRUST_MIN_VALUE> <!-- N        int_min:     0 -->
+	  <LL_AUTOPILOT_COMMAND_THRUST_MAX_VALUE>  +29.71  </LL_AUTOPILOT_COMMAND_THRUST_MAX_VALUE> <!-- N        int_max:     1 -->
+	</LL_AUTOPILOT>
+    </midlevel_autopilot>
+
+    <altitude_speed_controller> 
+	<!-- 
+	// 12 Dec 2014, Pixhawk (Full) Weight: 1.7 Kg
+	-->
+	
+	<FEEDFORWARD_M>    0.79     </FEEDFORWARD_M>    <!-- kg  -->
+	<THRUSTER_GAIN>    0.33    </THRUSTER_GAIN>    <!-- 1p1/kg, pixhawk: 1/(29.71/9.81)-->
+	<GAIN_P>           0.05    </GAIN_P>           <!-- pixhawk: 0.1             , 1p1/(m/s)-->1
+	<GAIN_I>           0.03    </GAIN_I>           <!-- pixhawk: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
+	<GAIN_D>           0.01    </GAIN_D>           <!-- pixhawk: (GAIN_P * 0.00) , 1p1 * s / (m/s)-->
+
+	<ALT_SPEED_MEASURE_SATURATION_FACTOR> 3.0 </ALT_SPEED_MEASURE_SATURATION_FACTOR>
+
+	<COMMAND_UPPER_LIMIT>  0.04  </COMMAND_UPPER_LIMIT> <!-- Pixhawk: (Same as pelican) -->
+	<COMMAND_LOWER_LIMIT> -0.04 </COMMAND_LOWER_LIMIT>  <!-- Pixhawk:  (Same as pelican) -->
+	<SUBSAMPLING_DIVIDER>  6     </SUBSAMPLING_DIVIDER> <!-- Pixhawk: deprecated        -->
+    </altitude_speed_controller>
+ 
+    <hover_controller> 
+
+	<GAIN_P>                  9.00 </GAIN_P>                 <!-- [deg / (m/s)]  -->
+	<GAIN_I>                  1.80 </GAIN_I>                 <!-- Ti = 5s, (GAIN_P / 5.0)  -->
+	<GAIN_D>                  0.5 </GAIN_D>                 <!-- -->
+	<MAX_OUTPUT>             12.00 </MAX_OUTPUT>             <!-- [deg] -->
+	<ALTITUDE_FOR_NOMINAL_D>  0.70 </ALTITUDE_FOR_NOMINAL_D> <!-- [m]   -->
+
+    </hover_controller>
+
+    <yaw_controller> 
+	<GAIN_P> 3.00 </GAIN_P>                 <!-- [deg/s / (deg)]  -->
+	<GAIN_I> 0.00 </GAIN_I>                 <!--  -->
+	<GAIN_D> 0.30 </GAIN_D>                 <!-- (0.1 * GAIN_P) -->
+    </yaw_controller> 
+
+</midlevel_autopilot_config>

@@ -1,0 +1,73 @@
+<MPC>
+        
+	<Model>	
+
+		<Saturation> <!-- Transfer Function saturation -->
+			<pitch_roll> 20.00 	</pitch_roll>  <!-- <pitch_roll> 20.00 </pitch_roll> --> 
+			<dyaw>       1.78		</dyaw>  <!-- <dyaw> 1.78 </dyaw> --> 
+			<dz>         0.50		</dz>  <!-- <dz> 0.50 </dz> -->
+		</Saturation>
+
+		<Gain> <!-- Transfer Function numerator -->
+			<pitch_roll> 27.10 </pitch_roll> <!-- <pitch_roll> 2.75 </pitch_roll> -->
+			<dz>         0.5637 	</dz>  <!-- <dz>  0.5 </dz>  -->
+			<dyaw>       -1.786	</dyaw>  <!-- <dyaw> 1.78 </dyaw>  -->
+		</Gain>
+		
+		<Time_response> <!-- Transfer Function time response -->
+			<pitch_roll> 4.5 	</pitch_roll> <!-- <pitch_roll> 0.40 </pitch_roll>  -->
+			<dz>         0.2409	</dz>  <!-- <dz> 0.135 </dz> -->
+			<dyaw>       0.3824	</dyaw>  <!-- <dyaw> 0.115 </dyaw> -->
+		</Time_response>
+
+		<Delay> <!-- Transfer Function Delay -->
+			<pitch_roll> 0.171 	</pitch_roll> <!-- <pitch_roll> 0.40 </pitch_roll>  -->
+			<dz>         0.041	</dz>  <!-- <dz> 0.135 </dz> -->
+			<dyaw>       0.075	</dyaw>  <!-- <dyaw> 0.115 </dyaw> -->
+		</Delay>
+
+	</Model>
+
+	<Cmd_limits> <!-- Maximum value to command -->
+
+		<pitch_roll> 0.5 </pitch_roll>  <!-- <pitch_roll> 1.00 </pitch_roll> --> 
+		<dyaw>       2.00 </dyaw>  <!-- <dyaw> 1.00	</dyaw> --> 
+		<dz>         2.00	</dz>  <!-- <dz> 1.00	</dz> -->
+
+	</Cmd_limits>
+
+	<Cost>	<!-- Cost function values -->
+	
+		<State>
+			<position_xy> 10.0 </position_xy>  <!-- <position_xy> 1.0 </position_xy> --> 
+			<position_z>  100.0  </position_z>  <!-- <position_z> 1.0 </position_z> --> 
+			<yaw>         25.0	</yaw>  <!-- <yaw> 1.0 </yaw> -->
+
+			<speed_xy> 5.0 </speed_xy> <!-- <speed_xy> 1.0 </speed_xy> -->
+			<speed_z>  50.0 </speed_z>  <!-- <speed_z>  1.0 </speed_z> -->
+			<dyaw>     10.0 </dyaw>  <!-- <dyaw> 1.0 </dyaw> -->
+		</State>
+		
+		<Command>
+			<pitch_roll> 1.0 </pitch_roll> <!-- <pitch_roll> 1.0 </pitch_roll> -->
+			<dz>         1.0 </dz>  <!-- <dz> 1.0	</dz> -->
+			<dyaw>       1.0 </dyaw>  <!-- <dyaw> 1.0 </dyaw> -->
+		</Command>
+
+	</Cost>
+
+	<Height>
+
+		<minimun> 0.15 </minimun>  <!-- <minimun> 0.15  </minimun> Minimun possible height for safety --> 
+		<hover>   0.70 </hover>  <!-- <hover> 0.70	  </hover> Hovering start  --> 
+
+	</Height>
+
+	<Trajectory> <!-- Desire speeds on trajectory-->
+
+		<Speed_xy> 2.5 </Speed_xy>  <!-- <Speed_xy> 1.5  </Speed_xy> --> 
+		<Speed_z>   0.30 </Speed_z>  <!-- <hover> 0.50	  </hover>   --> 
+
+	</Trajectory>
+
+</MPC>

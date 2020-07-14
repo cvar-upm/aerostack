@@ -1,0 +1,32 @@
+<Altitude_Controller>
+        
+	<PID_Z2Dz>	
+	
+		<Gain>
+			<Kp> 1.25	  </Kp>  <!-- <Kp> 0.85	  </Kp>  Proportional Gain 1.33--> 
+			<Kd> 0.15	  </Kd>  <!-- <Kd> 0.03  </Kd> Derivative Gain   -0.35--> 
+			<Ki> 0.50		</Ki>  <!-- <Ki> 0.30   </Ki>Integral Gain     0-->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.40 </SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.40 </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.20 </AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.60 </AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 0.60		</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+		<FeedForward>
+			<enable_feedforward> 1.0 </enable_feedforward> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<mass>  0.73 </mass>  <!--0.4 UAV mass -->
+			<factor>	0.36	</factor>  <!--0.66 Factor Value-->
+		</FeedForward>
+
+	</PID_Z2Dz>
+
+</Altitude_Controller>

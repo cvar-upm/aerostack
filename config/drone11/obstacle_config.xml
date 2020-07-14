@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+      
+<map>
+	<!--    Obstacles processor -->
+  <!-- Dimensions windows and others not used JL? -->
+  <wall_width>0.25</wall_width>
+  <wall_length>8</wall_length>
+
+  <known_pole_rad>0.3</known_pole_rad> <!-- JL: not used ?? -->
+  <unknown_pole_rad>0.3</unknown_pole_rad> <!-- JL: not used ?? -->
+  <large_window_length>1.5</large_window_length> <!-- JL: only used with windows_distribution_option=1 ?? -->
+  <small_window_length>0.8</small_window_length> <!-- JL: only used with windows_distribution_option=1 ?? -->
+
+  <aruco_width>0.15</aruco_width>
+  <!-- Arucos windows distribution -->
+  <num_landmarks_wind>8</num_landmarks_wind> <!-- JL: not used ?? -->
+  <windows_distribution_option>0</windows_distribution_option>
+        
+  <obstaclesInMap>
+
+    <!-- other robots: RESERVED: 0-9999 -->
+
+
+
+
+    <!-- borders (Virtual Obstacles): 10000-19999 -->
+    <rectangle description="bottom side">
+			<id>10000</id>
+			<centerPoint>4.5 -1.5</centerPoint>
+			<size>10.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+		
+		
+		<rectangle description="right side"> 
+			<id>10001</id>
+			<centerPoint>9.5 6.0</centerPoint>
+			<size>0.3 15.0</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+		
+		<rectangle description="up side"> 
+			<id>10002</id>
+			<centerPoint>4.5 13.5</centerPoint>
+			<size>10.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+		
+		<rectangle description="left side"> 
+			<id>10003</id>
+			<centerPoint>-0.5 6.0</centerPoint>
+			<size>0.3 15.0</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+
+
+    <!-- virtual walls: 20000-29999 -->
+
+    <rectangle description="left"> 
+			<id>20000</id>
+			<centerPoint>1.5 6.0</centerPoint>
+			<!-- <centerPoint>1.5 4.5</centerPoint> -->
+			<size>4.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      	<virtual description="define a virtual object">1</virtual>
+		</rectangle>
+
+    <rectangle description="rigth"> 
+			<id>20001</id>
+			<centerPoint>7.5 6.0</centerPoint>
+			<!-- <centerPoint>7.5 4.5</centerPoint> -->
+			<size>4.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      	<virtual description="define a virtual object">1</virtual>
+		</rectangle>
+
+    <!-- virtual poles: 30000-39999 -->
+    <!--
+  	<pole description="">
+  		<id>30000</id>
+      <centerPoint>0.0 0.0</centerPoint>
+  		<radius>0.2 0.2</radius>	
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</pole>
+    -->
+
+
+
+
+    <!-- Fixed Known Real poles: 40000-49999 -->
+  	<pole description="Naranja 1">
+  		<id>40000</id>
+  		<radius>0.2 0.2</radius>
+  		<aruco>
+			  <id aruco_id = "41"/>
+			  <id aruco_id = "42"/>
+			  <id aruco_id = "43"/>
+			  <id aruco_id = "44"/>
+  		</aruco>
+		</pole>
+		
+		<pole description="Naranja 2">
+			<id>40001</id>
+  		<radius>0.2 0.2</radius>
+  		<aruco>
+			  <id aruco_id = "45"/>
+			  <id aruco_id = "46"/>
+			  <id aruco_id = "47"/>
+			  <id aruco_id = "48"/>
+  		</aruco>
+		</pole>
+
+		<pole description="Naranja 3">
+			<id>40002</id>
+  		<radius>0.2 0.2</radius>
+  		<aruco>
+				<id aruco_id = "49"/>
+				<id aruco_id = "50"/>
+				<id aruco_id = "51"/>
+				<id aruco_id = "52"/>
+  		</aruco>
+		</pole>
+
+		<pole description="Naranja 4">
+			<id>40003</id>
+  		<radius>0.2 0.2</radius>
+  		<aruco>
+				<id aruco_id = "53"/>
+				<id aruco_id = "54"/>
+				<id aruco_id = "55"/>
+				<id aruco_id = "56"/>
+  		</aruco>
+		</pole>
+
+		<pole description="Naranja 5">
+			<id>40004</id>
+  		<radius>0.2 0.2</radius>
+  		<aruco>
+				<id aruco_id = "57"/>
+				<id aruco_id = "58"/>
+				<id aruco_id = "59"/>
+				<id aruco_id = "60"/>
+  		</aruco>
+		</pole>
+
+<!-- ESTAN REPETIDAS EN LAS COLUMNAS DEL BORDE!!!
+
+		<pole description="">
+			<id>40005</id>
+  		<radius>0.2 0.2</radius>
+  		<aruco>
+				<id aruco_id = "61"/>
+				<id aruco_id = "62"/>
+				<id aruco_id = "63"/>
+				<id aruco_id = "64"/>
+  		</aruco>
+		</pole>
+-->
+
+
+    <!-- Fixed UnKnown Real poles: 50000-59999 -->
+		<pole description="">
+			<id>50000</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "9"/>
+				  <id aruco_id = "10"/>
+				  <id aruco_id = "11"/>
+				  <id aruco_id = "12"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+			<id>50001</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+			    <id aruco_id = "13"/>
+			    <id aruco_id = "14"/>
+			    <id aruco_id = "15"/>
+			    <id aruco_id = "16"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+			<id>50002</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "17"/>
+				  <id aruco_id = "18"/>
+				  <id aruco_id = "19"/>
+				  <id aruco_id = "20"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+			<id>50003</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+			    <id aruco_id = "21"/>
+			    <id aruco_id = "22"/>
+			    <id aruco_id = "23"/>
+			    <id aruco_id = "24"/>
+  		  </aruco>
+		</pole>
+
+		<pole description="">
+			<id>50004</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "25"/>
+				  <id aruco_id = "26"/>
+				  <id aruco_id = "27"/>
+				  <id aruco_id = "28"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+			<id>50005</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "29"/>
+				  <id aruco_id = "30"/>
+				  <id aruco_id = "31"/>
+				  <id aruco_id = "32"/>
+    		</aruco>
+		</pole>
+
+		
+    <!-- Fixed Known Real landmarks: 60000-69999 -->
+		<pole description="">
+    		<id>60000</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "61"/>
+				  <id aruco_id = "62"/>
+    		</aruco>
+		</pole>
+		
+		<pole description="">
+			<id>60001</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "63"/>
+				  <id aruco_id = "64"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+    		<id>60002</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "65"/>
+				  <id aruco_id = "66"/>
+    		</aruco>
+		</pole>
+		
+		<pole description="">
+			<id>60003</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "67"/>
+				  <id aruco_id = "68"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+    		<id>60004</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "69"/>
+				  <id aruco_id = "70"/>
+    		</aruco>
+		</pole>
+		
+		<pole description="">
+			<id>60005</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "71"/>
+				  <id aruco_id = "72"/>
+    		</aruco>
+		</pole>
+
+		<pole description="">
+    		<id>60006</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "73"/>
+				  <id aruco_id = "74"/>
+    		</aruco>
+		</pole>
+		
+		<pole description="">
+			<id>60007</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "75"/>
+				  <id aruco_id = "76"/>
+    		</aruco>
+		</pole>
+
+     
+  </obstaclesInMap>
+        
+</map> 

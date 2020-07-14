@@ -1,0 +1,51 @@
+<Speed_ControllerNN>
+        
+	<PID_Dx2Pitch>
+		<Gain>
+			<Kp> 0.50	</Kp>  <!-- <Kp> 0.45	</Kp> Proportional Gain -->
+			<Kd> 0.05	</Kd>  <!-- <Kd> 0.20 </Kd> Derivative Gain   --> 
+			<Ki> 0.15	</Ki>  <!-- <Ki> 0.10   </Ki> Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.50 </SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.50  </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.4 </AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.4 </AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 0.60		</Kw>  <!-- <Kw> 0.50   </Kw> -->
+		</Anti_wind_up>
+
+	</PID_Dx2Pitch>
+
+	<PID_Dy2Roll>
+		<Gain>
+			<Kp> 0.50	</Kp>  <!-- <Kp> 0.1   </Kp> Proportional Gain -->
+			<Kd> 0.05	</Kd>  <!-- <Kd> 0.06 </Kd> Derivative Gain   --> 
+			<Ki> 0.15	</Ki>  <!-- <Ki> 0.0    </Ki> Integral Gain     -->
+		</Gain>
+
+		<Saturation> <!-- Control Input Saturation -->
+			<enable_saturation> 1.0 </enable_saturation> <!-- 1.0 means saturation enabled, 0.0 disabled -->
+			<SatMax>  0.50 </SatMax>  <!-- Max Saturation Value -->
+			<SatMin> -0.50 </SatMin>  <!-- Min Saturation Value -->
+		</Saturation>
+		
+		<Anti_wind_up>
+			<enable_anti_wind_up> 1.0 </enable_anti_wind_up> <!-- 1.0 means anti-WindUp enabled, 0.0 disabled -->
+			<AwuMax>  0.4 </AwuMax>  <!-- Max A-WU Value -->
+			<AwuMin> -0.4 </AwuMin>  <!-- Min A-WU Value -->
+			<Kw> 0.60		</Kw>  <!-- <Kw> 0.50   </Kw> -->d
+
+		</Anti_wind_up>
+
+	</PID_Dy2Roll>
+	
+	<Vmax>	1		</Vmax>	<!-- Max Vxy Value -->
+	<enablemax>	1		</enablemax>	<!-- 1.0 means max Vxy enabled, 0.0 disabled -->
+</Speed_ControllerNN> 
+

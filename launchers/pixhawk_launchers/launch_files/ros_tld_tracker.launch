@@ -1,0 +1,33 @@
+<launch>
+	<!-- declare arg to be passed in -->
+	<arg name="load_model" default="false"/>
+	<arg name="auto_face_detection" default="false"/>
+	<arg name="model_import_file" default=""/>
+	<arg name="model_export_file" default=""/>
+	<arg name="cascade_path" default=""/>
+	<arg name="image_topic" default="/usb_cam_red/image_raw"/>
+
+	<!-- Nodes -->
+    <node name="ros_tld_tracker_node" pkg="tld_tracker" type="tld_tracker_node"
+	    output="screen">
+        <!-- remap of topics -->
+        <remap from="image" to="$(arg image_topic)"/>
+        <remap from="bounding_box" to="tld_gui_bb"/>
+        <remap from="cmds" to="tld_gui_cmds"/>
+
+        <!-- declare param and read value of arg-->
+        <param name="showOutput" value="true" type="bool"/>
+        <param name="loadModel" value="$(arg load_model)" type="bool"/>
+        <param name="autoFaceDetection" value="$(arg auto_face_detection)" type="bool"/>
+        <param name="modelImportFile" value="$(arg model_import_file)" type="string"/>
+        <param name="exportModelAfterRun" value="false" type="bool"/>
+        <param name="modelExportFile" value="$(arg model_export_file)" type="string"/>
+        <param name="cascadePath" value="$(arg cascade_path)" type="string"/>
+        <param name="x" value="200" type="int"/>
+        <param name="y" value="200" type="int"/>
+        <param name="width" value="200" type="int"/>
+        <param name="height" value="200" type="int"/>
+        <param name="correctBB" value="false" type="bool"/>
+    </node>
+</launch>
+

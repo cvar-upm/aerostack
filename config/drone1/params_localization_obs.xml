@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<main FormatVersion="1">
+    <params>
+    
+    	<!-- Localization -->
+    	  <!-- Init pose -->
+        <x_0>  4.0</x_0>
+        <y_0>  4.0</y_0>
+        <z_0>  0.7</z_0>
+        <roll_0>0.0</roll_0> <!-- Angles are given in degrees!! -->
+        <pitch_0>0.0</pitch_0>
+        <yaw_0>0.0</yaw_0>
+        
+        
+        <!-- Odom sigma -->
+        <sigma_odom_x>0.4</sigma_odom_x>
+        <sigma_odom_y>0.4</sigma_odom_y>
+        <sigma_odom_z>0.1</sigma_odom_z>
+        <sigma_odom_roll>5</sigma_odom_roll> <!-- Angles are given in degrees!! -->
+        <sigma_odom_pitch>5</sigma_odom_pitch>
+        <sigma_odom_yaw>5</sigma_odom_yaw>
+        <!-- Obs sigma -->
+        <sigma_obs_x>0.2</sigma_obs_x>
+        <sigma_obs_y>0.2</sigma_obs_y>
+        <sigma_obs_z>0.3</sigma_obs_z>
+        <sigma_obs_roll>10</sigma_obs_roll> <!-- Angles are given in degrees!! -->
+        <sigma_obs_pitch>10</sigma_obs_pitch>
+        <sigma_obs_yaw>10</sigma_obs_yaw>
+        
+        
+        <!-- Visual Markers -->
+        <VisualMarkerList description="List of visual markers that are going to be added to the visual markers SLAM">
+   <!--   <VisualMarker id="1" />
+          <VisualMarker id="2" />   -->
+          <VisualMarkersRange fromId="9" toId="100"/>
+        </VisualMarkerList>
+        
+        <!-- Visual Markers Landmarks -->
+        <Arucos description="List of visual markers considered as landmarks (previously known pose)">
+        <!-- Angles are given in degrees!! -->
+
+        		<!-- Pole 1 -->
+        		<Aruco id="45"   x="5.0" y="3.8" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="46"   x="4.8" y="4.0" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="47"   x="5.0" y="4.2" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="48"   x="5.2" y="4.0" z="1.3" roll="0" pitch="0" yaw="0"/>
+                
+        </Arucos>	
+        
+
+    </params>
+</main>
+

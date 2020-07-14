@@ -1,0 +1,60 @@
+<ShapeColor_ObjectDetector_config>
+	<description>Configuration file for the ShapeColor_ObjectDetector package.</description>
+
+  <VisualObjectRecognizer>
+    <!-- Options Available: 1 (Exploration), 2 (GoForGraspingRedObject), 3 (GoForGraspingBlueObject) -->
+    <!-- Options Available: 4 (GoForReleasingRedObject), 5 (GoForReleasingBlueObject) -->
+    <perception_manager_mission_state>1</perception_manager_mission_state>
+    <!-- Options Available: RED, BLUE, REDandBLUE -->
+    <recognize_color>REDandBLUE</recognize_color>
+  </VisualObjectRecognizer>
+
+  <PoseEstimator>
+		<CameraMatrix>
+			<at00>457.84999843514953</at00>
+			<at01>0.0</at01>
+			<at02>320.5</at02>
+			<at10>0.0</at10>
+			<at11>457.84999843514953</at11>
+			<at12>240.5</at12>
+			<at20>0.0</at20>
+			<at21>0.0</at21>
+			<at22>1.0</at22>
+		</CameraMatrix>	
+        
+		<DistMatrix>
+			<at0>0.0</at0>
+			<at1>0.0</at1>
+			<at2>0.0</at2>
+			<at3>0.0</at3>
+			<at4>-2.5553636828393729</at4>
+		</DistMatrix>
+  </PoseEstimator>
+
+  <ShapeImageProcessor>	
+		<ItemParameters>
+			<!-- Size of the Item -->
+			<radius>0.05</radius>
+			<height>0.1</height>		
+		</ItemParameters>
+
+		<BucketParameters>
+			<!-- Size of the Bucket -->
+			<radius>0.125</radius>
+			<height>0.30</height>		
+		</BucketParameters>
+
+		<DoorParameters>
+			<!-- Size of the Door -->
+			<doorSizeX>1.2</doorSizeX>
+			<doorSizeY>2.0</doorSizeY>		
+		</DoorParameters>
+
+		<WindowParameters>
+			<!-- Size of the Window -->
+			<windowSizeX>1.0</windowSizeX>
+			<windowSizeY>1.0</windowSizeY>		
+		</WindowParameters>
+  </ShapeImageProcessor>	
+</ShapeColor_ObjectDetector_config>
+

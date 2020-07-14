@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+
+<mission description="IMAV-2013">
+
+	<config>
+		<precission>
+			<x>0.4</x>
+			<y>0.4</y>
+			<z>0.4</z>
+			<yaw>20.0</yaw> <!--deg-->
+		</precission>
+	</config>
+
+
+	<submission description="01 - Take-off, hover">
+		<config>
+			<id>01</id>
+		</config>
+		<task description=".1 - Take-off">
+			<config>
+				<id>01</id>
+			</config>
+			<command>takeOff</command>
+		</task>
+		
+		<task description=".2 - Hover for at least 1 secs">
+			<config>
+				<id>02</id>
+				<time>1.0</time>
+			</config>
+			<command>hover</command>
+		</task>
+		<task description=".1 - zMove">
+			<config>
+				<id>03</id>
+			</config>
+			<command>move</command>
+			<point>
+				<z>1.5</z>
+			</point>
+			<yaw>90.0</yaw>
+		</task>
+	</submission>
+	
+	<submission description="02 - investigar">
+		<config>
+			<id>02</id>
+		</config>
+		
+		
+		<task description=".1 - Move">
+			<config>
+				<id>01</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>1.2</x>
+				<y>-3.0</y>
+				<z>1.5</z>
+			</point>
+			<yaw>90.0</yaw>
+		</task>
+		
+
+	</submission>
+	
+	
+	<submission description="03 - cruzar ventana">
+		<config>
+			<id>03</id>
+		</config>
+		
+		
+		<task description=".1 - Move">
+			<config>
+				<id>01</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>-0.3</x>
+				<y>1.7</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+		
+
+	</submission>
+
+	
+	<submission description="04 - vueltas">
+		<config>
+			<id>04</id>
+			<loop>1</loop>
+			<time>300.0</time>
+		</config>
+		<task description=".1 - Move and Look point 1">
+			<config>
+				<id>01</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>-0.3</x>
+				<y>1.7</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".2 - MOve and Look point 2">
+			<config>
+				<id>02</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>-0.3</x>
+				<y>6.0</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".3 - MOve Look point 3">
+			<config>
+				<id>03</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>-0.3</x>
+				<y>10.3</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".4 - move Look point 4">
+			<config>
+				<id>04</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>4.0</x>
+				<y>10.3</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".5 - Move and Look point 1">
+			<config>
+				<id>05</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>8.3</x>
+				<y>10.3</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>6.8</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".6 - Move and Look point 1">
+			<config>
+				<id>06</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>8.3</x>
+				<y>6.0</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>6.8</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".7 - Move and Look point 1">
+			<config>
+				<id>07</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>8.3</x>
+				<y>1.7</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>6.8</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".8 - Move and Look point 1">
+			<config>
+				<id>08</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>4.0</x>
+				<y>1.7</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>6.8</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+		
+		<task description=".9 - Move and Look point 1">
+			<config>
+				<id>09</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>-0.3</x>
+				<y>1.7</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>1.2</x>
+				<y>3.2</y>
+			</pointToLook>
+		</task>
+
+	</submission>
+	
+	
+	<submission description=".1 - cross">
+		<config>
+			<id>05</id>
+		</config>
+		
+		<task description=".1 - MOve and Look point 4">
+			<config>
+				<id>01</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>8.3</x>
+				<y>13.3</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>6.8</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		
+		
+
+	</submission>
+	
+	
+	
+	<submission description="03 - go landing zone">
+		<config>
+			<id>06</id>
+		</config>
+		<task description=".2 - move">
+			<config>
+				<id>01</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>8.3</x>
+				<y>13.3</y>
+				<z>1.5</z>
+			</point>
+			<pointToLook>
+				<x>6.8</x>
+				<y>8.8</y>
+			</pointToLook>
+		</task>
+		<task description=".2 - move">
+			<config>
+				<id>02</id>
+			</config>
+			<command>move</command>
+			<point>
+				<x>5.3</x>
+				<y>14.0</y>
+				<z>1.5</z>
+			</point>
+			<yaw>-90.0</yaw>
+		</task>
+
+	</submission>
+	
+	<submission description="03 - hover and land">
+		<config>
+			<id>07</id>
+		</config>
+		<task description=".2 - Hover for at least 5 secs">
+			<config>
+				<id>02</id>
+				<time>0.5</time>
+			</config>
+			<command>hover</command>
+		</task>
+		<task description=".3 - land">
+			<config>
+				<id>03</id>
+			</config>
+			<command>land</command>
+		</task>	
+	</submission>
+	
+	
+</mission>

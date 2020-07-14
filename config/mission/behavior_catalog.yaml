@@ -1,0 +1,345 @@
+#------------------------------------------------------
+# BRIEF: Catalog of robot behaviors in Aerostack.
+#------------------------------------------------------
+
+#------------------------------------------------------
+# BEHAVIORS:
+#
+# For each behavior, a descriptor is specified using
+# the following attributes:
+#
+# timeout: Maximum available time to reach the goal.
+# Number of seconds (integer).
+#
+# task: Task performed by the behavior.
+#
+# package: Name of the software package.
+#
+# requires: List of task required by the behavior.
+#
+# efficacy: Efficacy of the behavior (in percentage).
+# An integer in [0,100]
+#
+# TASKS:
+#
+# For each task that a behavior can perform, a
+# descriptor is specified using the following attributes:
+#
+# category: A value of {goal_based, recurrent}.
+#
+# default: Expresses if the task is activated by
+# default or not. Boolean {TRUE,FALSE}.
+#
+# automatic_activation: Expresses if the task can be
+# activated automatically or not.
+# Boolean {TRUE,FALSE}.
+#
+# parameters: List of available parameters for the
+# task. For each task it is possible
+# to define the allowed values, and the
+# dimensions.
+#
+# COMPATIBILITY CONSTRAINTS:
+#
+# Each constraint indicates a list of incompatible tasks
+# that are mutually exclusive.
+#
+#------------------------------------------------------
+default_values:
+- tasks:
+  - category: goal_based
+    automatic_activation: FALSE
+    default: FALSE
+    timeout: 15
+- behaviors:
+  - efficacy: 100
+
+#------------------------------------------------------
+behaviors:
+- behavior: TAKE_OFF
+  package: basic_quadrotor_behaviors
+  task: TAKE_OFF
+  requires:
+  - task: THRUST_CONTROL
+
+- behavior: LAND
+  package: basic_quadrotor_behaviors
+  task: LAND
+  requires:
+  - task: THRUST_CONTROL
+
+- behavior: WAIT
+  package: basic_quadrotor_behaviors
+  task: WAIT
+
+- behavior: SELF_LOCALIZE_WITH_GROUND_TRUTH
+  package: basic_quadrotor_behaviors
+  task: SELF_LOCALIZE
+
+- behavior: ESTIMATE_POSITION_WITH_SENSOR
+  package: basic_quadrotor_behaviors
+  task: ESTIMATE_POSITION
+
+- behavior: ESTIMATE_POSITION_WITH_LINEAR_SPEED
+  package: basic_quadrotor_behaviors
+  task: ESTIMATE_POSITION
+  efficacy: 80
+
+#------------------------------------------------------
+- behavior: HOVER_WITH_MPC_CONTROL
+  package: quadrotor_motion_with_mpc_control
+  task: HOVER
+  requires:
+  - task: MPC_MOTION_CONTROL
+
+- behavior: ROTATE_WITH_MPC_CONTROL
+  package: quadrotor_motion_with_mpc_control
+  task: ROTATE
+  requires:
+  - task: MPC_MOTION_CONTROL
+
+- behavior: FOLLOW_PATH_WITH_MPC_CONTROL
+  package: quadrotor_motion_with_mpc_control
+  task: FOLLOW_PATH
+  requires:
+  - task: MPC_MOTION_CONTROL
+
+- behavior: QUADROTOR_MPC_MOTION_CONTROL
+  package: quadrotor_motion_with_mpc_control
+  task: MPC_MOTION_CONTROL
+  requires:
+  - task: SELF_LOCALIZE
+    minimum_performance: 80
+
+#------------------------------------------------------
+
+- behavior: MOVE_AT_SPEED_WITH_PLATFORM_CONTROL
+  package: quadrotor_motion_with_platform_control
+  task: MOVE_AT_SPEED
+
+- behavior: MOVE_VERTICAL_WITH_PLATFORM_CONTROL
+  package: quadrotor_motion_with_platform_control
+  task: MOVE_VERTICAL
+
+- behavior: ROTATE_WITH_PLATFORM_CONTROL
+  package: quadrotor_motion_with_platform_control
+  task: ROTATE
+
+- behavior: HOVER_WITH_FLIGHT_ACTION_CONTROL
+  package: basic_quadrotor_behaviors
+  task: HOVER
+
+#------------------------------------------------------
+- behavior: KEEP_HOVERING_WITH_PID_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: HOVER
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: KEEP_MOVING_WITH_PID_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: MOVE_AT_SPEED
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: ROTATE_WITH_PID_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: ROTATE
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: FOLLOW_PATH
+  package: quadrotor_motion_with_pid_control
+  task: FOLLOW_PATH
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: QUADROTOR_PID_MOTION_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: PID_MOTION_CONTROL
+  efficacy: 90
+  requires:
+  - task: SELF_LOCALIZE
+    minimum_performance: 70
+  - task: THRUST_CONTROL
+
+- behavior: QUADROTOR_PID_THRUST_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: THRUST_CONTROL
+  requires:
+  - task: SELF_LOCALIZE
+
+#------------------------------------------------------
+- behavior: GENERATE_PATH_WITH_OCCUPANCY_GRID
+  package: navigation_with_lidar
+  task: GENERATE_PATH
+  requires:
+  - task: SELF_LOCALIZE
+
+- behavior: CLEAR_OCCUPANCY_GRID
+  package: navigation_with_lidar
+  task: CLEAR_OCCUPANCY_GRID
+
+- behavior: SAVE_OCCUPANCY_GRID
+  package: navigation_with_lidar
+  task: SAVE_OCCUPANCY_GRID
+
+#------------------------------------------------------
+- behavior: SELF_LOCALIZE_WITH_EKF_SENSOR_FUSION
+  package: multi_sensor_fusion
+  task: SELF_LOCALIZE
+  requires:
+  - task: ESTIMATE_POSITION
+
+#------------------------------------------------------
+- behavior: PAY_ATTENTION_TO_QR_CODE
+  package: attention_to_visual_markers
+  task: PAY_ATTENTION_TO_QR_CODES
+
+#------------------------------------------------------
+- behavior: PAY_ATTENTION_TO_ROBOT_MESSAGES
+  package: swarm_interaction
+  task: PAY_ATTENTION_TO_ROBOT_MESSAGES
+
+- behavior: INFORM_ROBOTS
+  package: swarm_interaction
+  task: INFORM_ROBOTS
+
+- behavior: INFORM_POSITION_TO_ROBOTS
+  package: swarm_interaction
+  task: INFORM_POSITION_TO_ROBOTS
+  requires:
+  - task: SELF_LOCALIZE
+
+#------------------------------------------------------
+- behavior: INFORM_OPERATOR
+  task: INFORM_OPERATOR
+
+- behavior: REQUEST_OPERATOR_ASSISTANCE
+  task: REQUEST_OPERATOR_ASSISTANCE
+
+#------------------------------------------------------
+tasks:
+
+- task: LAND
+
+- task: TAKE_OFF
+
+- task: HOVER
+  category: recurrent
+  default: TRUE
+
+- task: WAIT
+  parameters:
+  - parameter: duration
+    allowed_values: [0,1000]
+
+- task: MOVE_AT_SPEED
+  parameters:
+  - parameter: speed
+    allowed_values: [0,30]
+  - parameter: direction
+    allowed_values: [FORWARD, BACKWARD, LEFT, RIGHT]
+
+- task: MOVE_VERTICAL
+  parameters:
+  - parameter: distance
+    allowed_values: [-200,200]
+
+- task: ROTATE
+  timeout: 30
+  parameters:
+  - parameter: angle
+    allowed_values: [-360,360]
+  - parameter: relative_angle
+    allowed_values: [-360,360]
+
+- task: FOLLOW_PATH
+  timeout: 180
+  parameters:
+  - parameter: path
+    allowed_values: point_list
+
+- task: GENERATE_PATH
+  parameters:
+  - parameter: destination
+    allowed_values: point
+
+- task: CLEAR_OCCUPANCY_GRID
+
+- task: SAVE_OCCUPANCY_GRID
+  parameters:
+  - parameter: map_name
+    allowed_values: string
+
+- task: PAY_ATTENTION_TO_QR_CODES
+  category: recurrent
+
+- task: PAY_ATTENTION_TO_ROBOT_MESSAGES
+  category: recurrent
+
+- task: PID_MOTION_CONTROL
+  automatic_activation: TRUE
+  category: recurrent
+
+- task: THRUST_CONTROL
+  automatic_activation: TRUE
+  category: recurrent
+
+- task: MPC_MOTION_CONTROL
+  automatic_activation: TRUE
+  category: recurrent
+
+- task: SELF_LOCALIZE
+  automatic_activation: TRUE
+  category: recurrent
+
+- task: ESTIMATE_POSITION
+  automatic_activation: TRUE
+  category: recurrent
+
+- task: INFORM_OPERATOR
+  parameters:
+  - parameter: message
+    allowed_values: string
+
+- task: REQUEST_OPERATOR_ASSISTANCE
+  parameters:
+  - parameter: question
+    allowed_values: string
+  - parameter: object
+    allowed_values: string
+  - parameter: predicate
+    allowed_values: string
+  - parameter: options
+  allowed_values: list_of_strings
+
+- task: INFORM_ROBOTS
+  parameters:
+  - parameter: receiver
+    allowed_values: string
+  - parameter: message
+    allowed_values: string
+
+- task: INFORM_POSITION_TO_ROBOTS
+  category: recurrent
+
+#------------------------------------------------------
+exclusivity_constraints:
+
+- mutually_exclusive:
+  - TAKE_OFF
+  - LAND
+  - HOVER
+  - FOLLOW_PATH
+  - MOVE_AT_SPEED
+  - MOVE_VERTICAL
+  - ROTATE
+
+- mutually_exclusive:
+  - PID_MOTION_CONTROL
+  - MPC_MOTION_CONTROL
+
+- mutually_exclusive:
+  - THRUST_CONTROL
+  - MPC_MOTION_CONTROL

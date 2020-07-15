@@ -139,9 +139,6 @@
 [submodule "stack/hardware_interface/gazebo_interface"]
 	path = stack/hardware_interface/gazebo_interface
 	url = https://bitbucket.org/visionaerialrobotics/gazebo_interface.git
-[submodule "stack/hardware_interface/rotors_interface"]
-	path = stack/hardware_interface/rotors_interface
-	url = https://bitbucket.org/visionaerialrobotics/rotors_interface.git
 [submodule "stack/hardware_interface/tello_interface"]
 	path = stack/hardware_interface/tello_interface
 	url = https://bitbucket.org/visionaerialrobotics/tello_interface.git

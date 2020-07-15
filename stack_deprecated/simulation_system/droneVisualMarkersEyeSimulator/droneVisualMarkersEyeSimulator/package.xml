@@ -1,0 +1,26 @@
+<package>
+	<name>droneVisualMarkersEyeSimulator</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is droneVisualMarkersEyeSimulator.
+	</description>
+	<author email="jl.sanchez@upm.es">Jose Luis Sanchez Lopez and Jesus Pestana Puerta</author>
+	<maintainer email="jl.sanchez@upm.es">Jose Luis Sanchez Lopez and Jesus Pestana Puerta</maintainer>
+  	<license>GPLv3</license>
+	<url>http://ros.org/wiki/droneVisualMarkersEyeSimulator</url>
+
+  	<buildtool_depend>catkin</buildtool_depend>
+
+
+	<build_depend>lib_cvgutils</build_depend>
+	<build_depend>lib_pugixml</build_depend>
+	<build_depend>referenceFrames</build_depend>
+
+	<run_depend>lib_cvgutils</run_depend>
+	<run_depend>lib_pugixml</run_depend>
+	<run_depend>referenceFrames</run_depend>
+
+
+</package>
+
+

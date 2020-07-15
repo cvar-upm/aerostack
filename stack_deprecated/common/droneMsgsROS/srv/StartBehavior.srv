@@ -1,0 +1,10 @@
+# This service sends the argument required to the behaviors
+
+string arguments          # The arguments of the behavior
+float64 uid               # The UID of the behavior
+int32 timeout             # The time the behavior needs to be active
+
+---
+
+bool ack                  # If this value is true, the behavior has been activated correctly
+string error_message      # If the above variable is true, an error is contained inside this variable

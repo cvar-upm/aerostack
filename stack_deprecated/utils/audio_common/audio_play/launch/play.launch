@@ -1,0 +1,10 @@
+<launch>
+  <arg name="ns" default="audio"/>
+  <arg name="dst" default="alsasink"/>
+
+  <group ns="$(arg ns)">
+  <node name="audio_play" pkg="audio_play" type="audio_play" output="screen">
+    <param name="dst" value="$(arg dst)"/>
+  </node>
+  </group>
+</launch>

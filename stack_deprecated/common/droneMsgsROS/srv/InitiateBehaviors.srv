@@ -1,0 +1,5 @@
+# This service start the default operations needed for the system to work as expected
+---
+bool ack                  # If this value is true, the operation was done succesfully
+string error_message      # If the above variable is false, an error is contained inside this variable
+float64[] behaviors_uid    # UID of each reactive behavior activated

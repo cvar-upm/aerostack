@@ -1,0 +1,6 @@
+string skill_name
+bool activate
+
+---
+string why
+bool ack

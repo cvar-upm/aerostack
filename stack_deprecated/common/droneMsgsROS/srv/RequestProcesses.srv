@@ -1,0 +1,5 @@
+# This services request the activation or cancellation of the processes given
+string[] processes        # The list of processes
+---
+bool acknowledge          # If this value is true, the operation was done successfully
+string error_message      # If the above variable is false, an error is contained inside this variable

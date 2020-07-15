@@ -1,0 +1,2 @@
+string name
+SkillState current_state

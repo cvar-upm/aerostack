@@ -1,0 +1,11 @@
+#time
+Header header
+
+#command
+int32 command
+
+int32 ARDRONE_ANIM_FLIP_AHEAD  = 1
+int32 ARDRONE_ANIM_FLIP_BEHIND = 2
+int32 ARDRONE_ANIM_FLIP_LEFT   = 3
+int32 ARDRONE_ANIM_FLIP_RIGHT  = 4
+int32 UNKNOWN_COMMAND          = 1000

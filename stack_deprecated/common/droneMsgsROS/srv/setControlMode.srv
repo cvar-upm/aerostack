@@ -1,0 +1,11 @@
+#Control mode
+#0: default control mode
+#1: trajectory control mode
+#2: position control mode
+#3: speed control mode
+
+droneTrajectoryControllerControlMode controlMode
+
+---
+
+bool ack

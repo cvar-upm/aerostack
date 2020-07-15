@@ -1,0 +1,5 @@
+# This services starts the execution of the capabilities associated to a behavior
+string behavior_name      # The name of the behavior
+---
+bool acknowledge          # If this value is true, the operation was done succesfully
+string error_message      # If the above variable is false, an error is contained inside this variable

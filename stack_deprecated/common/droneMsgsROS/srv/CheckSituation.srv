@@ -1,0 +1,4 @@
+# This service checks if the behavior trying to start can be started by checking the actual situation of the drone
+---
+bool viable             # If this value is true, the operation was done succesfully
+string error_message    # If the above variable is false, an error is contained inside this variable

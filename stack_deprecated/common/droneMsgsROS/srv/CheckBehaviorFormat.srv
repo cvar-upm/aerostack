@@ -1,0 +1,15 @@
+# This service checks the format of the arguments associated to a behavior
+
+BehaviorCommand behavior            # The name of the behavior to activate and its argument
+---
+bool ack                            # If this value is true, the behavior has been activated correctly
+
+string error_message                # If the above variable is false, an error is contained inside this variable
+
+int32 behavior_error_code           # The type of error occurred
+int32 BEHAVIOR_VALUE_INCORRECT = 1
+int32 ASSUMPTION_CONFLICT      = 2
+
+string failed_belief
+
+string belief_conflict

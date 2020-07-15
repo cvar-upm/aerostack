@@ -1,0 +1,17 @@
+<package>
+	<name>referenceFrames</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is referenceFrames.
+	</description>
+	<author email="jl.sanchez@upm.es">Jose Luis Sanchez-Lopez</author>
+	<maintainer email="jl.sanchez@upm.es">Jose Luis Sanchez-Lopez</maintainer>
+  	<license>GPLv3</license>
+	<url>http://ros.org/wiki/referenceFrames</url>
+
+  	<buildtool_depend>catkin</buildtool_depend>
+
+
+</package>
+
+

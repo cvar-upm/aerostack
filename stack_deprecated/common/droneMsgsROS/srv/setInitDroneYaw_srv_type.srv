@@ -1,0 +1,9 @@
+# send the initial float to the parrot StateEstimator, that MUST be taken into account
+# float32 yaw_droneLMrT_telemetry_rad
+# bool 		ack, is data ok?
+
+float32 yaw_droneLMrT_telemetry_rad
+
+---
+
+bool 	ack

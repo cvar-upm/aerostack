@@ -1,0 +1,14 @@
+<!-- Launches: droneLoggerROSModule -->
+<launch>
+	
+	<arg name="drone_id_namespace"  default="drone0" />
+	<arg name="drone_id_int" 	default="0" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+	<group ns="$(arg drone_id_namespace)">
+		<!-- Trajectory Controller - Drone Swarm Architecture -->
+		<node name="droneLogger" pkg="droneLoggerROSModule" type="droneLoggerROSModuleNode" output="screen">
+			<param name="droneId" value="$(arg drone_id_int)" type="int"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+		</node>
+	</group>
+</launch>

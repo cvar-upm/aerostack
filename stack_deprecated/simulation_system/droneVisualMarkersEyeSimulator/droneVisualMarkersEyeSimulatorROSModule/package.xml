@@ -1,0 +1,28 @@
+<package>
+	<name>droneVisualMarkersEyeSimulatorROSModule</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is droneVisualMarkersEyeSimulatorROSModule.
+	</description>
+	<author email="jl.sanchez@upm.es">Jose Luis Sanchez Lopez</author>
+	<maintainer email="jl.sanchez@upm.es">Jose Luis Sanchez Lopez</maintainer>
+  	<license>BSD</license>
+	<url>http://ros.org/wiki/droneVisualMarkersEyeSimulatorROSModule</url>
+
+  	<buildtool_depend>catkin</buildtool_depend>
+
+
+  	<build_depend>roscpp</build_depend>
+	<build_depend>droneModuleROS</build_depend>
+	<build_depend>droneMsgsROS</build_depend>
+	<build_depend>droneVisualMarkersEyeSimulator</build_depend>
+
+	<run_depend>roscpp</run_depend>
+	<run_depend>droneModuleROS</run_depend>
+	<run_depend>droneMsgsROS</run_depend>
+	<run_depend>droneVisualMarkersEyeSimulator</run_depend>
+
+
+</package>
+
+

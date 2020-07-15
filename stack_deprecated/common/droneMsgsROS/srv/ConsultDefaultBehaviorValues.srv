@@ -1,0 +1,7 @@
+# This service consults the default values of a behavior
+
+string name           # behavior name
+---
+bool ack              # if this value is true, the operation was done succesfully
+string error_message  # text message describing a detected error during the consulation
+int32 timeout         # default timeout value for the behavior

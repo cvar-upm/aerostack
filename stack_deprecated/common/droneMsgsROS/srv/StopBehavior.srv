@@ -1,0 +1,5 @@
+# This service is used to send the required data to the behavior to stop it
+---
+
+bool ack                   # If this variable is true, the behavior has been deactivated correctly
+string error_message       # If the above variable is true, an error is contained insisde this variable

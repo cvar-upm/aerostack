@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <name>drone_process</name>
+  <version>0.2.1</version>
+  <description>The drone_process package</description>
+
+  <author email="e.ortizp@alumnos.upm.es">Enrique Ortiz</author>
+  <author email="davidnpalacios@gmail.com">David Palacios</author>
+  <maintainer email="alberto.camporredondop@alumnos.upm.es">Alberto Camporredondo</maintainer>
+
+  <license>GPLv3</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>droneMsgsROS</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>droneMsgsROS</run_depend>
+
+</package>

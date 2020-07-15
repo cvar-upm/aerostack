@@ -1,0 +1,6 @@
+# This service is used to get every reactive behaivor in different lists
+---
+BehaviorCommand[] high_priority_behaviors   # Contains every behavior that can be activated in a reactive way (with high priority)
+BehaviorCommand[] low_priority_behaviors    # Contains every behavior that can be activated in a reactive way (with low priority)
+bool ack                                    # If this value is true, the operation was done succesfully
+string error_message                        # If the above variable is false, an error is contained inside this variable

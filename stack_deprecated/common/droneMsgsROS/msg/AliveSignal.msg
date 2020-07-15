@@ -1,0 +1,4 @@
+Header header
+string process_name
+string hostname
+ProcessState current_state

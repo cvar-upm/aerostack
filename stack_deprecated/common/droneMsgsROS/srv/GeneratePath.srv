@@ -1,0 +1,5 @@
+# This service asks for the generation of a new path given a goal
+
+geometry_msgs/PoseStamped goal           # The goal
+---
+uint32                    uid            # The id of the path to be grabbed later

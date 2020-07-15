@@ -1,0 +1,4 @@
+# This service returns a list of every available behavior
+
+---
+ListOfBehaviors available_behaviors        # The list of available behaviors

@@ -1,0 +1,9 @@
+# send a string to parrotLogger, that MUST be logged (configuration information, etc)
+# std::string 	str2belogged
+# bool 		ack, is data ok?
+
+string 	str2belogged
+
+---
+
+bool ack

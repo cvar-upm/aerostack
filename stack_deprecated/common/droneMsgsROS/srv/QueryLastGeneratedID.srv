@@ -1,0 +1,6 @@
+# This service gets the last generated ID
+
+---
+uint64 id 							 				 # The last unique identifier generated
+bool ack                         # If this value is true, the identifier was correctly queried
+string error_message             # If the above variable is false, an error is contained inside this variable

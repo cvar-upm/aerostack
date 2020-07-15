@@ -1,0 +1,14 @@
+# SERVICE TYPE: ConsultBelief
+# ------------------------------------------------------------------------------
+# This service queries the belief memory belief memory, returning a boolean
+# value and a list of variables substituted to unify the query
+
+
+string query           # query expression that may contain variables
+---
+bool success           # whether a match was found in the belief memory
+
+string substitutions   # The variables that were substituted to achieve the match
+                       # YAML object with the format:
+                       # {var1: substitution1, var2: substitution2 ...}
+# ------------------------------------------------------------------------------

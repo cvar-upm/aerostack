@@ -1,0 +1,8 @@
+# SERVICE TYPE: CheckBeliefFormat
+# ------------------------------------------------------------------------------
+# This service checks whether a belief expression is specified correctly
+
+string belief_expression  # belief expression to check
+---
+bool success              # whether the belief expression is correct
+# ------------------------------------------------------------------------------

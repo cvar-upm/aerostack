@@ -1,0 +1,22 @@
+<package>
+	<name>lib_cvglogger</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is lib_cvglogger.
+	</description>
+	<author email="jespestana@gmail.com">Jesus Pestana Puerta</author>
+	<maintainer email="jespestana@gmail.com">Jesus Pestana Puerta</maintainer>
+  	<license>GPLv3</license>
+	<url>http://ros.org/wiki/lib_cvglogger</url>
+
+  	<buildtool_depend>catkin</buildtool_depend>
+
+
+  	<build_depend>lib_cvgutils</build_depend>
+
+	<run_depend>lib_cvgutils</run_depend>
+
+
+</package>
+
+

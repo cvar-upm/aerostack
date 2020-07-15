@@ -1,0 +1,13 @@
+#Path where the mission specification file is located
+string mission_file_path
+
+---
+
+#Ack indicates if the mission file has been loaded successfully
+bool ack
+
+#The name of the mission.
+string mission_name
+
+#If ack is false, the error messages are stored in the following variable
+string[] error_messages

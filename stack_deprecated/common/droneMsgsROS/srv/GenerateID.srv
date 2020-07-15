@@ -1,0 +1,6 @@
+# This service generates a new ID
+
+---
+uint64 id 							 			 	 # The unique identifier generated
+bool ack                         # If this value is true, the identifier has been correctly generated
+string error_message             # If the above variable is false, an error is contained inside this variable

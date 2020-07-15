@@ -1,0 +1,27 @@
+# Temporary files
+*~
+
+#ROS messages gen
+msg_gen
+
+#ROS servicios generados
+srv_gen
+
+#Ros carpeta build
+build
+
+#ROS carpeta src
+*.py
+*_.py
+*.pyc
+
+#user qt creator
+CMakeLists.txt.user
+
+#ROS carpeta lib
+lib
+
+#ROS carpeta bin
+bin
+
+msg/BoundingBox.msg

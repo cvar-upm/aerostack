@@ -1,0 +1,8 @@
+# This service checks if a behavior request is consistent with a set of active behaviors
+
+string behavior_name                # name of the behavior request
+BehaviorCommand[] active_behaviors  # list of active behaviors
+---
+bool consistent                     # if this value is true, the operation was done succesfully
+string error_message                # text message describing a detected error
+string[] incompatibilities          # list of names of behaviors that are incompatible with the requested behavior

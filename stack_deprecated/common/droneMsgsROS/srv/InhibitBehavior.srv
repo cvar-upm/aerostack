@@ -1,0 +1,7 @@
+# This service inhibits a behavior
+
+float64 behavior_uid       # The UID of the behavior to inhibit
+---
+bool ack                   # If this value is true, the behavior been inhibited correctly
+
+string error_message       # If the above variable is false, the error is contained inside this variable

@@ -1,0 +1,9 @@
+# This service checks if each capability trying to activate is consistent with every capability already activated
+
+string[] capabilities_to_activate       # Capabilities to activate
+
+string[] active_capabilities            # Already active capabilities
+---
+bool consistent                         # If this value is true, tthe operation was done succesfully
+string error_message                    # If the above variable is false, an error is contained inside this variable
+string[] inconsistent_capabilities      # This variable stores every inconsistent capability

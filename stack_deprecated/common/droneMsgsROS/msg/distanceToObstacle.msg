@@ -1,0 +1,2 @@
+int32 id_obstacle
+float32 distance_to_obstacle

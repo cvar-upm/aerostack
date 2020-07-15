@@ -1,0 +1,4 @@
+BehaviorCommand behavior
+---
+BehaviorCommand[] incompatible_behaviors
+float64[] uids

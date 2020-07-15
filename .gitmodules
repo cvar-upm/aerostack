@@ -121,3 +121,6 @@
 [submodule "stack/behaviors/single_behaviors/behavior_request_operator_assistance"]
 	path = stack/behaviors/single_behaviors/behavior_request_operator_assistance
 	url = https://bitbucket.org/visionaerialrobotics/behavior_request_operator_assistance.git
+[submodule "stack/behavior_management/behavior_manager"]
+	path = stack/behavior_management/behavior_manager
+	url = https://bitbucket.org/visionaerialrobotics/behavior_manager.git

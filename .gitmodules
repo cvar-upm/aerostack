@@ -211,3 +211,28 @@
 [submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_interface_rosmodule"]
 	path = stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_interface_rosmodule
 	url = https://bitbucket.org/visionaerialrobotics/driver_px4flow_interface_rosmodule.git
+[submodule "stack/behaviors/behavior_packages/attention_to_visual_markers"]
+	path = stack/behaviors/behavior_packages/attention_to_visual_markers
+	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git
+[submodule "stack/behaviors/behavior_packages/basic_quadrotor_behaviors"]
+	path = stack/behaviors/behavior_packages/basic_quadrotor_behaviors
+	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
+[submodule "stack/behaviors/behavior_packages/multi_sensor_fusion"]
+	path = stack/behaviors/behavior_packages/multi_sensor_fusion
+	url = https://bitbucket.org/visionaerialrobotics/multi_sensor_fusion.git
+[submodule "stack/behaviors/behavior_packages/navigation_with_lidar"]
+	path = stack/behaviors/behavior_packages/navigation_with_lidar
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_lidar.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_mpc_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_mpc_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_mpc_control.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_pid_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_pid_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_platform_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_platform_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_platform_control.git
+[submodule "stack/behaviors/behavior_packages/swarm_interaction"]
+	path = stack/behaviors/behavior_packages/swarm_interaction
+	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git
+>>>>>>> 8f62361fbdbea33f4e456dceab1af4b92a0e3e44

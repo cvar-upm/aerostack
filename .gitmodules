@@ -46,6 +46,51 @@
 [submodule "stack_deprecated/utils/audio_common"]
 	path = stack_deprecated/utils/audio_common
 	url = https://bitbucket.org/visionaerialrobotics/audio_common.git
+[submodule "projects/airplane_inspection_gazebo"]
+	path = projects/airplane_inspection_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/airplane_inspection_gazebo.git
+[submodule "projects/basic_mission_quadrotor_simulator"]
+	path = projects/basic_mission_quadrotor_simulator
+	url = https://bitbucket.org/visionaerialrobotics/basic_mission_quadrotor_simulator.git
+[submodule "projects/basic_behavior_tree_quadrotor_simulator"]
+	path = projects/basic_behavior_tree_quadrotor_simulator
+	url = https://bitbucket.org/visionaerialrobotics/basic_behavior_tree_quadrotor_simulator
+[submodule "projects/teleoperation_quadrotor_simulator"]
+	path = projects/teleoperation_quadrotor_simulator
+	url = https://bitbucket.org/visionaerialrobotics/teleoperation_quadrotor_simulator
+[submodule "projects/teleoperation_pid_gazebo"]
+	path = projects/teleoperation_pid_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/teleoperation_pid_gazebo.git
+[submodule "projects/teleoperation_mpc_gazebo_simulator"]
+	path = projects/teleoperation_mpc_gazebo_simulator
+	url = https://bitbucket.org/visionaerialrobotics/teleoperation_mpc_gazebo_simulator.git
+[submodule "projects/behavior_tree_trello"]
+	path = projects/behavior_tree_trello
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_trello.git
+[submodule "projects/visual_commands_tello"]
+	path = projects/visual_commands_tello
+	url = https://bitbucket.org/visionaerialrobotics/visual_commands_tello.git
+[submodule "projects/basic_mission_gazebo"]
+	path = projects/basic_mission_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/basic_mission_gazebo.git
+[submodule "projects/multidrone_bridge_inspection_rotors_simulator"]
+	path = projects/multidrone_bridge_inspection_rotors_simulator
+	url = https://bitbucket.org/visionaerialrobotics/multidrone_bridge_inspection_rotors_simulator.git
+[submodule "projects/basic_lidar_gazebo"]
+	path = projects/basic_lidar_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/basic_lidar_gazebo.git
+[submodule "projects/tower_inspection_lidar_gazebo"]
+	path = projects/tower_inspection_lidar_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/tower_inspection_lidar_gazebo.git
+[submodule "projects/warehouse_gazebo"]
+	path = projects/warehouse_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/warehouse_gazebo.git
+[submodule "projects_test/behavior_viewer_test"]
+	path = projects_test/behavior_viewer_test
+	url = https://bitbucket.org/visionaerialrobotics/behavior_viewer_test.git
+[submodule "projects_test/belief_updater_test"]
+	path = projects_test/belief_updater_test
+	url = https://bitbucket.org/visionaerialrobotics/belief_updater_test.git
 [submodule "stack/common/aerostack_msgs"]
 	path = stack/common/aerostack_msgs
 	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git

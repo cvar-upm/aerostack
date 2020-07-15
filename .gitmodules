@@ -115,3 +115,9 @@
 [submodule "stack/behaviors/behavior_packages/swarm_interaction"]
 	path = stack/behaviors/behavior_packages/swarm_interaction
 	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git
+[submodule "stack/behaviors/single_behaviors/behavior_inform_operator"]
+	path = stack/behaviors/single_behaviors/behavior_inform_operator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_inform_operator.git
+[submodule "stack/behaviors/single_behaviors/behavior_request_operator_assistance"]
+	path = stack/behaviors/single_behaviors/behavior_request_operator_assistance
+	url = https://bitbucket.org/visionaerialrobotics/behavior_request_operator_assistance.git

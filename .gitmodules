@@ -229,3 +229,9 @@
 [submodule "stack/user_interface/vehicle_dynamics_viewer_process"]
 	path = stack/user_interface/vehicle_dynamics_viewer_process
 	url = https://bitbucket.org/visionaerialrobotics/vehicle_dynamics_viewer_process.git
+[submodule "stack/belief_management/belief_manager"]
+	path = stack/belief_management/belief_manager
+	url = https://bitbucket.org/visionaerialrobotics/belief_manager.git
+[submodule "stack/belief_management/belief_updater_process"]
+	path = stack/belief_management/belief_updater_process
+	url = https://bitbucket.org/visionaerialrobotics/belief_updater_process.git

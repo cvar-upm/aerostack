@@ -1,0 +1,48 @@
+[submodule "stack_deprecated/common/drone_process"]
+	path = stack_deprecated/common/drone_process
+	url = https://bitbucket.org/visionaerialrobotics/drone_process.git
+[submodule "stack_deprecated/common/dronemoduleinterfaceros"]
+	path = stack_deprecated/common/dronemoduleinterfaceros
+	url = https://bitbucket.org/visionaerialrobotics/dronemoduleinterfaceros.git
+[submodule "stack_deprecated/common/dronemoduleros"]
+	path = stack_deprecated/common/dronemoduleros
+	url = https://bitbucket.org/visionaerialrobotics/dronemoduleros.git
+[submodule "stack_deprecated/common/dronemsgsros"]
+	path = stack_deprecated/common/dronemsgsros
+	url = https://bitbucket.org/visionaerialrobotics/dronemsgsros.git
+[submodule "stack_deprecated/libraries/lib_cvgthread"]
+	path = stack_deprecated/libraries/lib_cvgthread
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvgthread.git
+[submodule "stack_deprecated/libraries/lib_pose"]
+	path = stack_deprecated/libraries/lib_pose
+	url = https://bitbucket.org/visionaerialrobotics/lib_pose.git
+[submodule "stack_deprecated/libraries/lib_pugixml"]
+	path = stack_deprecated/libraries/lib_pugixml
+	url = https://bitbucket.org/visionaerialrobotics/lib_pugixml.git
+[submodule "stack_deprecated/libraries/mav_comm_rotors"]
+	path = stack_deprecated/libraries/mav_comm_rotors
+	url = https://bitbucket.org/visionaerialrobotics/mav_comm_rotors.git
+[submodule "stack_deprecated/libraries/referenceframes"]
+	path = stack_deprecated/libraries/referenceframes
+	url = https://bitbucket.org/visionaerialrobotics/referenceframes.git
+[submodule "stack_deprecated/logging/droneloggerrosmodule"]
+	path = stack_deprecated/logging/droneloggerrosmodule
+	url = https://bitbucket.org/visionaerialrobotics/droneloggerrosmodule.git
+[submodule "stack_deprecated/logging/lib_cvglogger"]
+	path = stack_deprecated/logging/lib_cvglogger
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvglogger.git
+[submodule "stack_deprecated/logging/lib_cvgloggerros"]
+	path = stack_deprecated/logging/lib_cvgloggerros
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvgloggerros.git
+[submodule "stack_deprecated/motor_system/mav_control_rw"]
+	path = stack_deprecated/motor_system/mav_control_rw
+	url = https://bitbucket.org/visionaerialrobotics/mav_control_rw.git
+[submodule "stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/dronevisualmarkerseyesimulatorrosmodule"]
+	path = stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/dronevisualmarkerseyesimulatorrosmodule
+	url = https://bitbucket.org/visionaerialrobotics/dronevisualmarkerseyesimulatorrosmodule.git
+[submodule "stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/dronevisualmarkerseyesimulator"]
+	path = stack_deprecated/simulation_system/droneVisualMarkersEyeSimulator/dronevisualmarkerseyesimulator
+	url = https://bitbucket.org/visionaerialrobotics/dronevisualmarkerseyesimulator.git
+[submodule "stack_deprecated/utils/audio_common"]
+	path = stack_deprecated/utils/audio_common
+	url = https://bitbucket.org/visionaerialrobotics/audio_common.git

@@ -91,6 +91,126 @@
 [submodule "projects_test/belief_updater_test"]
 	path = projects_test/belief_updater_test
 	url = https://bitbucket.org/visionaerialrobotics/belief_updater_test.git
+[submodule "stack/common/aerostack_msgs"]
+	path = stack/common/aerostack_msgs
+	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git
+[submodule "stack/common/behavior_execution_controller"]
+	path = stack/common/behavior_execution_controller
+	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_controller.git
+[submodule "stack/common/behavior_process"]
+	path = stack/common/behavior_process
+	url = https://bitbucket.org/visionaerialrobotics/behavior_process.git
+[submodule "stack/common/msgs_adapters"]
+	path = stack/common/msgs_adapters
+	url = https://bitbucket.org/visionaerialrobotics/msgs_adapters.git
+[submodule "stack/common/robot_process"]
+	path = stack/common/robot_process
+	url = https://bitbucket.org/visionaerialrobotics/robot_process.git
+[submodule "stack/libraries/catkin_simple"]
+	path = stack/libraries/catkin_simple
+	url = https://bitbucket.org/visionaerialrobotics/catkin_simple.git
+[submodule "stack/libraries/eigen_catkin"]
+	path = stack/libraries/eigen_catkin
+	url = https://bitbucket.org/visionaerialrobotics/eigen_catkin.git
+[submodule "stack/libraries/lib_cvgekf"]
+	path = stack/libraries/lib_cvgekf
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvgekf.git
+[submodule "stack/libraries/lib_cvgutils"]
+	path = stack/libraries/lib_cvgutils
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvgutils.git
+[submodule "stack/libraries/lib_levmar-2.6"]
+	path = stack/libraries/lib_levmar-2.6
+	url = https://bitbucket.org/visionaerialrobotics/lib_levmar-2.6.git
+[submodule "stack/libraries/lib_newmat11"]
+	path = stack/libraries/lib_newmat11
+	url = https://bitbucket.org/visionaerialrobotics/lib_newmat11.git
+[submodule "stack/libraries/mav_comm"]
+	path = stack/libraries/mav_comm
+	url = https://bitbucket.org/visionaerialrobotics/mav_comm.git
+[submodule "stack/libraries/pugixml"]
+	path = stack/libraries/pugixml
+	url = https://bitbucket.org/visionaerialrobotics/pugixml.git
+[submodule "stack/mission_control/emergency_manager"]
+	path = stack/mission_control/emergency_manager
+	url = https://bitbucket.org/visionaerialrobotics/emergency_manager.git
+[submodule "stack/mission_control/python_based_mission_interpreter/python_based_mission_interpreter_process"]
+	path = stack/mission_control/python_based_mission_interpreter/python_based_mission_interpreter_process
+	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process.git
+[submodule "stack/simulation/quadrotor_gazebo_simulator"]
+	path = stack/simulation/quadrotor_gazebo_simulator
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_gazebo_simulator.git
+[submodule "stack/simulation/quadrotor_simulator"]
+	path = stack/simulation/quadrotor_simulator
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_simulator.git
+[submodule "stack/simulation/vrep_simulator"]
+	path = stack/simulation/vrep_simulator
+	url = https://bitbucket.org/visionaerialrobotics/vrep_simulator.git
+[submodule "stack/hardware_interface/gazebo_interface"]
+	path = stack/hardware_interface/gazebo_interface
+	url = https://bitbucket.org/visionaerialrobotics/gazebo_interface.git
+[submodule "stack/hardware_interface/rotors_interface"]
+	path = stack/hardware_interface/rotors_interface
+	url = https://bitbucket.org/visionaerialrobotics/rotors_interface.git
+[submodule "stack/hardware_interface/tello_interface"]
+	path = stack/hardware_interface/tello_interface
+	url = https://bitbucket.org/visionaerialrobotics/tello_interface.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_bebop/bebop_autonomy"]
+	path = stack/hardware_interface/drivers_platforms/driver_bebop/bebop_autonomy
+	url = https://bitbucket.org/visionaerialrobotics/bebop_autonomy.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_bebop/driverbeboprosmodule"]
+	path = stack/hardware_interface/drivers_platforms/driver_bebop/driverbeboprosmodule
+	url = https://bitbucket.org/visionaerialrobotics/driverbeboprosmodule.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK
+	url = https://bitbucket.org/visionaerialrobotics/Onboard-SDK.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK-ROS"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji/Onboard-SDK-ROS
+	url = https://bitbucket.org/visionaerialrobotics/Onboard-SDK-ROS.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_dji/dji_matrice_210_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_dji/dji_matrice_210_process
+	url = https://bitbucket.org/visionaerialrobotics/dji_matrice_210_process.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/mikrokopter_driver"]
+	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/mikrokopter_driver
+	url = https://bitbucket.org/visionaerialrobotics/mikrokopter_driver.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/mikrokopter_driver_ros_module"]
+	path = stack/hardware_interface/drivers_platforms/driver_mikrokopter_flight_controller/mikrokopter_driver_ros_module
+	url = https://bitbucket.org/visionaerialrobotics/mikrokopter_driver_ros_module.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
+	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
+	url = https://bitbucket.org/visionaerialrobotics/mavros.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/driverpixhawkrosmodule"]
+	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/driverpixhawkrosmodule
+	url = https://bitbucket.org/visionaerialrobotics/driverpixhawkrosmodule.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
+	url = https://bitbucket.org/visionaerialrobotics/driver_rotors_simulator_process.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_camera_ueye/ueye_cam"]
+	path = stack/hardware_interface/drivers_sensors/driver_camera_ueye/ueye_cam
+	url = https://bitbucket.org/visionaerialrobotics/ueye_cam.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_hokuyo/hokuyo_node"]
+	path = stack/hardware_interface/drivers_sensors/driver_hokuyo/hokuyo_node
+	url = https://bitbucket.org/visionaerialrobotics/hokuyo_node.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_leapmotion/leap_motion"]
+	path = stack/hardware_interface/drivers_sensors/driver_leapmotion/leap_motion
+	url = https://bitbucket.org/visionaerialrobotics/leap_motion.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_lidar_lite/driverlidarliteinterfacerosmodule"]
+	path = stack/hardware_interface/drivers_sensors/driver_lidar_lite/driverlidarliteinterfacerosmodule
+	url = https://bitbucket.org/visionaerialrobotics/driverlidarliteinterfacerosmodule.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_lightware/cereal_port"]
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/cereal_port
+	url = https://bitbucket.org/visionaerialrobotics/cereal_port.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_lightware/ros_lightware"]
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/ros_lightware
+	url = https://bitbucket.org/visionaerialrobotics/ros_lightware.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30-b"]
+	path = stack/hardware_interface/drivers_sensors/driver_lightware/driver_lightware_sf30/sf30-b
+	url = https://bitbucket.org/visionaerialrobotics/sf30-b.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/px-ros-pkg"]
+	path = stack/hardware_interface/drivers_sensors/driver_px4flow/px-ros-pkg
+	url = https://bitbucket.org/visionaerialrobotics/px-ros-pkg.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_interface_rosmodule"]
+	path = stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_interface_rosmodule
+	url = https://bitbucket.org/visionaerialrobotics/driver_px4flow_interface_rosmodule.git
 [submodule "stack/behaviors/behavior_packages/attention_to_visual_markers"]
 	path = stack/behaviors/behavior_packages/attention_to_visual_markers
 	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git

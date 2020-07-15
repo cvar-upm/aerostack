@@ -235,4 +235,3 @@
 [submodule "stack/behaviors/behavior_packages/swarm_interaction"]
 	path = stack/behaviors/behavior_packages/swarm_interaction
 	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git
->>>>>>> 8f62361fbdbea33f4e456dceab1af4b92a0e3e44

@@ -1,1 +1,0 @@
-SkillDescriptor[] skill_list

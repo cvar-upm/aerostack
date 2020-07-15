@@ -91,3 +91,27 @@
 [submodule "projects_test/belief_updater_test"]
 	path = projects_test/belief_updater_test
 	url = https://bitbucket.org/visionaerialrobotics/belief_updater_test.git
+[submodule "stack/behaviors/behavior_packages/attention_to_visual_markers"]
+	path = stack/behaviors/behavior_packages/attention_to_visual_markers
+	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git
+[submodule "stack/behaviors/behavior_packages/basic_quadrotor_behaviors"]
+	path = stack/behaviors/behavior_packages/basic_quadrotor_behaviors
+	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
+[submodule "stack/behaviors/behavior_packages/multi_sensor_fusion"]
+	path = stack/behaviors/behavior_packages/multi_sensor_fusion
+	url = https://bitbucket.org/visionaerialrobotics/multi_sensor_fusion.git
+[submodule "stack/behaviors/behavior_packages/navigation_with_lidar"]
+	path = stack/behaviors/behavior_packages/navigation_with_lidar
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_lidar.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_mpc_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_mpc_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_mpc_control.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_pid_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_pid_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_platform_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_platform_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_platform_control.git
+[submodule "stack/behaviors/behavior_packages/swarm_interaction"]
+	path = stack/behaviors/behavior_packages/swarm_interaction
+	url = https://bitbucket.org/visionaerialrobotics/swarm_interaction.git

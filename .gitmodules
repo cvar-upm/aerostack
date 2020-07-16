@@ -196,39 +196,12 @@
 [submodule "stack/user_interface/belief_memory_viewer"]
 	path = stack/user_interface/belief_memory_viewer
 	url = https://bitbucket.org/visionaerialrobotics/belief_memory_viewer.git
-[submodule "stack/user_interface/camera_viewer_process"]
-	path = stack/user_interface/camera_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/camera_viewer_process.git
-[submodule "stack/user_interface/environment_editor_process"]
-	path = stack/user_interface/environment_editor_process
-	url = https://bitbucket.org/visionaerialrobotics/environment_editor_process.git
-[submodule "stack/user_interface/environment_viewer_process"]
-	path = stack/user_interface/environment_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/environment_viewer_process.git
 [submodule "stack/user_interface/execution_viewer_process"]
 	path = stack/user_interface/execution_viewer_process
 	url = https://bitbucket.org/visionaerialrobotics/execution_viewer_process.git
-[submodule "stack/user_interface/first_person_viewer_process"]
-	path = stack/user_interface/first_person_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/first_person_viewer_process.git
-[submodule "stack/user_interface/integrated_viewer_process"]
-	path = stack/user_interface/integrated_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/integrated_viewer_process.git
 [submodule "stack/user_interface/map_viewer_2d_process"]
 	path = stack/user_interface/map_viewer_2d_process
 	url = https://bitbucket.org/visionaerialrobotics/map_viewer_2d_process.git
-[submodule "stack/user_interface/parameters_viewer_process"]
-	path = stack/user_interface/parameters_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/parameters_viewer_process.git
-[submodule "stack/user_interface/python_mission_control_window_process"]
-	path = stack/user_interface/python_mission_control_window_process
-	url = https://bitbucket.org/visionaerialrobotics/python_mission_control_window_process.git
-[submodule "stack/user_interface/teleoperation_control_window_process"]
-	path = stack/user_interface/teleoperation_control_window_process
-	url = https://bitbucket.org/visionaerialrobotics/teleoperation_control_window_process.git
-[submodule "stack/user_interface/vehicle_dynamics_viewer_process"]
-	path = stack/user_interface/vehicle_dynamics_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/vehicle_dynamics_viewer_process.git
 [submodule "stack/belief_management/belief_manager"]
 	path = stack/belief_management/belief_manager
 	url = https://bitbucket.org/visionaerialrobotics/belief_manager.git

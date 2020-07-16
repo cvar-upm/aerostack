@@ -127,9 +127,6 @@
 [submodule "stack/mission_control/emergency_manager"]
 	path = stack/mission_control/emergency_manager
 	url = https://bitbucket.org/visionaerialrobotics/emergency_manager.git
-[submodule "stack/mission_control/python_based_mission_interpreter/python_based_mission_interpreter_process"]
-	path = stack/mission_control/python_based_mission_interpreter/python_based_mission_interpreter_process
-	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter_process.git
 [submodule "stack/simulation/quadrotor_gazebo_simulator"]
 	path = stack/simulation/quadrotor_gazebo_simulator
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_gazebo_simulator.git
@@ -187,24 +184,27 @@
 [submodule "stack/user_interface/behavior_execution_viewer"]
 	path = stack/user_interface/behavior_execution_viewer
 	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_viewer.git
-[submodule "stack/user_interface/behavior_tree_editor_process"]
-	path = stack/user_interface/behavior_tree_editor_process
-	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_editor_process.git
-[submodule "stack/user_interface/behavior_tree_interpreter_process"]
-	path = stack/user_interface/behavior_tree_interpreter_process
-	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_interpreter_process.git
 [submodule "stack/user_interface/belief_memory_viewer"]
 	path = stack/user_interface/belief_memory_viewer
 	url = https://bitbucket.org/visionaerialrobotics/belief_memory_viewer.git
-[submodule "stack/user_interface/execution_viewer_process"]
-	path = stack/user_interface/execution_viewer_process
-	url = https://bitbucket.org/visionaerialrobotics/execution_viewer_process.git
-[submodule "stack/user_interface/map_viewer_2d_process"]
-	path = stack/user_interface/map_viewer_2d_process
-	url = https://bitbucket.org/visionaerialrobotics/map_viewer_2d_process.git
 [submodule "stack/belief_management/belief_manager"]
 	path = stack/belief_management/belief_manager
 	url = https://bitbucket.org/visionaerialrobotics/belief_manager.git
-[submodule "stack/belief_management/belief_updater_process"]
-	path = stack/belief_management/belief_updater_process
-	url = https://bitbucket.org/visionaerialrobotics/belief_updater_process.git
+[submodule "stack/user_interface/behavior_tree_editor"]
+	path = stack/user_interface/behavior_tree_editor
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_editor.git
+[submodule "stack/user_interface/behavior_tree_interpreter"]
+	path = stack/user_interface/behavior_tree_interpreter
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_interpreter.git
+[submodule "stack/user_interface/execution_viewer"]
+	path = stack/user_interface/execution_viewer
+	url = https://bitbucket.org/visionaerialrobotics/execution_viewer.git
+[submodule "stack/user_interface/map_viewer_2d"]
+	path = stack/user_interface/map_viewer_2d
+	url = https://bitbucket.org/visionaerialrobotics/map_viewer_2d.git
+[submodule "stack/mission_control/python_based_mission_interpreter"]
+	path = stack/mission_control/python_based_mission_interpreter
+	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter.git
+[submodule "stack/belief_management/belief_updater"]
+	path = stack/belief_management/belief_updater
+	url = https://bitbucket.org/visionaerialrobotics/belief_updater.git

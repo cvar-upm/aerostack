@@ -52,18 +52,12 @@
 [submodule "projects/basic_mission_quadrotor_simulator"]
 	path = projects/basic_mission_quadrotor_simulator
 	url = https://bitbucket.org/visionaerialrobotics/basic_mission_quadrotor_simulator.git
-[submodule "projects/basic_behavior_tree_quadrotor_simulator"]
-	path = projects/basic_behavior_tree_quadrotor_simulator
-	url = https://bitbucket.org/visionaerialrobotics/basic_behavior_tree_quadrotor_simulator
 [submodule "projects/teleoperation_quadrotor_simulator"]
 	path = projects/teleoperation_quadrotor_simulator
 	url = https://bitbucket.org/visionaerialrobotics/teleoperation_quadrotor_simulator
 [submodule "projects/teleoperation_pid_gazebo"]
 	path = projects/teleoperation_pid_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/teleoperation_pid_gazebo.git
-[submodule "projects/teleoperation_mpc_gazebo_simulator"]
-	path = projects/teleoperation_mpc_gazebo_simulator
-	url = https://bitbucket.org/visionaerialrobotics/teleoperation_mpc_gazebo_simulator.git
 [submodule "projects/behavior_tree_trello"]
 	path = projects/behavior_tree_trello
 	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_trello.git
@@ -73,18 +67,6 @@
 [submodule "projects/basic_mission_gazebo"]
 	path = projects/basic_mission_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/basic_mission_gazebo.git
-[submodule "projects/multidrone_bridge_inspection_rotors_simulator"]
-	path = projects/multidrone_bridge_inspection_rotors_simulator
-	url = https://bitbucket.org/visionaerialrobotics/multidrone_bridge_inspection_rotors_simulator.git
-[submodule "projects/basic_lidar_gazebo"]
-	path = projects/basic_lidar_gazebo
-	url = https://bitbucket.org/visionaerialrobotics/basic_lidar_gazebo.git
-[submodule "projects/tower_inspection_lidar_gazebo"]
-	path = projects/tower_inspection_lidar_gazebo
-	url = https://bitbucket.org/visionaerialrobotics/tower_inspection_lidar_gazebo.git
-[submodule "projects/warehouse_gazebo"]
-	path = projects/warehouse_gazebo
-	url = https://bitbucket.org/visionaerialrobotics/warehouse_gazebo.git
 [submodule "projects_test/behavior_viewer_test"]
 	path = projects_test/behavior_viewer_test
 	url = https://bitbucket.org/visionaerialrobotics/behavior_viewer_test.git
@@ -208,3 +190,21 @@
 [submodule "stack/belief_management/belief_updater"]
 	path = stack/belief_management/belief_updater
 	url = https://bitbucket.org/visionaerialrobotics/belief_updater.git
+[submodule "projects/behavior_tree_quadrotor_simulator"]
+	path = projects/behavior_tree_quadrotor_simulator
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_quadrotor_simulator.git
+[submodule "projects/rooms_exploration_gazebo"]
+	path = projects/rooms_exploration_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/rooms_exploration_gazebo.git
+[submodule "projects/bridge_inspection_gazebo"]
+	path = projects/bridge_inspection_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/bridge_inspection_gazebo.git
+[submodule "projects/teleoperation_mpc_gazebo"]
+	path = projects/teleoperation_mpc_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/teleoperation_mpc_gazebo.git
+[submodule "projects/tower_inspection_gazebo"]
+	path = projects/tower_inspection_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/tower_inspection_gazebo.git
+[submodule "projects/warehouse_inventory_gazebo"]
+	path = projects/warehouse_inventory_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/warehouse_inventory_gazebo.git

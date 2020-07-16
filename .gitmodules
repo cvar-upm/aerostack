@@ -178,9 +178,6 @@
 [submodule "stack/user_interface/behavior_tree_interpreter"]
 	path = stack/user_interface/behavior_tree_interpreter
 	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_interpreter.git
-[submodule "stack/user_interface/execution_viewer"]
-	path = stack/user_interface/execution_viewer
-	url = https://bitbucket.org/visionaerialrobotics/execution_viewer.git
 [submodule "stack/user_interface/map_viewer_2d"]
 	path = stack/user_interface/map_viewer_2d
 	url = https://bitbucket.org/visionaerialrobotics/map_viewer_2d.git

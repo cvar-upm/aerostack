@@ -106,9 +106,6 @@
 [submodule "stack/libraries/pugixml"]
 	path = stack/libraries/pugixml
 	url = https://bitbucket.org/visionaerialrobotics/pugixml.git
-[submodule "stack/mission_control/emergency_manager"]
-	path = stack/mission_control/emergency_manager
-	url = https://bitbucket.org/visionaerialrobotics/emergency_manager.git
 [submodule "stack/simulation/quadrotor_gazebo_simulator"]
 	path = stack/simulation/quadrotor_gazebo_simulator
 	url = https://bitbucket.org/visionaerialrobotics/quadrotor_gazebo_simulator.git

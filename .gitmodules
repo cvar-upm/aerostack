@@ -202,3 +202,9 @@
 [submodule "projects/warehouse_inventory_gazebo"]
 	path = projects/warehouse_inventory_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/warehouse_inventory_gazebo.git
+[submodule "stack/mission_control/safety_monitor"]
+	path = stack/mission_control/safety_monitor
+	url = https://bitbucket.org/visionaerialrobotics/safety_monitor.git
+[submodule "stack/mission_control/recovery_manager"]
+	path = stack/mission_control/recovery_manager
+	url = https://bitbucket.org/visionaerialrobotics/recovery_manager.git

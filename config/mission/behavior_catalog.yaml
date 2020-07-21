@@ -179,6 +179,8 @@ behaviors:
 - behavior: CLEAR_OCCUPANCY_GRID
   package: navigation_with_lidar
   task: CLEAR_OCCUPANCY_GRID
+  requires:
+  - task: SELF_LOCALIZE
 
 - behavior: SAVE_OCCUPANCY_GRID
   package: navigation_with_lidar

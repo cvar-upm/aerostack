@@ -58,9 +58,6 @@
 [submodule "projects/teleoperation_pid_gazebo"]
 	path = projects/teleoperation_pid_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/teleoperation_pid_gazebo.git
-[submodule "projects/behavior_tree_trello"]
-	path = projects/behavior_tree_trello
-	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_trello.git
 [submodule "projects/visual_commands_tello"]
 	path = projects/visual_commands_tello
 	url = https://bitbucket.org/visionaerialrobotics/visual_commands_tello.git
@@ -208,3 +205,6 @@
 [submodule "stack/mission_control/recovery_manager"]
 	path = stack/mission_control/recovery_manager
 	url = https://bitbucket.org/visionaerialrobotics/recovery_manager.git
+[submodule "projects/behavior_tree_tello"]
+	path = projects/behavior_tree_tello
+	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_tello.git

@@ -4,7 +4,7 @@
 	
   <arg name="drone_id_namespace"  default="drone0" />
   <arg name="drone_id_int" 	default="0" />
-  <arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+  <arg name="config_path" 	default="$(env AEROSTACK_STACK)" />
 
   <!-- Run the map server -->
   <!--<node name="map_server" pkg="map_server" type="map_server" args="$(find my_map_package)/my_map.pgm my_map_resolution"/>-->
@@ -23,11 +23,11 @@
     <rosparam file="$(find mrpt_tutorials)/cfg/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find mrpt_tutorials)/cfg/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find mrpt_tutorials)/cfg/base_local_planner_params.yaml" command="load" />-->
-    <rosparam file="$(arg my_stack_directory)/configs/$(arg drone_id_namespace)/costmap_common_params.yaml" command="load" ns="global_costmap" />
-    <rosparam file="$(arg my_stack_directory)/configs/$(arg drone_id_namespace)/costmap_common_params.yaml" command="load" ns="local_costmap" />
-    <rosparam file="$(arg my_stack_directory)/configs/$(arg drone_id_namespace)/local_costmap_params.yaml" command="load" />
-    <rosparam file="$(arg my_stack_directory)/configs/$(arg drone_id_namespace)/global_costmap_params.yaml" command="load" />
-    <rosparam file="$(arg my_stack_directory)/configs/$(arg drone_id_namespace)/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(arg config_path)/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(arg config_path)/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(arg config_path)/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(arg config_path)/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(arg config_path)/base_local_planner_params.yaml" command="load" />
     <rosparam param="controller_frequency">13</rosparam>
   </node>
 </group>

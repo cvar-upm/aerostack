@@ -187,9 +187,6 @@
 [submodule "projects/bridge_inspection_gazebo"]
 	path = projects/bridge_inspection_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/bridge_inspection_gazebo.git
-[submodule "projects/teleoperation_mpc_gazebo"]
-	path = projects/teleoperation_mpc_gazebo
-	url = https://bitbucket.org/visionaerialrobotics/teleoperation_mpc_gazebo.git
 [submodule "projects/tower_inspection_gazebo"]
 	path = projects/tower_inspection_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/tower_inspection_gazebo.git
@@ -208,3 +205,6 @@
 [submodule "projects/teleoperation_gazebo"]
 	path = projects/teleoperation_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/teleoperation_gazebo.git
+[submodule "projects/fast_drone_gazebo"]
+	path = projects/fast_drone_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/fast_drone_gazebo.git

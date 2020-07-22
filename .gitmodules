@@ -55,9 +55,6 @@
 [submodule "projects/teleoperation_quadrotor_simulator"]
 	path = projects/teleoperation_quadrotor_simulator
 	url = https://bitbucket.org/visionaerialrobotics/teleoperation_quadrotor_simulator
-[submodule "projects/teleoperation_pid_gazebo"]
-	path = projects/teleoperation_pid_gazebo
-	url = https://bitbucket.org/visionaerialrobotics/teleoperation_pid_gazebo.git
 [submodule "projects/visual_commands_tello"]
 	path = projects/visual_commands_tello
 	url = https://bitbucket.org/visionaerialrobotics/visual_commands_tello.git
@@ -208,3 +205,6 @@
 [submodule "projects/behavior_tree_tello"]
 	path = projects/behavior_tree_tello
 	url = https://bitbucket.org/visionaerialrobotics/behavior_tree_tello.git
+[submodule "projects/teleoperation_gazebo"]
+	path = projects/teleoperation_gazebo
+	url = https://bitbucket.org/visionaerialrobotics/teleoperation_gazebo.git

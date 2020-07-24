@@ -1,0 +1,64 @@
+position_x:
+    proportional_gain:    1.00       
+    derivative_gain:      0.20       
+    integral_gain:        0.00        
+    saturation_enabled:   true        
+    saturation_min:      -2.0      
+    saturation_max:       2.0     
+    anti_wind_up_enabled: true    
+    anti_wind_up:         0.5
+position_y:
+    proportional_gain:    1.00       
+    derivative_gain:      0.20       
+    integral_gain:        0.00        
+    saturation_enabled:   true        
+    saturation_min:      -2.0      
+    saturation_max:       2.0     
+    anti_wind_up_enabled: true
+    anti_wind_up:         0.5
+position_z:
+    proportional_gain:    1.10       
+    derivative_gain:      0.15       
+    integral_gain:        0.40        
+    saturation_enabled:   true        
+    saturation_min:      -1.40      
+    saturation_max:       1.40     
+    anti_wind_up_enabled: true    
+    anti_wind_up:         0.60
+    feedforward_enabled:  false
+    feedforward_mass:     0.73
+    feedforward_factor:   0.36
+speed_x:
+    proportional_gain:    0.30       
+    derivative_gain:      0.03       
+    integral_gain:        0.10        
+    saturation_enabled:   true        
+    saturation_min:      -0.50      
+    saturation_max:       0.50     
+    anti_wind_up_enabled: true    
+    anti_wind_up:         0.60
+speed_y:
+    proportional_gain:    0.30       
+    derivative_gain:      0.03       
+    integral_gain:        0.10        
+    saturation_enabled:   true        
+    saturation_min:      -0.50      
+    saturation_max:       0.50     
+    anti_wind_up_enabled: true    
+    anti_wind_up:         0.60
+    vxy_max_enabled:      true
+    vxy_max:              2.0
+yaw:
+    proportional_gain:    1.00       
+    derivative_gain:      0.05       
+    integral_gain:        0.40        
+    saturation_enabled:   true        
+    saturation_min:      -0.70      
+    saturation_max:       0.70     
+    anti_wind_up_enabled: true    
+    anti_wind_up:         0.60
+trajectory_speed:
+    vxy_max:              0.75
+    vxz_max:              0.40
+    error_max:            0.35
+    radius:               0.75

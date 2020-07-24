@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<drone_yaw_commander>
-  <yaw_tolerance description="yaw tolerance in degrees">5</yaw_tolerance> 
-
-
-
-</drone_yaw_commander>

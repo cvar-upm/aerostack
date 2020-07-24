@@ -61,9 +61,6 @@
 [submodule "projects/basic_mission_gazebo"]
 	path = projects/basic_mission_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/basic_mission_gazebo.git
-[submodule "projects_test/behavior_viewer_test"]
-	path = projects_test/behavior_viewer_test
-	url = https://bitbucket.org/visionaerialrobotics/behavior_viewer_test.git
 [submodule "projects_test/belief_updater_test"]
 	path = projects_test/belief_updater_test
 	url = https://bitbucket.org/visionaerialrobotics/belief_updater_test.git

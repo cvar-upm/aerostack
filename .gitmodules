@@ -61,9 +61,6 @@
 [submodule "projects/basic_mission_gazebo"]
 	path = projects/basic_mission_gazebo
 	url = https://bitbucket.org/visionaerialrobotics/basic_mission_gazebo.git
-[submodule "projects_test/belief_updater_test"]
-	path = projects_test/belief_updater_test
-	url = https://bitbucket.org/visionaerialrobotics/belief_updater_test.git
 [submodule "stack/common/aerostack_msgs"]
 	path = stack/common/aerostack_msgs
 	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git

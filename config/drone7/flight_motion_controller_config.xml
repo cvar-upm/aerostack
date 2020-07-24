@@ -1,6 +1,0 @@
-<flight_motion_controller_config>
-   
-    <module_frequency> 30.0 </module_frequency> 
-		<init_control_mode>position</init_control_mode>
-
-</flight_motion_controller_config>
